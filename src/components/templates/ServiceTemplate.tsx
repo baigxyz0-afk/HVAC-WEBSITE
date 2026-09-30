@@ -9,6 +9,8 @@ import { createLinker } from "@/lib/linker";
 import type { Crumb } from "@/lib/schema";
 import { Hero } from "../Hero";
 import { categoryPhotos, servicePhotoOverrides } from "@/content/photos";
+import { BeforeAfterSlider } from "../BeforeAfterSlider";
+import { beforeAfterFor } from "@/content/beforeAfter";
 import { Chip, FaqList, Glance, ServiceCard, Reviews } from "../ui";
 import { Icon } from "../icons";
 import { LeadFormBlock } from "../lead/LeadFormBlock";
@@ -23,7 +25,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
   const related = s.related.map(getService).filter(Boolean) as Service[];
   const guides = publishedArticles.filter((a) => a.services.includes(s.slug)).slice(0, 3);
   const towns = city ? publishedCities.filter((c) => city.nearby.includes(c.slug)) : publishedCities.filter((c) => c.popularServices.includes(s.slug));
-  const place = city ? cityLabel(city) : "the Phoenix metro";
+  const place = city ? cityLabel(city) : "the Kansas City metro";
   const sections = [
     ["overview", "Overview"],
     ...(local ? [["local", `In ${city!.name}`]] : []),
@@ -79,7 +81,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
                   ))}
                 </div>
                 <p className="text-muted">
-                  <strong className="text-ink">Water:</strong> {city.water} <strong className="text-ink">Permits:</strong> {city.permits}
+                  <strong className="text-ink">Utilities:</strong> {city.water} <strong className="text-ink">Permits:</strong> {city.permits}
                 </p>
               </div>
             )}
@@ -97,7 +99,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
             </div>
 
             <div id="process" className="scroll-mt-32">
-              <h2 className="text-3xl font-semibold">How the plumber handles it</h2>
+              <h2 className="text-3xl font-semibold">How the technician handles it</h2>
               <ol className="mt-5 space-y-4 border-l-2 border-teal/40 pl-6">
                 {s.process.map((p, i) => (
                   <li key={p.title} className="relative">
@@ -111,7 +113,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
 
             <div id="cost" className="scroll-mt-32">
               <h2 className="text-3xl font-semibold">What affects the cost</h2>
-              <p className="mt-3 text-muted">Prices depend on what the plumber finds, so the plumber quotes on site. These are the main factors:</p>
+              <p className="mt-3 text-muted">Prices depend on what the technician finds, so the contractor quotes on site. These are the main factors:</p>
               <ul className="prose-cp mt-4">
                 {s.costFactors.map((c) => (
                   <li key={c}>{c}</li>
@@ -128,7 +130,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
                     <ul className="prose-cp mt-2 text-sm">{s.diy.safe.map((x) => <li key={x}>{x}</li>)}</ul>
                   </div>
                   <div className="rounded-xl bg-alert-tint p-5 ring-1 ring-alert/20">
-                    <h3 className="font-sans font-semibold text-alert">Call a plumber</h3>
+                    <h3 className="font-sans font-semibold text-alert">Call a technician</h3>
                     <ul className="prose-cp mt-2 text-sm">{s.diy.stop.map((x) => <li key={x}>{x}</li>)}</ul>
                   </div>
                 </div>
@@ -141,7 +143,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
 
             {towns.length > 0 && (
               <div>
-                <h2 className="text-2xl font-semibold">{city ? "Nearby towns" : `${s.shortName ?? s.name} across the Valley`}</h2>
+                <h2 className="text-2xl font-semibold">{city ? "Nearby towns" : `${s.shortName ?? s.name} across Kansas City`}</h2>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {towns.map((c) => (
                     <Chip key={c.slug} href={routes.city(c.stateSlug, c.slug)}>
@@ -149,6 +151,16 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
                     </Chip>
                   ))}
                   {city && <Chip href={routes.service(s.slug)}>{s.name} (all areas)</Chip>}
+                </div>
+              </div>
+            )}
+            {beforeAfterFor(s.slug).length > 0 && (
+              <div>
+                <h2 className="text-3xl font-semibold">Before and after</h2>
+                <div className="mt-5 grid gap-5">
+                  {beforeAfterFor(s.slug).slice(0, 1).map((b) => (
+                    <BeforeAfterSlider key={b.slug} item={b} />
+                  ))}
                 </div>
               </div>
             )}
@@ -190,7 +202,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
           )}
         </div>
       </section>
-      <CtaBand service={s.slug} title={`Need ${(s.shortName ?? s.name).toLowerCase()} in ${city ? city.name : "the Valley"}?`} />
+      <CtaBand service={s.slug} title={`Need ${(s.shortName ?? s.name).toLowerCase()} in ${city ? city.name : "Kansas City"}?`} />
     </main>
   );
 }

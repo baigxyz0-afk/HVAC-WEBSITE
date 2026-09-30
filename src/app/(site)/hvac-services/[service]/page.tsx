@@ -3,6 +3,7 @@ import { publishedServices, getService, getCategory } from "@/content/services";
 import { pageMeta } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { graph, ids, pageGraph } from "@/lib/schema";
+import { indexableCities } from "@/lib/sitemap";
 import { site } from "@/content/site";
 import { JsonLd } from "@/components/ui";
 import { ServiceTemplate } from "@/components/templates/ServiceTemplate";
@@ -37,7 +38,7 @@ export default async function ServicePage({ params }: P) {
     serviceType: s.name,
     category: getCategory(s.category).name,
     broker: { "@id": ids.org },
-    areaServed: { "@id": ids.county },
+    areaServed: indexableCities().map((c) => ({ "@id": ids.place(c.slug) })),
   };
   return (
     <>

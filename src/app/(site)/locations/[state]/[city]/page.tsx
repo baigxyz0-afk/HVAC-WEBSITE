@@ -27,8 +27,8 @@ export async function generateMetadata({ params }: P) {
   const p = await params;
   const c = getCity(p.state, p.city)!;
   return pageMeta({
-    title: `Plumber in ${cityLabel(c)}`,
-    description: `Plumbing help in ${c.name}: ${c.localIssues.map((i) => i.title.toLowerCase()).slice(0, 2).join(", ")}, water heaters and more. Local water and permit facts, and a licensed plumber.`.slice(0, 158),
+    title: `HVAC Repair in ${cityLabel(c)}`,
+    description: `Heating and AC help in ${c.name}: ${c.localIssues.map((i) => i.title.toLowerCase()).slice(0, 2).join(", ")}, furnaces and more. Local utility and permit facts, and a licensed HVAC contractor.`.slice(0, 158),
     path: routes.city(c.stateSlug, c.slug),
   });
 }
@@ -53,11 +53,11 @@ export default async function CityPage({ params }: P) {
 
   return (
     <main id="main">
-      <JsonLd data={graph(pageGraph({ path, name: `Plumber in ${cityLabel(c)}`, description: c.intro, crumbs, faqs: c.faqs, about: [ids.place(c.slug)] }))} />
+      <JsonLd data={graph(pageGraph({ path, name: `HVAC Repair in ${cityLabel(c)}`, description: c.intro, crumbs, faqs: c.faqs, about: [ids.place(c.slug)] }))} />
       <Hero
         crumbs={crumbs}
         eyebrow={`${c.county} County · ${cityLabel(c)}`}
-        title={`Plumbing help in ${c.name}`}
+        title={`Heating and AC help in ${c.name}`}
         lead={<p>{c.intro}</p>}
         facts={[availability, `Neighborhoods: ${c.areas.slice(0, 3).join(", ")}`]}
         aside={
@@ -78,7 +78,7 @@ export default async function CityPage({ params }: P) {
         <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_380px]">
           <div className="min-w-0 space-y-12">
             <div>
-              <h2 className="text-3xl font-semibold">{c.name} homes and their plumbing</h2>
+              <h2 className="text-3xl font-semibold">{c.name} homes and their heating and cooling</h2>
               <p className="mt-4 text-lg leading-relaxed">{link(c.housingNotes)}</p>
               <div className="mt-6 grid gap-4 md:grid-cols-3">
                 {c.localIssues.map((i) => (
@@ -107,8 +107,8 @@ export default async function CityPage({ params }: P) {
               </ul>
               <p className="mt-4 text-muted">
                 Also available in {c.name}:{" "}
-                <Link href={routes.emergency()} className="link">emergency plumbing</Link> and{" "}
-                <Link href={routes.services()} className="link">every plumbing service</Link>.
+                <Link href={routes.emergency()} className="link">emergency heating and AC</Link> and{" "}
+                <Link href={routes.services()} className="link">every HVAC service</Link>.
               </p>
             </div>
 
@@ -116,13 +116,13 @@ export default async function CityPage({ params }: P) {
               title={`${c.name} at a glance`}
               items={[
                 { term: "County", detail: `${c.county} County` },
-                { term: "Water", detail: c.water },
+                { term: "Utilities", detail: c.water },
                 { term: "Permits", detail: c.permits },
                 { term: "ZIP codes", detail: c.zips.join(", ") },
               ]}
             />
 
-            <FaqList faqs={c.faqs} title={`${c.name} plumbing FAQ`} />
+            <FaqList faqs={c.faqs} title={`${c.name} heating and cooling FAQ`} />
 
             {guides.length > 0 && (
               <div>
@@ -152,7 +152,7 @@ export default async function CityPage({ params }: P) {
           </aside>
         </div>
       </section>
-      <CtaBand title={`Need a plumber in ${c.name}?`} />
+      <CtaBand title={`Need HVAC help in ${c.name}?`} />
     </main>
   );
 }

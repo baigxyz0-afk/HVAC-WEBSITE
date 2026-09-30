@@ -44,8 +44,8 @@ export function MobileNav({ services, locations, company, phone, e164 }: Props) 
           </button>
         </div>
         <div className="flex-1 overflow-y-auto p-4">
-          <Link href="/emergency-plumbing/" className="block rounded-xl bg-alert-tint p-4">
-            <span className="font-semibold text-alert">Plumbing emergency?</span>
+          <Link href="/emergency-hvac/" className="block rounded-xl bg-alert-tint p-4">
+            <span className="font-semibold text-alert">No heat or no AC?</span>
             <span className="mt-1 block text-sm text-muted">Shut off the main, then call.</span>
           </Link>
           <a href={`tel:${e164}`} className="btn btn-alert mt-3 w-full">

@@ -9,7 +9,7 @@ export function GET() {
     `## ${h}\n\n` + urls.filter((u) => u.group === g).map((u) => `- [${u.title}](${site.url}${u.path})`).join("\n");
   const body = `# ${site.name}
 
-> Plumbing referral service for the Phoenix metro (Maricopa County, Arizona). Connects homeowners with independent, licensed plumbers for slab leaks, hard water treatment, repiping, water heaters, pressure regulators, backflow, drains and gas lines.
+> Heating and cooling referral service for the Kansas City metro (Jackson and Clay counties, Missouri; Johnson and Wyandotte counties, Kansas). Connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.
 
 ${DISCLOSURE}
 

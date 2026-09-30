@@ -12,7 +12,7 @@ export function Footer() {
       <div className="container-x grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
         <div>
           <Logo light />
-          <p className="mt-4 text-sm">Plumbing help for {site.marketLong}, connected to independent, licensed local plumbers.</p>
+          <p className="mt-4 text-sm">Heating and cooling help for {site.marketLong}, connected to independent, licensed local HVAC contractors.</p>
           <a href={`tel:${site.phoneE164}`} className="mt-4 block font-serif text-2xl font-semibold text-white">
             {site.phone}
           </a>
@@ -27,7 +27,7 @@ export function Footer() {
                 <Link href={g.href} className="hover:text-white hover:underline">{g.title}</Link>
               </li>
             ))}
-            <li><Link href={routes.emergency()} className="hover:text-white hover:underline">Emergency plumbing</Link></li>
+            <li><Link href={routes.emergency()} className="hover:text-white hover:underline">Emergency heating & AC</Link></li>
           </ul>
         </div>
         <div>

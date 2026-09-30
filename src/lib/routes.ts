@@ -1,12 +1,12 @@
 // Every URL builder. Single source of truth. Rename SERVICES for another trade.
-export const SERVICES = "plumbing-services";
+export const SERVICES = "hvac-services";
 
 export const routes = {
   home: () => "/",
   services: () => `/${SERVICES}/`,
   service: (slug: string) => `/${SERVICES}/${slug}/`,
   category: (slug: string) => `/${SERVICES}/#${slug}`,
-  emergency: () => "/emergency-plumbing/",
+  emergency: () => "/emergency-hvac/",
   locations: () => "/locations/",
   state: (s: string) => `/locations/${s}/`,
   city: (s: string, c: string) => `/locations/${s}/${c}/`,

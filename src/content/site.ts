@@ -2,17 +2,17 @@
 
 const env = (k: string) => (process.env[k] ?? "").trim();
 
-const TEMP_PHONE = "(602) 555-0147"; // fictional 555-01xx range; never emitted in schema
-const TEMP_PHONE_E164 = "+16025550147";
+const TEMP_PHONE = "(816) 555-0142"; // fictional 555-01xx range; never emitted in schema
+const TEMP_PHONE_E164 = "+18165550142";
 
 export const site = {
-  name: "Caliche Plumbing",
-  shortName: "Caliche",
-  domain: "calicheplumbing.com",
-  url: (env("NEXT_PUBLIC_SITE_URL") || "https://calicheplumbing.com").replace(/\/$/, ""),
-  market: "Phoenix metro",
-  marketLong: "the Phoenix metro and Maricopa County",
-  stateAbbr: "AZ",
+  name: "Tallgrass Heating & Air",
+  shortName: "Tallgrass",
+  domain: "tallgrassair.com",
+  url: (env("NEXT_PUBLIC_SITE_URL") || "https://tallgrassair.com").replace(/\/$/, ""),
+  market: "Kansas City metro",
+  marketLong: "the Kansas City metro in Missouri and Kansas",
+  stateAbbr: "MO",
   phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || TEMP_PHONE,
   phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || TEMP_PHONE_E164,
   phoneIsReal: Boolean(env("NEXT_PUBLIC_BUSINESS_PHONE")),
@@ -32,13 +32,13 @@ export const site = {
 
 export const availability = site.emergency247
   ? "Emergency calls answered 24/7"
-  : "Same-day service when a plumber is available";
+  : "Same-day service when a technician is available";
 
 export const BRAND_PROMISE =
-  "One call connects you with an independent, licensed plumber who works your part of the Valley.";
+  "One call connects you with an independent, licensed heating and cooling contractor who works your part of Kansas City.";
 
 export const DISCLOSURE =
-  "Caliche Plumbing is a referral service. We do not perform plumbing work. Calls and requests are connected to independent, licensed plumbing contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with the Arizona Registrar of Contractors.";
+  "Tallgrass Heating & Air is a referral service. We do not perform HVAC work. Calls and requests are connected to independent, licensed heating and cooling contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with your city or Johnson County before work begins.";
 
 export function telHref(e164 = site.phoneE164) {
   return `tel:${e164}`;

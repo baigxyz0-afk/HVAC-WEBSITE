@@ -1,6 +1,6 @@
 import { notFound } from "next/navigation";
 import { getService } from "@/content/services";
-import { getCity, getState, cityLabel } from "@/content/locations";
+import { getCity, getState, cityLabel, cityBySlug } from "@/content/locations";
 import { indexableCityServices } from "@/lib/sitemap";
 import { pageMeta } from "@/lib/seo";
 import { routes } from "@/lib/routes";
@@ -11,7 +11,7 @@ import { ServiceTemplate } from "@/components/templates/ServiceTemplate";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return indexableCityServices().map((cs) => ({ state: "arizona", city: cs.citySlug, service: cs.serviceSlug }));
+  return indexableCityServices().map((cs) => ({ state: cityBySlug(cs.citySlug)!.stateSlug, city: cs.citySlug, service: cs.serviceSlug }));
 }
 
 type P = { params: Promise<{ state: string; city: string; service: string }> };

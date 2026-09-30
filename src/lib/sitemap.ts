@@ -1,7 +1,7 @@
 import "server-only";
 import { routes } from "./routes";
 import { publishedServices } from "@/content/services";
-import { cities, cityServices, states, getCity } from "@/content/locations";
+import { cities, cityServices, states, getCity, cityBySlug } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
 import { dates } from "@/content/misc";
 import { cityQuality, cityServiceQuality } from "./quality";
@@ -25,14 +25,14 @@ export function indexableUrls(): IndexUrl[] {
     { path: routes.privacy(), lastmod: dates.legal, group: "pages", title: "Privacy" },
     { path: routes.terms(), lastmod: dates.legal, group: "pages", title: "Terms" },
     { path: routes.accessibility(), lastmod: dates.legal, group: "pages", title: "Accessibility" },
-    { path: routes.services(), lastmod: dates.services, group: "services", title: "Plumbing services" },
-    { path: routes.emergency(), lastmod: dates.services, group: "services", title: "Emergency plumbing" },
+    { path: routes.services(), lastmod: dates.services, group: "services", title: "HVAC services" },
+    { path: routes.emergency(), lastmod: dates.services, group: "services", title: "Emergency heating & AC" },
     ...publishedServices.map((s) => ({ path: routes.service(s.slug), lastmod: s.updated, group: "services" as const, title: s.name })),
     { path: routes.locations(), lastmod: dates.locations, group: "locations", title: "Service areas" },
     ...states.filter((s) => s.status === "PUBLISHED").map((s) => ({ path: routes.state(s.slug), lastmod: s.updated, group: "locations" as const, title: s.name })),
     ...indexableCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: c.updated, group: "locations" as const, title: c.name })),
     ...indexableCityServices().map((cs) => {
-      const c = getCity("arizona", cs.citySlug)!;
+      const c = cityBySlug(cs.citySlug)!;
       return { path: routes.cityService(c.stateSlug, c.slug, cs.serviceSlug), lastmod: cs.updated, group: "locations" as const, title: cs.h1 };
     }),
     { path: routes.resources(), lastmod: dates.guides, group: "guides", title: "Resources" },
