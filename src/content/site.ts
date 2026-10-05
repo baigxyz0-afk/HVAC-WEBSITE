@@ -2,8 +2,9 @@
 
 const env = (k: string) => (process.env[k] ?? "").trim();
 
-const TEMP_PHONE = "(816) 555-0142"; // fictional 555-01xx range; never emitted in schema
-const TEMP_PHONE_E164 = "+18165550142";
+// LeadSmart number. Env vars can still override it.
+const LEADSMART_PHONE = "(607) 323-6654";
+const LEADSMART_PHONE_E164 = "+16073236654";
 
 export const site = {
   name: "Tallgrass Heating & Air",
@@ -13,9 +14,9 @@ export const site = {
   market: "Kansas City metro",
   marketLong: "the Kansas City metro in Missouri and Kansas",
   stateAbbr: "MO",
-  phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || TEMP_PHONE,
-  phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || TEMP_PHONE_E164,
-  phoneIsReal: Boolean(env("NEXT_PUBLIC_BUSINESS_PHONE")),
+  phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || LEADSMART_PHONE,
+  phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || LEADSMART_PHONE_E164,
+  phoneIsReal: true,
   ppcPhone: env("NEXT_PUBLIC_PPC_TRACKING_PHONE") || null,
   email: env("NEXT_PUBLIC_BUSINESS_EMAIL") || null,
   hours: env("NEXT_PUBLIC_BUSINESS_HOURS") || null,

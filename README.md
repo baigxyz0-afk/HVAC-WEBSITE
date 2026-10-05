@@ -19,7 +19,7 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 | PPC pages | 3 (`/lp/ac-repair`, `/lp/furnace-repair`, `/lp/ac-replacement`) |
 | Indexable URLs | **44** in 4 sitemaps, max click depth 2 |
 | Audit | `npm run audit:seo`: **0 errors, 0 warnings**. No horizontal overflow at 375px on home, service, city, guide, LP or request pages |
-| Temporary phone | `(816) 555-0142`, from the fictional range and kept out of schema |
+| Phone | LeadSmart number `(607) 323-6654` (`+16073236654`), shown sitewide and in schema |
 
 ### States and cities
 
@@ -63,7 +63,7 @@ node scripts/make-brand.mjs && npm run icons   # regenerate logo + favicons
 
 - [ ] Trademark and entity check for "Tallgrass Heating & Air" (USPTO Class 37, MO and KS Secretary of State). Note that "Tallgrass" is used by other companies in other industries.
 - [ ] Register the domain, then set DNS and HTTPS.
-- [ ] Replace the temporary phone with the LeadSmart number, and load the real HVAC coverage ZIPs.
+- [x] LeadSmart phone number added. [ ] Load the real HVAC coverage ZIPs.
 - [ ] Set `LEAD_WEBHOOK_URL` and its secret. Set up GTM/GA4, Search Console and Bing.
 - [ ] Have Privacy and Terms legally reviewed. Terms currently say Missouri law governs.
 - [ ] Verify the utility and permit facts on the city pages with each city before launch (the Evergy, Spire, Kansas Gas Service, BPU and IPL service areas, and the Johnson County licensing program).
