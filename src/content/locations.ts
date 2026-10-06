@@ -56,6 +56,10 @@ export const regions = [
   { slug: "twin-cities", name: "Twin Cities" },
   { slug: "indianapolis", name: "Indianapolis area" },
   { slug: "baltimore", name: "Baltimore area" },
+  { slug: "new-york-city", name: "New York City" },
+  { slug: "los-angeles", name: "Los Angeles area" },
+  { slug: "bay-area", name: "Bay Area" },
+  { slug: "oklahoma-city", name: "Oklahoma City area" },
 ] as const;
 
 const core: City[] = [

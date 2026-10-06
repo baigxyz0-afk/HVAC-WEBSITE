@@ -144,7 +144,7 @@ export const northeastMidwest: State[] = [
       { term: "Cooling", detail: "Humid downstate summers" },
       { term: "Watch for", detail: "Lake-effect snow on vents, steam systems" },
     ],
-    metros: ["New York City", "Buffalo", "Rochester", "Syracuse", "Albany"],
+    metros: ["New York City", "Brooklyn", "Buffalo", "Rochester", "Syracuse", "Albany"],
     focus: [
       { service: "ductless-mini-splits", why: "Fits apartments, row houses and homes without ducts." },
       { service: "furnace-repair", why: "Upstate winters make no-heat calls urgent." },
