@@ -1,5 +1,11 @@
 // Extra local issues merged into city records (keeps the base files readable).
 export const extraIssues: Record<string, { title: string; body: string }[]> = {
+  birmingham: [
+    { title: "Over the Mountain suburbs", body: "Homewood, Mountain Brook and Vestavia Hills, just over Red Mountain from downtown, have many two-story homes with separate upstairs and downstairs systems. Upstairs attic units work hardest in summer, so clean condensate drains, float switches and sealed attic ducts prevent leaks and hot bedrooms." },
+  ],
+  "virginia-beach": [
+    { title: "Military households and frequent moves", body: "With several large Navy installations nearby, many Virginia Beach homes change hands or tenants often, and maintenance records can be missing. A full system check when you move in, including refrigerant charge, drain lines and heat pump defrost, catches worn parts before the first summer or cold snap." },
+  ],
   "blue-springs": [
     { title: "Lake-area homes and wooded lots", body: "Neighborhoods near Lake Tapawingo, Lake Jacomo and the Burr Oak area sit among mature trees that drop leaves, seeds and cottonwood fluff onto condensers. Outdoor coils clog faster there, so a spring coil cleaning and keeping two feet of clearance around the unit noticeably reduce summer breakdowns and run times." },
   ],
