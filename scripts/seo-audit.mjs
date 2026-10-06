@@ -13,6 +13,11 @@ async function get(path, opts = {}) {
   return { res, text: res.status < 300 ? await res.text() : "" };
 }
 const toPath = (loc) => new URL(loc).pathname;
+const STATE_ABBR = Object.fromEntries(
+  "alabama:AL alaska:AK arizona:AZ arkansas:AR california:CA colorado:CO connecticut:CT delaware:DE district-of-columbia:DC florida:FL georgia:GA hawaii:HI idaho:ID illinois:IL indiana:IN iowa:IA kansas:KS kentucky:KY louisiana:LA maine:ME maryland:MD massachusetts:MA michigan:MI minnesota:MN mississippi:MS missouri:MO montana:MT nebraska:NE nevada:NV new-hampshire:NH new-jersey:NJ new-mexico:NM new-york:NY north-carolina:NC north-dakota:ND ohio:OH oklahoma:OK oregon:OR pennsylvania:PA rhode-island:RI south-carolina:SC south-dakota:SD tennessee:TN texas:TX utah:UT vermont:VT virginia:VA washington:WA west-virginia:WV wisconsin:WI wyoming:WY"
+    .split(" ")
+    .map((p) => p.split(":")),
+);
 // Near-duplicate detection: 5-word shingles of each page's <main> text (form markup excluded).
 const bodies = new Map();
 function shingles(s) {
@@ -72,7 +77,10 @@ for (const path of urls) {
   for (const re of BANNED) if (re.test(text)) err(path, `banned phrase ${re}`);
   const main = (html.match(/<main[\s\S]*?<\/main>/) || [html])[0].replace(/<script[\s\S]*?<\/script>/g, "").replace(/<form[\s\S]*?<\/form>/g, "").replace(/<[^>]+>/g, " ").toLowerCase();
   bodies.set(path, shingles(main));
-  if (/, NC\b|, SC\b/.test(title || "")) err(path, "wrong state in title");
+  // City and city+service pages: the ", XX" state in the title must match the state in the URL.
+  const locMatch = path.match(/^\/locations\/([a-z-]+)\/[a-z-]+\//);
+  const titleAbbr = (title || "").match(/, ([A-Z]{2})\b/);
+  if (locMatch && titleAbbr && STATE_ABBR[locMatch[1]] && STATE_ABBR[locMatch[1]] !== titleAbbr[1]) err(path, `wrong state in title (${titleAbbr[1]})`);
   for (const [m, v] of [[titles, title], [descs, desc], [h1s, h1[0]?.[1]]]) {
     if (!v) continue;
     m.set(v, [...(m.get(v) || []), path]);

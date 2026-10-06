@@ -44,6 +44,12 @@ export const regions = [
   { slug: "northeast-florida", name: "Northeast Florida" },
   { slug: "philadelphia", name: "Philadelphia area" },
   { slug: "pittsburgh", name: "Pittsburgh area" },
+  { slug: "columbus", name: "Columbus area" },
+  { slug: "cincinnati", name: "Cincinnati area" },
+  { slug: "atlanta", name: "Metro Atlanta" },
+  { slug: "charlotte", name: "Charlotte area" },
+  { slug: "triangle", name: "Research Triangle" },
+  { slug: "nashville", name: "Nashville area" },
 ] as const;
 
 const core: City[] = [
