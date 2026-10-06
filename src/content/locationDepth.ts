@@ -1,5 +1,8 @@
 // Extra local issues merged into city records (keeps the base files readable).
 export const extraIssues: Record<string, { title: string; body: string }[]> = {
+  "little-rock": [
+    { title: "Historic homes in the Quapaw Quarter", body: "Victorian and early twentieth-century homes in the Quapaw Quarter and Hillcrest have tall ceilings, plaster walls and limited space for new ducts. Ductless mini-splits or carefully routed attic systems add cooling while protecting historic interiors, and older gas furnaces should get a venting and carbon monoxide check." },
+  ],
   birmingham: [
     { title: "Over the Mountain suburbs", body: "Homewood, Mountain Brook and Vestavia Hills, just over Red Mountain from downtown, have many two-story homes with separate upstairs and downstairs systems. Upstairs attic units work hardest in summer, so clean condensate drains, float switches and sealed attic ducts prevent leaks and hot bedrooms." },
   ],

@@ -66,6 +66,12 @@ export const regions = [
   { slug: "hampton-roads", name: "Hampton Roads" },
   { slug: "milwaukee", name: "Milwaukee area" },
   { slug: "albuquerque", name: "Albuquerque area" },
+  { slug: "north-jersey", name: "North Jersey" },
+  { slug: "hartford", name: "Hartford area" },
+  { slug: "lowcountry", name: "Lowcountry" },
+  { slug: "des-moines", name: "Des Moines area" },
+  { slug: "little-rock", name: "Little Rock area" },
+  { slug: "treasure-valley", name: "Treasure Valley" },
 ] as const;
 
 const core: City[] = [
