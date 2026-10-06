@@ -32,6 +32,12 @@ export const regions = [
   { slug: "central-massachusetts", name: "Central Massachusetts" },
   { slug: "portland-metro", name: "Portland metro" },
   { slug: "willamette-valley", name: "Willamette Valley" },
+  { slug: "sacramento", name: "Sacramento area" },
+  { slug: "san-diego", name: "San Diego area" },
+  { slug: "houston", name: "Greater Houston" },
+  { slug: "dallas-fort-worth", name: "Dallas–Fort Worth" },
+  { slug: "tampa-bay", name: "Tampa Bay" },
+  { slug: "central-florida", name: "Central Florida" },
 ] as const;
 
 const core: City[] = [
