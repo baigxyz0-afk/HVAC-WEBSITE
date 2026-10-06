@@ -687,6 +687,121 @@ export const cityServices: CityService[] = [
     ],
     updated: "2026-10-07",
   },
+  // Wave 4 batch 3: large-city combinations, spread across services.
+  {
+    citySlug: "chicago",
+    serviceSlug: "furnace-repair",
+    status: "PUBLISHED",
+    h1: "Furnace repair in Chicago",
+    seoTitle: "Furnace Repair in Chicago, IL",
+    metaDescription:
+      "Furnace and boiler repair in Chicago: subzero breakdowns, bungalow basement furnaces, two-flat boilers, chimney venting and city permits.",
+    answer:
+      "Chicago heating calls peak during the first deep cold snaps, when worn ignitors, dirty flame sensors and failing inducer motors finally give out. Many homes also heat with boilers, so the right technician depends on whether you have a furnace with ducts or a boiler with radiators.",
+    localAngle: [
+      "Bungalows across the Northwest and Southwest sides usually have a basement gas furnace, often vented through a chimney shared with the water heater. When a repair turns into a replacement and the new furnace vents through PVC, the water heater may need a chimney liner to draft safely. Two-flats and greystones frequently have a separate boiler for each unit, where no-heat calls often trace to low water, failed circulator pumps or zone valves.",
+      "Lakefront wind chills can push temperatures far below zero, and a failed furnace in that weather can freeze pipes in exterior walls quickly. Until the technician arrives, open cabinet doors on outside walls, let faucets drip and use space heaters safely. Peoples Gas handles gas leaks within the city, so leave the house and call them if you smell gas.",
+    ],
+    localFaqs: [
+      { q: "My Chicago two-flat has radiators. Can a furnace technician fix it?", a: "You need a technician who services hot-water or steam boilers. Ask when booking." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "atlanta",
+    serviceSlug: "duct-sealing",
+    status: "PUBLISHED",
+    h1: "Duct sealing in Atlanta",
+    seoTitle: "Duct Sealing & Repair in Atlanta, GA",
+    metaDescription:
+      "Duct sealing for Atlanta homes: leaky crawlspace ducts in intown bungalows, sweating ductwork, musty air, attic systems and humidity control.",
+    answer:
+      "In Atlanta, leaky ducts are often in damp crawlspaces under intown bungalows or in hot attics above two-story homes. Sealing joints with mastic, reconnecting loose runs and insulating ducts improves comfort, cuts humidity problems and reduces musty odors.",
+    localAngle: [
+      "Bungalows in Virginia-Highland, Kirkwood, Grant Park and Inman Park typically run supply ducts through a crawlspace, where summer humidity condenses on cold ducts and leaks pull damp, musty air into the return side. Sealing the ducts, replacing torn insulation and controlling crawlspace moisture often fixes the smell and the clammy feel together.",
+      "In two-story homes, the upstairs system and its ducts sit in an attic that can be far hotter than the outdoors in July. Disconnected or crushed flex duct there is a common reason bedrooms stay warm. Atlanta's heavy spring pollen also gets pulled in through return leaks, so sealing the return side helps filters do their job.",
+    ],
+    localFaqs: [
+      { q: "Why do my Atlanta ducts sweat in summer?", a: "Cold ducts in a humid crawlspace collect condensation, especially when insulation is torn. Sealing, insulating and drying the crawlspace helps." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "seattle",
+    serviceSlug: "heat-pump-installation",
+    status: "PUBLISHED",
+    h1: "Heat pump installation in Seattle",
+    seoTitle: "Heat Pump Installation in Seattle, WA",
+    metaDescription:
+      "Heat pump installation in Seattle: adding cooling to homes without AC, replacing oil furnaces and baseboard heat, oil tank decommissioning and permits.",
+    answer:
+      "Most Seattle heat pump projects add air conditioning to a home that never had it while replacing an aging oil furnace, gas furnace or electric baseboard heat. Seattle's mild winters let a properly sized heat pump handle most or all of the heating.",
+    localAngle: [
+      "Craftsman homes in Ballard, Wallingford and Ravenna with existing furnace ductwork are good candidates for a ducted heat pump, sometimes keeping the gas furnace as backup. Mid-century homes with electric baseboard heat usually get ductless mini-splits, which can cut heating costs significantly compared with resistance heat.",
+      "Homes switching from oil heat often have a basement or buried oil tank that must be decommissioned or removed, which has its own requirements and paperwork. Installations need a permit from the Seattle Department of Construction and Inspections, and the contractor must be registered with Washington's Department of Labor & Industries. Ask about current Seattle City Light programs before buying.",
+    ],
+    localFaqs: [
+      { q: "Can a heat pump heat my Seattle home all winter?", a: "Usually. Seattle's mild winters are well within a modern heat pump's range, though some owners keep a furnace as backup." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "minneapolis",
+    serviceSlug: "emergency-hvac-repair",
+    status: "PUBLISHED",
+    h1: "Emergency heating repair in Minneapolis",
+    seoTitle: "Emergency Furnace & Boiler Repair, Minneapolis",
+    metaDescription:
+      "No heat in a Minneapolis cold snap? Steps to protect your home, common causes, boiler and furnace failures, and when to call the gas utility.",
+    answer:
+      "In a Minneapolis winter, losing heat is an emergency: indoor temperatures can fall fast and pipes in exterior walls can freeze within hours. Check the thermostat, breaker, filter and outdoor vent pipes, protect your plumbing, and call for emergency service.",
+    localAngle: [
+      "Many Minneapolis homes heat with older boilers, and no-heat calls there often trace to low water pressure, a failed circulator pump or a stuck zone valve. Forced-air furnaces fail most often at the ignitor, flame sensor or inducer motor, and high-efficiency furnaces can shut down when snow or frost blocks their PVC intake and exhaust pipes, so check those first.",
+      "While you wait, open cabinet doors under sinks on exterior walls, let faucets drip, close off unused rooms and use space heaters only with safe clearance. If you smell gas or a carbon monoxide alarm sounds, leave the house and call CenterPoint Energy or 911 from outside before calling for HVAC service.",
+    ],
+    localFaqs: [
+      { q: "How fast can pipes freeze without heat in Minneapolis?", a: "In subzero weather, pipes in exterior walls can freeze within hours. Protect them while you wait for service." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "philadelphia",
+    serviceSlug: "ductless-mini-splits",
+    status: "PUBLISHED",
+    h1: "Ductless mini-splits in Philadelphia",
+    seoTitle: "Ductless Mini-Split Installation in Philadelphia",
+    metaDescription:
+      "Ductless mini-splits for Philadelphia rowhomes: adding cooling without ducts, roof and rear-wall condensers, boiler-heated homes and L&I permits.",
+    answer:
+      "Ductless mini-splits are one of the simplest ways to cool a Philadelphia rowhome that has radiators or no room for ductwork. Indoor heads mount high on walls, and the outdoor unit usually goes on the flat roof or the rear wall of the house.",
+    localAngle: [
+      "Nineteenth-century rows in South Philly, Fishtown and Fairmount rarely have space for duct runs, and many still heat with gas boilers and radiators. A multi-zone mini-split can serve a front room, a back room and bedrooms upstairs from one outdoor unit, with refrigerant lines run inside closets or along the rear exterior.",
+      "Because most rowhomes have no side yard, outdoor units commonly sit on the flat roof, which means planning roof access, protecting the roof membrane and securing the unit against wind. Mini-splits also act as heat pumps, letting owners run the boiler less in spring and fall. Philadelphia's Department of Licenses and Inspections handles permits.",
+    ],
+    localFaqs: [
+      { q: "Where does the outdoor unit go on a Philadelphia rowhome?", a: "Usually on the flat roof or mounted on the rear wall, since most rowhomes have no side yard." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "miami",
+    serviceSlug: "ac-tune-up",
+    status: "PUBLISHED",
+    h1: "AC maintenance in Miami",
+    seoTitle: "AC Tune-Up & Maintenance in Miami, FL",
+    metaDescription:
+      "AC maintenance in Miami: twice-yearly service, condensate drain treatment, salt-air coil care, hurricane tie-down checks and condo fan coils.",
+    answer:
+      "Miami air conditioners run nearly every day of the year, so most homeowners benefit from maintenance twice a year. A Miami tune-up focuses on clearing and treating the condensate drain, cleaning salt and grime from the coils, and checking that the outdoor unit's hurricane tie-downs are secure.",
+    localAngle: [
+      "Constant operation in heat and humidity means condensate lines clog with algae faster here than almost anywhere, which trips safety switches or causes leaks. Drain treatment and a cleanout are the most valuable part of a Miami maintenance visit. Homes near Biscayne Bay and the ocean also need coils rinsed of salt to slow corrosion.",
+      "Before hurricane season, have the technician confirm that the outdoor unit is anchored with approved tie-downs, as Miami-Dade's high-velocity hurricane zone rules require, and that surge protection is in place. Condo owners with fan coils should coordinate with building management, since filters and drains may be shared or serviced on a building schedule.",
+    ],
+    localFaqs: [
+      { q: "How often should a Miami AC be serviced?", a: "Twice a year is common because systems run almost year-round in heat and humidity." },
+    ],
+    updated: "2026-10-07",
+  },
 ];
 
 export const publishedCityServices = cityServices.filter((cs) => cs.status === "PUBLISHED");
