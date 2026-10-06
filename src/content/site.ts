@@ -11,9 +11,9 @@ export const site = {
   shortName: "Tallgrass",
   domain: "tallgrassair.com",
   url: (env("NEXT_PUBLIC_SITE_URL") || "https://tallgrassair.com").replace(/\/$/, ""),
-  market: "Kansas City metro",
-  marketLong: "the Kansas City metro in Missouri and Kansas",
-  stateAbbr: "MO",
+  market: "United States",
+  marketLong: "homeowners in all 50 states and Washington, D.C.",
+  stateAbbr: "US",
   phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || LEADSMART_PHONE,
   phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || LEADSMART_PHONE_E164,
   phoneIsReal: true,
@@ -36,10 +36,10 @@ export const availability = site.emergency247
   : "Same-day service when a technician is available";
 
 export const BRAND_PROMISE =
-  "One call connects you with an independent, licensed heating and cooling contractor who works your part of Kansas City.";
+  "One call connects you with an independent, licensed heating and cooling contractor who serves your ZIP code.";
 
 export const DISCLOSURE =
-  "Tallgrass Heating & Air is a referral service. We do not perform HVAC work. Calls and requests are connected to independent, licensed heating and cooling contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with your city or Johnson County before work begins.";
+  "Tallgrass Heating & Air is a referral service. We do not perform HVAC work. Calls and requests are connected to independent, licensed heating and cooling contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with your state or local licensing authority before work begins.";
 
 export function telHref(e164 = site.phoneE164) {
   return `tel:${e164}`;

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { City, CityService, Service } from "@/content/types";
 import { getService, getCategory } from "@/content/services";
-import { publishedCities, cityLabel } from "@/content/locations";
+import { publishedCities, cityLabel, states } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
 import { availability, site } from "@/content/site";
 import { routes } from "@/lib/routes";
@@ -25,7 +25,9 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
   const related = s.related.map(getService).filter(Boolean) as Service[];
   const guides = publishedArticles.filter((a) => a.services.includes(s.slug)).slice(0, 3);
   const towns = city ? publishedCities.filter((c) => city.nearby.includes(c.slug)) : publishedCities.filter((c) => c.popularServices.includes(s.slug));
-  const place = city ? cityLabel(city) : "the Kansas City metro";
+  // States whose guides single this service out, with the state-specific reason (national pages only).
+  const focusStates = city ? [] : states.flatMap((st) => (st.focus ?? []).filter((f) => f.service === s.slug).map((f) => ({ st, why: f.why })));
+  const place = city ? cityLabel(city) : "your area";
   const sections = [
     ["overview", "Overview"],
     ...(local ? [["local", `In ${city!.name}`]] : []),
@@ -141,9 +143,27 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
               <FaqList faqs={faqs} />
             </div>
 
+            {focusStates.length > 0 && (
+              <div>
+                <h2 className="text-2xl font-semibold">Where this service comes up most</h2>
+                <p className="mt-2 text-muted">Climate changes how often this comes up. These state guides explain why it's a common call there.</p>
+                <ul className="mt-4 grid gap-3 sm:grid-cols-2">
+                  {focusStates.slice(0, 8).map(({ st, why }) => (
+                    <li key={st.slug} className="rounded-xl bg-white p-4 ring-1 ring-line">
+                      <Link href={routes.state(st.slug)} className="link font-semibold">{st.name}</Link>
+                      <p className="mt-1 text-sm text-muted">{why}</p>
+                    </li>
+                  ))}
+                </ul>
+                <p className="mt-3 text-sm">
+                  <Link href={routes.locations()} className="link">Find your state</Link>
+                </p>
+              </div>
+            )}
+
             {towns.length > 0 && (
               <div>
-                <h2 className="text-2xl font-semibold">{city ? "Nearby towns" : `${s.shortName ?? s.name} across Kansas City`}</h2>
+                <h2 className="text-2xl font-semibold">{city ? "Nearby towns" : "City guides"}</h2>
                 <div className="mt-4 flex flex-wrap gap-2">
                   {towns.map((c) => (
                     <Chip key={c.slug} href={routes.city(c.stateSlug, c.slug)}>
@@ -202,7 +222,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
           )}
         </div>
       </section>
-      <CtaBand service={s.slug} title={`Need ${(s.shortName ?? s.name).toLowerCase()} in ${city ? city.name : "Kansas City"}?`} />
+      <CtaBand service={s.slug} title={`Need ${(s.shortName ?? s.name).toLowerCase()} in ${city ? city.name : "your area"}?`} />
     </main>
   );
 }

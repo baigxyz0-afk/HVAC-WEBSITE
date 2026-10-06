@@ -1,4 +1,4 @@
-# Tallgrass Heating & Air — Kansas City HVAC Lead-Gen Site
+# Tallgrass Heating & Air — Nationwide HVAC Lead-Gen Site
 
 This site was built from the **Local Service Lead-Gen Website Playbook**, kept in `docs/PLAYBOOK.md`. The playbook remains the process reference; this file documents this project.
 
@@ -6,22 +6,35 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 
 **Stack:** Next.js 16 (App Router, static) · React 19 · TypeScript · Tailwind CSS v4 · Zod · sharp.
 
-## Snapshot (2026-09-28)
+## Snapshot (2026-10-06): nationwide expansion, Waves 1–2
 
 | | |
 |---|---|
-| Brand | **Tallgrass Heating & Air** (short: Tallgrass). `tallgrassair.com` returned RDAP 404 (unregistered) on 2026-09-28. Also free: `tallgrassheatingandair.com`, `prairielineair.com`, `kawvalleyair.com` |
-| Market | Kansas City metro across **2 states**: Missouri (Jackson and Clay counties) and Kansas (Johnson and Wyandotte counties) |
+| Brand | **Tallgrass Heating & Air** (short: Tallgrass). `tallgrassair.com` returned RDAP 404 (unregistered) on 2026-09-28 |
+| Market | **All 50 states + Washington, D.C.**, with in-depth city guides for the Kansas City metro |
+| Coverage | **22,621 LeadSmart HVAC ZIP codes** (Call), data date 2026-10-05, pulled by `scripts/pull-coverage.mjs` into `src/content/coverage-data.json`. Server-only: the browser calls `/api/zip/?zip=`, so the national list never ships in the JS bundle |
 | Business model | Call brand / referral for LeadSmart buyers. `BRAND_PROMISE` and `DISCLOSURE` are in `src/content/site.ts` |
-| Services | **15 in 7 categories:** Air Conditioning · Furnaces & Heating · Heat Pumps · Ductless Mini-Splits · Indoor Air Quality · Ductwork · Thermostats & Zoning |
-| Locations | 2 states · **12 cities** in 4 regions · 3 city+service pages |
-| Guides | 9 |
-| PPC pages | 3 (`/lp/ac-repair`, `/lp/furnace-repair`, `/lp/ac-replacement`) |
-| Indexable URLs | **44** in 4 sitemaps, max click depth 2 |
-| Audit | `npm run audit:seo`: **0 errors, 0 warnings**. No horizontal overflow at 375px on home, service, city, guide, LP or request pages |
+| Services | **15 in 7 categories**, rewritten for every U.S. climate (no longer Kansas City-only) |
+| State hubs | **51** at `/locations/{state}/`: intro, 4–5 state-specific sections (climate, fuel mix, risks, seasonal timing, housing/what to ask), at-a-glance facts, focus services with a state-specific reason, major metros, FAQs, same-region links, network ZIP count |
+| Cities | 12 (Kansas City metro) · 3 city+service pages |
+| Indexable URLs | **101** in 6 sitemaps (pages 7, services 17, states 52, cities 12, local-services 3, guides 10), max click depth 2 |
+| Audit | `npm run audit:seo`: **0 errors**. Max sibling-page similarity **0.18** (near-duplicate error threshold 0.6). No horizontal overflow at 375px |
 | Phone | LeadSmart number `(607) 323-6654` (`+16073236654`), shown sitewide and in schema |
 
-### States and cities
+### Quality gates (`src/lib/quality.ts`)
+
+- **State:** at least 180 words of state-specific copy (intro, sections and focus reasons), at least 3 sections, at least 2 FAQs, at-a-glance facts and at least 3 focus services. All 51 pass; check with `node scripts/state-words.mjs` or `/api/quality-report/` in dev.
+- **City:** at least 180 local words. All 12 pass. Before this round, only 4 of 12 passed, and the earlier "12 cities" claim was wrong; it's fixed with real local sections in `locationDepth.ts`.
+- **City+service:** at least 90 local words and a passing parent city.
+- **Crawl** (`scripts/seo-audit.mjs`): adds 5-word-shingle near-duplicate detection between sibling pages, the ZIP API check and 6-sitemap validation.
+
+### Next waves (not built yet)
+
+3. City hubs for the largest metros in high-payout states (from `docs/coverage-summary.json`), each only when genuinely local content is written.
+4. City + service pages for the strongest combinations.
+5. Problem-intent pages, where they don't cannibalize existing guides.
+
+### Kansas City city guides
 
 | State | Region | Cities |
 |---|---|---|

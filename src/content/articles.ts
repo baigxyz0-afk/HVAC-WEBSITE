@@ -48,7 +48,7 @@ export const articles: Article[] = [
       {
         heading: "When it's just too hot outside",
         body: [
-          "On a 100°F Kansas City afternoon, most systems are designed to hold about 75°F indoors, not 68°F. If the air at the vents is 15 to 20 degrees cooler than the air at the return, the system is probably working and simply at capacity.",
+          "On a 100°F afternoon, most systems are designed to hold about 75°F indoors, not 68°F. If the air at the vents is 15 to 20 degrees cooler than the air at the return, the system is probably working and simply at capacity.",
         ],
       },
     ],
@@ -142,7 +142,7 @@ export const articles: Article[] = [
       {
         heading: "Outdoor vent pipes",
         body: [
-          "High-efficiency furnaces have two white PVC pipes on an outside wall or the roof. Drifting snow and ice can block them after a Kansas City storm. Clear them gently, then reset the furnace by turning the switch off for 30 seconds and back on.",
+          "High-efficiency furnaces have two white PVC pipes on an outside wall or the roof. Drifting snow and ice can block them after a winter storm. Clear them gently, then reset the furnace by turning the switch off for 30 seconds and back on.",
         ],
       },
       {
@@ -220,11 +220,11 @@ export const articles: Article[] = [
       {
         heading: "Right now",
         body: ["Carbon monoxide is odorless, and symptoms such as headache, dizziness and nausea feel like the flu."],
-        list: ["Leave the house and leave the door open behind you.", "Call 911, or Spire (Missouri) or Kansas Gas Service (Kansas) from outside.", "Get medical help for anyone with symptoms."],
+        list: ["Leave the house and leave the door open behind you.", "Call 911 or your gas utility's emergency line from outside.", "Get medical help for anyone with symptoms."],
       },
       {
         heading: "Common sources",
-        body: ["In Kansas City homes, the most common sources are a cracked furnace heat exchanger, a blocked or disconnected flue, a water heater backdrafting into a shared chimney, a car running in an attached garage, and generators or grills used too close to the house."],
+        body: ["In most homes, the most common sources are a cracked furnace heat exchanger, a blocked or disconnected flue, a water heater backdrafting into a shared chimney, a car running in an attached garage, and generators or grills used too close to the house."],
       },
       {
         heading: "Before using the furnace again",
@@ -244,14 +244,14 @@ export const articles: Article[] = [
   },
   {
     slug: "heat-pump-vs-furnace-kansas-city",
-    title: "Heat pump or furnace in Kansas City?",
-    seoTitle: "Heat Pump vs. Furnace in Kansas City",
+    title: "Heat pump or furnace? How climate decides",
+    seoTitle: "Heat Pump vs. Furnace: Which Fits Your Climate?",
     metaDescription:
-      "Comparing heat pumps, gas furnaces and dual-fuel systems for Kansas City's winters: comfort, operating cost and when each makes sense.",
+      "Comparing heat pumps, gas furnaces and dual-fuel systems across U.S. climates: comfort, operating cost and when each makes sense.",
     category: "Heat pumps",
     status: "PUBLISHED",
     answer:
-      "In Kansas City, a dual-fuel system, with a heat pump plus a gas furnace for the coldest days, is often the best balance of comfort and operating cost. Cold-climate heat pumps can heat alone in homes without gas, while a furnace with AC remains the simplest choice when budgets are tight.",
+      "In mild and hot climates, a heat pump alone usually wins. In four-season climates, a dual-fuel system, with a heat pump plus a gas furnace for the coldest days, is often the best balance of comfort and operating cost. Cold-climate heat pumps can heat alone in homes without gas, while a furnace with AC remains the simplest choice when budgets are tight.",
     sections: [
       {
         heading: "How each one heats",
@@ -338,7 +338,7 @@ export const articles: Article[] = [
       },
     ],
     whenToCall: ["You've had two or more repairs in two years.", "Your system uses R-22 and needs refrigerant."],
-    faqs: [{ q: "How long do HVAC systems last in Kansas City?", a: "Air conditioners typically 12 to 15 years and furnaces 15 to 20, depending on maintenance." }],
+    faqs: [{ q: "How long do HVAC systems last?", a: "Air conditioners typically 12 to 15 years and furnaces 15 to 20, depending on maintenance." }],
     services: ["ac-installation", "furnace-installation", "heat-pump-installation"],
     relatedArticles: ["heat-pump-vs-furnace-kansas-city", "ac-running-but-not-cooling"],
     published: P,
@@ -366,7 +366,7 @@ export const articles: Article[] = [
         body: [],
       },
       {
-        heading: "Kansas City pollen seasons",
+        heading: "Seasonal pollen and smoke",
         body: ["Tree pollen in spring, grass in early summer and ragweed into fall make filter changes at the start of each season a good habit."],
       },
     ],

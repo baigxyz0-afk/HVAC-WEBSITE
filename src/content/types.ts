@@ -74,6 +74,14 @@ export type State = {
   details: { heading: string; body: string }[];
   faqs: Faq[];
   updated: string;
+  /** Census region, used to group the national hub. */
+  region?: "Northeast" | "Midwest" | "South" | "West";
+  /** Facts rendered in the "at a glance" <dl>. */
+  glance?: { term: string; detail: string }[];
+  /** Major metros, shown as text and linked when a city page exists. */
+  metros?: string[];
+  /** Services that matter most in this climate, with a state-specific reason. */
+  focus?: { service: string; why: string }[];
 };
 
 export type City = {

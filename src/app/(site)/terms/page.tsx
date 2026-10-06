@@ -16,7 +16,7 @@ export default function Terms() {
       <h2>Contractor work</h2>
       <p>Any agreement for HVAC work is between you and the contractor. The contractor is responsible for pricing, permits, workmanship and warranties.</p>
       <h2>Information on this site</h2>
-      <p>Guides are general information for Kansas City-area homeowners and aren't a substitute for an on-site diagnosis by a licensed professional. In an emergency involving gas, call 911 or your gas utility.</p>
+      <p>Guides are general information for homeowners and aren't a substitute for an on-site diagnosis by a licensed professional. In an emergency involving gas, call 911 or your gas utility.</p>
       <h2>Governing law</h2>
       <p>These terms are governed by the laws of the State of Missouri.</p>
     </SimplePage>

@@ -24,7 +24,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ key: st
             <span style={{ fontSize: 26, color: "#bfe3c5", textTransform: "uppercase", letterSpacing: 2 }}>{card.eyebrow}</span>
             <span style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.1, marginTop: 16 }}>{card.title}</span>
           </div>
-          <span style={{ fontSize: 26, color: "rgba(255,255,255,0.75)" }}>Kansas City · Overland Park · Olathe · Lee's Summit</span>
+          <span style={{ fontSize: 26, color: "rgba(255,255,255,0.75)" }}>All 50 states · Washington, D.C.</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", flex: 1, background: "#efe6d6" }}>
           <div style={{ height: 120, background: "#e8c9a0", display: "flex" }} />

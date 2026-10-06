@@ -3,7 +3,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { track } from "@/lib/analytics";
 import { readAttribution } from "@/lib/attribution";
-import { coveredZips } from "@/content/coverage";
+import { lookupZip, type ZipResult } from "@/lib/zipLookup";
 import { phoneRe } from "@/lib/lead/phone";
 
 type Opt = { value: string; label: string };
@@ -50,7 +50,15 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
   };
 
   const total = emergency ? 2 : 3;
-  const zipInfo = /^\d{5}$/.test(f.zip) ? coveredZips[f.zip] ?? null : undefined;
+  const [zipInfo, setZipInfo] = useState<ZipResult | null | undefined>(undefined);
+  useEffect(() => {
+    if (!/^\d{5}$/.test(f.zip)) return setZipInfo(undefined);
+    let live = true;
+    lookupZip(f.zip).then((r) => live && setZipInfo(r.ok ? r : null));
+    return () => {
+      live = false;
+    };
+  }, [f.zip]);
 
   useEffect(() => {
     const first = formRef.current?.querySelector<HTMLElement>("[aria-invalid='true']");

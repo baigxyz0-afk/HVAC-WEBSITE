@@ -57,7 +57,7 @@ export default async function CityPage({ params }: P) {
       <Hero
         crumbs={crumbs}
         eyebrow={`${c.county} County · ${cityLabel(c)}`}
-        title={`Heating and AC help in ${c.name}`}
+        title={`Heating and AC help in ${cityLabel(c)}`}
         lead={<p>{c.intro}</p>}
         facts={[availability, `Neighborhoods: ${c.areas.slice(0, 3).join(", ")}`]}
         aside={

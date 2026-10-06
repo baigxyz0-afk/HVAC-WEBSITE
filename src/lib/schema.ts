@@ -16,6 +16,7 @@ export const ids = {
   place: (city: string) => `${U}/#place-${city}`,
   county: (slug: string) => `${U}/#place-${slug}-county`,
   state: (s: string) => `${U}/#place-${s}`,
+  country: `${U}/#place-united-states`,
   page: (path: string) => `${U}${path}#webpage`,
   breadcrumb: (path: string) => `${U}${path}#breadcrumb`,
   faq: (path: string) => `${U}${path}#faq`,
@@ -31,8 +32,8 @@ export function siteGraph() {
     url: `${U}/`,
     logo: { "@id": ids.logo },
     description:
-      "Tallgrass Heating & Air is a heating and cooling referral service for the Kansas City metro in Missouri and Kansas. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
-    areaServed: cities.map((c) => ({ "@id": ids.place(c.slug) })),
+      "Tallgrass Heating & Air is a nationwide heating and cooling referral service in the United States. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
+    areaServed: { "@id": ids.country },
     knowsAbout: ["Air conditioning repair", "Furnace repair", "Heat pumps", "Dual-fuel systems", "Ductless mini-splits", "Duct sealing", "Indoor air quality", "HVAC zoning"],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
@@ -55,7 +56,8 @@ export function siteGraph() {
     { "@type": "ImageObject", "@id": ids.logo, url: `${U}/brand/logo.png`, width: 600, height: 160, caption: site.name },
     { "@type": "WebSite", "@id": ids.website, url: `${U}/`, name: site.name, publisher: { "@id": ids.org }, inLanguage: "en-US" },
     ...publishedServices.map((s) => ({ "@type": "Service", "@id": ids.service(s.slug), name: s.name, url: `${U}${routes.service(s.slug)}` })),
-    ...states.map((s) => ({ "@type": "State", "@id": ids.state(s.slug), name: s.name })),
+    { "@type": "Country", "@id": ids.country, name: "United States", containsPlace: states.map((s) => ({ "@id": ids.state(s.slug) })) },
+    ...states.map((s) => ({ "@type": "State", "@id": ids.state(s.slug), name: s.name, containedInPlace: { "@id": ids.country } })),
     ...[...new Map(cities.map((c) => [`${c.county}-${c.stateSlug}`, c])).values()].map((c) => ({
       "@type": "AdministrativeArea",
       "@id": ids.county(`${c.county.toLowerCase()}-${c.stateSlug}`),

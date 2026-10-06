@@ -1,0 +1,3247 @@
+{
+ "dataDate": "2026-10-05",
+ "states": {
+  "AL": {
+   "zips": 520,
+   "avg": 40.96,
+   "max": 73.5,
+   "topCities": [
+    {
+     "name": "Birmingham",
+     "zips": 62,
+     "maxPayout": 42.52
+    },
+    {
+     "name": "Montgomery",
+     "zips": 35,
+     "maxPayout": 63
+    },
+    {
+     "name": "Huntsville",
+     "zips": 24,
+     "maxPayout": 73.5
+    },
+    {
+     "name": "Mobile",
+     "zips": 18,
+     "maxPayout": 32.57
+    },
+    {
+     "name": "Tuscaloosa",
+     "zips": 10,
+     "maxPayout": 42.52
+    },
+    {
+     "name": "Dolomite",
+     "zips": 1,
+     "maxPayout": 35.75
+    },
+    {
+     "name": "Anniston",
+     "zips": 6,
+     "maxPayout": 35.75
+    },
+    {
+     "name": "Brownsboro",
+     "zips": 1,
+     "maxPayout": 73.5
+    },
+    {
+     "name": "Capshaw",
+     "zips": 1,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Normal",
+     "zips": 1,
+     "maxPayout": 37.13
+    },
+    {
+     "name": "Auburn",
+     "zips": 3,
+     "maxPayout": 63
+    },
+    {
+     "name": "Florence",
+     "zips": 4,
+     "maxPayout": 15.75
+    }
+   ]
+  },
+  "AK": {
+   "zips": 1,
+   "avg": 7.69,
+   "max": 7.69,
+   "topCities": [
+    {
+     "name": "Fairbanks",
+     "zips": 1,
+     "maxPayout": 7.69
+    }
+   ]
+  },
+  "AZ": {
+   "zips": 408,
+   "avg": 56.57,
+   "max": 79.1,
+   "topCities": [
+    {
+     "name": "Phoenix",
+     "zips": 76,
+     "maxPayout": 75.6
+    },
+    {
+     "name": "Tucson",
+     "zips": 54,
+     "maxPayout": 79.1
+    },
+    {
+     "name": "Mesa",
+     "zips": 19,
+     "maxPayout": 70.88
+    },
+    {
+     "name": "Scottsdale",
+     "zips": 15,
+     "maxPayout": 75.6
+    },
+    {
+     "name": "Glendale",
+     "zips": 12,
+     "maxPayout": 70.54
+    },
+    {
+     "name": "Chandler",
+     "zips": 8,
+     "maxPayout": 70.54
+    },
+    {
+     "name": "Gilbert",
+     "zips": 7,
+     "maxPayout": 70.54
+    },
+    {
+     "name": "Tempe",
+     "zips": 8,
+     "maxPayout": 71.84
+    },
+    {
+     "name": "Peoria",
+     "zips": 6,
+     "maxPayout": 71.84
+    },
+    {
+     "name": "Surprise",
+     "zips": 5,
+     "maxPayout": 71.84
+    },
+    {
+     "name": "Flagstaff",
+     "zips": 6,
+     "maxPayout": 52.25
+    },
+    {
+     "name": "San Tan Valley",
+     "zips": 3,
+     "maxPayout": 71.84
+    }
+   ]
+  },
+  "AR": {
+   "zips": 158,
+   "avg": 24.98,
+   "max": 32.18,
+   "topCities": [
+    {
+     "name": "Little Rock",
+     "zips": 8,
+     "maxPayout": 32.18
+    },
+    {
+     "name": "Fayetteville",
+     "zips": 4,
+     "maxPayout": 28
+    },
+    {
+     "name": "Fort Smith",
+     "zips": 11,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Springdale",
+     "zips": 4,
+     "maxPayout": 28
+    },
+    {
+     "name": "Rogers",
+     "zips": 3,
+     "maxPayout": 30.94
+    },
+    {
+     "name": "North Little Rock",
+     "zips": 2,
+     "maxPayout": 17.72
+    },
+    {
+     "name": "Bentonville",
+     "zips": 2,
+     "maxPayout": 30.94
+    },
+    {
+     "name": "Conway",
+     "zips": 1,
+     "maxPayout": 9.32
+    },
+    {
+     "name": "Benton",
+     "zips": 2,
+     "maxPayout": 32.18
+    },
+    {
+     "name": "Bella Vista",
+     "zips": 2,
+     "maxPayout": 28
+    },
+    {
+     "name": "Russellville",
+     "zips": 2,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Van Buren",
+     "zips": 2,
+     "maxPayout": 26.25
+    }
+   ]
+  },
+  "CA": {
+   "zips": 2044,
+   "avg": 55.64,
+   "max": 122.5,
+   "topCities": [
+    {
+     "name": "Los Angeles",
+     "zips": 94,
+     "maxPayout": 84
+    },
+    {
+     "name": "San Diego",
+     "zips": 76,
+     "maxPayout": 122.5
+    },
+    {
+     "name": "Sacramento",
+     "zips": 100,
+     "maxPayout": 63
+    },
+    {
+     "name": "Van Nuys",
+     "zips": 13,
+     "maxPayout": 84
+    },
+    {
+     "name": "North Hollywood",
+     "zips": 11,
+     "maxPayout": 84
+    },
+    {
+     "name": "San Jose",
+     "zips": 57,
+     "maxPayout": 70
+    },
+    {
+     "name": "San Francisco",
+     "zips": 30,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Northridge",
+     "zips": 6,
+     "maxPayout": 84
+    },
+    {
+     "name": "San Pedro",
+     "zips": 4,
+     "maxPayout": 84
+    },
+    {
+     "name": "Canoga Park",
+     "zips": 4,
+     "maxPayout": 84
+    },
+    {
+     "name": "Encino",
+     "zips": 4,
+     "maxPayout": 62.21
+    },
+    {
+     "name": "Woodland Hills",
+     "zips": 4,
+     "maxPayout": 84
+    }
+   ]
+  },
+  "CO": {
+   "zips": 395,
+   "avg": 68.24,
+   "max": 97.02,
+   "topCities": [
+    {
+     "name": "Denver",
+     "zips": 66,
+     "maxPayout": 97.02
+    },
+    {
+     "name": "Colorado Springs",
+     "zips": 53,
+     "maxPayout": 88.2
+    },
+    {
+     "name": "Aurora",
+     "zips": 17,
+     "maxPayout": 97.02
+    },
+    {
+     "name": "Fort Collins",
+     "zips": 7,
+     "maxPayout": 77
+    },
+    {
+     "name": "Pueblo",
+     "zips": 12,
+     "maxPayout": 88.2
+    },
+    {
+     "name": "Boulder",
+     "zips": 11,
+     "maxPayout": 77
+    },
+    {
+     "name": "Arvada",
+     "zips": 7,
+     "maxPayout": 87.5
+    },
+    {
+     "name": "Greeley",
+     "zips": 6,
+     "maxPayout": 77
+    },
+    {
+     "name": "Littleton",
+     "zips": 16,
+     "maxPayout": 97.02
+    },
+    {
+     "name": "Westminster",
+     "zips": 4,
+     "maxPayout": 84
+    },
+    {
+     "name": "Longmont",
+     "zips": 4,
+     "maxPayout": 77
+    },
+    {
+     "name": "Broomfield",
+     "zips": 4,
+     "maxPayout": 87.5
+    }
+   ]
+  },
+  "CT": {
+   "zips": 394,
+   "avg": 30.23,
+   "max": 53.55,
+   "topCities": [
+    {
+     "name": "Hartford",
+     "zips": 36,
+     "maxPayout": 39.38
+    },
+    {
+     "name": "New Haven",
+     "zips": 27,
+     "maxPayout": 53.55
+    },
+    {
+     "name": "Bridgeport",
+     "zips": 11,
+     "maxPayout": 35.35
+    },
+    {
+     "name": "Waterbury",
+     "zips": 15,
+     "maxPayout": 25.3
+    },
+    {
+     "name": "Stamford",
+     "zips": 17,
+     "maxPayout": 34.38
+    },
+    {
+     "name": "West Hartford",
+     "zips": 7,
+     "maxPayout": 34.38
+    },
+    {
+     "name": "Danbury",
+     "zips": 6,
+     "maxPayout": 34.38
+    },
+    {
+     "name": "Norwalk",
+     "zips": 10,
+     "maxPayout": 32.18
+    },
+    {
+     "name": "New Britain",
+     "zips": 4,
+     "maxPayout": 34.38
+    },
+    {
+     "name": "Norwich",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Taftville",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Bristol",
+     "zips": 2,
+     "maxPayout": 39.38
+    }
+   ]
+  },
+  "DE": {
+   "zips": 95,
+   "avg": 58.57,
+   "max": 78.75,
+   "topCities": [
+    {
+     "name": "Wilmington",
+     "zips": 25,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Dover",
+     "zips": 5,
+     "maxPayout": 61.25
+    },
+    {
+     "name": "Newark",
+     "zips": 10,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Dover Afb",
+     "zips": 1,
+     "maxPayout": 61.25
+    },
+    {
+     "name": "Middletown",
+     "zips": 1,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Bear",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "New Castle",
+     "zips": 3,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Hockessin",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Yorklyn",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Smyrna",
+     "zips": 1,
+     "maxPayout": 61.25
+    },
+    {
+     "name": "Milford",
+     "zips": 1,
+     "maxPayout": 61.25
+    },
+    {
+     "name": "Claymont",
+     "zips": 1,
+     "maxPayout": 68.75
+    }
+   ]
+  },
+  "DC": {
+   "zips": 271,
+   "avg": 32.76,
+   "max": 58.12,
+   "topCities": [
+    {
+     "name": "Washington",
+     "zips": 265,
+     "maxPayout": 58.12
+    },
+    {
+     "name": "Washington Navy Yard",
+     "zips": 5,
+     "maxPayout": 34.3
+    },
+    {
+     "name": "Naval Anacost Annex",
+     "zips": 1,
+     "maxPayout": 15.75
+    }
+   ]
+  },
+  "FL": {
+   "zips": 1374,
+   "avg": 48.04,
+   "max": 96.08,
+   "topCities": [
+    {
+     "name": "Miami",
+     "zips": 95,
+     "maxPayout": 42
+    },
+    {
+     "name": "Tampa",
+     "zips": 58,
+     "maxPayout": 72.45
+    },
+    {
+     "name": "Orlando",
+     "zips": 59,
+     "maxPayout": 56.7
+    },
+    {
+     "name": "Jacksonville",
+     "zips": 48,
+     "maxPayout": 71.5
+    },
+    {
+     "name": "Pensacola",
+     "zips": 23,
+     "maxPayout": 48.78
+    },
+    {
+     "name": "Fort Lauderdale",
+     "zips": 47,
+     "maxPayout": 44.63
+    },
+    {
+     "name": "Saint Petersburg",
+     "zips": 31,
+     "maxPayout": 72.45
+    },
+    {
+     "name": "Cape Coral",
+     "zips": 8,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Tallahassee",
+     "zips": 19,
+     "maxPayout": 20.16
+    },
+    {
+     "name": "Kissimmee",
+     "zips": 9,
+     "maxPayout": 55.44
+    },
+    {
+     "name": "Palm Bay",
+     "zips": 7,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Lakeland",
+     "zips": 13,
+     "maxPayout": 44
+    }
+   ]
+  },
+  "GA": {
+   "zips": 630,
+   "avg": 30.87,
+   "max": 56.7,
+   "topCities": [
+    {
+     "name": "Atlanta",
+     "zips": 64,
+     "maxPayout": 42.52
+    },
+    {
+     "name": "Augusta",
+     "zips": 13,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Savannah",
+     "zips": 6,
+     "maxPayout": 28.35
+    },
+    {
+     "name": "Macon",
+     "zips": 9,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Athens",
+     "zips": 7,
+     "maxPayout": 39.38
+    },
+    {
+     "name": "Marietta",
+     "zips": 14,
+     "maxPayout": 49.5
+    },
+    {
+     "name": "Warner Robins",
+     "zips": 5,
+     "maxPayout": 29.02
+    },
+    {
+     "name": "Gainesville",
+     "zips": 4,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Valdosta",
+     "zips": 7,
+     "maxPayout": 29.4
+    },
+    {
+     "name": "Gracewood",
+     "zips": 1,
+     "maxPayout": 33
+    },
+    {
+     "name": "Brunswick",
+     "zips": 5,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Albany",
+     "zips": 4,
+     "maxPayout": 22.05
+    }
+   ]
+  },
+  "HI": {
+   "zips": 95,
+   "avg": 26.25,
+   "max": 26.25,
+   "topCities": [
+    {
+     "name": "Honolulu",
+     "zips": 41,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Fort Shafter",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Tripler Army Medical Center",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Wake Island",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Kailua",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Kahului",
+     "zips": 2,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Pearl City",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Kapolei",
+     "zips": 2,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Waipahu",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Kaneohe",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Mililani",
+     "zips": 1,
+     "maxPayout": 26.25
+    },
+    {
+     "name": "Kihei",
+     "zips": 1,
+     "maxPayout": 26.25
+    }
+   ]
+  },
+  "ID": {
+   "zips": 167,
+   "avg": 45.81,
+   "max": 110.56,
+   "topCities": [
+    {
+     "name": "Boise",
+     "zips": 28,
+     "maxPayout": 110.56
+    },
+    {
+     "name": "Nampa",
+     "zips": 5,
+     "maxPayout": 108.99
+    },
+    {
+     "name": "Idaho Falls",
+     "zips": 7,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Pocatello",
+     "zips": 6,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Coeur D Alene",
+     "zips": 3,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Meridian",
+     "zips": 3,
+     "maxPayout": 52.5
+    },
+    {
+     "name": "Caldwell",
+     "zips": 3,
+     "maxPayout": 69.1
+    },
+    {
+     "name": "Rexburg",
+     "zips": 3,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Post Falls",
+     "zips": 2,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Eagle",
+     "zips": 1,
+     "maxPayout": 59.85
+    },
+    {
+     "name": "Kuna",
+     "zips": 1,
+     "maxPayout": 69.1
+    },
+    {
+     "name": "Mountain Home",
+     "zips": 1,
+     "maxPayout": 63.58
+    }
+   ]
+  },
+  "IL": {
+   "zips": 810,
+   "avg": 32.34,
+   "max": 63,
+   "topCities": [
+    {
+     "name": "Chicago",
+     "zips": 84,
+     "maxPayout": 51.98
+    },
+    {
+     "name": "Springfield",
+     "zips": 34,
+     "maxPayout": 34.3
+    },
+    {
+     "name": "Peoria",
+     "zips": 10,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Rockford",
+     "zips": 9,
+     "maxPayout": 42.7
+    },
+    {
+     "name": "Aurora",
+     "zips": 10,
+     "maxPayout": 49
+    },
+    {
+     "name": "Bloomington",
+     "zips": 8,
+     "maxPayout": 34.3
+    },
+    {
+     "name": "Naperville",
+     "zips": 6,
+     "maxPayout": 63
+    },
+    {
+     "name": "Joliet",
+     "zips": 6,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Champaign",
+     "zips": 4,
+     "maxPayout": 31.85
+    },
+    {
+     "name": "Elgin",
+     "zips": 5,
+     "maxPayout": 49
+    },
+    {
+     "name": "Schaumburg",
+     "zips": 7,
+     "maxPayout": 51.98
+    },
+    {
+     "name": "Decatur",
+     "zips": 6,
+     "maxPayout": 31.5
+    }
+   ]
+  },
+  "IN": {
+   "zips": 792,
+   "avg": 41.5,
+   "max": 78.75,
+   "topCities": [
+    {
+     "name": "Indianapolis",
+     "zips": 56,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Fort Wayne",
+     "zips": 43,
+     "maxPayout": 43.75
+    },
+    {
+     "name": "South Bend",
+     "zips": 12,
+     "maxPayout": 42.7
+    },
+    {
+     "name": "Camby",
+     "zips": 1,
+     "maxPayout": 67.38
+    },
+    {
+     "name": "West Newton",
+     "zips": 1,
+     "maxPayout": 67.38
+    },
+    {
+     "name": "Lafayette",
+     "zips": 6,
+     "maxPayout": 42.7
+    },
+    {
+     "name": "Bloomington",
+     "zips": 8,
+     "maxPayout": 67.38
+    },
+    {
+     "name": "Anderson",
+     "zips": 8,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Elkhart",
+     "zips": 4,
+     "maxPayout": 42.7
+    },
+    {
+     "name": "Muncie",
+     "zips": 7,
+     "maxPayout": 50.23
+    },
+    {
+     "name": "Gary",
+     "zips": 8,
+     "maxPayout": 42.7
+    },
+    {
+     "name": "Jeffersonville",
+     "zips": 8,
+     "maxPayout": 50.88
+    }
+   ]
+  },
+  "IA": {
+   "zips": 270,
+   "avg": 21.65,
+   "max": 35.77,
+   "topCities": [
+    {
+     "name": "Des Moines",
+     "zips": 21,
+     "maxPayout": 26.77
+    },
+    {
+     "name": "Davenport",
+     "zips": 6,
+     "maxPayout": 35.77
+    },
+    {
+     "name": "Sioux City",
+     "zips": 9,
+     "maxPayout": 22
+    },
+    {
+     "name": "Cedar Rapids",
+     "zips": 5,
+     "maxPayout": 21.42
+    },
+    {
+     "name": "Ames",
+     "zips": 5,
+     "maxPayout": 29.7
+    },
+    {
+     "name": "Iowa City",
+     "zips": 2,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Ankeny",
+     "zips": 2,
+     "maxPayout": 29.7
+    },
+    {
+     "name": "West Des Moines",
+     "zips": 2,
+     "maxPayout": 31.85
+    },
+    {
+     "name": "Dubuque",
+     "zips": 2,
+     "maxPayout": 9.68
+    },
+    {
+     "name": "Urbandale",
+     "zips": 1,
+     "maxPayout": 23.38
+    },
+    {
+     "name": "Marion",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Bettendorf",
+     "zips": 1,
+     "maxPayout": 24.75
+    }
+   ]
+  },
+  "KS": {
+   "zips": 176,
+   "avg": 41.58,
+   "max": 59.5,
+   "topCities": [
+    {
+     "name": "Wichita",
+     "zips": 26,
+     "maxPayout": 24.75
+    },
+    {
+     "name": "Topeka",
+     "zips": 18,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Overland Park",
+     "zips": 12,
+     "maxPayout": 51.98
+    },
+    {
+     "name": "Kansas City",
+     "zips": 14,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Olathe",
+     "zips": 4,
+     "maxPayout": 44
+    },
+    {
+     "name": "Lawrence",
+     "zips": 5,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Shawnee",
+     "zips": 6,
+     "maxPayout": 45.5
+    },
+    {
+     "name": "Lenexa",
+     "zips": 5,
+     "maxPayout": 45.5
+    },
+    {
+     "name": "Stilwell",
+     "zips": 1,
+     "maxPayout": 44
+    },
+    {
+     "name": "Shawnee Mission",
+     "zips": 1,
+     "maxPayout": 45.5
+    },
+    {
+     "name": "Leawood",
+     "zips": 3,
+     "maxPayout": 44
+    },
+    {
+     "name": "Fort Leavenworth",
+     "zips": 1,
+     "maxPayout": 45.5
+    }
+   ]
+  },
+  "KY": {
+   "zips": 471,
+   "avg": 44.79,
+   "max": 66.15,
+   "topCities": [
+    {
+     "name": "Louisville",
+     "zips": 66,
+     "maxPayout": 57.75
+    },
+    {
+     "name": "Lexington",
+     "zips": 39,
+     "maxPayout": 66.15
+    },
+    {
+     "name": "Eastwood",
+     "zips": 1,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Fisherville",
+     "zips": 1,
+     "maxPayout": 57.75
+    },
+    {
+     "name": "Harrods Creek",
+     "zips": 1,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Fairdale",
+     "zips": 1,
+     "maxPayout": 57.75
+    },
+    {
+     "name": "Bowling Green",
+     "zips": 4,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Frankfort",
+     "zips": 9,
+     "maxPayout": 57.75
+    },
+    {
+     "name": "Covington",
+     "zips": 5,
+     "maxPayout": 63
+    },
+    {
+     "name": "Elizabethtown",
+     "zips": 2,
+     "maxPayout": 57.75
+    },
+    {
+     "name": "Richmond",
+     "zips": 2,
+     "maxPayout": 57.75
+    },
+    {
+     "name": "Florence",
+     "zips": 2,
+     "maxPayout": 63
+    }
+   ]
+  },
+  "LA": {
+   "zips": 286,
+   "avg": 40.91,
+   "max": 66.5,
+   "topCities": [
+    {
+     "name": "New Orleans",
+     "zips": 61,
+     "maxPayout": 66.5
+    },
+    {
+     "name": "Baton Rouge",
+     "zips": 42,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Shreveport",
+     "zips": 13,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Metairie",
+     "zips": 12,
+     "maxPayout": 66.5
+    },
+    {
+     "name": "Lafayette",
+     "zips": 3,
+     "maxPayout": 24.75
+    },
+    {
+     "name": "Slidell",
+     "zips": 5,
+     "maxPayout": 66.5
+    },
+    {
+     "name": "Mandeville",
+     "zips": 3,
+     "maxPayout": 66.5
+    },
+    {
+     "name": "Kenner",
+     "zips": 5,
+     "maxPayout": 66.5
+    },
+    {
+     "name": "Bossier City",
+     "zips": 5,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Lake Charles",
+     "zips": 2,
+     "maxPayout": 21.42
+    },
+    {
+     "name": "Hammond",
+     "zips": 4,
+     "maxPayout": 64.75
+    },
+    {
+     "name": "Marrero",
+     "zips": 2,
+     "maxPayout": 66.5
+    }
+   ]
+  },
+  "ME": {
+   "zips": 74,
+   "avg": 19.08,
+   "max": 31.5,
+   "topCities": [
+    {
+     "name": "Portland",
+     "zips": 9,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Peaks Island",
+     "zips": 1,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "South Portland",
+     "zips": 2,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Westbrook",
+     "zips": 2,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Biddeford",
+     "zips": 1,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Sanford",
+     "zips": 1,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Springvale",
+     "zips": 1,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Saco",
+     "zips": 1,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Bath",
+     "zips": 1,
+     "maxPayout": 10.35
+    },
+    {
+     "name": "Belfast",
+     "zips": 1,
+     "maxPayout": 14.53
+    },
+    {
+     "name": "Windham",
+     "zips": 1,
+     "maxPayout": 19.25
+    },
+    {
+     "name": "Scarborough",
+     "zips": 2,
+     "maxPayout": 19.25
+    }
+   ]
+  },
+  "MD": {
+   "zips": 498,
+   "avg": 38.27,
+   "max": 61.25,
+   "topCities": [
+    {
+     "name": "Baltimore",
+     "zips": 40,
+     "maxPayout": 45.5
+    },
+    {
+     "name": "Gwynn Oak",
+     "zips": 1,
+     "maxPayout": 56
+    },
+    {
+     "name": "Brooklyn",
+     "zips": 1,
+     "maxPayout": 42
+    },
+    {
+     "name": "Curtis Bay",
+     "zips": 1,
+     "maxPayout": 42
+    },
+    {
+     "name": "Silver Spring",
+     "zips": 16,
+     "maxPayout": 56.7
+    },
+    {
+     "name": "Frederick",
+     "zips": 6,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Bethesda",
+     "zips": 11,
+     "maxPayout": 56.7
+    },
+    {
+     "name": "Gaithersburg",
+     "zips": 9,
+     "maxPayout": 56
+    },
+    {
+     "name": "Hagerstown",
+     "zips": 3,
+     "maxPayout": 26.62
+    },
+    {
+     "name": "Rockville",
+     "zips": 8,
+     "maxPayout": 56.7
+    },
+    {
+     "name": "Waldorf",
+     "zips": 4,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Bowie",
+     "zips": 7,
+     "maxPayout": 44
+    }
+   ]
+  },
+  "MA": {
+   "zips": 605,
+   "avg": 54.21,
+   "max": 80.33,
+   "topCities": [
+    {
+     "name": "Boston",
+     "zips": 36,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Dorchester",
+     "zips": 3,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Worcester",
+     "zips": 15,
+     "maxPayout": 61.25
+    },
+    {
+     "name": "Springfield",
+     "zips": 12,
+     "maxPayout": 29.93
+    },
+    {
+     "name": "Roxbury",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Roxbury Crossing",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Dorchester Center",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Mattapan",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Charlestown",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Jamaica Plain",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "Roslindale",
+     "zips": 1,
+     "maxPayout": 68.75
+    },
+    {
+     "name": "West Roxbury",
+     "zips": 1,
+     "maxPayout": 68.75
+    }
+   ]
+  },
+  "MI": {
+   "zips": 528,
+   "avg": 24.33,
+   "max": 50.4,
+   "topCities": [
+    {
+     "name": "Detroit",
+     "zips": 38,
+     "maxPayout": 28.88
+    },
+    {
+     "name": "Grand Rapids",
+     "zips": 26,
+     "maxPayout": 39.38
+    },
+    {
+     "name": "Redford",
+     "zips": 2,
+     "maxPayout": 28.88
+    },
+    {
+     "name": "Ann Arbor",
+     "zips": 8,
+     "maxPayout": 28.88
+    },
+    {
+     "name": "Lansing",
+     "zips": 7,
+     "maxPayout": 42.7
+    },
+    {
+     "name": "Kalamazoo",
+     "zips": 10,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Flint",
+     "zips": 4,
+     "maxPayout": 10.44
+    },
+    {
+     "name": "Warren",
+     "zips": 7,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Muskegon",
+     "zips": 5,
+     "maxPayout": 20.63
+    },
+    {
+     "name": "Sterling Heights",
+     "zips": 5,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Dearborn",
+     "zips": 6,
+     "maxPayout": 33.08
+    },
+    {
+     "name": "Troy",
+     "zips": 6,
+     "maxPayout": 38.5
+    }
+   ]
+  },
+  "MN": {
+   "zips": 407,
+   "avg": 33.19,
+   "max": 45.67,
+   "topCities": [
+    {
+     "name": "Minneapolis",
+     "zips": 68,
+     "maxPayout": 45.67
+    },
+    {
+     "name": "Saint Paul",
+     "zips": 46,
+     "maxPayout": 45.67
+    },
+    {
+     "name": "Duluth",
+     "zips": 14,
+     "maxPayout": 21
+    },
+    {
+     "name": "Saint Cloud",
+     "zips": 4,
+     "maxPayout": 30.63
+    },
+    {
+     "name": "Monticello",
+     "zips": 14,
+     "maxPayout": 39.88
+    },
+    {
+     "name": "Eden Prairie",
+     "zips": 3,
+     "maxPayout": 39.88
+    },
+    {
+     "name": "Burnsville",
+     "zips": 2,
+     "maxPayout": 39.88
+    },
+    {
+     "name": "Lakeville",
+     "zips": 1,
+     "maxPayout": 39.88
+    },
+    {
+     "name": "Inver Grove Heights",
+     "zips": 2,
+     "maxPayout": 39.88
+    },
+    {
+     "name": "Maple Grove",
+     "zips": 1,
+     "maxPayout": 39.88
+    },
+    {
+     "name": "Norwood Young America",
+     "zips": 17,
+     "maxPayout": 35.75
+    },
+    {
+     "name": "Minnetonka",
+     "zips": 1,
+     "maxPayout": 45.67
+    }
+   ]
+  },
+  "MS": {
+   "zips": 122,
+   "avg": 17.17,
+   "max": 36.23,
+   "topCities": [
+    {
+     "name": "Jackson",
+     "zips": 9,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Gulfport",
+     "zips": 4,
+     "maxPayout": 27.15
+    },
+    {
+     "name": "Biloxi",
+     "zips": 5,
+     "maxPayout": 12.95
+    },
+    {
+     "name": "Meridian",
+     "zips": 6,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Hattiesburg",
+     "zips": 2,
+     "maxPayout": 7.7
+    },
+    {
+     "name": "Southaven",
+     "zips": 2,
+     "maxPayout": 36.23
+    },
+    {
+     "name": "Nesbit",
+     "zips": 1,
+     "maxPayout": 31.63
+    },
+    {
+     "name": "Laurel",
+     "zips": 3,
+     "maxPayout": 12.25
+    },
+    {
+     "name": "Brandon",
+     "zips": 2,
+     "maxPayout": 28.88
+    },
+    {
+     "name": "Olive Branch",
+     "zips": 1,
+     "maxPayout": 36.23
+    },
+    {
+     "name": "Madison",
+     "zips": 1,
+     "maxPayout": 28.88
+    },
+    {
+     "name": "Pearl",
+     "zips": 1,
+     "maxPayout": 31.5
+    }
+   ]
+  },
+  "MO": {
+   "zips": 392,
+   "avg": 36.87,
+   "max": 59.5,
+   "topCities": [
+    {
+     "name": "Kansas City",
+     "zips": 63,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Saint Louis",
+     "zips": 34,
+     "maxPayout": 33.6
+    },
+    {
+     "name": "Springfield",
+     "zips": 16,
+     "maxPayout": 23.63
+    },
+    {
+     "name": "Independence",
+     "zips": 8,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Lees Summit",
+     "zips": 7,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Saint Joseph",
+     "zips": 8,
+     "maxPayout": 45.5
+    },
+    {
+     "name": "Jefferson City",
+     "zips": 11,
+     "maxPayout": 20.63
+    },
+    {
+     "name": "Columbia",
+     "zips": 3,
+     "maxPayout": 23.63
+    },
+    {
+     "name": "Brookline",
+     "zips": 1,
+     "maxPayout": 29.7
+    },
+    {
+     "name": "Saint Charles",
+     "zips": 4,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "O Fallon",
+     "zips": 2,
+     "maxPayout": 30.25
+    },
+    {
+     "name": "Blue Springs",
+     "zips": 3,
+     "maxPayout": 59.5
+    }
+   ]
+  },
+  "MT": {
+   "zips": 18,
+   "avg": 18.1,
+   "max": 26.88,
+   "topCities": [
+    {
+     "name": "Bozeman",
+     "zips": 3,
+     "maxPayout": 21.42
+    },
+    {
+     "name": "Billings",
+     "zips": 1,
+     "maxPayout": 26.88
+    },
+    {
+     "name": "Butte",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Divide",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Helena",
+     "zips": 1,
+     "maxPayout": 13.3
+    },
+    {
+     "name": "Livingston",
+     "zips": 1,
+     "maxPayout": 15.71
+    },
+    {
+     "name": "Dillon",
+     "zips": 1,
+     "maxPayout": 13.3
+    },
+    {
+     "name": "Deer Lodge",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Townsend",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "East Helena",
+     "zips": 1,
+     "maxPayout": 15.71
+    },
+    {
+     "name": "Absarokee",
+     "zips": 1,
+     "maxPayout": 11.03
+    },
+    {
+     "name": "Park City",
+     "zips": 1,
+     "maxPayout": 19.6
+    }
+   ]
+  },
+  "NE": {
+   "zips": 45,
+   "avg": 20.69,
+   "max": 42.52,
+   "topCities": [
+    {
+     "name": "Omaha",
+     "zips": 18,
+     "maxPayout": 42.52
+    },
+    {
+     "name": "Lincoln",
+     "zips": 4,
+     "maxPayout": 9.68
+    },
+    {
+     "name": "Bellevue",
+     "zips": 1,
+     "maxPayout": 9.1
+    },
+    {
+     "name": "Papillion",
+     "zips": 2,
+     "maxPayout": 29.7
+    },
+    {
+     "name": "Fremont",
+     "zips": 1,
+     "maxPayout": 28
+    },
+    {
+     "name": "La Vista",
+     "zips": 1,
+     "maxPayout": 9.1
+    },
+    {
+     "name": "Scottsbluff",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Gretna",
+     "zips": 1,
+     "maxPayout": 29.7
+    },
+    {
+     "name": "Gering",
+     "zips": 1,
+     "maxPayout": 14
+    },
+    {
+     "name": "Seward",
+     "zips": 1,
+     "maxPayout": 10.73
+    },
+    {
+     "name": "Plattsmouth",
+     "zips": 1,
+     "maxPayout": 23.98
+    },
+    {
+     "name": "Sidney",
+     "zips": 1,
+     "maxPayout": 21.42
+    }
+   ]
+  },
+  "NV": {
+   "zips": 220,
+   "avg": 67.26,
+   "max": 105,
+   "topCities": [
+    {
+     "name": "Las Vegas",
+     "zips": 77,
+     "maxPayout": 105
+    },
+    {
+     "name": "Reno",
+     "zips": 24,
+     "maxPayout": 48.79
+    },
+    {
+     "name": "Henderson",
+     "zips": 12,
+     "maxPayout": 105
+    },
+    {
+     "name": "North Las Vegas",
+     "zips": 10,
+     "maxPayout": 105
+    },
+    {
+     "name": "The Lakes",
+     "zips": 2,
+     "maxPayout": 105
+    },
+    {
+     "name": "Sparks",
+     "zips": 6,
+     "maxPayout": 40.25
+    },
+    {
+     "name": "Carson City",
+     "zips": 6,
+     "maxPayout": 48.79
+    },
+    {
+     "name": "Sloan",
+     "zips": 1,
+     "maxPayout": 98
+    },
+    {
+     "name": "Pahrump",
+     "zips": 4,
+     "maxPayout": 52.37
+    },
+    {
+     "name": "Boulder City",
+     "zips": 2,
+     "maxPayout": 52.37
+    },
+    {
+     "name": "Incline Village",
+     "zips": 3,
+     "maxPayout": 48.79
+    },
+    {
+     "name": "Fernley",
+     "zips": 1,
+     "maxPayout": 38.23
+    }
+   ]
+  },
+  "NH": {
+   "zips": 133,
+   "avg": 31.37,
+   "max": 53.2,
+   "topCities": [
+    {
+     "name": "Nashua",
+     "zips": 5,
+     "maxPayout": 53.2
+    },
+    {
+     "name": "Manchester",
+     "zips": 5,
+     "maxPayout": 53.2
+    },
+    {
+     "name": "Portsmouth",
+     "zips": 4,
+     "maxPayout": 25.3
+    },
+    {
+     "name": "Rochester",
+     "zips": 4,
+     "maxPayout": 28
+    },
+    {
+     "name": "Concord",
+     "zips": 2,
+     "maxPayout": 47.88
+    },
+    {
+     "name": "Dover",
+     "zips": 1,
+     "maxPayout": 51.98
+    },
+    {
+     "name": "Keene",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Laconia",
+     "zips": 1,
+     "maxPayout": 21.07
+    },
+    {
+     "name": "Lebanon",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Claremont",
+     "zips": 1,
+     "maxPayout": 35.38
+    },
+    {
+     "name": "Hooksett",
+     "zips": 1,
+     "maxPayout": 34.3
+    },
+    {
+     "name": "Suncook",
+     "zips": 1,
+     "maxPayout": 27
+    }
+   ]
+  },
+  "NJ": {
+   "zips": 720,
+   "avg": 42.24,
+   "max": 60.5,
+   "topCities": [
+    {
+     "name": "Trenton",
+     "zips": 26,
+     "maxPayout": 44.1
+    },
+    {
+     "name": "Newark",
+     "zips": 20,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Jersey City",
+     "zips": 12,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Paterson",
+     "zips": 14,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Elizabeth",
+     "zips": 4,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Clifton",
+     "zips": 5,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Camden",
+     "zips": 5,
+     "maxPayout": 49.5
+    },
+    {
+     "name": "New Brunswick",
+     "zips": 5,
+     "maxPayout": 44.1
+    },
+    {
+     "name": "Vineland",
+     "zips": 3,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Plainfield",
+     "zips": 4,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "East Orange",
+     "zips": 3,
+     "maxPayout": 33
+    },
+    {
+     "name": "Princeton",
+     "zips": 5,
+     "maxPayout": 36.75
+    }
+   ]
+  },
+  "NM": {
+   "zips": 101,
+   "avg": 36.35,
+   "max": 40.25,
+   "topCities": [
+    {
+     "name": "Albuquerque",
+     "zips": 42,
+     "maxPayout": 40.25
+    },
+    {
+     "name": "Rio Rancho",
+     "zips": 3,
+     "maxPayout": 40.25
+    },
+    {
+     "name": "Santa Fe",
+     "zips": 3,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Farmington",
+     "zips": 2,
+     "maxPayout": 30.94
+    },
+    {
+     "name": "Clovis",
+     "zips": 1,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Los Lunas",
+     "zips": 1,
+     "maxPayout": 40.25
+    },
+    {
+     "name": "Los Alamos",
+     "zips": 1,
+     "maxPayout": 24.75
+    },
+    {
+     "name": "Las Vegas",
+     "zips": 1,
+     "maxPayout": 27.15
+    },
+    {
+     "name": "Portales",
+     "zips": 1,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Bernalillo",
+     "zips": 1,
+     "maxPayout": 40.25
+    },
+    {
+     "name": "Corrales",
+     "zips": 1,
+     "maxPayout": 40.25
+    },
+    {
+     "name": "Shiprock",
+     "zips": 1,
+     "maxPayout": 30.94
+    }
+   ]
+  },
+  "NY": {
+   "zips": 1360,
+   "avg": 35.88,
+   "max": 56.59,
+   "topCities": [
+    {
+     "name": "New York",
+     "zips": 146,
+     "maxPayout": 36.23
+    },
+    {
+     "name": "Jamaica",
+     "zips": 14,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Flushing",
+     "zips": 8,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Brooklyn",
+     "zips": 47,
+     "maxPayout": 36.23
+    },
+    {
+     "name": "Astoria",
+     "zips": 4,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Far Rockaway",
+     "zips": 4,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Long Island City",
+     "zips": 3,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Bayside",
+     "zips": 3,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Queens Village",
+     "zips": 3,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Little Neck",
+     "zips": 2,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Fresh Meadows",
+     "zips": 2,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "East Elmhurst",
+     "zips": 2,
+     "maxPayout": 31.5
+    }
+   ]
+  },
+  "NC": {
+   "zips": 850,
+   "avg": 35.19,
+   "max": 67.72,
+   "topCities": [
+    {
+     "name": "Charlotte",
+     "zips": 73,
+     "maxPayout": 44.1
+    },
+    {
+     "name": "Raleigh",
+     "zips": 44,
+     "maxPayout": 67.72
+    },
+    {
+     "name": "Greensboro",
+     "zips": 28,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Winston Salem",
+     "zips": 18,
+     "maxPayout": 38.5
+    },
+    {
+     "name": "Durham",
+     "zips": 16,
+     "maxPayout": 67.72
+    },
+    {
+     "name": "Wilmington",
+     "zips": 12,
+     "maxPayout": 64.75
+    },
+    {
+     "name": "Fayetteville",
+     "zips": 10,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Winston-Salem",
+     "zips": 7,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Asheville",
+     "zips": 6,
+     "maxPayout": 29.4
+    },
+    {
+     "name": "Newell",
+     "zips": 1,
+     "maxPayout": 27.56
+    },
+    {
+     "name": "Paw Creek",
+     "zips": 1,
+     "maxPayout": 21.78
+    },
+    {
+     "name": "High Point",
+     "zips": 7,
+     "maxPayout": 47.25
+    }
+   ]
+  },
+  "ND": {
+   "zips": 12,
+   "avg": 14.09,
+   "max": 35,
+   "topCities": [
+    {
+     "name": "Bismarck",
+     "zips": 7,
+     "maxPayout": 9.36
+    },
+    {
+     "name": "Larimore",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Velva",
+     "zips": 1,
+     "maxPayout": 20.89
+    },
+    {
+     "name": "Rutland",
+     "zips": 1,
+     "maxPayout": 20.89
+    },
+    {
+     "name": "Menoken",
+     "zips": 1,
+     "maxPayout": 9.36
+    },
+    {
+     "name": "Esmond",
+     "zips": 1,
+     "maxPayout": 17.43
+    }
+   ]
+  },
+  "OH": {
+   "zips": 932,
+   "avg": 38.39,
+   "max": 70,
+   "topCities": [
+    {
+     "name": "Cincinnati",
+     "zips": 71,
+     "maxPayout": 70
+    },
+    {
+     "name": "Columbus",
+     "zips": 45,
+     "maxPayout": 50.75
+    },
+    {
+     "name": "Cleveland",
+     "zips": 32,
+     "maxPayout": 32.81
+    },
+    {
+     "name": "Dayton",
+     "zips": 43,
+     "maxPayout": 70
+    },
+    {
+     "name": "Akron",
+     "zips": 21,
+     "maxPayout": 29.4
+    },
+    {
+     "name": "Youngstown",
+     "zips": 15,
+     "maxPayout": 28.98
+    },
+    {
+     "name": "Canton",
+     "zips": 15,
+     "maxPayout": 24.75
+    },
+    {
+     "name": "Amlin",
+     "zips": 1,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Blacklick",
+     "zips": 1,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Galloway",
+     "zips": 1,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Lorain",
+     "zips": 3,
+     "maxPayout": 23.65
+    },
+    {
+     "name": "Mansfield",
+     "zips": 7,
+     "maxPayout": 53.63
+    }
+   ]
+  },
+  "OK": {
+   "zips": 262,
+   "avg": 32.83,
+   "max": 63,
+   "topCities": [
+    {
+     "name": "Oklahoma City",
+     "zips": 73,
+     "maxPayout": 63
+    },
+    {
+     "name": "Tulsa",
+     "zips": 31,
+     "maxPayout": 33.08
+    },
+    {
+     "name": "Wheatland",
+     "zips": 1,
+     "maxPayout": 55
+    },
+    {
+     "name": "Newalla",
+     "zips": 1,
+     "maxPayout": 44.1
+    },
+    {
+     "name": "Norman",
+     "zips": 6,
+     "maxPayout": 44.1
+    },
+    {
+     "name": "Edmond",
+     "zips": 6,
+     "maxPayout": 55
+    },
+    {
+     "name": "Broken Arrow",
+     "zips": 4,
+     "maxPayout": 29.75
+    },
+    {
+     "name": "Stillwater",
+     "zips": 4,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Shawnee",
+     "zips": 3,
+     "maxPayout": 27.3
+    },
+    {
+     "name": "Lawton",
+     "zips": 1,
+     "maxPayout": 8.19
+    },
+    {
+     "name": "Yukon",
+     "zips": 2,
+     "maxPayout": 55
+    },
+    {
+     "name": "Ponca City",
+     "zips": 2,
+     "maxPayout": 17.15
+    }
+   ]
+  },
+  "OR": {
+   "zips": 281,
+   "avg": 53.16,
+   "max": 67.72,
+   "topCities": [
+    {
+     "name": "Portland",
+     "zips": 60,
+     "maxPayout": 67.72
+    },
+    {
+     "name": "Salem",
+     "zips": 14,
+     "maxPayout": 49
+    },
+    {
+     "name": "Eugene",
+     "zips": 4,
+     "maxPayout": 46.78
+    },
+    {
+     "name": "Beaverton",
+     "zips": 10,
+     "maxPayout": 66
+    },
+    {
+     "name": "Bend",
+     "zips": 5,
+     "maxPayout": 59.5
+    },
+    {
+     "name": "Medford",
+     "zips": 2,
+     "maxPayout": 41.65
+    },
+    {
+     "name": "Hillsboro",
+     "zips": 3,
+     "maxPayout": 66
+    },
+    {
+     "name": "Corvallis",
+     "zips": 4,
+     "maxPayout": 49
+    },
+    {
+     "name": "Gresham",
+     "zips": 2,
+     "maxPayout": 66
+    },
+    {
+     "name": "Albany",
+     "zips": 2,
+     "maxPayout": 49
+    },
+    {
+     "name": "Springfield",
+     "zips": 2,
+     "maxPayout": 41.65
+    },
+    {
+     "name": "Lake Oswego",
+     "zips": 2,
+     "maxPayout": 66
+    }
+   ]
+  },
+  "PA": {
+   "zips": 1288,
+   "avg": 45.08,
+   "max": 84,
+   "topCities": [
+    {
+     "name": "Philadelphia",
+     "zips": 87,
+     "maxPayout": 77
+    },
+    {
+     "name": "Pittsburgh",
+     "zips": 44,
+     "maxPayout": 40.42
+    },
+    {
+     "name": "Harrisburg",
+     "zips": 26,
+     "maxPayout": 84
+    },
+    {
+     "name": "Allentown",
+     "zips": 8,
+     "maxPayout": 47.25
+    },
+    {
+     "name": "Lancaster",
+     "zips": 12,
+     "maxPayout": 84
+    },
+    {
+     "name": "Scranton",
+     "zips": 10,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Reading",
+     "zips": 12,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "York",
+     "zips": 9,
+     "maxPayout": 84
+    },
+    {
+     "name": "Lehigh Valley",
+     "zips": 3,
+     "maxPayout": 35.75
+    },
+    {
+     "name": "Bethlehem",
+     "zips": 6,
+     "maxPayout": 35.75
+    },
+    {
+     "name": "State College",
+     "zips": 4,
+     "maxPayout": 34.38
+    },
+    {
+     "name": "Levittown",
+     "zips": 5,
+     "maxPayout": 77
+    }
+   ]
+  },
+  "RI": {
+   "zips": 88,
+   "avg": 32.02,
+   "max": 55.53,
+   "topCities": [
+    {
+     "name": "Providence",
+     "zips": 12,
+     "maxPayout": 51.83
+    },
+    {
+     "name": "Warwick",
+     "zips": 4,
+     "maxPayout": 50.1
+    },
+    {
+     "name": "Cranston",
+     "zips": 3,
+     "maxPayout": 35
+    },
+    {
+     "name": "Pawtucket",
+     "zips": 3,
+     "maxPayout": 35
+    },
+    {
+     "name": "Fiskeville",
+     "zips": 1,
+     "maxPayout": 27.5
+    },
+    {
+     "name": "Hope",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "East Greenwich",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Newport",
+     "zips": 2,
+     "maxPayout": 35
+    },
+    {
+     "name": "East Providence",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Riverside",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Rumford",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Woonsocket",
+     "zips": 1,
+     "maxPayout": 55.53
+    }
+   ]
+  },
+  "SC": {
+   "zips": 462,
+   "avg": 34.67,
+   "max": 70,
+   "topCities": [
+    {
+     "name": "Columbia",
+     "zips": 34,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Charleston",
+     "zips": 16,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Greenville",
+     "zips": 17,
+     "maxPayout": 70
+    },
+    {
+     "name": "Myrtle Beach",
+     "zips": 7,
+     "maxPayout": 38.5
+    },
+    {
+     "name": "Spartanburg",
+     "zips": 8,
+     "maxPayout": 66.15
+    },
+    {
+     "name": "Johns Island",
+     "zips": 2,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Rock Hill",
+     "zips": 5,
+     "maxPayout": 37.98
+    },
+    {
+     "name": "North Charleston",
+     "zips": 5,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Sumter",
+     "zips": 4,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Mount Pleasant",
+     "zips": 3,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Florence",
+     "zips": 3,
+     "maxPayout": 37.8
+    },
+    {
+     "name": "Beaufort",
+     "zips": 4,
+     "maxPayout": 31.5
+    }
+   ]
+  },
+  "SD": {
+   "zips": 39,
+   "avg": 17.42,
+   "max": 31.5,
+   "topCities": [
+    {
+     "name": "Sioux Falls",
+     "zips": 7,
+     "maxPayout": 20.89
+    },
+    {
+     "name": "Pierre",
+     "zips": 1,
+     "maxPayout": 20.3
+    },
+    {
+     "name": "Tea",
+     "zips": 1,
+     "maxPayout": 9.68
+    },
+    {
+     "name": "Dell Rapids",
+     "zips": 1,
+     "maxPayout": 11.99
+    },
+    {
+     "name": "Milbank",
+     "zips": 1,
+     "maxPayout": 9.58
+    },
+    {
+     "name": "Canton",
+     "zips": 1,
+     "maxPayout": 9.68
+    },
+    {
+     "name": "Fort Pierre",
+     "zips": 1,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Eagle Butte",
+     "zips": 1,
+     "maxPayout": 20.65
+    },
+    {
+     "name": "Miller",
+     "zips": 1,
+     "maxPayout": 18.38
+    },
+    {
+     "name": "Gettysburg",
+     "zips": 1,
+     "maxPayout": 17.41
+    },
+    {
+     "name": "Platte",
+     "zips": 1,
+     "maxPayout": 9.58
+    },
+    {
+     "name": "Wessington Springs",
+     "zips": 1,
+     "maxPayout": 20.3
+    }
+   ]
+  },
+  "TN": {
+   "zips": 577,
+   "avg": 43.66,
+   "max": 78.75,
+   "topCities": [
+    {
+     "name": "Memphis",
+     "zips": 59,
+     "maxPayout": 63
+    },
+    {
+     "name": "Nashville",
+     "zips": 38,
+     "maxPayout": 49
+    },
+    {
+     "name": "Knoxville",
+     "zips": 30,
+     "maxPayout": 27.5
+    },
+    {
+     "name": "Chattanooga",
+     "zips": 20,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Cordova",
+     "zips": 3,
+     "maxPayout": 63
+    },
+    {
+     "name": "Antioch",
+     "zips": 2,
+     "maxPayout": 49
+    },
+    {
+     "name": "Madison",
+     "zips": 2,
+     "maxPayout": 49
+    },
+    {
+     "name": "Murfreesboro",
+     "zips": 7,
+     "maxPayout": 49
+    },
+    {
+     "name": "Hermitage",
+     "zips": 1,
+     "maxPayout": 49
+    },
+    {
+     "name": "Joelton",
+     "zips": 1,
+     "maxPayout": 49
+    },
+    {
+     "name": "Old Hickory",
+     "zips": 1,
+     "maxPayout": 49
+    },
+    {
+     "name": "Whites Creek",
+     "zips": 1,
+     "maxPayout": 49
+    }
+   ]
+  },
+  "TX": {
+   "zips": 1562,
+   "avg": 45.25,
+   "max": 82.25,
+   "topCities": [
+    {
+     "name": "Houston",
+     "zips": 178,
+     "maxPayout": 81.2
+    },
+    {
+     "name": "Dallas",
+     "zips": 105,
+     "maxPayout": 69.3
+    },
+    {
+     "name": "San Antonio",
+     "zips": 83,
+     "maxPayout": 80.5
+    },
+    {
+     "name": "Austin",
+     "zips": 74,
+     "maxPayout": 82.25
+    },
+    {
+     "name": "Fort Worth",
+     "zips": 56,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Kingwood",
+     "zips": 3,
+     "maxPayout": 81.2
+    },
+    {
+     "name": "El Paso",
+     "zips": 14,
+     "maxPayout": 31.18
+    },
+    {
+     "name": "Corpus Christi",
+     "zips": 30,
+     "maxPayout": 48.64
+    },
+    {
+     "name": "Arlington",
+     "zips": 19,
+     "maxPayout": 63
+    },
+    {
+     "name": "North Houston",
+     "zips": 1,
+     "maxPayout": 48.13
+    },
+    {
+     "name": "Huffman",
+     "zips": 1,
+     "maxPayout": 66.5
+    },
+    {
+     "name": "Alief",
+     "zips": 1,
+     "maxPayout": 48.13
+    }
+   ]
+  },
+  "UT": {
+   "zips": 214,
+   "avg": 72.44,
+   "max": 98.75,
+   "topCities": [
+    {
+     "name": "Salt Lake City",
+     "zips": 52,
+     "maxPayout": 98.75
+    },
+    {
+     "name": "Ogden",
+     "zips": 13,
+     "maxPayout": 94.5
+    },
+    {
+     "name": "Provo",
+     "zips": 6,
+     "maxPayout": 94.5
+    },
+    {
+     "name": "Sandy",
+     "zips": 6,
+     "maxPayout": 86.21
+    },
+    {
+     "name": "Saint George",
+     "zips": 3,
+     "maxPayout": 27.85
+    },
+    {
+     "name": "West Valley City",
+     "zips": 3,
+     "maxPayout": 86.21
+    },
+    {
+     "name": "Logan",
+     "zips": 3,
+     "maxPayout": 59.13
+    },
+    {
+     "name": "West Jordan",
+     "zips": 3,
+     "maxPayout": 98.75
+    },
+    {
+     "name": "Orem",
+     "zips": 3,
+     "maxPayout": 94.5
+    },
+    {
+     "name": "Layton",
+     "zips": 2,
+     "maxPayout": 94.5
+    },
+    {
+     "name": "South Jordan",
+     "zips": 2,
+     "maxPayout": 86.21
+    },
+    {
+     "name": "Clearfield",
+     "zips": 3,
+     "maxPayout": 82.5
+    }
+   ]
+  },
+  "VT": {
+   "zips": 3,
+   "avg": 23.28,
+   "max": 30.19,
+   "topCities": [
+    {
+     "name": "Rutland",
+     "zips": 1,
+     "maxPayout": 29.64
+    },
+    {
+     "name": "Johnson",
+     "zips": 1,
+     "maxPayout": 10.02
+    },
+    {
+     "name": "Wallingford",
+     "zips": 1,
+     "maxPayout": 30.19
+    }
+   ]
+  },
+  "VA": {
+   "zips": 528,
+   "avg": 38.31,
+   "max": 63,
+   "topCities": [
+    {
+     "name": "Virginia Beach",
+     "zips": 20,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Richmond",
+     "zips": 16,
+     "maxPayout": 39.2
+    },
+    {
+     "name": "Arlington",
+     "zips": 27,
+     "maxPayout": 56.7
+    },
+    {
+     "name": "Norfolk",
+     "zips": 23,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Alexandria",
+     "zips": 21,
+     "maxPayout": 63
+    },
+    {
+     "name": "Chesapeake",
+     "zips": 9,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Fredericksburg",
+     "zips": 9,
+     "maxPayout": 45.38
+    },
+    {
+     "name": "Newport News",
+     "zips": 7,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Hampton",
+     "zips": 6,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Portsmouth",
+     "zips": 8,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Suffolk",
+     "zips": 7,
+     "maxPayout": 41.25
+    },
+    {
+     "name": "Charlottesville",
+     "zips": 6,
+     "maxPayout": 28.35
+    }
+   ]
+  },
+  "WA": {
+   "zips": 457,
+   "avg": 47.13,
+   "max": 78.75,
+   "topCities": [
+    {
+     "name": "Seattle",
+     "zips": 59,
+     "maxPayout": 78.4
+    },
+    {
+     "name": "Spokane",
+     "zips": 28,
+     "maxPayout": 78.75
+    },
+    {
+     "name": "Tacoma",
+     "zips": 33,
+     "maxPayout": 74.03
+    },
+    {
+     "name": "Vancouver",
+     "zips": 14,
+     "maxPayout": 67.72
+    },
+    {
+     "name": "Olympia",
+     "zips": 10,
+     "maxPayout": 35
+    },
+    {
+     "name": "Bremerton",
+     "zips": 5,
+     "maxPayout": 49
+    },
+    {
+     "name": "Bellevue",
+     "zips": 7,
+     "maxPayout": 64.98
+    },
+    {
+     "name": "Yakima",
+     "zips": 7,
+     "maxPayout": 30.25
+    },
+    {
+     "name": "Kent",
+     "zips": 7,
+     "maxPayout": 78.4
+    },
+    {
+     "name": "Everett",
+     "zips": 8,
+     "maxPayout": 74.03
+    },
+    {
+     "name": "Kennewick",
+     "zips": 3,
+     "maxPayout": 35
+    },
+    {
+     "name": "Renton",
+     "zips": 5,
+     "maxPayout": 74.03
+    }
+   ]
+  },
+  "WV": {
+   "zips": 164,
+   "avg": 32.86,
+   "max": 49.5,
+   "topCities": [
+    {
+     "name": "Huntington",
+     "zips": 37,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Charleston",
+     "zips": 45,
+     "maxPayout": 35
+    },
+    {
+     "name": "Martinsburg",
+     "zips": 4,
+     "maxPayout": 49.5
+    },
+    {
+     "name": "South Charleston",
+     "zips": 2,
+     "maxPayout": 35
+    },
+    {
+     "name": "Wheeling",
+     "zips": 1,
+     "maxPayout": 24.75
+    },
+    {
+     "name": "Scott Depot",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Teays",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Saint Albans",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Charles Town",
+     "zips": 1,
+     "maxPayout": 49.5
+    },
+    {
+     "name": "Dunbar",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Hurricane",
+     "zips": 1,
+     "maxPayout": 35
+    },
+    {
+     "name": "Nitro",
+     "zips": 1,
+     "maxPayout": 35
+    }
+   ]
+  },
+  "WI": {
+   "zips": 285,
+   "avg": 26.29,
+   "max": 45.5,
+   "topCities": [
+    {
+     "name": "Milwaukee",
+     "zips": 39,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Madison",
+     "zips": 13,
+     "maxPayout": 20.48
+    },
+    {
+     "name": "Appleton",
+     "zips": 5,
+     "maxPayout": 9.68
+    },
+    {
+     "name": "Racine",
+     "zips": 7,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Green Bay",
+     "zips": 3,
+     "maxPayout": 9.68
+    },
+    {
+     "name": "Kenosha",
+     "zips": 4,
+     "maxPayout": 45.5
+    },
+    {
+     "name": "Waukesha",
+     "zips": 4,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Sheboygan",
+     "zips": 2,
+     "maxPayout": 28
+    },
+    {
+     "name": "Janesville",
+     "zips": 2,
+     "maxPayout": 22
+    },
+    {
+     "name": "Brookfield",
+     "zips": 3,
+     "maxPayout": 36.75
+    },
+    {
+     "name": "Fond du Lac",
+     "zips": 2,
+     "maxPayout": 24.75
+    },
+    {
+     "name": "New Berlin",
+     "zips": 2,
+     "maxPayout": 36.75
+    }
+   ]
+  },
+  "WY": {
+   "zips": 37,
+   "avg": 19.33,
+   "max": 31.5,
+   "topCities": [
+    {
+     "name": "Cheyenne",
+     "zips": 4,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Laramie",
+     "zips": 3,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Sheridan",
+     "zips": 1,
+     "maxPayout": 15.98
+    },
+    {
+     "name": "Jackson",
+     "zips": 1,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Torrington",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Buffalo",
+     "zips": 1,
+     "maxPayout": 15.98
+    },
+    {
+     "name": "Wheatland",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Fe Warren Afb",
+     "zips": 1,
+     "maxPayout": 15.71
+    },
+    {
+     "name": "Pine Bluffs",
+     "zips": 1,
+     "maxPayout": 19.6
+    },
+    {
+     "name": "Ranchester",
+     "zips": 1,
+     "maxPayout": 15.98
+    },
+    {
+     "name": "Wilson",
+     "zips": 1,
+     "maxPayout": 31.5
+    },
+    {
+     "name": "Banner",
+     "zips": 1,
+     "maxPayout": 15.98
+    }
+   ]
+  }
+ }
+}

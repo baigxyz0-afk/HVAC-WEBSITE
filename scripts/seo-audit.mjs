@@ -13,6 +13,19 @@ async function get(path, opts = {}) {
   return { res, text: res.status < 300 ? await res.text() : "" };
 }
 const toPath = (loc) => new URL(loc).pathname;
+// Near-duplicate detection: 5-word shingles of each page's <main> text (form markup excluded).
+const bodies = new Map();
+function shingles(s) {
+  const w = s.split(/\W+/).filter(Boolean);
+  const out = new Set();
+  for (let i = 0; i + 5 <= w.length; i++) out.add(w.slice(i, i + 5).join(" "));
+  return out;
+}
+function jaccard(a, b) {
+  let n = 0;
+  for (const x of a) if (b.has(x)) n++;
+  return n / (a.size + b.size - n || 1);
+}
 const attr = (html, re) => (html.match(re) || [])[1];
 
 // 1. robots + sitemaps
@@ -20,7 +33,7 @@ const robots = (await get("/robots.txt")).text;
 if (!robots) err("/robots.txt", "missing");
 const index = (await get("/sitemap.xml")).text;
 const subs = [...index.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => toPath(m[1]));
-if (subs.length !== 4) err("/sitemap.xml", `expected 4 sitemaps, got ${subs.length}`);
+if (subs.length !== 6) err("/sitemap.xml", `expected 6 sitemaps, got ${subs.length}`);
 const urls = [];
 for (const s of subs) {
   const x = (await get(s)).text;
@@ -57,6 +70,8 @@ for (const path of urls) {
   if (h1.length !== 1) err(path, `${h1.length} h1 tags`);
   const text = html.replace(/<script[\s\S]*?<\/script>/g, "").replace(/<[^>]+>/g, " ");
   for (const re of BANNED) if (re.test(text)) err(path, `banned phrase ${re}`);
+  const main = (html.match(/<main[\s\S]*?<\/main>/) || [html])[0].replace(/<script[\s\S]*?<\/script>/g, "").replace(/<form[\s\S]*?<\/form>/g, "").replace(/<[^>]+>/g, " ").toLowerCase();
+  bodies.set(path, shingles(main));
   if (/, NC\b|, SC\b/.test(title || "")) err(path, "wrong state in title");
   for (const [m, v] of [[titles, title], [descs, desc], [h1s, h1[0]?.[1]]]) {
     if (!v) continue;
@@ -122,6 +137,21 @@ for (const u of urls) {
 }
 const maxDepth = Math.max(...depth.values());
 
+// 3b. near-duplicate clusters among sibling pages (same URL depth and section)
+const sib = (p) => p.split("/").filter(Boolean).slice(0, -1).map((s, i) => (i === 0 ? s : "*")).join("/") + "#" + p.split("/").filter(Boolean).length;
+const groupsBySib = new Map();
+for (const p of bodies.keys()) groupsBySib.set(sib(p), [...(groupsBySib.get(sib(p)) || []), p]);
+let maxSim = 0;
+for (const list of groupsBySib.values()) {
+  for (let i = 0; i < list.length; i++)
+    for (let j = i + 1; j < list.length; j++) {
+      const s = jaccard(bodies.get(list[i]), bodies.get(list[j]));
+      maxSim = Math.max(maxSim, s);
+      if (s > 0.6) err(list[i], `near-duplicate of ${list[j]} (${s.toFixed(2)})`);
+      else if (s > 0.45) warn(list[i], `similar to ${list[j]} (${s.toFixed(2)})`);
+    }
+}
+
 // 4. behavior checks
 const nf = await get("/definitely-not-a-page/");
 if (nf.res.status !== 404) err("/definitely-not-a-page/", `soft 404 (status ${nf.res.status})`);
@@ -140,7 +170,9 @@ for (const u of urls) if (!llms.includes(u === "/" ? "](" : u)) err("/llms.txt",
 const cross = await fetch(BASE + "/api/lead", { method: "POST", headers: { "content-type": "application/json", origin: "https://evil.example" }, body: "{}" });
 if (cross.status !== 403) err("/api/lead", `cross-origin not rejected (${cross.status})`);
 
-console.log(`Audited ${urls.length} sitemap URLs · max click depth ${maxDepth}`);
+const zipOk = await (await get("/api/zip/?zip=10001")).res.status;
+if (zipOk !== 200) err("/api/zip/", `lookup failed (${zipOk})`);
+console.log(`Audited ${urls.length} sitemap URLs · max click depth ${maxDepth} · max sibling similarity ${maxSim.toFixed(2)}`);
 if (warns.length) console.log(`\nWarnings (${warns.length}):\n  ` + warns.join("\n  "));
 console.log(errors.length ? `\nErrors (${errors.length}):\n  ` + errors.join("\n  ") : "\n0 errors");
 process.exit(errors.length ? 1 : 0);

@@ -1,15 +1,24 @@
-// Service-area ZIPs, derived from the published city records.
-// Replace with the LeadSmart HVAC coverage list when it's available.
-import { publishedCities } from "./locations";
+import "server-only";
+// LeadSmart HVAC (Call) coverage for all 50 states + DC, pulled by scripts/pull-coverage.mjs.
+// Server-only: the national ZIP list is never shipped to the browser.
+import data from "./coverage-data.json";
 
-export const coverageDate = "2026-09-28";
-
-export const coveredZips: Record<string, { city: string; tier: "A" | "B" }> = {};
-
-for (const c of publishedCities) {
-  for (const zip of c.zips) coveredZips[zip] ??= { city: c.name, tier: "A" };
-}
+const zips = (data as unknown as { zips: Record<string, [string, string]> }).zips;
+export const coverageDate = (data as unknown as { dataDate: string }).dataDate;
 
 export function zipCoverage(zip: string) {
-  return coveredZips[zip] ?? null;
+  const z = zips[zip];
+  return z ? { city: titleCase(z[0]), state: z[1] } : null;
+}
+
+function titleCase(s: string) {
+  return s.toLowerCase().replace(/\b\w/g, (c) => c.toUpperCase());
+}
+
+const countByState: Record<string, number> = {};
+for (const [, st] of Object.values(zips)) countByState[st] = (countByState[st] ?? 0) + 1;
+
+/** Number of ZIP codes in a state where network contractors take HVAC calls. */
+export function zipCountForState(abbr: string) {
+  return countByState[abbr] ?? 0;
 }

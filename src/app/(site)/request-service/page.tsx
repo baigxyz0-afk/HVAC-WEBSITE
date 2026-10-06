@@ -9,7 +9,7 @@ import { PhoneLink } from "@/components/PhoneLink";
 const path = routes.request();
 export const metadata = pageMeta({
   title: "Request HVAC Service",
-  description: "Send a free request and get connected with a licensed HVAC contractor who serves your ZIP code in the Kansas City metro.",
+  description: "Send a free request and get connected with a licensed HVAC contractor who serves your ZIP code anywhere in the U.S.",
   path,
   noindex: true,
 });

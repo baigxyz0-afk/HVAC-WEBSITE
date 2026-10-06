@@ -1,5 +1,5 @@
 import "server-only";
-import type { City, CityService } from "@/content/types";
+import type { City, CityService, State } from "@/content/types";
 import { getService } from "@/content/services";
 import { cityBySlug } from "@/content/locations";
 
@@ -16,6 +16,19 @@ export function cityQuality(c: City) {
   if (c.popularServices.filter((s) => getService(s)).length < 3) reasons.push("fewer than 3 services");
   if (c.nearby.length < 1) reasons.push("no nearby links");
   return { ok: reasons.length === 0 && c.status === "PUBLISHED", localWords, reasons };
+}
+
+// State hubs must carry state-specific substance: climate, fuel mix, local risks, focus services and FAQs.
+export function stateQuality(s: State) {
+  const localWords =
+    words(s.intro) + s.details.reduce((n, d) => n + words(d.body), 0) + (s.focus ?? []).reduce((n, f) => n + words(f.why), 0);
+  const reasons: string[] = [];
+  if (localWords < 180) reasons.push(`local copy ${localWords} < 180 words`);
+  if (s.details.length < 3) reasons.push("fewer than 3 detail sections");
+  if (s.faqs.length < 2) reasons.push("fewer than 2 FAQs");
+  if ((s.glance ?? []).length < 3) reasons.push("missing at-a-glance facts");
+  if ((s.focus ?? []).filter((f) => getService(f.service)).length < 3) reasons.push("fewer than 3 focus services");
+  return { ok: reasons.length === 0 && s.status === "PUBLISHED", localWords, reasons };
 }
 
 export function cityServiceQuality(cs: CityService) {

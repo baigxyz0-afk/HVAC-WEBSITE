@@ -8,7 +8,7 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 
 const title = "Contact Tallgrass Heating & Air";
-const description = "Call or send a request to get connected with a licensed HVAC contractor in the Kansas City metro. Smell gas? Leave and call the gas utility first.";
+const description = "Call or send a request to get connected with a licensed HVAC contractor anywhere in the United States. Smell gas? Leave and call the gas utility first.";
 const path = routes.contact();
 export const metadata = pageMeta({ title, description, path });
 

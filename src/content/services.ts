@@ -2,7 +2,7 @@ import type { Category, Service } from "./types";
 import { servicesMore } from "./servicesMore";
 
 export const categories: Category[] = [
-  { slug: "cooling", name: "Air Conditioning", blurb: "AC repair, replacement and tune-ups for Kansas City summers.", icon: "snow" },
+  { slug: "cooling", name: "Air Conditioning", blurb: "AC repair, replacement and tune-ups for every climate.", icon: "snow" },
   { slug: "heating", name: "Furnaces & Heating", blurb: "Gas furnace repair, replacement and safety checks.", icon: "flame" },
   { slug: "heat-pumps", name: "Heat Pumps", blurb: "Heat pump repair and installation, including cold-climate models.", icon: "heatpump" },
   { slug: "ductless", name: "Ductless Mini-Splits", blurb: "Mini-splits for additions, finished basements and hot rooms.", icon: "fan" },
@@ -20,14 +20,14 @@ const core: Service[] = [
     shortName: "AC repair",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Repair in Kansas City, MO & KS",
+    seoTitle: "AC Repair: Common Causes, Fixes & Costs",
     metaDescription:
-      "Air conditioner repair across the Kansas City metro: warm air, frozen coils, tripped breakers and dead condensers. Call or request service.",
-    h1: "AC repair in the Kansas City metro",
+      "Air conditioner repair explained: warm air, frozen coils, tripped breakers and dead condensers. Call or request service.",
+    h1: "Air conditioner repair",
     answer:
       "Most air conditioner failures come down to a handful of parts: the capacitor, the contactor, the condenser fan motor, a clogged condensate drain, low refrigerant from a leak, or restricted airflow. A licensed HVAC technician tests the system, names the failed part and quotes the repair before doing it.",
     intro: [
-      "Kansas City summers bring long runs of 90-degree days with high humidity, and that's when worn parts fail. Capacitors weaken in the heat, contactors pit after years of cycling, and cottonwood fluff clogs condenser coils every June.",
+      "Most breakdowns happen during the first long heat wave of the year, when worn parts finally fail. Capacitors weaken in the heat, contactors pit after years of cycling, and pollen, cottonwood fluff and dust clog condenser coils. In humid climates, clogged condensate drains are a leading cause of shutdowns.",
       "Before a technician arrives, check the simple things: the thermostat is set to cool, the filter isn't packed, the furnace door is closed, and the breaker for the outdoor unit hasn't tripped. If the indoor coil is iced over, switch the system off and run the fan so it thaws.",
     ],
     signs: [
@@ -75,15 +75,15 @@ const core: Service[] = [
     shortName: "AC replacement",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Replacement & Installation, Kansas City",
+    seoTitle: "AC Replacement & Installation: Sizing and Costs",
     metaDescription:
-      "Central air conditioner replacement in Kansas City: load calculation, matched coil, line set, pad and permit. Get connected with a licensed HVAC contractor.",
+      "Central air conditioner replacement explained: load calculation, matched coil, line set, pad and permit. Get connected with a licensed HVAC contractor.",
     h1: "Air conditioner replacement and installation",
     answer:
       "Replacing a central air conditioner means sizing it to the house with a load calculation, matching the outdoor unit to a compatible indoor coil, and flushing or replacing the refrigerant lines. Most replacements take one day and need a city mechanical permit.",
     intro: [
-      "Many Kansas City homes still run air conditioners installed in the 2000s, some on the phased-out R-22 refrigerant. When one of those needs a compressor or a large refrigerant repair, replacement usually makes more sense.",
-      "Size matters more than brand. An oversized unit cools the air quickly but leaves the house clammy in humid July weather. A Manual J load calculation, not the old unit's tonnage, should set the size.",
+      "Millions of homes still run air conditioners installed in the 2000s, some on the phased-out R-22 refrigerant. When one of those needs a compressor or a large refrigerant repair, replacement usually makes more sense.",
+      "Size matters more than brand. An oversized unit cools the air quickly but leaves the house clammy in humid weather and short-cycles in dry climates. A Manual J load calculation, not the old unit's tonnage, should set the size.",
     ],
     signs: [
       "System is 12 to 15 years old or older",
@@ -103,12 +103,12 @@ const core: Service[] = [
       "Single-stage vs. two-stage or variable-speed",
       "Whether the indoor coil and furnace are replaced too",
       "Line set replacement and pad work",
-      "Utility rebates from Evergy for qualifying equipment",
+      "Utility and state rebates for qualifying equipment",
     ],
     faqs: [
       { q: "Should I replace my furnace at the same time?", a: "If the furnace is over 15 years old, pairing them usually saves on labor and gets a matched system. A newer furnace can stay." },
       { q: "What size air conditioner do I need?", a: "It depends on insulation, windows, orientation and ductwork, not just square footage. Ask for a Manual J load calculation." },
-      { q: "Are there rebates in Kansas City?", a: "Evergy has offered rebates on qualifying high-efficiency equipment, and federal tax credits apply to some heat pumps. The contractor can confirm current programs." },
+      { q: "Are there rebates for a new air conditioner?", a: "Many utilities and states offer rebates on qualifying high-efficiency equipment, and federal tax credits have applied to some heat pumps. The contractor can confirm what applies at your address." },
     ],
     related: ["ac-repair", "heat-pump-installation", "furnace-installation", "smart-thermostats"],
     isEmergencyCapable: false,
@@ -126,15 +126,15 @@ const core: Service[] = [
     shortName: "AC tune-up",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Tune-Up & Maintenance in Kansas City",
+    seoTitle: "AC Tune-Up & Maintenance Checklist",
     metaDescription:
-      "Spring AC tune-ups for Kansas City homes: coil cleaning, capacitor test, drain flush and refrigerant check before the summer heat.",
+      "What a spring AC tune-up includes: coil cleaning, capacitor test, drain flush and refrigerant check before the summer heat.",
     h1: "Air conditioner tune-up and maintenance",
     answer:
       "An AC tune-up cleans the condenser coil, tests the capacitor and contactor, flushes the condensate drain, checks refrigerant pressures and measures airflow. Doing it in April or May catches weak parts before the first heat wave.",
     intro: [
       "Most no-cooling calls in July trace back to parts that were already weak in spring. A capacitor testing below its rating or a pitted contactor is cheap to replace on a scheduled visit.",
-      "Kansas City's cottonwood season packs condenser fins with fluff in late May and June, which raises head pressure and power use. A proper coil cleaning is the most valuable part of the visit.",
+      "Pollen, cottonwood fluff, dust and grass clippings pack condenser fins every season, which raises head pressure and power use. A proper coil cleaning is the most valuable part of the visit.",
     ],
     signs: ["No maintenance in the last two years", "Condenser fins matted with cottonwood or grass", "Longer run times than last summer", "Condensate drain has backed up before", "Musty smell when cooling starts"],
     process: [
@@ -164,14 +164,14 @@ const core: Service[] = [
     shortName: "Furnace repair",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Repair in Kansas City, MO & KS",
+    seoTitle: "Furnace Repair: No Heat Causes & Fixes",
     metaDescription:
-      "Gas furnace repair in the Kansas City metro: no heat, short cycling, ignitor and flame sensor failures, and blower problems. Call or request service.",
-    h1: "Furnace repair in the Kansas City metro",
+      "Gas furnace repair explained: no heat, short cycling, ignitor and flame sensor failures, and blower problems. Call or request service.",
+    h1: "Furnace repair",
     answer:
       "When a gas furnace won't heat, the usual causes are a dirty flame sensor, a failed hot-surface ignitor, a blocked condensate line or flue, a tripped limit switch from a clogged filter, or a failed inducer or blower motor. A technician reads the control board's error code, tests the parts and quotes the repair.",
     intro: [
-      "Kansas City winters swing from mild days to arctic blasts that drop below zero, and the first cold snap in November brings a wave of furnaces that haven't run since spring. Flame sensors and ignitors are the most common failures.",
+      "The first cold snap of every heating season brings a wave of furnaces that haven't run since spring. Flame sensors and ignitors are the most common failures.",
       "High-efficiency furnaces drain condensate through plastic lines that can freeze where they exit the house, which shuts the furnace down in the coldest weather. If your furnace stops during a deep freeze, that line is worth checking.",
     ],
     signs: ["Furnace starts, then shuts off within a minute", "Blower runs but air is cold", "Clicking with no ignition", "Flashing light code on the control board", "Rattling, squealing or booming at startup"],
@@ -184,11 +184,11 @@ const core: Service[] = [
     costFactors: ["Part that failed (flame sensor vs. inducer motor vs. control board)", "Furnace age and parts availability", "Nights, weekends and holidays", "Heat exchanger condition"],
     diy: {
       safe: ["Replace the filter", "Check that the furnace switch and breaker are on", "Make sure the front panel is seated", "Clear snow from the intake and exhaust pipes outside"],
-      stop: ["Any gas smell: leave and call Spire or Kansas Gas Service", "Removing gas valves or burners", "Bypassing a safety switch"],
+      stop: ["Any gas smell: leave and call your gas utility or 911", "Removing gas valves or burners", "Bypassing a safety switch"],
     },
     faqs: [
       { q: "Why does my furnace keep shutting off?", a: "Short cycling usually points to a dirty flame sensor, a clogged filter tripping the high-limit switch, or a blocked vent or condensate line." },
-      { q: "What do I do if I smell gas?", a: "Leave the house without flipping switches and call your gas utility's emergency line from outside. Spire serves most of the Missouri side and Kansas Gas Service most of the Kansas side." },
+      { q: "What do I do if I smell gas?", a: "Leave the house without flipping switches and call your gas utility's emergency line or 911 from outside." },
       { q: "Is a cracked heat exchanger dangerous?", a: "It can let combustion gases, including carbon monoxide, into the air stream. A technician who finds one will usually shut the furnace off, which is the correct call." },
     ],
     related: ["furnace-installation", "furnace-tune-up", "emergency-hvac-repair", "heat-pump-repair"],
@@ -207,15 +207,15 @@ const core: Service[] = [
     shortName: "Furnace replacement",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Replacement & Installation, Kansas City",
+    seoTitle: "Furnace Replacement: 80% vs. 96% & Costs",
     metaDescription:
-      "Gas furnace replacement for Kansas City homes: sizing, 80% vs. 96% efficiency, venting, condensate and permits. Get connected with a licensed HVAC pro.",
+      "Gas furnace replacement explained: sizing, 80% vs. 96% efficiency, venting, condensate and permits. Get connected with a licensed HVAC pro.",
     h1: "Furnace replacement and installation",
     answer:
       "Replacing a furnace means choosing between an 80% furnace that vents through the existing chimney or flue and a 90%-plus condensing furnace that vents through PVC pipe and needs a condensate drain. Most installs take one day and need a mechanical permit.",
     intro: [
-      "Many older Kansas City homes, especially the brick and frame houses in Brookside, Waldo and Overland Park's first-ring suburbs, have basement furnaces that vent into a masonry chimney. Moving to a high-efficiency furnace means new PVC venting and often a chimney liner for the water heater left behind.",
-      "In a climate with 4,700-plus heating degree days a year, a condensing furnace pays back faster than it would farther south, but the venting work has to be planned.",
+      "Many older homes, especially pre-war brick and frame houses in Northern and Midwestern cities, have basement furnaces that vent into a masonry chimney. Moving to a high-efficiency furnace means new PVC venting and often a chimney liner for the water heater left behind.",
+      "In cold climates with long heating seasons, a condensing furnace pays back faster than it would in the South, but the venting work has to be planned.",
     ],
     signs: ["Furnace is 18–20 years old or more", "Cracked heat exchanger found", "Repeated repairs in the last two winters", "Uneven heat and rising gas bills", "Yellow, lazy burner flames"],
     process: [
@@ -224,10 +224,10 @@ const core: Service[] = [
       { title: "Install", body: "Remove the old furnace, set the new one, and connect gas, venting, condensate and the AC coil." },
       { title: "Commission", body: "Check gas pressure, combustion, temperature rise and CO, then schedule the permit inspection." },
     ],
-    costFactors: ["80% vs. 90%+ efficiency", "Venting changes and chimney liner", "Single-stage, two-stage or modulating burner", "Whether the AC coil is replaced at the same time", "Spire or Kansas Gas Service rebates, when offered"],
+    costFactors: ["80% vs. 90%+ efficiency", "Venting changes and chimney liner", "Single-stage, two-stage or modulating burner", "Whether the AC coil is replaced at the same time", "Gas utility rebates, when offered"],
     faqs: [
       { q: "How long does a furnace last?", a: "Typically 15 to 20 years with maintenance. Cracked heat exchangers and failing inducer motors are common end-of-life signs." },
-      { q: "Is a 96% furnace worth it in Kansas City?", a: "Usually, given the long heating season, unless the venting changes would be unusually expensive. The contractor should show both options." },
+      { q: "Is a 96% furnace worth it?", a: "In cold and mixed climates it usually is, unless the venting changes would be unusually expensive. In warm climates an 80% furnace or a heat pump often makes more sense. The contractor should show both options." },
     ],
     related: ["furnace-repair", "heat-pump-installation", "ac-installation", "whole-house-humidifiers"],
     isEmergencyCapable: false,
@@ -244,14 +244,14 @@ const core: Service[] = [
     shortName: "Furnace tune-up",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Tune-Up & Safety Check, Kansas City",
+    seoTitle: "Furnace Tune-Up & Safety Check Checklist",
     metaDescription:
-      "Fall furnace tune-ups for Kansas City homes: flame sensor cleaning, combustion and CO checks, venting inspection and filter change.",
+      "What a fall furnace tune-up includes: flame sensor cleaning, combustion and CO checks, venting inspection and filter change.",
     h1: "Furnace tune-up and safety check",
     answer:
       "A furnace tune-up cleans the flame sensor, checks the ignitor, burners, gas pressure and venting, tests for carbon monoxide, and inspects the heat exchanger. Doing it in September or October avoids the rush when the first cold front hits.",
     intro: [
-      "The first cold snap of the year brings a wave of no-heat calls in the metro. A fall safety check finds the dirty flame sensor or cracked ignitor before you need the heat.",
+      "The first cold snap of the year brings a wave of no-heat calls everywhere. A fall safety check finds the dirty flame sensor or cracked ignitor before you need the heat.",
       "The combustion and carbon monoxide check matters most for older furnaces and homes where the water heater shares the chimney.",
     ],
     signs: ["No service in two years", "Furnace needed a reset last winter", "Soot or rust near the burners", "CO alarm has sounded", "Water heater shares the flue"],
@@ -281,14 +281,14 @@ const core: Service[] = [
     shortName: "Emergency repair",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Emergency Heating & AC Repair, Kansas City",
+    seoTitle: "Emergency Heating & AC Repair: What Counts",
     metaDescription:
-      "No heat in a cold snap or no AC in a heat wave? Get connected with an available licensed HVAC technician in the Kansas City metro.",
+      "No heat in a cold snap or no AC in a heat wave? Get connected with an available licensed HVAC technician near you.",
     h1: "Emergency heating and air conditioning repair",
     answer:
       "No heat when temperatures drop below freezing, or no cooling in extreme heat with elderly residents, infants or health conditions in the home, is worth an urgent call. Check the breaker, thermostat, filter and outdoor vent pipes first, then call.",
     intro: [
-      "Kansas City's extremes are what make HVAC failures urgent. Pipes can freeze within hours in a house without heat during a subzero night, and summer heat indexes over 105 are dangerous for vulnerable people.",
+      "Weather extremes are what make HVAC failures urgent. Pipes can freeze within hours in a house without heat during a hard freeze, and summer heat indexes over 105 are dangerous for vulnerable people.",
       "If you smell gas or a carbon monoxide alarm sounds, leave the house and call the gas utility or 911 first. An HVAC technician comes after the home is safe.",
     ],
     signs: ["No heat and the house is dropping below 55°F", "No cooling during a heat advisory", "Burning smell from the furnace or air handler", "CO alarm sounding", "Breaker trips repeatedly"],
@@ -315,9 +315,9 @@ const core: Service[] = [
     shortName: "Heat pump repair",
     category: "heat-pumps",
     status: "PUBLISHED",
-    seoTitle: "Heat Pump Repair in Kansas City, MO & KS",
+    seoTitle: "Heat Pump Repair: Ice, Defrost & Cold Air",
     metaDescription:
-      "Heat pump repair in the Kansas City metro: iced outdoor units, defrost problems, reversing valves and backup heat. Call or request service.",
+      "Heat pump repair explained: iced outdoor units, defrost problems, reversing valves and backup heat. Call or request service.",
     h1: "Heat pump repair",
     answer:
       "A heat pump that blows cool air in winter, stays coated in ice, or leans constantly on its electric backup heat usually has a defrost control, sensor, reversing valve or refrigerant problem. A technician tests the system in both heating and cooling modes.",
@@ -350,12 +350,12 @@ const core: Service[] = [
     shortName: "Heat pumps",
     category: "heat-pumps",
     status: "PUBLISHED",
-    seoTitle: "Heat Pump Installation in Kansas City",
+    seoTitle: "Heat Pump Installation: Cold-Climate & Dual-Fuel",
     metaDescription:
-      "Heat pump and dual-fuel installation for Kansas City homes: cold-climate models, gas furnace backup, sizing and available tax credits.",
+      "Heat pump and dual-fuel installation explained: cold-climate models, gas furnace backup, sizing and available tax credits.",
     h1: "Heat pump installation",
     answer:
-      "A heat pump heats and cools with one outdoor unit. In Kansas City, many homes pair it with a gas furnace (a dual-fuel system) that takes over in the coldest weather, while cold-climate heat pumps can heat well below zero without gas backup.",
+      "A heat pump heats and cools with one outdoor unit. In warm climates a heat pump usually handles all the heating. In colder regions, many homes pair it with a gas furnace (a dual-fuel system), while cold-climate heat pumps can heat well below zero.",
     intro: [
       "When an air conditioner needs replacing, swapping in a heat pump costs somewhat more and adds efficient heating for fall and spring. With a dual-fuel setup, the gas furnace still covers the January cold snaps.",
       "Federal tax credits have applied to qualifying heat pumps, and utilities have offered rebates. The contractor can confirm what's current for your home.",
@@ -368,7 +368,7 @@ const core: Service[] = [
     ],
     costFactors: ["Standard vs. cold-climate model", "Dual-fuel controls", "Electrical upgrades", "Tax credits and rebates"],
     faqs: [
-      { q: "Do heat pumps work in Kansas City winters?", a: "Yes. Standard heat pumps handle most winter days, and cold-climate models keep heating well below zero. Dual-fuel systems use gas for the coldest hours." },
+      { q: "Do heat pumps work in cold climates?", a: "Yes. Cold-climate models keep heating well below zero, and dual-fuel systems use gas for the coldest hours. Check your state guide for how common they are where you live." },
     ],
     related: ["heat-pump-repair", "ac-installation", "ductless-mini-splits", "furnace-installation"],
     isEmergencyCapable: false,
@@ -384,9 +384,9 @@ const core: Service[] = [
     shortName: "Mini-splits",
     category: "ductless",
     status: "PUBLISHED",
-    seoTitle: "Ductless Mini-Split Installation, Kansas City",
+    seoTitle: "Ductless Mini-Split Installation Guide",
     metaDescription:
-      "Ductless mini-split installation for Kansas City additions, finished basements, sunrooms, garages and hot upstairs rooms.",
+      "Ductless mini-split installation for additions, finished basements, sunrooms, garages and hot upstairs rooms.",
     h1: "Ductless mini-split installation",
     answer:
       "A ductless mini-split is a small heat pump with an outdoor unit and one or more wall, ceiling or floor heads. It heats and cools a room or zone without ductwork, which makes it a good fit for additions, finished attics, sunrooms and garages.",
@@ -416,14 +416,14 @@ const core: Service[] = [
     shortName: "Air filtration",
     category: "air-quality",
     status: "PUBLISHED",
-    seoTitle: "Whole-Home Air Filtration in Kansas City",
+    seoTitle: "Whole-Home Air Filtration & MERV Ratings",
     metaDescription:
-      "Whole-home air filters and purifiers for Kansas City homes: media filters, MERV ratings and help for spring and fall allergy seasons.",
+      "Whole-home air filters and purifiers: media filters, MERV ratings and help for allergy seasons and wildfire smoke.",
     h1: "Whole-home air filtration",
     answer:
       "A whole-home media filter cabinet holds a 4- or 5-inch filter at MERV 11 to 13, which catches much more pollen and dust than a 1-inch filter without choking airflow. It's installed in the return duct next to the furnace.",
     intro: [
-      "The Kansas City area has long pollen seasons: tree pollen in spring, grass in early summer, and ragweed into October. A better filter is the simplest upgrade for allergy households.",
+      "Pollen seasons, dust and wildfire smoke affect indoor air across much of the country. A better filter is the simplest upgrade for allergy households.",
       "Thin, high-MERV 1-inch filters can restrict airflow enough to freeze AC coils. A deeper media cabinet solves that.",
     ],
     signs: ["Allergies worse indoors", "Dust returns quickly after cleaning", "Pets in the home", "Nearby construction or renovation"],
@@ -445,12 +445,12 @@ const core: Service[] = [
     shortName: "Humidity control",
     category: "air-quality",
     status: "PUBLISHED",
-    seoTitle: "Whole-House Humidifiers & Dehumidifiers, KC",
+    seoTitle: "Whole-House Humidifiers & Dehumidifiers",
     metaDescription:
-      "Humidity control for Kansas City homes: furnace-mounted humidifiers for dry winters and whole-house dehumidifiers for humid basements.",
+      "Whole-house humidity control: furnace-mounted humidifiers for dry winters and whole-house dehumidifiers for humid basements.",
     h1: "Whole-house humidifiers and dehumidifiers",
     answer:
-      "Kansas City air is dry in winter and humid in summer. A furnace-mounted humidifier keeps winter humidity around 30 to 40 percent, and a whole-house dehumidifier keeps basements and summer air below about 50 percent.",
+      "Heated winter air is dry almost everywhere, and summers are humid across much of the East and South. A furnace-mounted humidifier keeps winter humidity around 30 to 40 percent, and a whole-house dehumidifier keeps basements and summer air below about 50 percent.",
     intro: [
       "Heated winter air in the metro can drop into the teens for relative humidity, which means static shocks, cracked wood floors and dry sinuses.",
       "In summer, basements stay damp and musty. A ducted dehumidifier handles that better than a portable unit you have to empty.",
@@ -474,14 +474,14 @@ const core: Service[] = [
     shortName: "Duct sealing",
     category: "ductwork",
     status: "PUBLISHED",
-    seoTitle: "Duct Sealing & Repair in Kansas City",
+    seoTitle: "Duct Sealing & Repair: Fix Hot Rooms",
     metaDescription:
-      "Duct sealing and repair for Kansas City homes: leaky attic ducts, disconnected runs, weak airflow to upstairs rooms and hot bedrooms.",
+      "Duct sealing and repair: leaky attic ducts, disconnected runs, weak airflow to upstairs rooms and hot bedrooms.",
     h1: "Duct sealing and repair",
     answer:
       "Leaky or disconnected ducts waste conditioned air into attics, crawlspaces and wall cavities, which leaves far rooms weak and bills high. A technician finds leaks, seals joints with mastic, reconnects runs and balances airflow.",
     intro: [
-      "Two-story homes in Johnson County and the Northland often run upstairs ducts through hot attics. A disconnected or crushed run there explains the bedroom that never cools.",
+      "Two-story homes often run upstairs ducts through hot attics, and Southern homes frequently have ducts in crawlspaces. A disconnected or crushed run there explains the bedroom that never cools.",
       "Older homes may have undersized returns, which starve the system of air no matter how new the equipment is.",
     ],
     signs: ["One room much hotter or colder", "Weak airflow at far registers", "Dusty house", "Whistling returns"],
@@ -503,9 +503,9 @@ const core: Service[] = [
     shortName: "Thermostats",
     category: "controls",
     status: "PUBLISHED",
-    seoTitle: "Smart Thermostat Installation in Kansas City",
+    seoTitle: "Smart Thermostat Installation & C-Wire Help",
     metaDescription:
-      "Smart thermostat installation in the Kansas City metro: C-wire, heat pump and dual-fuel wiring, and utility programs.",
+      "Smart thermostat installation: C-wire, heat pump and dual-fuel wiring, and utility programs.",
     h1: "Smart thermostat installation",
     answer:
       "A smart thermostat learns your schedule and can be controlled by phone. Most need a C-wire for steady power, and heat pump or dual-fuel systems need correct staging setup, which is where a technician helps.",
@@ -531,14 +531,14 @@ const core: Service[] = [
     shortName: "Zoning",
     category: "controls",
     status: "PUBLISHED",
-    seoTitle: "HVAC Zoning Systems for Kansas City Homes",
+    seoTitle: "HVAC Zoning Systems for Multi-Level Homes",
     metaDescription:
-      "HVAC zoning for Kansas City two-story homes: motorized dampers and separate thermostats to fix hot upstairs and cold basements.",
+      "HVAC zoning for two-story and multi-level homes: motorized dampers and separate thermostats to fix hot upstairs and cold basements.",
     h1: "HVAC zoning systems",
     answer:
       "Zoning uses motorized dampers in the ductwork and a thermostat per zone, so one furnace and AC can send air where it's needed. It's the common fix for two-story homes where upstairs is hot in summer and the basement is cold in winter.",
     intro: [
-      "Many two-story homes built in the 1990s and 2000s across Johnson County, Lee's Summit and the Northland have one thermostat downstairs. Upstairs runs several degrees warmer all summer.",
+      "Many two-story homes built in the 1990s and 2000s across the suburbs of most U.S. metros have one thermostat downstairs. Upstairs runs several degrees warmer all summer.",
       "Zoning works best with a two-stage or variable-speed system and a bypass or proper duct design to protect the equipment.",
     ],
     signs: ["Upstairs 4°F or more warmer than downstairs", "Finished basement always cold", "Constant thermostat fights"],

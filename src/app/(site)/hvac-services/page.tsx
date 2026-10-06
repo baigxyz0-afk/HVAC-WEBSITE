@@ -10,9 +10,9 @@ import { JsonLd, ServiceCard } from "@/components/ui";
 import { Icon } from "@/components/icons";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Heating & Cooling Services in Kansas City";
+const title = "Heating & Air Conditioning Services";
 const description =
-  "Every HVAC service we connect Kansas City homeowners with: AC repair and replacement, furnaces, heat pumps, mini-splits, air quality, ductwork and thermostats.";
+  "Every HVAC service we connect homeowners with nationwide: AC repair and replacement, furnaces, heat pumps, mini-splits, air quality, ductwork and thermostats.";
 const path = routes.services();
 
 export const metadata = pageMeta({ title, description, path });
@@ -28,7 +28,7 @@ export default function ServicesHub() {
       <Hero
         crumbs={crumbs}
         eyebrow="HVAC services"
-        title="Heating and cooling services for Kansas City homes"
+        title="Heating and air conditioning services"
         lead={<p>Eight categories, 21 services, each explained with the signs, the process and what drives cost. Pick a service, or call and describe the problem.</p>}
         facts={[availability, "Licensed local contractors"]}
         photo={photos.technician}

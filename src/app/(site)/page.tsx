@@ -4,7 +4,8 @@ import { routes } from "@/lib/routes";
 import { pageGraph, graph, ids } from "@/lib/schema";
 import { site, availability, BRAND_PROMISE } from "@/content/site";
 import { categories, servicesInCategory, getService } from "@/content/services";
-import { regions, publishedCities } from "@/content/locations";
+import { publishedCities } from "@/content/locations";
+import { indexableStates } from "@/lib/sitemap";
 import { publishedArticles } from "@/content/articles";
 import { generalFaqs, problems } from "@/content/misc";
 import Image from "next/image";
@@ -18,9 +19,9 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { beforeAfter } from "@/content/beforeAfter";
 
-const title = "Kansas City Heating & AC Help: Repair, Furnaces, Heat Pumps";
+const title = "Heating & AC Repair Help in All 50 States";
 const description =
-  "Connect with a licensed HVAC contractor for AC repair, furnace repair, heat pumps and replacements across Kansas City, Overland Park, Olathe and Lee's Summit.";
+  "Connect with an independent, licensed HVAC contractor for AC repair, furnace repair, heat pumps and replacements. State guides for all 50 states and D.C.";
 
 export const metadata = pageMeta({ title, description, path: "/" });
 
@@ -31,11 +32,11 @@ export default function Home() {
     <main id="main" data-home>
       <JsonLd data={graph(pageGraph({ path: "/", name: title, description, crumbs: [{ name: "Home", path: "/" }], faqs, about: [ids.org] }))} />
       <Hero
-        eyebrow="Kansas City metro · Missouri & Kansas"
-        title="Heating and air help built for Kansas City's extremes"
+        eyebrow="All 50 states · Washington, D.C."
+        title="Heating and air conditioning help, wherever you live"
         lead={
           <p>
-            100-degree summers, subzero cold snaps and a housing stock that runs from 1920s bungalows to new two-stories make heating and cooling work here. {BRAND_PROMISE}
+            Desert heat, Gulf Coast humidity, Northern cold and mountain altitude all change what a home needs from its heating and cooling. {BRAND_PROMISE}
           </p>
         }
         facts={[availability, "Licensed local contractors", "Free to request"]}
@@ -74,7 +75,7 @@ export default function Home() {
 
       <section className="py-16">
         <div className="container-x">
-          <SectionHeading eyebrow="Services" title="What Kansas City homes call an HVAC pro for" lead="Seven categories built around how heating and cooling actually fail here." />
+          <SectionHeading eyebrow="Services" title="What homeowners call an HVAC pro for" lead="Seven categories built around how heating and cooling actually fail here." />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((c) => {
               const list = servicesInCategory(c.slug);
@@ -134,12 +135,12 @@ export default function Home() {
 
       <section className="bg-ink py-16 text-white">
         <div className="container-x">
-          <SectionHeading light eyebrow="Local knowledge" title="Why Kansas City heating and cooling is different" />
+          <SectionHeading light eyebrow="Local knowledge" title="Why heating and cooling depends on where you live" />
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { icon: "sun" as const, t: "Hot, humid summers", b: "Long runs of 95-degree days with high humidity push air conditioners hard. Right-sizing matters as much as capacity.", href: routes.guide("ac-running-but-not-cooling") },
-              { icon: "snow" as const, t: "Subzero cold snaps", b: "Arctic outbreaks find weak ignitors and frozen condensate lines. A fall safety check prevents most no-heat nights.", href: routes.guide("furnace-not-turning-on") },
-              { icon: "heatpump" as const, t: "Dual-fuel country", b: "With gas and electric both available, heat pumps paired with furnaces often give the best mix of comfort and cost.", href: routes.guide("heat-pump-vs-furnace-kansas-city") },
+              { icon: "sun" as const, t: "Hot climates", b: "In the South and Southwest, air conditioners run most of the year. Humidity control, attic ducts and heat-related part failures dominate.", href: routes.state("texas") },
+              { icon: "snow" as const, t: "Cold climates", b: "From Minnesota to Maine, the furnace or boiler is the most important appliance, and cold-climate heat pumps are changing how homes heat.", href: routes.state("minnesota") },
+              { icon: "heatpump" as const, t: "Mixed and mountain climates", b: "Four-season states use dual-fuel systems, while altitude, dry air and wildfire smoke shape HVAC across the West.", href: routes.state("colorado") },
             ].map((c) => (
               <div key={c.t} className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
                 <Icon name={c.icon} className="h-8 w-8 text-[#a9d6b2]" />
@@ -188,18 +189,18 @@ export default function Home() {
       <section className="bg-sand-deep py-16">
         <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           <div>
-            <SectionHeading eyebrow="Service area" title="Across Kansas City, MO and KS" lead="City pages cover local housing, utilities and permits." />
-            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {regions.map((r) => (
-                <div key={r.slug}>
-                  <h3 className="font-sans text-sm font-semibold tracking-wider text-muted uppercase">{r.name}</h3>
+            <SectionHeading eyebrow="Service area" title="Help in all 50 states and D.C." lead="Each state guide covers the local climate, common systems and the problems contractors see most." />
+            <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+              {(["Northeast", "Midwest", "South", "West"] as const).map((r) => (
+                <div key={r}>
+                  <h3 className="font-sans text-sm font-semibold tracking-wider text-muted uppercase">{r}</h3>
                   <ul className="mt-2 space-y-1">
-                    {publishedCities
-                      .filter((c) => c.region === r.slug)
-                      .map((c) => (
-                        <li key={c.slug}>
-                          <Link href={routes.city(c.stateSlug, c.slug)} className="link">
-                            {c.name}
+                    {indexableStates()
+                      .filter((s) => s.region === r)
+                      .map((s) => (
+                        <li key={s.slug}>
+                          <Link href={routes.state(s.slug)} className="link">
+                            {s.name}
                           </Link>
                         </li>
                       ))}
@@ -207,6 +208,16 @@ export default function Home() {
                 </div>
               ))}
             </div>
+            <p className="mt-6 text-sm text-muted">
+              City guides:{" "}
+              {publishedCities.slice(0, 6).map((c, i) => (
+                <span key={c.slug}>
+                  {i > 0 && ", "}
+                  <Link href={routes.city(c.stateSlug, c.slug)} className="link">{c.name}</Link>
+                </span>
+              ))}{" "}
+              and more on the <Link href={routes.locations()} className="link">locations page</Link>.
+            </p>
           </div>
           <div className="card self-start p-6">
             <ZipChecker />
@@ -216,7 +227,7 @@ export default function Home() {
 
       <section className="py-16">
         <div className="container-x">
-          <SectionHeading eyebrow="Resources" title="Straight answers for Kansas City homeowners" />
+          <SectionHeading eyebrow="Resources" title="Straight answers for homeowners" />
           <div className="grid gap-5 md:grid-cols-3">
             {publishedArticles.slice(0, 6).map((a) => (
               <Link key={a.slug} href={routes.guide(a.slug)} className="card group p-6">

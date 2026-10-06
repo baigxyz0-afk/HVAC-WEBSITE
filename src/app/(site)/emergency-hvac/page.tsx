@@ -10,9 +10,9 @@ import { FaqList, JsonLd, ServiceCard } from "@/components/ui";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Emergency Heating & AC Repair in Kansas City";
+const title = "Emergency Heating & AC Repair: What to Do Now";
 const description =
-  "No heat in a cold snap, no AC in a heat wave, a CO alarm or a gas smell? What to do right now and how to reach a licensed Kansas City HVAC technician fast.";
+  "No heat in a cold snap, no AC in a heat wave, a CO alarm or a gas smell? What to do right now and how to reach a licensed HVAC technician near you fast.";
 const path = routes.emergency();
 
 const faqs = [
@@ -37,7 +37,7 @@ export default function Emergency() {
         crumbs={crumbs}
         eyebrow="Emergency heating & AC"
         title="No heat or no AC? Make it safe, then call"
-        lead={<p>If you smell gas or a CO alarm sounds, get everyone outside and call 911 or the gas utility first. Otherwise, check the breaker, thermostat and filter, then call and we'll connect you with a licensed HVAC technician in your part of Kansas City.</p>}
+        lead={<p>If you smell gas or a CO alarm sounds, get everyone outside and call 911 or the gas utility first. Otherwise, check the breaker, thermostat and filter, then call and we'll connect you with a licensed HVAC technician who serves your ZIP code.</p>}
         facts={[availability, "No heat · no cooling · furnace lockouts"]}
         photo={photos.condenser}
       />

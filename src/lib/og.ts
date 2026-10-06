@@ -11,7 +11,7 @@ export type OgCard = { key: string; eyebrow: string; title: string };
 export function ogCards(): OgCard[] {
   return indexableUrls().map((u) => {
     const parts = u.path.split("/").filter(Boolean);
-    let eyebrow = "Kansas City heating & air";
+    let eyebrow = "Heating & air conditioning help";
     let title = u.title;
     if (parts[0] === "hvac-services" && parts[1]) {
       const s = getService(parts[1]);
@@ -27,7 +27,7 @@ export function ogCards(): OgCard[] {
       const a = getArticle(parts[1]);
       eyebrow = `Guide · ${a?.category}`;
     } else if (u.path === "/") {
-      title = "Heating and air help built for Kansas City's extremes";
+      title = "Heating and AC help in every state";
     }
     return { key: ogKeyFor(u.path), eyebrow, title };
   });

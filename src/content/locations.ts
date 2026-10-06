@@ -1,49 +1,18 @@
 import type { City, CityService, State } from "./types";
 import { citiesMore } from "./locationsMore";
 import { extraIssues } from "./locationDepth";
+import { northeastMidwest } from "./states/northeastMidwest";
+import { south } from "./states/south";
+import { west } from "./states/west";
+import { stateDepth } from "./states/depth";
+import { stateDepth2 } from "./states/depth2";
 
 const U = "2026-09-28";
 
-export const states: State[] = [
-  {
-    slug: "missouri",
-    name: "Missouri",
-    abbr: "MO",
-    status: "PUBLISHED",
-    intro:
-      "Tallgrass Heating & Air connects homeowners on the Missouri side of the Kansas City metro, in Jackson and Clay counties, with independent, licensed HVAC contractors. The Missouri side has the metro's oldest housing: brick bungalows, Tudors and foursquares with basement furnaces, gravity-era ductwork and masonry chimneys, alongside newer subdivisions in the Northland and eastern Jackson County.",
-    details: [
-      { heading: "Housing stock", body: "Kansas City's older neighborhoods, including Brookside, Waldo, Midtown and the Northeast, hold homes from the 1900s through the 1940s, many with basement furnaces that replaced coal or gravity systems and undersized return air. Independence and Raytown filled in after World War II. Lee's Summit, Blue Springs and the Northland grew fastest from the 1980s on, with two-story homes and attic ductwork." },
-      { heading: "Utilities", body: "Evergy supplies electricity to most of the Missouri side, and Independence Power & Light serves Independence. Spire supplies natural gas to most Missouri-side homes. Utility rebate programs change from year to year, so ask the contractor what applies when you replace equipment." },
-      { heading: "Permits and licensing", body: "Missouri has no statewide HVAC contractor license. Cities license and permit mechanical work themselves. Kansas City, Missouri, requires licensed mechanical contractors and permits for furnace and AC replacement, as do Independence, Lee's Summit and most other metro cities." },
-      { heading: "Climate", body: "Summer highs regularly top 95°F with high humidity, and winter cold snaps can drop below zero. HVAC systems here work hard in both seasons, which is why both AC and furnace maintenance matter." },
-    ],
-    faqs: [
-      { q: "Does Missouri license HVAC contractors?", a: "Not at the state level. Cities such as Kansas City, Independence and Lee's Summit license contractors and issue mechanical permits locally." },
-      { q: "Who do I call if I smell gas on the Missouri side?", a: "Leave the home and call Spire's emergency line or 911 from outside." },
-    ],
-    updated: U,
-  },
-  {
-    slug: "kansas",
-    name: "Kansas",
-    abbr: "KS",
-    status: "PUBLISHED",
-    intro:
-      "On the Kansas side, Tallgrass Heating & Air connects homeowners in Johnson and Wyandotte counties with independent, licensed HVAC contractors. Johnson County is mostly post-1960 suburbs with basements and two-story homes; Kansas City, Kansas, has older housing closer to the river.",
-    details: [
-      { heading: "Housing stock", body: "Prairie Village, Mission and north Overland Park were built in the late 1940s through the 1960s as ranch and split-level homes with basement furnaces. South Overland Park, Olathe, Lenexa and Shawnee grew from the 1980s on with two-story homes, attic ductwork and larger systems. Kansas City, Kansas, has a mix of early-1900s homes and postwar neighborhoods." },
-      { heading: "Utilities", body: "Evergy supplies electricity to most of Johnson County, while the Board of Public Utilities (BPU) serves Kansas City, Kansas. Kansas Gas Service supplies natural gas to most Kansas-side homes." },
-      { heading: "Permits and licensing", body: "Johnson County cities use a shared contractor licensing program run by Johnson County, and each city issues its own mechanical permits. Kansas City, Kansas, and Wyandotte County license and permit through the Unified Government." },
-      { heading: "Climate", body: "The Kansas side shares the metro's hot, humid summers and cold, windy winters. Hail storms in spring can damage condenser fins and coils." },
-    ],
-    faqs: [
-      { q: "How do I check an HVAC contractor's license in Johnson County?", a: "Johnson County's contractor licensing program lists licensed contractors. Your city's permit office can also confirm it." },
-      { q: "Who do I call if I smell gas on the Kansas side?", a: "Leave the home and call Kansas Gas Service's emergency line or 911 from outside." },
-    ],
-    updated: U,
-  },
-];
+// All 50 states + DC. Kansas City metro towns have their own city pages under Missouri and Kansas.
+export const states: State[] = [...northeastMidwest, ...south, ...west]
+  .map((s) => ({ ...s, details: [...s.details, ...(stateDepth[s.slug] ?? []), ...(stateDepth2[s.slug] ? [stateDepth2[s.slug]] : [])] }))
+  .sort((x, y) => x.name.localeCompare(y.name));
 
 export const regions = [
   { slug: "urban", name: "Kansas City core" },

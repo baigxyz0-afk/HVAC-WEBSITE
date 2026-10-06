@@ -43,8 +43,8 @@ export function Header() {
             href="/locations/"
             groups={locations}
             feature={{
-              title: "Across Kansas City",
-              body: "Both sides of the state line: Johnson County, the Northland, eastern Jackson County and the urban core.",
+              title: "All 50 states",
+              body: "State guides to climate, common systems and local HVAC needs, from Alaska to Florida.",
               href: routes.locations(),
               cta: "All service areas",
             }}

@@ -21,9 +21,9 @@ export const redirects: { source: string; destination: string; permanent: boolea
 export const generalFaqs: Faq[] = [
   { q: "How does Tallgrass Heating & Air work?", a: "You call or send a request, and we connect you with an independent, licensed heating and cooling contractor who serves your ZIP code. The contractor quotes and performs the work directly." },
   { q: "Is Tallgrass Heating & Air an HVAC company?", a: "No. We're a referral service. The contractors in our network are independent businesses responsible for their own licensing, pricing and work." },
-  { q: "What areas do you cover?", a: "The Kansas City metro on both sides of the state line, including Kansas City (MO and KS), Independence, Lee's Summit, Blue Springs, Liberty, Gladstone, Overland Park, Olathe, Lenexa, Shawnee and Leawood. Check your ZIP on the locations page." },
+  { q: "What areas do you cover?", a: "Contractors in our network take HVAC calls in all 50 states and Washington, D.C. Coverage varies by ZIP code, so check yours on the locations page." },
   { q: "Does it cost anything to request service?", a: "No. Requesting service is free. You only pay the contractor for work you approve." },
-  { q: "How do I check an HVAC contractor's license?", a: "Missouri cities license mechanical contractors locally, and Johnson County, Kansas, runs a contractor licensing program. Your city's permit office can confirm a license." },
+  { q: "How do I check an HVAC contractor's license?", a: "It depends on the state. Some states license HVAC contractors statewide, while others leave it to cities or counties. Each state guide notes what to check, and your local building department can confirm." },
   { q: "Do you give prices over the phone?", a: "HVAC prices depend on what the technician finds, so each service page explains the cost factors and the contractor quotes after seeing the system." },
 ];
 
@@ -44,7 +44,7 @@ export const landingPages: LandingPage[] = [
     service: "ac-repair",
     canonical: "/hvac-services/ac-repair/",
     headline: "AC not cooling? Talk to a local HVAC technician",
-    sub: "Warm air, an iced coil or an outdoor unit that just hums. Get connected with a licensed Kansas City HVAC contractor who diagnoses before quoting.",
+    sub: "Warm air, an iced coil or an outdoor unit that just hums. Get connected with a licensed local HVAC contractor who diagnoses before quoting.",
     bullets: ["Capacitors, contactors and fan motors often fixed on the first visit", "Price quoted before any work", "Independent, licensed local contractors"],
     signs: ["Warm air from vents", "Outdoor fan not spinning", "Ice on refrigerant lines"],
     expect: ["A short call about what the system is doing", "Connection with a contractor serving your ZIP", "Diagnosis and a written price before repair"],
@@ -56,11 +56,11 @@ export const landingPages: LandingPage[] = [
     service: "furnace-repair",
     canonical: "/hvac-services/furnace-repair/",
     headline: "No heat? Get a furnace technician",
-    sub: "Furnace won't light, keeps shutting off or blows cold air. Get connected with a licensed Kansas City heating contractor.",
+    sub: "Furnace won't light, keeps shutting off or blows cold air. Get connected with a licensed local heating contractor.",
     bullets: ["Ignitor, flame sensor and control board repairs", "Safety and CO checks", "Independent, licensed local contractors"],
     signs: ["No heat", "Furnace short cycling", "Blinking error code"],
     expect: ["Quick checks by phone", "A contractor serving your ZIP", "A quote before any work"],
-    faqs: [{ q: "What if I smell gas?", a: "Leave the home and call Spire or Kansas Gas Service from outside first." }],
+    faqs: [{ q: "What if I smell gas?", a: "Leave the home and call your gas utility's emergency line or 911 from outside first." }],
     kw: { "no-heat": "No heat? Talk to a technician now", "furnace-not-working": "Furnace not working? Get help now" },
   },
   {
@@ -73,7 +73,7 @@ export const landingPages: LandingPage[] = [
     signs: ["System 12–15+ years old", "R-22 refrigerant", "Compressor failure"],
     expect: ["A call about your home and system", "An in-home visit", "Written options"],
     faqs: [{ q: "Should I also replace the furnace?", a: "If it's over 15 years old, pairing them is often worth it." }],
-    kw: { "heat-pump": "Considering a heat pump? Get a quote", "new-ac": "New AC installation in Kansas City" },
+    kw: { "heat-pump": "Considering a heat pump? Get a quote", "new-ac": "New AC installation near you" },
   },
 ];
 

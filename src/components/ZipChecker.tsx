@@ -1,19 +1,22 @@
 "use client";
 import { useState } from "react";
 import Link from "next/link";
-import { coveredZips } from "@/content/coverage";
 import { track } from "@/lib/analytics";
+import { lookupZip, type ZipResult } from "@/lib/zipLookup";
 
 export function ZipChecker({ dark = false }: { dark?: boolean }) {
   const [zip, setZip] = useState("");
-  const [result, setResult] = useState<null | { ok: boolean; city?: string }>(null);
+  const [busy, setBusy] = useState(false);
+  const [result, setResult] = useState<null | ZipResult>(null);
 
-  function check(e: React.FormEvent) {
+  async function check(e: React.FormEvent) {
     e.preventDefault();
     if (!/^\d{5}$/.test(zip)) return setResult({ ok: false });
-    const c = coveredZips[zip];
-    setResult(c ? { ok: true, city: c.city } : { ok: false });
-    track("location_selected", { zip, inArea: Boolean(c) });
+    setBusy(true);
+    const r = await lookupZip(zip);
+    setBusy(false);
+    setResult(r);
+    track("location_selected", { zip, inArea: r.ok });
   }
 
   return (
@@ -30,14 +33,14 @@ export function ZipChecker({ dark = false }: { dark?: boolean }) {
           value={zip}
           onChange={(e) => setZip(e.target.value.replace(/\D/g, ""))}
           className="field"
-          placeholder="e.g. 85308"
+          placeholder="e.g. 64111"
         />
-        <button className="btn btn-primary">Check</button>
+        <button className="btn btn-primary" disabled={busy}>{busy ? "Checking…" : "Check"}</button>
       </div>
       <p aria-live="polite" className={`mt-2 min-h-6 text-sm ${dark ? "text-white/90" : ""}`}>
         {result?.ok && (
           <>
-            ✓ We connect homeowners in {zip} ({result.city}).{" "}
+            ✓ We connect homeowners in {zip} ({result.city}, {result.state}).{" "}
             <Link className={dark ? "underline" : "link"} href={`/request-service/?zip=${zip}`}>
               Request service
             </Link>

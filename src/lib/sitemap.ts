@@ -1,16 +1,19 @@
 import "server-only";
 import { routes } from "./routes";
 import { publishedServices } from "@/content/services";
-import { cities, cityServices, states, getCity, cityBySlug } from "@/content/locations";
+import { cities, cityServices, states, cityBySlug } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
 import { dates } from "@/content/misc";
-import { cityQuality, cityServiceQuality } from "./quality";
+import { cityQuality, cityServiceQuality, stateQuality } from "./quality";
 
-export type SitemapGroup = "pages" | "services" | "locations" | "guides";
+export type SitemapGroup = "pages" | "services" | "states" | "cities" | "local-services" | "guides";
 export type IndexUrl = { path: string; lastmod: string; group: SitemapGroup; title: string };
 
 export function indexableCities() {
   return cities.filter((c) => cityQuality(c).ok);
+}
+export function indexableStates() {
+  return states.filter((s) => stateQuality(s).ok);
 }
 export function indexableCityServices() {
   return cityServices.filter((cs) => cityServiceQuality(cs).ok);
@@ -28,12 +31,12 @@ export function indexableUrls(): IndexUrl[] {
     { path: routes.services(), lastmod: dates.services, group: "services", title: "HVAC services" },
     { path: routes.emergency(), lastmod: dates.services, group: "services", title: "Emergency heating & AC" },
     ...publishedServices.map((s) => ({ path: routes.service(s.slug), lastmod: s.updated, group: "services" as const, title: s.name })),
-    { path: routes.locations(), lastmod: dates.locations, group: "locations", title: "Service areas" },
-    ...states.filter((s) => s.status === "PUBLISHED").map((s) => ({ path: routes.state(s.slug), lastmod: s.updated, group: "locations" as const, title: s.name })),
-    ...indexableCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: c.updated, group: "locations" as const, title: c.name })),
+    { path: routes.locations(), lastmod: dates.locations, group: "states", title: "Service areas" },
+    ...indexableStates().map((s) => ({ path: routes.state(s.slug), lastmod: s.updated, group: "states" as const, title: s.name })),
+    ...indexableCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: c.updated, group: "cities" as const, title: c.name })),
     ...indexableCityServices().map((cs) => {
       const c = cityBySlug(cs.citySlug)!;
-      return { path: routes.cityService(c.stateSlug, c.slug, cs.serviceSlug), lastmod: cs.updated, group: "locations" as const, title: cs.h1 };
+      return { path: routes.cityService(c.stateSlug, c.slug, cs.serviceSlug), lastmod: cs.updated, group: "local-services" as const, title: cs.h1 };
     }),
     { path: routes.resources(), lastmod: dates.guides, group: "guides", title: "Resources" },
     ...publishedArticles.map((a) => ({ path: routes.guide(a.slug), lastmod: a.updated, group: "guides" as const, title: a.title })),

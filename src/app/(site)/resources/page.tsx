@@ -7,9 +7,9 @@ import { Hero } from "@/components/Hero";
 import { JsonLd } from "@/components/ui";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Heating & Cooling Guides for Kansas City Homes";
+const title = "Heating & Cooling Guides for Homeowners";
 const description =
-  "Plain-language Kansas City HVAC guides: AC not cooling, frozen coils, furnace failures, heat pumps, CO alarms, filters and replacement.";
+  "Plain-language HVAC guides: AC not cooling, frozen coils, furnace failures, heat pumps, CO alarms, filters and replacement.";
 const path = routes.resources();
 
 export const metadata = pageMeta({ title, description, path });
