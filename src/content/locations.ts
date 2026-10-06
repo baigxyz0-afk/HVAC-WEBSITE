@@ -50,6 +50,12 @@ export const regions = [
   { slug: "charlotte", name: "Charlotte area" },
   { slug: "triangle", name: "Research Triangle" },
   { slug: "nashville", name: "Nashville area" },
+  { slug: "chicago", name: "Chicago area" },
+  { slug: "detroit", name: "Detroit area" },
+  { slug: "seattle", name: "Seattle area" },
+  { slug: "twin-cities", name: "Twin Cities" },
+  { slug: "indianapolis", name: "Indianapolis area" },
+  { slug: "baltimore", name: "Baltimore area" },
 ] as const;
 
 const core: City[] = [
