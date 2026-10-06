@@ -6,7 +6,7 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 
 **Stack:** Next.js 16 (App Router, static) · React 19 · TypeScript · Tailwind CSS v4 · Zod · sharp.
 
-## Snapshot (2026-10-06): nationwide expansion, Waves 1–2
+## Snapshot (2026-10-06): nationwide expansion, Waves 1–4
 
 | | |
 |---|---|
@@ -16,9 +16,9 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 | Business model | Call brand / referral for LeadSmart buyers. `BRAND_PROMISE` and `DISCLOSURE` are in `src/content/site.ts` |
 | Services | **15 in 7 categories**, rewritten for every U.S. climate (no longer Kansas City-only) |
 | State hubs | **51** at `/locations/{state}/`: intro, 4–5 state-specific sections (climate, fuel mix, risks, seasonal timing, housing/what to ask), at-a-glance facts, focus services with a state-specific reason, major metros, FAQs, same-region links, network ZIP count |
-| Cities | 12 (Kansas City metro) · 3 city+service pages |
-| Indexable URLs | **101** in 6 sitemaps (pages 7, services 17, states 52, cities 12, local-services 3, guides 10), max click depth 2 |
-| Audit | `npm run audit:seo`: **0 errors**. Max sibling-page similarity **0.18** (near-duplicate error threshold 0.6). No horizontal overflow at 375px |
+| Cities | **20**: 12 in the Kansas City metro + 8 in the highest-payout HVAC metros (Denver, Aurora, Las Vegas, Henderson, Salt Lake City, Sandy, Phoenix, Mesa) · **8** city+service pages |
+| Indexable URLs | **114** in 6 sitemaps (pages 7, services 17, states 52, cities 20, local-services 8, guides 10), max click depth 2 |
+| Audit | `npm run audit:seo`: **0 errors, 0 warnings**. Max sibling-page similarity **0.40** (warning 0.45, error 0.6). No horizontal overflow at 375px |
 | Phone | LeadSmart number `(607) 323-6654` (`+16073236654`), shown sitewide and in schema |
 
 ### Quality gates (`src/lib/quality.ts`)
@@ -28,11 +28,16 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 - **City+service:** at least 90 local words and a passing parent city.
 - **Crawl** (`scripts/seo-audit.mjs`): adds 5-word-shingle near-duplicate detection between sibling pages, the ZIP API check and 6-sitemap validation.
 
+### Waves 3–4 (done)
+
+- Cities picked by LeadSmart HVAC payout: UT $72, CO $68, NV $67, AZ $57 average.
+- City+service pages show local content first and link to the main service guide for the general process and DIY steps, plus local FAQs. This is what keeps sibling pages distinct (similarity was 0.56 before this change).
+- The location menu groups the top states by census region; the footer lists all city guides.
+
 ### Next waves (not built yet)
 
-3. City hubs for the largest metros in high-payout states (from `docs/coverage-summary.json`), each only when genuinely local content is written.
-4. City + service pages for the strongest combinations.
-5. Problem-intent pages, where they don't cannibalize existing guides.
+5. More metros in high-payout states (Las Vegas suburbs, Colorado Springs, Tucson, Portland, Boston, Houston), each only with genuinely local content.
+6. Problem-intent pages, where they don't cannibalize existing guides.
 
 ### Kansas City city guides
 

@@ -1,5 +1,5 @@
 import { categories, servicesInCategory } from "@/content/services";
-import { regions, publishedCities } from "@/content/locations";
+import { states, publishedCities, cityLabel } from "@/content/locations";
 import { routes } from "@/lib/routes";
 import type { IconName } from "@/content/types";
 
@@ -14,12 +14,24 @@ export function serviceGroups(): NavGroup[] {
   }));
 }
 
+// Top states per census region by LeadSmart HVAC coverage (docs/coverage-summary.json).
+const TOP: Record<string, string[]> = {
+  Northeast: ["new-york", "pennsylvania", "new-jersey", "massachusetts", "connecticut", "new-hampshire"],
+  Midwest: ["ohio", "illinois", "indiana", "michigan", "minnesota", "missouri"],
+  South: ["texas", "florida", "north-carolina", "georgia", "tennessee", "virginia"],
+  West: ["california", "washington", "arizona", "colorado", "oregon", "nevada"],
+};
+
 export function locationGroups(): NavGroup[] {
-  return regions.map((r) => ({
-    title: r.name,
-    href: `${routes.locations()}#${r.slug}`,
-    links: publishedCities.filter((c) => c.region === r.slug).map((c) => ({ name: c.name, href: routes.city(c.stateSlug, c.slug) })),
+  return Object.entries(TOP).map(([region, slugs]) => ({
+    title: region,
+    href: `${routes.locations()}#${region.toLowerCase()}`,
+    links: slugs.map((s) => states.find((x) => x.slug === s)!).map((s) => ({ name: s.name, href: routes.state(s.slug) })),
   }));
+}
+
+export function cityLinks() {
+  return publishedCities.map((c) => ({ name: cityLabel(c), href: routes.city(c.stateSlug, c.slug) }));
 }
 
 export const companyLinks = [

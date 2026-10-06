@@ -2,11 +2,12 @@ import Link from "next/link";
 import { site, DISCLOSURE } from "@/content/site";
 import { routes } from "@/lib/routes";
 import { Logo } from "../Logo";
-import { serviceGroups, locationGroups, companyLinks } from "./nav";
+import { serviceGroups, locationGroups, cityLinks, companyLinks } from "./nav";
 
 export function Footer() {
   const services = serviceGroups();
-  const cities = locationGroups().flatMap((g) => g.links);
+  const regions = locationGroups();
+  const cities = cityLinks();
   return (
     <footer className="bg-ink pb-24 text-white/85 lg:pb-0">
       <div className="container-x grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4">
@@ -32,7 +33,17 @@ export function Footer() {
         </div>
         <div>
           <h2 className="font-sans text-sm font-semibold tracking-wider text-white uppercase">Service areas</h2>
-          <ul className="mt-3 grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
+          <p className="mt-3 text-sm">
+            <Link href={routes.locations()} className="font-semibold text-white hover:underline">All 50 states + D.C.</Link>
+            {regions.map((r) => (
+              <span key={r.href}>
+                {" · "}
+                <Link href={r.href} className="hover:text-white hover:underline">{r.title}</Link>
+              </span>
+            ))}
+          </p>
+          <h3 className="mt-4 font-sans text-xs font-semibold tracking-wider text-white/70 uppercase">City guides</h3>
+          <ul className="mt-2 grid grid-cols-2 gap-x-4 gap-y-1.5 text-sm">
             {cities.map((c) => (
               <li key={c.href}>
                 <Link href={c.href} className="hover:text-white hover:underline">{c.name}</Link>

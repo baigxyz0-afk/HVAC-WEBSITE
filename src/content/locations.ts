@@ -19,6 +19,10 @@ export const regions = [
   { slug: "johnson", name: "Johnson County, KS" },
   { slug: "east", name: "Eastern Jackson County" },
   { slug: "northland", name: "Northland" },
+  { slug: "denver-metro", name: "Denver metro" },
+  { slug: "las-vegas-valley", name: "Las Vegas Valley" },
+  { slug: "salt-lake-valley", name: "Salt Lake Valley" },
+  { slug: "phoenix-metro", name: "Phoenix metro" },
 ] as const;
 
 const core: City[] = [
@@ -438,6 +442,102 @@ export const cityServices: CityService[] = [
       { q: "Can I add zoning without replacing my system?", a: "Sometimes, if the ducts are accessible and the blower can handle it. Many homeowners add zoning at replacement time." },
     ],
     updated: U,
+  },
+  // Wave 4: strongest combinations in the highest-payout metros.
+  {
+    citySlug: "las-vegas",
+    serviceSlug: "ac-repair",
+    status: "PUBLISHED",
+    h1: "AC repair in Las Vegas",
+    seoTitle: "AC Repair in Las Vegas, NV",
+    metaDescription:
+      "Air conditioner repair in Las Vegas: heat-killed capacitors and fan motors, hot attic ducts, dust-clogged coils, and city vs. Clark County permits.",
+    answer:
+      "Most Las Vegas AC breakdowns happen in June through August, when capacitors, contactors and condenser fan motors fail under extreme heat. A technician tests these parts, checks refrigerant and airflow, and quotes the repair before starting.",
+    localAngle: [
+      "With summer highs above 105°F and nights that often stay above 85°F, Las Vegas air conditioners can run almost nonstop for weeks. That constant duty is why weak capacitors and worn contactors fail here more often than in milder cities, and why a failing part can quickly take out a compressor if the system keeps running. If the outdoor fan stops but the unit hums, switch the system off and call.",
+      "Two-story homes in Summerlin, Centennial Hills and Mountains Edge often have a second air handler in an attic that can exceed 140°F, so upstairs repairs take longer and duct leaks there cost more cooling. Many valley addresses are in unincorporated Clark County rather than the City of Las Vegas, which matters for any repair that needs a permit.",
+    ],
+    localFaqs: [
+      { q: "What's the most common AC repair in Las Vegas?", a: "Capacitor and contactor replacement, followed by condenser fan motors. Testing them in spring prevents many summer breakdowns." },
+    ],
+    updated: "2026-10-06",
+  },
+  {
+    citySlug: "phoenix",
+    serviceSlug: "ac-repair",
+    status: "PUBLISHED",
+    h1: "AC repair in Phoenix",
+    seoTitle: "AC Repair in Phoenix, AZ",
+    metaDescription:
+      "Air conditioner repair in Phoenix: summer part failures, rooftop units, monsoon dust, refrigerant leaks and checking an Arizona ROC license.",
+    answer:
+      "Phoenix air conditioners fail most often between June and September, when 110-degree days push capacitors, contactors and fan motors past their limits. A technician diagnoses the failed part and quotes the repair, and a licensed contractor's Arizona ROC number is worth checking first.",
+    localAngle: [
+      "Phoenix has one of the longest cooling seasons in the country, and many systems run from April into October. Rooftop package units on older central Phoenix homes sit in direct sun on the roof, while split systems in newer homes push air through ducts in attics that bake all summer. Both make airflow and refrigerant problems show up quickly as warm air at the vents.",
+      "Monsoon storms and haboobs coat condenser coils with dust, which raises operating pressure and power use. After a big storm, check the filter and rinse the outdoor coil with the power off. Contractors performing repairs must be licensed by the Arizona Registrar of Contractors, and the ROC website shows license status and complaint history.",
+    ],
+    localFaqs: [
+      { q: "How fast should I get AC repair in a Phoenix summer?", a: "Treat it as urgent, especially for elderly residents, infants or anyone with health conditions. Keep blinds closed and stay on the lowest floor while you wait." },
+    ],
+    updated: "2026-10-06",
+  },
+  {
+    citySlug: "salt-lake-city",
+    serviceSlug: "furnace-installation",
+    status: "PUBLISHED",
+    h1: "Furnace replacement in Salt Lake City",
+    seoTitle: "Furnace Replacement in Salt Lake City, UT",
+    metaDescription:
+      "Furnace replacement in Salt Lake City: altitude setup, venting in older Avenues and Sugar House homes, inversion-season filtration and permits.",
+    answer:
+      "Replacing a furnace in Salt Lake City means setting it up for about 4,300 feet of elevation, planning venting for older homes, and choosing filtration that helps during winter inversions. Most installs take a day and need a city mechanical permit.",
+    localAngle: [
+      "Many Sugar House and Liberty Wells bungalows have basement furnaces that vent into masonry chimneys shared with the water heater. Moving to a high-efficiency furnace switches it to PVC venting, which can leave the water heater alone in a chimney that is now too large for proper draft, so a liner or venting change is often part of the job. Homes in the Avenues may have older boilers, where a furnace replacement is not a like-for-like swap.",
+      "Because winter inversions trap pollution in the valley for days, replacement is a good time to add a media filter cabinet that holds a MERV 11 to 13 filter without restricting airflow. Installers also follow the manufacturer's altitude instructions, and contractors are licensed through the Utah Division of Professional Licensing.",
+    ],
+    localFaqs: [
+      { q: "Does a new furnace in Salt Lake City need altitude adjustment?", a: "Often. Installers follow the manufacturer's high-altitude instructions and check combustion after startup." },
+    ],
+    updated: "2026-10-06",
+  },
+  {
+    citySlug: "denver",
+    serviceSlug: "ac-installation",
+    status: "PUBLISHED",
+    h1: "Adding central air in Denver",
+    seoTitle: "Central AC Installation in Denver, CO",
+    metaDescription:
+      "Central air and heat pump installation for Denver homes: replacing swamp coolers, cooling older homes, permits and rebates.",
+    answer:
+      "Many Denver homes are adding central air for the first time, usually when a swamp cooler wears out or wildfire smoke makes bringing in outside air a problem. Homes with existing ducts can add AC or a heat pump; homes with radiators usually get mini-splits.",
+    localAngle: [
+      "Denver's older neighborhoods were built before central air was common, and for decades evaporative coolers handled summer heat well in the dry climate. As summers have grown hotter and smoke events more common, many owners are switching to refrigerated cooling. If the house has a forced-air furnace, a coil and outdoor unit or a heat pump can use the same ducts, though small returns may need upgrading.",
+      "Heat pumps have become a common choice in Denver because city and utility programs have offered rebates for them, and a cold-climate model can also cover most of the heating load. Installations need a Denver mechanical permit pulled by a Denver-licensed contractor.",
+    ],
+    localFaqs: [
+      { q: "Should I choose AC or a heat pump in Denver?", a: "If you're adding cooling anyway, price a heat pump. Rebates can narrow the difference, and it heats efficiently for much of the winter." },
+    ],
+    updated: "2026-10-06",
+  },
+  {
+    citySlug: "aurora",
+    serviceSlug: "ac-repair",
+    status: "PUBLISHED",
+    h1: "AC repair in Aurora, Colorado",
+    seoTitle: "AC Repair in Aurora, CO",
+    metaDescription:
+      "Air conditioner repair in Aurora, Colorado: hail-damaged condensers, failed capacitors, frozen coils and upstairs heat in two-story homes.",
+    answer:
+      "In Aurora, AC repairs often follow hail storms that flatten condenser fins, along with the usual summer failures: capacitors, contactors, fan motors and frozen coils from dirty filters.",
+    localAngle: [
+      "Aurora and the eastern metro see some of the most frequent hail in Colorado. Hail can bend condenser fins enough to cut airflow and raise operating pressure, which makes the system run longer and can shorten compressor life. A technician can comb fins on light damage and document heavier damage for an insurance claim.",
+      "Two-story homes in southeast Aurora often push their air conditioners hard to cool upstairs bedrooms, and cottonwood and dust from the plains edge load coils quickly. An annual coil cleaning and a mid-summer filter change prevent many breakdown calls. Contractors need an Aurora license for work that requires a permit.",
+    ],
+    localFaqs: [
+      { q: "Can hail-bent fins be repaired?", a: "Light damage can be combed straight. Severe damage usually means a coil or condenser replacement, which may be covered by insurance." },
+    ],
+    updated: "2026-10-06",
   },
 ];
 

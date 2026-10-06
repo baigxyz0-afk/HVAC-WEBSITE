@@ -42,7 +42,8 @@ export default async function CityServicePage({ params }: P) {
     { name: city.name, path: routes.city(st.slug, city.slug) },
     { name: s.name, path },
   ];
-  const faqs = [...cs.localFaqs, ...s.faqs].slice(0, 4);
+  // Local questions first (page + city permit question), then a single general one, to keep sibling pages distinct.
+  const faqs = [...cs.localFaqs, ...city.faqs.slice(0, 1), ...s.faqs.slice(0, 1)];
   const node = {
     "@type": "Service",
     "@id": `${site.url}${path}#service`,

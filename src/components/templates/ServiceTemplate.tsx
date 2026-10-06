@@ -28,13 +28,13 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
   // States whose guides single this service out, with the state-specific reason (national pages only).
   const focusStates = city ? [] : states.flatMap((st) => (st.focus ?? []).filter((f) => f.service === s.slug).map((f) => ({ st, why: f.why })));
   const place = city ? cityLabel(city) : "your area";
+  const isLocal = Boolean(local && city);
   const sections = [
-    ["overview", "Overview"],
-    ...(local ? [["local", `In ${city!.name}`]] : []),
+    ...(isLocal ? [["local", `In ${city!.name}`]] : [["overview", "Overview"]]),
     ["signs", "Signs"],
-    ["process", "Process"],
+    ...(isLocal ? [] : [["process", "Process"]]),
     ["cost", "Cost factors"],
-    ...(s.diy ? [["diy", "DIY or call"]] : []),
+    ...(s.diy && !isLocal ? [["diy", "DIY or call"]] : []),
     ["faq", "FAQ"],
   ];
 
@@ -64,11 +64,13 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
       <section className="py-14">
         <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_380px]">
           <div className="min-w-0 space-y-12">
-            <div id="overview" className="prose-cp scroll-mt-32 text-lg">
-              {s.intro.map((p, i) => (
-                <p key={i}>{link(p)}</p>
-              ))}
-            </div>
+            {!(local && city) && (
+              <div id="overview" className="prose-cp scroll-mt-32 text-lg">
+                {s.intro.map((p, i) => (
+                  <p key={i}>{link(p)}</p>
+                ))}
+              </div>
+            )}
 
             <Glance title={`${s.shortName ?? s.name} at a glance`} items={s.glance} />
 
@@ -85,6 +87,10 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
                 <p className="text-muted">
                   <strong className="text-ink">Utilities:</strong> {city.water} <strong className="text-ink">Permits:</strong> {city.permits}
                 </p>
+                <p className="mt-4 rounded-xl bg-white p-4 text-muted ring-1 ring-line">
+                  How the work is done, typical process steps and what you can safely check yourself are the same everywhere, so they're covered in the main{" "}
+                  <Link href={routes.service(s.slug)} className="link">{s.name.toLowerCase()} guide</Link>. This page covers what's different in {city.name}.
+                </p>
               </div>
             )}
 
@@ -100,6 +106,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
               </ul>
             </div>
 
+            {!(local && city) && (
             <div id="process" className="scroll-mt-32">
               <h2 className="text-3xl font-semibold">How the technician handles it</h2>
               <ol className="mt-5 space-y-4 border-l-2 border-teal/40 pl-6">
@@ -112,6 +119,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
                 ))}
               </ol>
             </div>
+            )}
 
             <div id="cost" className="scroll-mt-32">
               <h2 className="text-3xl font-semibold">What affects the cost</h2>
@@ -123,7 +131,7 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
               </ul>
             </div>
 
-            {s.diy && (
+            {s.diy && !(local && city) && (
               <div id="diy" className="scroll-mt-32">
                 <h2 className="text-3xl font-semibold">What you can do, and when to stop</h2>
                 <div className="mt-5 grid gap-4 sm:grid-cols-2">
