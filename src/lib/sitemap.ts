@@ -1,7 +1,7 @@
 import "server-only";
 import { routes } from "./routes";
 import { publishedServices } from "@/content/services";
-import { cities, cityServices, states, cityBySlug } from "@/content/locations";
+import { cities, allCityServices as cityServices, states, cityBySlug } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
 import { dates } from "@/content/misc";
 import { cityQuality, cityServiceQuality, stateQuality } from "./quality";

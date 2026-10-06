@@ -47,7 +47,8 @@ export default async function CityPage({ params }: P) {
     { name: c.name, path },
   ];
   const combos = indexableCityServices().filter((cs) => cs.citySlug === c.slug);
-  const popular = c.popularServices.map(getService).filter(Boolean) as Service[];
+  // Local service pages first (so each is always linked from its city), then the city's other common calls.
+  const popular = [...new Set([...combos.map((x) => x.serviceSlug), ...c.popularServices])].map(getService).filter(Boolean) as Service[];
   const nearby = allCities.filter((x) => c.nearby.includes(x.slug));
   const guides = publishedArticles.filter((a) => a.services.some((s) => c.popularServices.includes(s))).slice(0, 3);
 

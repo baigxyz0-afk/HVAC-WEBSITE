@@ -1,5 +1,5 @@
 import { NextResponse } from "next/server";
-import { cities, cityServices, states } from "@/content/locations";
+import { cities, allCityServices as cityServices, states } from "@/content/locations";
 import { cityQuality, cityServiceQuality, stateQuality } from "@/lib/quality";
 
 export const dynamic = "force-dynamic";
