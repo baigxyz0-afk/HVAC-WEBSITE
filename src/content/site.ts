@@ -9,8 +9,8 @@ const LEADSMART_PHONE_E164 = "+16073236654";
 export const site = {
   name: "Tallgrass Heating & Air",
   shortName: "Tallgrass",
-  domain: "tallgrassair.com",
-  url: (env("NEXT_PUBLIC_SITE_URL") || "https://tallgrassair.com").replace(/\/$/, ""),
+  domain: "hvacserviceshubs.com",
+  url: (env("NEXT_PUBLIC_SITE_URL") || "https://hvacserviceshubs.com").replace(/\/$/, ""),
   market: "United States",
   marketLong: "homeowners in all 50 states and Washington, D.C.",
   stateAbbr: "US",
