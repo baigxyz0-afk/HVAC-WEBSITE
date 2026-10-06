@@ -138,16 +138,16 @@ export default function Home() {
           <SectionHeading light eyebrow="Local knowledge" title="Why heating and cooling depends on where you live" />
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { icon: "sun" as const, t: "Hot climates", b: "In the South and Southwest, air conditioners run most of the year. Humidity control, attic ducts and heat-related part failures dominate.", href: routes.state("texas") },
-              { icon: "snow" as const, t: "Cold climates", b: "From Minnesota to Maine, the furnace or boiler is the most important appliance, and cold-climate heat pumps are changing how homes heat.", href: routes.state("minnesota") },
-              { icon: "heatpump" as const, t: "Mixed and mountain climates", b: "Four-season states use dual-fuel systems, while altitude, dry air and wildfire smoke shape HVAC across the West.", href: routes.state("colorado") },
+              { icon: "sun" as const, t: "Hot climates", b: "In the South and Southwest, air conditioners run most of the year. Humidity control, attic ducts and heat-related part failures dominate.", href: routes.state("texas"), label: "Example: the Texas guide" },
+              { icon: "snow" as const, t: "Cold climates", b: "From Minnesota to Maine, the furnace or boiler is the most important appliance, and cold-climate heat pumps are changing how homes heat.", href: routes.state("minnesota"), label: "Example: the Minnesota guide" },
+              { icon: "heatpump" as const, t: "Mixed and mountain climates", b: "Four-season states use dual-fuel systems, while altitude, dry air and wildfire smoke shape HVAC across the West.", href: routes.state("colorado"), label: "Example: the Colorado guide" },
             ].map((c) => (
               <div key={c.t} className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
                 <Icon name={c.icon} className="h-8 w-8 text-[#a9d6b2]" />
                 <h3 className="mt-4 text-xl font-semibold">{c.t}</h3>
                 <p className="mt-2 text-white/80">{c.b}</p>
                 <Link href={c.href} className="mt-4 inline-block font-semibold text-[#bfe3c5] underline underline-offset-2">
-                  Learn more
+                  {c.label}
                 </Link>
               </div>
             ))}

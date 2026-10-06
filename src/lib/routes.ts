@@ -5,6 +5,7 @@ export const routes = {
   home: () => "/",
   services: () => `/${SERVICES}/`,
   service: (slug: string) => `/${SERVICES}/${slug}/`,
+  subservice: (parent: string, slug: string) => `/${SERVICES}/${parent}/${slug}/`,
   category: (slug: string) => `/${SERVICES}/#${slug}`,
   emergency: () => "/emergency-hvac/",
   locations: () => "/locations/",

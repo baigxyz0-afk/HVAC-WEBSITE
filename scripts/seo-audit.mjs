@@ -38,7 +38,7 @@ const robots = (await get("/robots.txt")).text;
 if (!robots) err("/robots.txt", "missing");
 const index = (await get("/sitemap.xml")).text;
 const subs = [...index.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => toPath(m[1]));
-if (subs.length !== 6) err("/sitemap.xml", `expected 6 sitemaps, got ${subs.length}`);
+if (subs.length !== 7) err("/sitemap.xml", `expected 7 sitemaps, got ${subs.length}`);
 const urls = [];
 for (const s of subs) {
   const x = (await get(s)).text;

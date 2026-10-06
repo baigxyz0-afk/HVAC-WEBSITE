@@ -87,3 +87,18 @@ node scripts/make-brand.mjs && npm run icons   # regenerate logo + favicons
 - [ ] Verify the utility and permit facts on the city pages with each city before launch (the Evergy, Spire, Kansas Gas Service, BPU and IPL service areas, and the Johnson County licensing program).
 - [ ] Replace stock photos with real job photos when they're available.
 - [ ] Remaining items in playbook A6/B13.
+
+### Fact check log (2026-10-07)
+
+Verified with web searches. Everything else on the city and state pages is general knowledge and should still be reviewed before relying on it in ads.
+
+| Claim | Status | Source |
+|---|---|---|
+| Utah gas utility is Enbridge Gas Utah (formerly Dominion Energy Utah, renamed June 2024) | Confirmed | [KUTV](https://kutv.com/news/eye-on-your-money/dominion-energy-is-now-enbridge-gas-in-utah) |
+| PSNC now does business as Enbridge Gas North Carolina (Sept 2024) | Confirmed | [Enbridge 8-K](https://www.sec.gov/Archives/edgar/data/895728/000110465924104685/tm2425172d1_8k.htm) |
+| Summit Utilities replaced CenterPoint as Little Rock's gas utility (Jan 2022) | Confirmed | [Summit Utilities](https://summitutilitiesinc.com/Article/207/Index) |
+| Salem Electric is a co-op founded in West Salem, serving parts of Salem and Keizer | Confirmed (FAQ wording refined) | [Salem Electric](https://salemelectric.com/node/5) |
+| Austin ECAD: homes 10+ years old need an energy audit disclosed at sale | Confirmed | [Austin Energy](https://austinenergy.com/energy-efficiency/ecad-ordinance/ecad-for-residential-customers) |
+| Pikes Peak Regional Building Dept issues permits and licenses contractors for Colorado Springs | Confirmed | [El Paso County](https://bocc.elpasoco.com/?p=131) |
+| Mesa gas is split between the City of Mesa and Southwest Gas | Confirmed | [City of Mesa](https://www.mesaaz.gov/residents/energy/natural-gas) |
+| Citizens Energy Group operates as a public charitable trust | Confirmed | [Citizens Energy Group](https://info.citizensenergygroup.com/company/about) |

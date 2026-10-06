@@ -11,6 +11,7 @@ import { Hero } from "../Hero";
 import { categoryPhotos, servicePhotoOverrides } from "@/content/photos";
 import { BeforeAfterSlider } from "../BeforeAfterSlider";
 import { beforeAfterFor } from "@/content/beforeAfter";
+import { subservicesOf } from "@/content/subservices";
 import { Chip, FaqList, Glance, ServiceCard, Reviews } from "../ui";
 import { Icon } from "../icons";
 import { LeadFormBlock } from "../lead/LeadFormBlock";
@@ -144,6 +145,22 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
                     <ul className="prose-cp mt-2 text-sm">{s.diy.stop.map((x) => <li key={x}>{x}</li>)}</ul>
                   </div>
                 </div>
+              </div>
+            )}
+
+            {!isLocal && subservicesOf(s.slug).length > 0 && (
+              <div>
+                <h2 className="text-3xl font-semibold">Specific repairs</h2>
+                <ul className="mt-5 grid gap-3 sm:grid-cols-2">
+                  {subservicesOf(s.slug).map((sub) => (
+                    <li key={sub.slug}>
+                      <Link href={routes.subservice(sub.parent, sub.slug)} className="card block p-4 transition hover:ring-teal">
+                        <span className="font-semibold text-ink">{sub.name}</span>
+                        <span className="mt-1 block text-sm text-muted">{sub.signs[0]}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
               </div>
             )}
 

@@ -60,7 +60,7 @@
     @apply text-white ring-1 ring-white/50 hover:bg-white/10;
   }
   .eyebrow {
-    @apply text-sm font-semibold tracking-wider text-teal uppercase;
+    @apply text-sm font-semibold tracking-wider text-teal-deep uppercase;
   }
   .link {
     @apply font-medium text-teal-deep underline decoration-teal/40 underline-offset-2 hover:decoration-teal-deep;

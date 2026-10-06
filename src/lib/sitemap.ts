@@ -3,10 +3,11 @@ import { routes } from "./routes";
 import { publishedServices } from "@/content/services";
 import { cities, allCityServices as cityServices, states, cityBySlug } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
+import { publishedSubservices } from "@/content/subservices";
 import { dates } from "@/content/misc";
 import { cityQuality, cityServiceQuality, stateQuality } from "./quality";
 
-export type SitemapGroup = "pages" | "services" | "states" | "cities" | "local-services" | "guides";
+export type SitemapGroup = "pages" | "services" | "subservices" | "states" | "cities" | "local-services" | "guides";
 export type IndexUrl = { path: string; lastmod: string; group: SitemapGroup; title: string };
 
 export function indexableCities() {
@@ -31,6 +32,7 @@ export function indexableUrls(): IndexUrl[] {
     { path: routes.services(), lastmod: dates.services, group: "services", title: "HVAC services" },
     { path: routes.emergency(), lastmod: dates.services, group: "services", title: "Emergency heating & AC" },
     ...publishedServices.map((s) => ({ path: routes.service(s.slug), lastmod: s.updated, group: "services" as const, title: s.name })),
+    ...publishedSubservices.map((s) => ({ path: routes.subservice(s.parent, s.slug), lastmod: s.updated, group: "subservices" as const, title: s.name })),
     { path: routes.locations(), lastmod: dates.locations, group: "states", title: "Service areas" },
     ...indexableStates().map((s) => ({ path: routes.state(s.slug), lastmod: s.updated, group: "states" as const, title: s.name })),
     ...indexableCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: c.updated, group: "cities" as const, title: c.name })),

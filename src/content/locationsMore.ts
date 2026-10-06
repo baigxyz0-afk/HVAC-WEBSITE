@@ -583,7 +583,7 @@ export const citiesMore: City[] = [
     permits: "The City of Salem issues mechanical permits, and contractors are licensed by the Oregon Construction Contractors Board.",
     faqs: [
       { q: "Can a ductless heat pump replace baseboard heat in Salem?", a: "Yes. Ductless heat pumps are commonly used to replace or supplement baseboard heaters." },
-      { q: "Who supplies electricity in Salem?", a: "Portland General Electric serves much of the city, while Salem Electric serves some areas, mainly West Salem." },
+      { q: "Who supplies electricity in Salem?", a: "Portland General Electric serves much of the city. Salem Electric, a member-owned cooperative founded in West Salem, serves parts of Salem and Keizer. Check your bill to see which serves you." },
     ],
     updated: U,
   },
