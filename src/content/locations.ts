@@ -554,6 +554,121 @@ export const cityServices: CityService[] = [
     ],
     updated: "2026-10-06",
   },
+  // Wave 4 batch 2: a mix of services so same-service siblings stay few and distinct.
+  {
+    citySlug: "houston",
+    serviceSlug: "ac-repair",
+    status: "PUBLISHED",
+    h1: "AC repair in Houston",
+    seoTitle: "AC Repair in Houston, TX",
+    metaDescription:
+      "Air conditioner repair in Houston: humidity problems, clogged attic drain pans, flood-damaged units, refrigerant leaks and checking a TDLR license.",
+    answer:
+      "In Houston, many AC repair calls trace back to humidity: clogged condensate drains that trip float switches, frozen coils, and systems that cool but leave the house sticky. A technician checks drains, airflow and refrigerant charge before quoting, and should hold a Texas TDLR air conditioning license.",
+    localAngle: [
+      "Houston's long, muggy season means air conditioners remove large amounts of water every day. When an attic drain line clogs with algae, the safety switch shuts the system off or the secondary pan overflows into the ceiling. Clearing and treating the drain often restores cooling the same day, and adding a cleanout makes the next flush easier.",
+      "After tropical storms and flooding, outdoor units that sat in water need inspection before they're restarted, because electrical components and the compressor can be damaged. In Houston's deregulated electricity market, a high summer bill can also signal a struggling system: low refrigerant, a dirty coil or leaky attic ducts all increase run time in the heat.",
+    ],
+    localFaqs: [
+      { q: "Why does my Houston AC shut off with water in the pan?", a: "The condensate drain is likely clogged, tripping the float switch. Clearing and treating the drain usually restores cooling." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "tampa",
+    serviceSlug: "ac-tune-up",
+    status: "PUBLISHED",
+    h1: "AC tune-up in Tampa",
+    seoTitle: "AC Tune-Up & Maintenance in Tampa, FL",
+    metaDescription:
+      "AC maintenance for Tampa homes: twice-a-year service, condensate drain flushing, salt-air coil care near the bay and hurricane-season prep.",
+    answer:
+      "Because Tampa air conditioners run most of the year, many homeowners schedule maintenance twice: in spring before the heat and in late summer or fall. A Tampa tune-up should include flushing the condensate drain, cleaning the coils, testing the capacitor and checking refrigerant charge.",
+    localAngle: [
+      "Algae growth in condensate lines is the most common reason Tampa systems shut down, so drain flushing and treatment is the most valuable part of a visit. Homes on Davis Islands, in South Tampa and near the bay also benefit from rinsing salt deposits off outdoor coils, which corrode faster in salty air.",
+      "A spring visit is also a good time for hurricane-season preparation: checking that the outdoor unit is securely anchored or elevated where required, confirming surge protection, and making sure the electrical disconnect is in good shape. After a storm, a quick inspection before restarting the system can prevent damage from water or debris.",
+    ],
+    localFaqs: [
+      { q: "How often should Tampa homes get AC maintenance?", a: "Twice a year is common because systems run most of the year: once in spring and once in late summer or fall." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "sacramento",
+    serviceSlug: "heat-pump-installation",
+    status: "PUBLISHED",
+    h1: "Heat pump installation in Sacramento",
+    seoTitle: "Heat Pump Installation in Sacramento, CA",
+    metaDescription:
+      "Heat pump installation in Sacramento: replacing gas furnaces and old AC, SMUD programs, Title 24 permits and duct testing, and sizing for valley heat.",
+    answer:
+      "Sacramento's hot summers and mild winters suit heat pumps well, and many homeowners replace an aging air conditioner and gas furnace with a single heat pump system. Installations typically need a permit and Title 24 duct testing, and SMUD has offered heat pump rebates.",
+    localAngle: [
+      "Winter lows in Sacramento rarely drop far below freezing, so a properly sized heat pump can handle the heating season without gas backup in most homes. The bigger sizing challenge is summer: long stretches above 100°F mean the system must be sized for cooling, with attention to attic ducts that lose capacity in the heat.",
+      "Because SMUD, the city's electric utility, has run programs encouraging homes to switch from gas to electric heating, it's worth checking current rebates before buying. California's Title 24 energy code usually requires a permit, duct leakage testing and third-party verification, so ask whether these are included in the quote. Older homes in Land Park and East Sacramento may need duct repairs to pass.",
+    ],
+    localFaqs: [
+      { q: "Can a heat pump replace my gas furnace in Sacramento?", a: "In most homes, yes. Sacramento's mild winters are well within a modern heat pump's range." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "boston",
+    serviceSlug: "ductless-mini-splits",
+    status: "PUBLISHED",
+    h1: "Ductless mini-splits in Boston",
+    seoTitle: "Ductless Mini-Split Installation in Boston, MA",
+    metaDescription:
+      "Ductless mini-splits for Boston brownstones, condos and triple-deckers: adding cooling to radiator-heated homes, condo approvals and cold-climate heat pumps.",
+    answer:
+      "Ductless mini-splits are the most common way to add air conditioning to Boston's brownstones, condos and triple-deckers, which usually have radiator heat and no ductwork. Cold-climate models also provide efficient heat, often letting the boiler run less.",
+    localAngle: [
+      "Most Boston homes were built long before central air, with steam or hot-water radiators and no ducts. Mini-splits need only a small hole for the refrigerant line, so heads can be mounted in bedrooms and living rooms without opening plaster walls. Outdoor units typically go on a rear deck, flat roof or wall bracket.",
+      "Condo buildings usually require association approval for outdoor units and line-set routing, and homes in historic districts like Beacon Hill or the South End may need review of anything visible from the street. Massachusetts efficiency programs have offered heat pump incentives, and many owners use mini-splits for spring and fall heating while keeping the boiler for the coldest weather.",
+    ],
+    localFaqs: [
+      { q: "Do I need condo board approval for a mini-split in Boston?", a: "Usually. Most associations regulate outdoor units and exterior wall penetrations." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "dallas",
+    serviceSlug: "ac-installation",
+    status: "PUBLISHED",
+    h1: "AC replacement in Dallas",
+    seoTitle: "AC Replacement & Installation in Dallas, TX",
+    metaDescription:
+      "Air conditioner replacement in Dallas: hail-damaged condensers and insurance, sizing for 100-degree summers, attic ducts, permits and TDLR licensing.",
+    answer:
+      "Many Dallas AC replacements follow hail damage or a failed compressor after years of 100-degree summers. A good replacement starts with a load calculation, checks the attic ductwork, and includes a City of Dallas permit pulled by a TDLR-licensed contractor.",
+    localAngle: [
+      "North Texas hail can crush condenser coils and fins badly enough that replacement is more practical than repair. If a storm caused the damage, photograph it and contact your insurer before the old unit is removed, since adjusters often want to see it. Some homeowners use the replacement to upgrade efficiency or switch to a heat pump.",
+      "Because Dallas summers bring long stretches near 100°F, and attic temperatures run even higher, the new system should be sized with a Manual J load calculation rather than matched to the old unit. Sealing and insulating attic ducts at the same time often does more for upstairs comfort than buying a larger air conditioner.",
+    ],
+    localFaqs: [
+      { q: "Should I replace my hail-damaged AC or repair it?", a: "Light fin damage can be repaired; crushed coils usually mean replacement. Document the damage for insurance first." },
+    ],
+    updated: "2026-10-07",
+  },
+  {
+    citySlug: "colorado-springs",
+    serviceSlug: "furnace-repair",
+    status: "PUBLISHED",
+    h1: "Furnace repair in Colorado Springs",
+    seoTitle: "Furnace Repair in Colorado Springs, CO",
+    metaDescription:
+      "Furnace repair in Colorado Springs: altitude-related ignition problems, cold-front breakdowns, downslope winds and Pikes Peak Regional permits.",
+    answer:
+      "Colorado Springs furnace calls spike when the first strong cold fronts arrive in fall. Common causes are dirty flame sensors, failed ignitors and pressure switch problems, and at 6,000 feet a furnace that wasn't set up for altitude can overheat or burn poorly.",
+    localAngle: [
+      "Temperatures in Colorado Springs can drop dramatically within hours when a cold front comes off the mountains, and furnaces that sat idle all summer are often the ones that fail. A fall check of the flame sensor, ignitor and venting prevents most of these breakdowns.",
+      "At this elevation, furnaces must be set up following the manufacturer's high-altitude instructions. A furnace that wasn't adjusted can trip limit switches, produce soot or raise carbon monoxide levels, so a technician should check gas pressure and combustion as part of any repair. West-side homes exposed to strong downslope winds can also see vent terminations blown out or iced over.",
+    ],
+    localFaqs: [
+      { q: "Why does my furnace keep shutting off in Colorado Springs?", a: "Common causes are a dirty flame sensor, a clogged filter tripping the limit switch, or incorrect altitude setup. A technician can test each." },
+    ],
+    updated: "2026-10-07",
+  },
 ];
 
 export const publishedCityServices = cityServices.filter((cs) => cs.status === "PUBLISHED");
