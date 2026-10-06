@@ -23,6 +23,10 @@ export const regions = [
   { slug: "las-vegas-valley", name: "Las Vegas Valley" },
   { slug: "salt-lake-valley", name: "Salt Lake Valley" },
   { slug: "phoenix-metro", name: "Phoenix metro" },
+  { slug: "pikes-peak", name: "Pikes Peak region" },
+  { slug: "northern-colorado", name: "Northern Colorado" },
+  { slug: "tucson", name: "Tucson area" },
+  { slug: "reno", name: "Reno–Sparks" },
 ] as const;
 
 const core: City[] = [

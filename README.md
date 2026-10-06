@@ -16,8 +16,8 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 | Business model | Call brand / referral for LeadSmart buyers. `BRAND_PROMISE` and `DISCLOSURE` are in `src/content/site.ts` |
 | Services | **15 in 7 categories**, rewritten for every U.S. climate (no longer Kansas City-only) |
 | State hubs | **51** at `/locations/{state}/`: intro, 4–5 state-specific sections (climate, fuel mix, risks, seasonal timing, housing/what to ask), at-a-glance facts, focus services with a state-specific reason, major metros, FAQs, same-region links, network ZIP count |
-| Cities | **20**: 12 in the Kansas City metro + 8 in the highest-payout HVAC metros (Denver, Aurora, Las Vegas, Henderson, Salt Lake City, Sandy, Phoenix, Mesa) · **8** city+service pages |
-| Indexable URLs | **114** in 6 sitemaps (pages 7, services 17, states 52, cities 20, local-services 8, guides 10), max click depth 2 |
+| Cities | **26**: 12 in the Kansas City metro + 14 in the highest-payout HVAC states: Colorado (Denver, Aurora, Colorado Springs, Fort Collins), Nevada (Las Vegas, Henderson, Reno), Utah (Salt Lake City, Sandy, West Valley City), Arizona (Phoenix, Mesa, Scottsdale, Tucson) · **8** city+service pages |
+| Indexable URLs | **120** in 6 sitemaps (pages 7, services 17, states 52, cities 26, local-services 8, guides 10), max click depth 2 |
 | Audit | `npm run audit:seo`: **0 errors, 0 warnings**. Max sibling-page similarity **0.40** (warning 0.45, error 0.6). No horizontal overflow at 375px |
 | Phone | LeadSmart number `(607) 323-6654` (`+16073236654`), shown sitewide and in schema |
 
@@ -36,7 +36,7 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 
 ### Next waves (not built yet)
 
-5. More metros in high-payout states (Las Vegas suburbs, Colorado Springs, Tucson, Portland, Boston, Houston), each only with genuinely local content.
+5. More metros in the next payout tier: Delaware ($58), California ($56), Massachusetts ($54), Oregon ($53), and big-volume Texas and Florida, each only with genuinely local content.
 6. Problem-intent pages, where they don't cannibalize existing guides.
 
 ### Kansas City city guides
