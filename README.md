@@ -1,4 +1,4 @@
-# Tallgrass Heating & Air — Nationwide HVAC Lead-Gen Site
+# HVAC Services Hub — Nationwide HVAC Lead-Gen Site
 
 This site was built from the **Local Service Lead-Gen Website Playbook**, kept in `docs/PLAYBOOK.md`. The playbook remains the process reference; this file documents this project.
 
@@ -10,7 +10,7 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 
 | | |
 |---|---|
-| Brand / domain | **Tallgrass Heating & Air** on **https://hvacserviceshubs.com** (live; apex is canonical, `www` redirects to it) |
+| Brand / domain | **HVAC Services Hub** on **https://hvacserviceshubs.com** (renamed from Tallgrass Heating & Air on 2026-10-07 to match the domain). Logo: house roofline with a blue snowflake (cooling) and orange flame (heating) on navy; source in `scripts/make-brand.mjs` and `src/components/Logo.tsx`. Files in `public/brand/`: `logo.png` (760x160), `logo@2x.png`, `logo-light.png`, `logo.svg`, `logo-icon-512.png` |
 | Market | **All 50 states + Washington, D.C.**, with in-depth city guides for the Kansas City metro |
 | Coverage | **22,621 LeadSmart HVAC ZIP codes** (Call), data date 2026-10-05, pulled by `scripts/pull-coverage.mjs` into `src/content/coverage-data.json`. Server-only: the browser calls `/api/zip/?zip=`, so the national list never ships in the JS bundle |
 | Business model | Call brand / referral for LeadSmart buyers. `BRAND_PROMISE` and `DISCLOSURE` are in `src/content/site.ts` |

@@ -7,8 +7,8 @@ import { JsonLd } from "@/components/ui";
 import { SimplePage } from "@/components/SimplePage";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "About Tallgrass Heating & Air";
-const description = "Tallgrass Heating & Air connects homeowners across the United States with independent, licensed HVAC contractors and publishes plain-language HVAC guides.";
+const title = "About HVAC Services Hub";
+const description = "HVAC Services Hub connects homeowners across the United States with independent, licensed HVAC contractors and publishes plain-language HVAC guides.";
 const path = routes.about();
 export const metadata = pageMeta({ title, description, path });
 
@@ -20,9 +20,9 @@ export default function About() {
   return (
     <>
       <JsonLd data={graph(pageGraph({ path, name: title, description, type: "AboutPage", crumbs, about: [ids.org] }))} />
-      <SimplePage title="About Tallgrass Heating & Air" crumbs={crumbs} lead="A faster, clearer way to find a heating and cooling contractor anywhere in the U.S.">
+      <SimplePage title="About HVAC Services Hub" crumbs={crumbs} lead="A faster, clearer way to find a heating and cooling contractor anywhere in the U.S.">
         <p>
-          The name comes from the tallgrass prairie at the center of the country, where we started with guides for the Kansas City metro. We now connect homeowners in all 50 states and Washington, D.C., and every state guide is written around that state's own climate and housing.
+          HVAC Services Hub started with in-depth guides for the Kansas City metro and now connects homeowners in all 50 states and Washington, D.C. Every state guide is written around that state's own climate and housing, because heating and cooling needs in Phoenix, Minneapolis and Miami have little in common.
         </p>
         <h2>What we do</h2>
         <p>

@@ -143,10 +143,10 @@ export default function Home() {
               { icon: "heatpump" as const, t: "Mixed and mountain climates", b: "Four-season states use dual-fuel systems, while altitude, dry air and wildfire smoke shape HVAC across the West.", href: routes.state("colorado"), label: "Example: the Colorado guide" },
             ].map((c) => (
               <div key={c.t} className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
-                <Icon name={c.icon} className="h-8 w-8 text-[#a9d6b2]" />
+                <Icon name={c.icon} className="h-8 w-8 text-[#9cc9ee]" />
                 <h3 className="mt-4 text-xl font-semibold">{c.t}</h3>
                 <p className="mt-2 text-white/80">{c.b}</p>
-                <Link href={c.href} className="mt-4 inline-block font-semibold text-[#bfe3c5] underline underline-offset-2">
+                <Link href={c.href} className="mt-4 inline-block font-semibold text-[#bfdcf5] underline underline-offset-2">
                   {c.label}
                 </Link>
               </div>

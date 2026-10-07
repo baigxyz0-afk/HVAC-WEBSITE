@@ -34,7 +34,7 @@ export function siteGraph() {
     url: `${U}/`,
     logo: { "@id": ids.logo },
     description:
-      "Tallgrass Heating & Air is a nationwide heating and cooling referral service in the United States. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
+      "HVAC Services Hub is a nationwide heating and cooling referral service in the United States. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
     areaServed: { "@type": "Country", name: "United States" },
     knowsAbout: ["Air conditioning repair", "Furnace repair", "Heat pumps", "Dual-fuel systems", "Ductless mini-splits", "Duct sealing", "Indoor air quality", "HVAC zoning"],
   };
@@ -44,7 +44,7 @@ export function siteGraph() {
 
   return [
     org,
-    { "@type": "ImageObject", "@id": ids.logo, url: `${U}/brand/logo.png`, width: 600, height: 160, caption: site.name },
+    { "@type": "ImageObject", "@id": ids.logo, url: `${U}/brand/logo.png`, width: 760, height: 160, caption: site.name },
     { "@type": "WebSite", "@id": ids.website, url: `${U}/`, name: site.name, publisher: { "@id": ids.org }, inLanguage: "en-US" },
   ];
 }

@@ -108,7 +108,7 @@ export default function LocationsHub() {
             </ul>
             <h2 className="mt-8 text-2xl font-semibold">How service areas work</h2>
             <p className="mt-2 text-muted">
-              Tallgrass is a referral service. When you call or send a request, we route it to an independent, licensed HVAC contractor who has chosen to serve
+              HVAC Services Hub is a referral service. When you call or send a request, we route it to an independent, licensed HVAC contractor who has chosen to serve
               your ZIP code. Licensing and permit rules vary by state and city, so each state guide notes what to check.
             </p>
             <p className="mt-2 text-muted">

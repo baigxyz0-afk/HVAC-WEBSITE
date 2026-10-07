@@ -19,8 +19,8 @@ export function Header() {
       <div className="bg-ink text-sm text-white/85">
         <div className="container-x flex h-9 items-center justify-between gap-4">
           <span className="truncate">Serving {site.marketLong}</span>
-          <span className="hidden md:inline">{availability}</span>
-          <span className="hidden lg:inline">Licensed, independent HVAC contractors</span>
+          <span className="hidden truncate md:inline">{availability}</span>
+          <span className="hidden whitespace-nowrap xl:inline">Licensed, independent HVAC contractors</span>
         </div>
       </div>
       <HeaderShell>
@@ -56,9 +56,9 @@ export function Header() {
           </span>
         </nav>
         <div className="ml-auto flex items-center gap-3 lg:ml-0">
-          <div className="hidden text-right leading-tight sm:block">
+          <div className="hidden text-right leading-tight whitespace-nowrap sm:block">
             <span className="block text-xs text-muted">Call for HVAC help</span>
-            <PhoneLink phone={site.phone} e164={site.phoneE164} location="header" className="font-serif text-xl font-semibold text-ink hover:text-teal-deep" icon={false} />
+            <PhoneLink phone={site.phone} e164={site.phoneE164} location="header" className="font-serif text-lg font-semibold whitespace-nowrap text-ink hover:text-teal-deep xl:text-xl" icon={false} />
           </div>
           <Link href={routes.request()} className="btn btn-primary hidden md:inline-flex">
             Request service

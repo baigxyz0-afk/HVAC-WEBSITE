@@ -33,13 +33,13 @@ export default async function Landing({ params, searchParams }: P) {
       <section className="bg-ink py-10 text-white lg:py-14">
         <div className="container-x grid gap-8 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-start">
           <div className="min-w-0">
-            <p className="eyebrow !text-[#a9d6b2]">Nationwide · {availability}</p>
+            <p className="eyebrow !text-[#9cc9ee]">Nationwide · {availability}</p>
             <h1 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl">{headline}</h1>
             <p className="mt-4 text-lg text-white/85">{l.sub}</p>
             <ul className="mt-6 space-y-2">
               {l.bullets.map((b) => (
                 <li key={b} className="flex gap-3">
-                  <Icon name="check" className="h-6 w-6 shrink-0 text-[#a9d6b2]" />
+                  <Icon name="check" className="h-6 w-6 shrink-0 text-[#9cc9ee]" />
                   {b}
                 </li>
               ))}

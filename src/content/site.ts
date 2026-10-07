@@ -7,8 +7,8 @@ const LEADSMART_PHONE = "(607) 323-6654";
 const LEADSMART_PHONE_E164 = "+16073236654";
 
 export const site = {
-  name: "Tallgrass Heating & Air",
-  shortName: "Tallgrass",
+  name: "HVAC Services Hub",
+  shortName: "HVAC Services Hub",
   domain: "hvacserviceshubs.com",
   url: (env("NEXT_PUBLIC_SITE_URL") || "https://hvacserviceshubs.com").replace(/\/$/, ""),
   market: "United States",
@@ -39,7 +39,7 @@ export const BRAND_PROMISE =
   "One call connects you with an independent, licensed heating and cooling contractor who serves your ZIP code.";
 
 export const DISCLOSURE =
-  "Tallgrass Heating & Air is a referral service. We do not perform HVAC work. Calls and requests are connected to independent, licensed heating and cooling contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with your state or local licensing authority before work begins.";
+  "HVAC Services Hub is a referral service. We do not perform HVAC work. Calls and requests are connected to independent, licensed heating and cooling contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with your state or local licensing authority before work begins.";
 
 export function telHref(e164 = site.phoneE164) {
   return `tel:${e164}`;

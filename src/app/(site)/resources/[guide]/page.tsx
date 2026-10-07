@@ -60,7 +60,7 @@ export default async function Guide({ params }: P) {
       <section className="bg-ink py-12 text-white">
         <div className="container-x max-w-4xl">
           <Breadcrumbs items={crumbs} light />
-          <p className="eyebrow mt-4 !text-[#a9d6b2]">{a.category}</p>
+          <p className="eyebrow mt-4 !text-[#9cc9ee]">{a.category}</p>
           <h1 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl">{a.title}</h1>
           <p className="mt-4 text-sm text-white/75">Updated <time dateTime={a.updated}>{fmt(a.updated)}</time></p>
         </div>

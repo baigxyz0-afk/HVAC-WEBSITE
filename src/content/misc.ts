@@ -19,8 +19,8 @@ export const redirects: { source: string; destination: string; permanent: boolea
 ];
 
 export const generalFaqs: Faq[] = [
-  { q: "How does Tallgrass Heating & Air work?", a: "You call or send a request, and we connect you with an independent, licensed heating and cooling contractor who serves your ZIP code. The contractor quotes and performs the work directly." },
-  { q: "Is Tallgrass Heating & Air an HVAC company?", a: "No. We're a referral service. The contractors in our network are independent businesses responsible for their own licensing, pricing and work." },
+  { q: "How does HVAC Services Hub work?", a: "You call or send a request, and we connect you with an independent, licensed heating and cooling contractor who serves your ZIP code. The contractor quotes and performs the work directly." },
+  { q: "Is HVAC Services Hub an HVAC company?", a: "No. We're a referral service. The contractors in our network are independent businesses responsible for their own licensing, pricing and work." },
   { q: "What areas do you cover?", a: "Contractors in our network take HVAC calls in all 50 states and Washington, D.C. Coverage varies by ZIP code, so check yours on the locations page." },
   { q: "Does it cost anything to request service?", a: "No. Requesting service is free. You only pay the contractor for work you approve." },
   { q: "How do I check an HVAC contractor's license?", a: "It depends on the state. Some states license HVAC contractors statewide, while others leave it to cities or counties. Each state guide notes what to check, and your local building department can confirm." },
