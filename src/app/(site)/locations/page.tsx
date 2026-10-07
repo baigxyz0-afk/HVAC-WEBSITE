@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { cityBySlug, cityLabel } from "@/content/locations";
 import { zipCountForState } from "@/content/coverage";
+import { directoryTotal } from "@/content/cityDirectory";
 import { indexableCities, indexableCityServices, indexableStates } from "@/lib/sitemap";
 import { pageMeta } from "@/lib/seo";
 import { routes } from "@/lib/routes";
@@ -47,7 +48,7 @@ export default function LocationsHub() {
             systems homes there usually rely on and the problems contractors see most. Check your ZIP code to confirm coverage at your address.
           </p>
         }
-        facts={[`${states.length} state and D.C. guides`, `Network coverage in ${totalZips.toLocaleString()} ZIP codes`]}
+        facts={[`${states.length} state and D.C. guides`, `${directoryTotal.toLocaleString()} popular cities listed`, `Network coverage in ${totalZips.toLocaleString()} ZIP codes`]}
         aside={
           <div className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
             <ZipChecker dark />

@@ -21,6 +21,10 @@ It started as a copy of the Caliche Plumbing codebase (`D:\ppc website`). That c
 | Audit | `npm run audit:seo`: **0 errors, 0 warnings**. Max sibling-page similarity **0.44** (warning 0.45, error 0.6) |
 | Phone | LeadSmart number `(607) 323-6654` (`+16073236654`), shown sitewide and in schema |
 
+### City directory (2026-10-07)
+
+Each state page lists every covered city with a population of at least 25,000 (**1,611 cities** in 50 states + D.C.), with a filter, ZIP samples and a request link. Built by `scripts/build-city-directory.mjs` from LeadSmart coverage plus the LeadSmart city index. These are deliberately **listings on state pages, not separate pages**: 1,000+ thin city pages would be doorway pages. Rules: population is used for ordering only (the source assigns metro totals to neighborhoods), places that only inherit a metro figure need 2+ covered ZIPs, and military bases are excluded. Cities with a full guide link to it.
+
 ### Quality gates (`src/lib/quality.ts`)
 
 - **State:** at least 180 words of state-specific copy (intro, sections and focus reasons), at least 3 sections, at least 2 FAQs, at-a-glance facts and at least 3 focus services. All 51 pass; check with `node scripts/state-words.mjs` or `/api/quality-report/` in dev.

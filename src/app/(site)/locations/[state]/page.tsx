@@ -11,6 +11,8 @@ import { Hero } from "@/components/Hero";
 import { Chip, FaqList, Glance, JsonLd } from "@/components/ui";
 import { ZipChecker } from "@/components/ZipChecker";
 import { CtaBand } from "@/components/CtaBand";
+import { CityDirectory } from "@/components/CityDirectory";
+import { directoryFor } from "@/content/cityDirectory";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
@@ -43,6 +45,10 @@ export default async function StatePage({ params }: P) {
   const focus = (st.focus ?? []).map((f) => ({ ...f, s: getService(f.service) })).filter((f) => f.s);
   const neighbors = indexableStates().filter((s) => s.region === st.region && s.slug !== st.slug);
   const cityFor = (name: string) => cities.find((c) => c.name.toLowerCase() === name.toLowerCase());
+  const directory = directoryFor(st.abbr).map((d) => {
+    const guide = cityFor(d.name);
+    return guide ? { ...d, guide: routes.city(st.slug, guide.slug) } : d;
+  });
   return (
     <main id="main">
       <JsonLd data={graph(pageGraph({ path, name: `Heating and air conditioning help in ${st.name}`, description: st.intro, type: "CollectionPage", crumbs, faqs: st.faqs, about: [ids.state(st.slug)] }))} />
@@ -142,6 +148,23 @@ export default async function StatePage({ params }: P) {
           <FaqList faqs={st.faqs} title={`${st.name} HVAC questions`} />
         </div>
       </section>
+
+      {directory.length > 0 && (
+        <section id="cities" className="scroll-mt-28 bg-sand-deep py-14">
+          <div className="container-x">
+            <h2 className="text-3xl font-semibold">
+              {st.name} cities we serve ({directory.length})
+            </h2>
+            <p className="mt-2 max-w-3xl text-muted">
+              Contractors in our network take heating and air conditioning calls in these {st.name} cities. Open a city to see its covered ZIP codes. Smaller
+              towns are covered too; use the ZIP checker above to confirm your address.
+            </p>
+            <div className="mt-6">
+              <CityDirectory state={st.name} cities={directory} requestHref={routes.request()} />
+            </div>
+          </div>
+        </section>
+      )}
 
       {neighbors.length > 0 && (
         <section className="bg-white py-12">
