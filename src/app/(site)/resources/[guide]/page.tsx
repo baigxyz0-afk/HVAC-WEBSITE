@@ -60,7 +60,7 @@ export default async function Guide({ params }: P) {
       <section className="bg-ink py-12 text-white">
         <div className="container-x max-w-4xl">
           <Breadcrumbs items={crumbs} light />
-          <p className="eyebrow mt-4 !text-[#7fc8c9]">{a.category}</p>
+          <p className="eyebrow mt-4 !text-[#9fd3c1]">{a.category}</p>
           <h1 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl">{a.title}</h1>
           <p className="mt-4 text-sm text-white/75">Updated <time dateTime={a.updated}>{fmt(a.updated)}</time></p>
         </div>
@@ -92,7 +92,7 @@ export default async function Guide({ params }: P) {
                 </div>
               ))}
               <div className="mb-8 rounded-2xl bg-white p-6 ring-1 ring-line">
-                <h2 className="mb-3 text-2xl font-semibold">When to call a plumber</h2>
+                <h2 className="mb-3 text-2xl font-semibold">When to call a technician</h2>
                 <ul>
                   {a.whenToCall.map((w) => (
                     <li key={w}>{w}</li>
@@ -100,20 +100,20 @@ export default async function Guide({ params }: P) {
                 </ul>
                 {primary && (
                   <p className="!mb-0">
-                    What the plumber does: see <Link href={routes.service(primary.slug)} className="link">{primary.name.toLowerCase()}</Link>.
+                    What the technician does: see <Link href={routes.service(primary.slug)} className="link">{primary.name.toLowerCase()}</Link>.
                   </p>
                 )}
               </div>
             </div>
             <FaqList faqs={a.faqs} title="Common questions" />
             <p className="mt-8 rounded-xl bg-sand-deep p-4 text-sm text-muted">
-              Editorial note: this guide is general information for Phoenix-area homeowners, not a diagnosis. Conditions vary by home, so a licensed plumber should confirm the cause before any repair.
+              Editorial note: this guide is general information for Denver-area homeowners, not a diagnosis. Conditions vary by home, so a licensed HVAC technician should confirm the cause before any repair.
             </p>
           </article>
           <aside className="space-y-5 lg:sticky lg:top-28 lg:self-start">
             <div className="card p-5">
-              <p className="font-serif text-xl font-semibold">Need a plumber for this?</p>
-              <p className="mt-1 text-sm text-muted">Get connected with a licensed plumber in your part of the Valley.</p>
+              <p className="font-serif text-xl font-semibold">Need a technician for this?</p>
+              <p className="mt-1 text-sm text-muted">Get connected with a licensed HVAC contractor in your part of Denver.</p>
               <PhoneLink phone={site.phone} e164={site.phoneE164} location="guide_sidebar" className="btn btn-primary mt-4 w-full whitespace-normal" label={`Call ${site.phone}`} />
               <Link href={routes.request({ service: primary?.slug })} className="btn btn-secondary mt-2 w-full whitespace-normal">
                 Request service

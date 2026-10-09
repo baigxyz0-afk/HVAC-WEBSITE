@@ -2,17 +2,17 @@
 
 const env = (k: string) => (process.env[k] ?? "").trim();
 
-const TEMP_PHONE = "(602) 555-0147"; // fictional 555-01xx range; never emitted in schema
-const TEMP_PHONE_E164 = "+16025550147";
+const TEMP_PHONE = "(303) 555-0142"; // fictional 555-01xx range; never emitted in schema
+const TEMP_PHONE_E164 = "+13035550142";
 
 export const site = {
-  name: "Caliche Plumbing",
-  shortName: "Caliche",
-  domain: "calicheplumbing.com",
-  url: (env("NEXT_PUBLIC_SITE_URL") || "https://calicheplumbing.com").replace(/\/$/, ""),
-  market: "Phoenix metro",
-  marketLong: "the Phoenix metro and Maricopa County",
-  stateAbbr: "AZ",
+  name: "Aspenridge Heating & Air",
+  shortName: "Aspenridge",
+  domain: "aspenridgeair.com",
+  url: (env("NEXT_PUBLIC_SITE_URL") || "https://aspenridgeair.com").replace(/\/$/, ""),
+  market: "Denver metro",
+  marketLong: "the Denver metro and Front Range",
+  stateAbbr: "CO",
   phone: env("NEXT_PUBLIC_BUSINESS_PHONE") || TEMP_PHONE,
   phoneE164: env("NEXT_PUBLIC_BUSINESS_PHONE_E164") || TEMP_PHONE_E164,
   phoneIsReal: Boolean(env("NEXT_PUBLIC_BUSINESS_PHONE")),
@@ -32,13 +32,13 @@ export const site = {
 
 export const availability = site.emergency247
   ? "Emergency calls answered 24/7"
-  : "Same-day service when a plumber is available";
+  : "Same-day service when a technician is available";
 
 export const BRAND_PROMISE =
-  "One call connects you with an independent, licensed plumber who works your part of the Valley.";
+  "One call connects you with an independent, licensed heating and cooling contractor who works your part of Denver.";
 
 export const DISCLOSURE =
-  "Caliche Plumbing is a referral service. We do not perform plumbing work. Calls and requests are connected to independent, licensed plumbing contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with the Arizona Registrar of Contractors.";
+  "Aspenridge Heating & Air is a referral service. We do not perform HVAC work. Calls and requests are connected to independent, licensed heating and cooling contractors in our network who set their own prices and are responsible for their own work. Verify any contractor's license with your city or county building department before work begins.";
 
 export function telHref(e164 = site.phoneE164) {
   return `tel:${e164}`;

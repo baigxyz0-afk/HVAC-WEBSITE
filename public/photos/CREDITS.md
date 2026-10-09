@@ -1,21 +1,24 @@
 # Photo credits
 
-All photos come from Pexels under the [Pexels License](https://www.pexels.com/license/), which permits free commercial use with no attribution required. We credit them here anyway. They were downloaded 2026-09-27 at 1600px wide and converted to WebP.
-
-These are stock photos, not photos of our network's jobs. Replace them with real job photos as they come in, with homeowner consent.
+All photos are from Pexels under the Pexels License (free for commercial use, no attribution required; credited here anyway). They are stock examples, not photos of contractors' jobs.
 
 | File | Pexels ID | Source |
 |---|---|---|
-| phoenix-aerial-neighborhood.webp | 34873755 | https://www.pexels.com/photo/aerial-view-of-residential-neighborhood-in-arizona-34873755/ |
-| phoenix-desert-sunset.webp | 32371656 | https://www.pexels.com/photo/scenic-phoenix-desert-landscape-at-sunset-32371656/ |
-| bathroom-faucet-brushed-nickel.webp | 12196323 | https://www.pexels.com/photo/stainless-steel-faucet-on-white-ceramic-sink-12196323/ |
-| glass-of-tap-water.webp | 12644991 | https://www.pexels.com/photo/hand-holding-glass-of-tap-water-12644991/ |
-| dripping-outdoor-pipe.webp | 36571568 | https://www.pexels.com/photo/water-dripping-from-an-outdoor-pipe-36571568/ |
-| copper-pipe-fittings.webp | 28169591 | https://www.pexels.com/photo/copper-pluming-fitting-28169591/ |
-| shower-head-running.webp | 4194866 | https://www.pexels.com/photo/close-up-photo-of-a-shower-head-4194866/ |
-| water-pressure-gauge.webp | 4744721 | https://www.pexels.com/photo/a-close-up-of-a-water-gauge-4744721/ |
-| lawn-sprinkler.webp | 23408532 | https://www.pexels.com/photo/sprinklers-watering-grass-23408532/ |
-| sink-drain.webp | 220612 | https://www.pexels.com/photo/stainless-steel-sink-drainage-220612/ |
-| gas-burner-flame.webp | 37520689 | https://www.pexels.com/photo/close-up-of-a-lit-gas-stove-burner-37520689/ |
-| plumber-with-wrench.webp | 8486978 | https://www.pexels.com/photo/handywoman-holding-a-plumbers-wrench-8486978/ |
-| wrench-on-sink.webp | 10961064 | https://www.pexels.com/photo/a-spanner-on-stainless-steel-sink-10961064/ |
+| technician-at-outdoor-ac-unit.webp | 32497161 | https://www.pexels.com/photo/32497161/ |
+| hvac-refrigerant-gauges.webp | 6471912 | https://www.pexels.com/photo/6471912/ |
+| technician-servicing-condenser.webp | 5463575 | https://www.pexels.com/photo/5463575/ |
+| glowing-heating-element.webp | 36788832 | https://www.pexels.com/photo/36788832/ |
+| ductless-mini-split-wall-unit.webp | 38788452 | https://www.pexels.com/photo/38788452/ |
+| smart-thermostat-adjusted.webp | 36077581 | https://www.pexels.com/photo/36077581/ |
+| bright-living-room-air-quality.webp | 7060814 | https://www.pexels.com/photo/7060814/ |
+| supply-air-ductwork.webp | 11538226 | https://www.pexels.com/photo/11538226/ |
+| suburban-two-story-home.webp | 8583638 | https://www.pexels.com/photo/8583638/ |
+| suburban-house-driveway.webp | 4832530 | https://www.pexels.com/photo/4832530/ |
+| denver-skyline-sunset.webp | 16108565 | https://www.pexels.com/photo/16108565/ |
+| denver-skyline-aerial.webp | 33258091 | https://www.pexels.com/photo/33258091/ |
+| boulder-flatirons.webp | 39052444 | https://www.pexels.com/photo/39052444/ |
+| hailstones-after-storm.webp | 34429004 | https://www.pexels.com/photo/34429004/ |
+| before-window-ac-units.webp | 11229452 | https://www.pexels.com/photo/11229452/ |
+| before-weathered-outdoor-units.webp | 12625396 | https://www.pexels.com/photo/12625396/ |
+| after-new-condenser-unit.webp | 39318564 | https://www.pexels.com/photo/39318564/ |
+| after-ductless-mini-split.webp | 38788452 | https://www.pexels.com/photo/38788452/ (crop) |

@@ -129,12 +129,24 @@ const slash = await get("/about");
 if (![301, 308].includes(slash.res.status)) err("/about", "no trailing-slash redirect");
 const param = await get("/about/?utm_source=x");
 if (toPath(attr(param.text, /<link rel="canonical" href="([^"]*)"/) || "http://x/") !== "/about/") err("/about/?utm_source=x", "param canonical wrong");
-for (const p of ["/lp/slab-leak/", "/request-service/", "/thank-you/"]) {
+for (const p of ["/lp/ac-repair/", "/request-service/", "/thank-you/"]) {
   const { res, text } = await get(p);
   if (!/noindex/.test(text) || !/noindex/.test(res.headers.get("x-robots-tag") || "")) err(p, "missing noindex meta or header");
 }
-const kw = await get("/lp/slab-leak/?kw=%3Cscript%3Ealert(1)%3C/script%3E");
-if (/<script>alert/.test(kw.text)) err("/lp/slab-leak/", "kw reflected");
+const kw = await get("/lp/ac-repair/?kw=%3Cscript%3Ealert(1)%3C/script%3E");
+if (/<script>alert/.test(kw.text)) err("/lp/ac-repair/", "kw reflected");
+const legacy = await get("/resources/heat-pump-vs-furnace-kansas-city/");
+if (![301, 308].includes(legacy.res.status) || legacy.res.headers.get("location") !== "/resources/heat-pump-vs-furnace-denver/") {
+  err("/resources/heat-pump-vs-furnace-kansas-city/", `expected redirect to /resources/heat-pump-vs-furnace-denver/, got ${legacy.res.status} to ${legacy.res.headers.get("location")}`);
+}
+const indexnowKey = await get("/e4c3b2a19876543210fedcbaabcdef01.txt");
+if (indexnowKey.res.status !== 200 || !indexnowKey.text.includes("e4c3b2a19876543210fedcbaabcdef01")) {
+  err("/e4c3b2a19876543210fedcbaabcdef01.txt", `IndexNow key file missing or invalid (status ${indexnowKey.res.status})`);
+}
+const indexnowApi = await get("/api/indexnow/");
+if (indexnowApi.res.status !== 200) {
+  err("/api/indexnow/", `IndexNow API endpoint returned ${indexnowApi.res.status}`);
+}
 const llms = (await get("/llms.txt")).text;
 for (const u of urls) if (!llms.includes(u === "/" ? "](" : u)) err("/llms.txt", `missing ${u}`);
 const cross = await fetch(BASE + "/api/lead", { method: "POST", headers: { "content-type": "application/json", origin: "https://evil.example" }, body: "{}" });

@@ -13,7 +13,7 @@ export default function NotFound() {
           <p className="mt-4 text-lg text-muted">The link may be old. Try one of these instead.</p>
           <div className="mt-8 flex flex-wrap justify-center gap-3">
             <Link href="/" className="btn btn-primary">Home</Link>
-            <Link href="/plumbing-services/" className="btn btn-secondary">Services</Link>
+            <Link href="/hvac-services/" className="btn btn-secondary">Services</Link>
             <Link href="/locations/" className="btn btn-secondary">Locations</Link>
           </div>
         </div>

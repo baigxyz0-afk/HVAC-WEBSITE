@@ -7,9 +7,9 @@ import { Hero } from "@/components/Hero";
 import { JsonLd } from "@/components/ui";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Plumbing Guides for Phoenix-Area Homeowners";
+const title = "Heating & Cooling Guides for Denver Homes";
 const description =
-  "Plain-language guides to Valley plumbing: high water bills, slab leaks, hard water, polybutylene, water heaters, pressure, backflow freezes and emergencies.";
+  "Plain-language Denver HVAC guides: AC not cooling, frozen coils, furnace failures, heat pumps, CO alarms, filters and replacement.";
 const path = routes.resources();
 
 export const metadata = pageMeta({ title, description, path });
@@ -23,7 +23,7 @@ export default function Resources() {
   return (
     <main id="main">
       <JsonLd data={graph(pageGraph({ path, name: title, description, type: "CollectionPage", crumbs, about: [ids.org] }))} />
-      <Hero crumbs={crumbs} eyebrow="Resources" title="Straight answers about desert plumbing" lead={<p>Each guide opens with the short answer, then explains the why, what you can check yourself, and when to call a plumber.</p>} />
+      <Hero crumbs={crumbs} eyebrow="Resources" title="Straight answers about heating and cooling" lead={<p>Each guide opens with the short answer, then explains the why, what you can check yourself, and when to call a technician.</p>} />
       <section className="py-14">
         <div className="container-x space-y-12">
           {cats.map((cat) => (

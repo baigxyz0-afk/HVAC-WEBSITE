@@ -20,7 +20,7 @@ export function Header() {
         <div className="container-x flex h-9 items-center justify-between gap-4">
           <span className="truncate">Serving {site.marketLong}</span>
           <span className="hidden md:inline">{availability}</span>
-          <span className="hidden lg:inline">Licensed, independent Arizona plumbers</span>
+          <span className="hidden lg:inline">Licensed, independent HVAC contractors</span>
         </div>
       </div>
       <HeaderShell>
@@ -28,13 +28,13 @@ export function Header() {
         <nav aria-label="Main" className="hidden flex-1 items-center justify-center lg:flex">
           <MegaMenu
             label="Services"
-            href="/plumbing-services/"
+            href="/hvac-services/"
             groups={services}
             feature={{
-              title: "Plumbing emergency?",
-              body: "Burst pipe, major leak or sewage backup. Shut off your main valve, then call.",
+              title: "No heat or no AC?",
+              body: "No heat in freezing weather or no cooling in a heat wave. Smell gas? Leave and call the utility first.",
               href: routes.emergency(),
-              cta: "Emergency plumbing",
+              cta: "Emergency heating & AC",
               alert: true,
             }}
           />
@@ -43,8 +43,8 @@ export function Header() {
             href="/locations/"
             groups={locations}
             feature={{
-              title: "Across the Valley",
-              body: "Phoenix, the West and Northwest Valley, Scottsdale and the East Valley.",
+              title: "Across Denver",
+              body: "Denver, the western and northern suburbs, Aurora and the south metro.",
               href: routes.locations(),
               cta: "All service areas",
             }}
@@ -57,7 +57,7 @@ export function Header() {
         </nav>
         <div className="ml-auto flex items-center gap-3 lg:ml-0">
           <div className="hidden text-right leading-tight sm:block">
-            <span className="block text-xs text-muted">Call a plumber</span>
+            <span className="block text-xs text-muted">Call for HVAC help</span>
             <PhoneLink phone={site.phone} e164={site.phoneE164} location="header" className="font-serif text-xl font-semibold text-ink hover:text-teal-deep" icon={false} />
           </div>
           <Link href={routes.request()} className="btn btn-primary hidden md:inline-flex">

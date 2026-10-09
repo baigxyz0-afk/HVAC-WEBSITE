@@ -2,7 +2,7 @@ import "server-only";
 import { indexableUrls } from "./sitemap";
 import { ogKeyFor } from "./seo";
 import { getService, getCategory } from "@/content/services";
-import { cityBySlug } from "@/content/locations";
+import { cityBySlug, cityLabel } from "@/content/locations";
 import { getArticle } from "@/content/articles";
 
 export type OgCard = { key: string; eyebrow: string; title: string };
@@ -11,9 +11,9 @@ export type OgCard = { key: string; eyebrow: string; title: string };
 export function ogCards(): OgCard[] {
   return indexableUrls().map((u) => {
     const parts = u.path.split("/").filter(Boolean);
-    let eyebrow = "Phoenix metro plumbing";
+    let eyebrow = "Denver heating & air";
     let title = u.title;
-    if (parts[0] === "plumbing-services" && parts[1]) {
+    if (parts[0] === "hvac-services" && parts[1]) {
       const s = getService(parts[1]);
       if (s) {
         eyebrow = getCategory(s.category).name;
@@ -21,13 +21,13 @@ export function ogCards(): OgCard[] {
       }
     } else if (parts[0] === "locations" && parts[2]) {
       const c = cityBySlug(parts[2]);
-      eyebrow = "Service area · Maricopa County";
-      title = parts[3] ? u.title : `Plumbing help in ${c?.name}, AZ`;
+      eyebrow = `Service area · ${c?.county} County`;
+      title = parts[3] ? u.title : `Heating & AC help in ${c ? cityLabel(c) : ""}`;
     } else if (parts[0] === "resources" && parts[1]) {
       const a = getArticle(parts[1]);
       eyebrow = `Guide · ${a?.category}`;
     } else if (u.path === "/") {
-      title = "Plumbing help built for desert homes";
+      title = "Heating and air help built for Denver's extremes";
     }
     return { key: ogKeyFor(u.path), eyebrow, title };
   });

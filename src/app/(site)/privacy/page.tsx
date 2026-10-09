@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 import { SimplePage } from "@/components/SimplePage";
 
 const path = routes.privacy();
-export const metadata = pageMeta({ title: "Privacy Policy", description: "How Caliche Plumbing collects, uses and shares information when you call or request plumbing service, including sharing with independent plumbers.", path });
+export const metadata = pageMeta({ title: "Privacy Policy", description: "How Aspenridge Heating & Air collects, uses and shares information when you call or request HVAC service, including sharing with independent contractors.", path });
 
 export default function Privacy() {
   return (
@@ -14,7 +14,7 @@ export default function Privacy() {
       <h2>Calls</h2>
       <p>Phone numbers on this site may be call-tracking numbers. Calls may be routed through a third-party provider and may be recorded for quality and billing purposes, where permitted by law, with notice at the start of the call.</p>
       <h2>How we share it</h2>
-      <p>{site.name} is a referral service. We share your request with up to three independent, licensed plumbing contractors or lead partners who serve your area so they can contact you about the job. We don't sell your information for unrelated marketing.</p>
+      <p>{site.name} is a referral service. We share your request with up to three independent, licensed HVAC contractors or lead partners who serve your area so they can contact you about the job. We don't sell your information for unrelated marketing.</p>
       <h2>Texts and calls</h2>
       <p>If you agree on the form, we and the contractors may call or text you about your request, including by automated means. Consent isn't required to buy anything. Reply STOP to opt out of texts.</p>
       <h2>Cookies and analytics</h2>

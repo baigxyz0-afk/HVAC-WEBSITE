@@ -5,14 +5,13 @@ export type Status = "DRAFT" | "REVIEW" | "PUBLISHED" | "NOINDEX" | "ARCHIVED";
 export type Faq = { q: string; a: string };
 
 export type CategorySlug =
-  | "hard-water"
-  | "hidden-leaks"
-  | "repiping"
-  | "water-heaters"
-  | "pressure-supply"
-  | "irrigation-backflow"
-  | "drains-sewer"
-  | "gas-lines";
+  | "cooling"
+  | "heating"
+  | "heat-pumps"
+  | "ductless"
+  | "air-quality"
+  | "ductwork"
+  | "controls";
 
 export type Category = {
   slug: CategorySlug;
@@ -22,14 +21,15 @@ export type Category = {
 };
 
 export type IconName =
-  | "drop"
-  | "filter"
-  | "slab"
-  | "pipe"
+  | "snow"
   | "flame"
+  | "heatpump"
+  | "fan"
+  | "filter"
+  | "duct"
+  | "thermostat"
+  | "drop"
   | "gauge"
-  | "sprinkler"
-  | "drain"
   | "gas"
   | "alert"
   | "phone"
@@ -116,7 +116,7 @@ export type Article = {
   title: string;
   seoTitle: string;
   metaDescription: string;
-  category: "Hard water" | "Leaks" | "Water heaters" | "Pipes" | "Outdoor" | "Drains" | "Emergencies";
+  category: "Cooling" | "Heating" | "Heat pumps" | "Air quality" | "Energy & cost" | "Emergencies";
   status: Status;
   answer: string;
   sections: { heading: string; body: string[]; list?: string[] }[];

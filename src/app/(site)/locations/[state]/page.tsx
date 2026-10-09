@@ -20,8 +20,8 @@ type P = { params: Promise<{ state: string }> };
 export async function generateMetadata({ params }: P) {
   const st = getState((await params).state)!;
   return pageMeta({
-    title: `Plumbing Help in ${st.name}: Phoenix Metro`,
-    description: `How plumbing works in ${st.name}'s Phoenix metro: housing eras, water providers, permits and ROC licensing, plus every town we serve in Maricopa County.`,
+    title: `Heating & Cooling in ${st.name}: Denver Metro`,
+    description: `Heating and cooling on the ${st.name} side of Denver: housing eras, utilities, permits and licensing, plus every town we serve.`,
     path: routes.state(st.slug),
   });
 }
@@ -38,11 +38,11 @@ export default async function StatePage({ params }: P) {
   const cities = indexableCities().filter((c) => c.stateSlug === st.slug);
   return (
     <main id="main">
-      <JsonLd data={graph(pageGraph({ path, name: `Plumbing help in ${st.name}`, description: st.intro, type: "CollectionPage", crumbs, faqs: st.faqs, about: [ids.state(st.slug)] }))} />
+      <JsonLd data={graph(pageGraph({ path, name: `Heating and cooling help in ${st.name}`, description: st.intro, type: "CollectionPage", crumbs, faqs: st.faqs, about: [ids.state(st.slug)] }))} />
       <Hero
         crumbs={crumbs}
-        eyebrow={`${st.name} · Maricopa County`}
-        title={`Plumbing help in ${st.name}'s Valley of the Sun`}
+        eyebrow={`${st.name} · Denver metro`}
+        title={`Heating and cooling help on the ${st.name} side`}
         lead={<p>{st.intro}</p>}
         aside={
           <div className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">

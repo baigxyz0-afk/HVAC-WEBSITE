@@ -6,43 +6,42 @@ export type Photo = { src: string; w: number; h: number; alt: string };
 const p = (name: string, w: number, h: number, alt: string): Photo => ({ src: `/photos/${name}.webp`, w, h, alt });
 
 export const photos = {
-  phoenixAerial: p("phoenix-aerial-neighborhood", 1600, 900, "Aerial view of a Phoenix-area residential neighborhood"),
-  phoenixSunset: p("phoenix-desert-sunset", 1600, 1067, "Homes on a desert mountainside in Phoenix at sunset"),
-  faucet: p("bathroom-faucet-brushed-nickel", 1600, 1067, "Brushed nickel bathroom faucet on a white sink"),
-  tapWater: p("glass-of-tap-water", 1600, 2409, "Filling a glass with tap water"),
-  drip: p("dripping-outdoor-pipe", 1600, 2400, "Water dripping from a leaking pipe"),
-  copper: p("copper-pipe-fittings", 1600, 1067, "Row of copper pipe fittings"),
-  shower: p("shower-head-running", 1600, 1067, "Shower head running hot water"),
-  gauge: p("water-pressure-gauge", 1600, 1067, "Water pressure gauge on a supply line"),
-  sprinkler: p("lawn-sprinkler", 1600, 3578, "Irrigation sprinkler watering a lawn"),
-  drain: p("sink-drain", 1600, 1200, "Stainless steel sink drain"),
-  gas: p("gas-burner-flame", 1600, 2134, "Blue flame on a gas burner"),
-  plumber: p("plumber-with-wrench", 1600, 2133, "Tradesperson in safety gear holding a pipe wrench"),
-  wrench: p("wrench-on-sink", 1600, 2133, "Wrench resting on a wet stainless steel sink"),
+  technician: p("technician-at-outdoor-ac-unit", 1600, 1067, "HVAC technician inspecting a central air conditioner outside a house"),
+  gauges: p("hvac-refrigerant-gauges", 1600, 2288, "Technician reading refrigerant manifold gauges"),
+  condenser: p("technician-servicing-condenser", 1600, 1137, "Technician testing an outdoor condensing unit"),
+  heating: p("glowing-heating-element", 1600, 1067, "Glowing red heating element"),
+  miniSplit: p("ductless-mini-split-wall-unit", 1600, 1067, "Ductless mini-split head mounted high on a white wall"),
+  thermostat: p("smart-thermostat-adjusted", 1600, 1067, "Hand adjusting a wall-mounted smart thermostat"),
+  livingRoom: p("bright-living-room-air-quality", 1600, 1068, "Bright living room with a wall-mounted air conditioner"),
+  ductwork: p("supply-air-ductwork", 1600, 1067, "Sheet-metal supply air ductwork under a ceiling"),
+  skyline: p("denver-skyline-sunset", 1600, 1067, "Downtown Denver skyline at sunset"),
+  civic: p("denver-skyline-aerial", 1600, 2133, "Downtown Denver towers above Civic Center Park"),
+  foothills: p("boulder-flatirons", 1600, 1067, "Boulder neighborhoods below the Flatirons"),
+  hail: p("hailstones-after-storm", 1600, 2133, "Hailstones on a deck after a storm"),
+  home: p("suburban-two-story-home", 1600, 1067, "Two-story suburban home with a front lawn and driveway"),
+  house: p("suburban-house-driveway", 1600, 1067, "Suburban house with a two-car garage"),
 };
 
 export const categoryPhotos: Record<CategorySlug, Photo> = {
-  "hard-water": photos.faucet,
-  "hidden-leaks": photos.drip,
-  repiping: photos.copper,
-  "water-heaters": photos.shower,
-  "pressure-supply": photos.gauge,
-  "irrigation-backflow": photos.sprinkler,
-  "drains-sewer": photos.drain,
-  "gas-lines": photos.gas,
+  cooling: photos.technician,
+  heating: photos.heating,
+  "heat-pumps": photos.condenser,
+  ductless: photos.miniSplit,
+  "air-quality": photos.livingRoom,
+  ductwork: photos.ductwork,
+  controls: photos.thermostat,
 };
 
 export const servicePhotoOverrides: Record<string, Photo> = {
-  "reverse-osmosis-systems": photos.tapWater,
-  "whole-house-filtration": photos.tapWater,
+  "ac-tune-up": photos.gauges,
+  "emergency-hvac-repair": photos.condenser,
 };
 
 export const guidePhotos: Record<Article["category"], Photo> = {
-  "Hard water": photos.faucet,
-  Leaks: photos.drip,
-  "Water heaters": photos.shower,
-  Pipes: photos.copper,
-  Outdoor: photos.sprinkler,
-  Drains: photos.drain,
-  Emergencies: photos.wrench,
+  Cooling: photos.technician,
+  Heating: photos.heating,
+  "Heat pumps": photos.condenser,
+  "Air quality": photos.livingRoom,
+  "Energy & cost": photos.foothills,
+  Emergencies: photos.gauges,
 };

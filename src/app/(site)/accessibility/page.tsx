@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 import { SimplePage } from "@/components/SimplePage";
 
 const path = routes.accessibility();
-export const metadata = pageMeta({ title: "Accessibility Statement", description: "Caliche Plumbing's commitment to an accessible website, the standards we follow, and how to report a barrier or get help by phone.", path });
+export const metadata = pageMeta({ title: "Accessibility Statement", description: "Aspenridge Heating & Air's commitment to an accessible website, the standards we follow, and how to report a barrier or get help by phone.", path });
 
 export default function Accessibility() {
   return (

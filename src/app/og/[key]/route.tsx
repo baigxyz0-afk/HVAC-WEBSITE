@@ -11,20 +11,20 @@ export async function GET(_req: Request, { params }: { params: Promise<{ key: st
   const card = ogCards().find((c) => c.key === key) ?? ogCards()[0];
   return new ImageResponse(
     (
-      <div style={{ width: "100%", height: "100%", display: "flex", background: "#1b2b34", color: "white", fontFamily: "serif" }}>
+      <div style={{ width: "100%", height: "100%", display: "flex", background: "#1b2838", color: "white", fontFamily: "serif" }}>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "space-between", padding: 72, width: 860 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
-            <div style={{ width: 64, height: 64, borderRadius: 14, background: "#2a7f83", display: "flex" }} />
+            <div style={{ width: 64, height: 64, borderRadius: 14, background: "#2f6b5a", display: "flex" }} />
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <span style={{ fontSize: 40, fontWeight: 700 }}>Caliche</span>
-              <span style={{ fontSize: 16, letterSpacing: 6, color: "#9fd8d9" }}>PLUMBING</span>
+              <span style={{ fontSize: 40, fontWeight: 700 }}>Aspenridge</span>
+              <span style={{ fontSize: 16, letterSpacing: 6, color: "#bfe6d8" }}>HEATING & AIR</span>
             </div>
           </div>
           <div style={{ display: "flex", flexDirection: "column" }}>
-            <span style={{ fontSize: 26, color: "#9fd8d9", textTransform: "uppercase", letterSpacing: 2 }}>{card.eyebrow}</span>
+            <span style={{ fontSize: 26, color: "#bfe6d8", textTransform: "uppercase", letterSpacing: 2 }}>{card.eyebrow}</span>
             <span style={{ fontSize: 64, fontWeight: 700, lineHeight: 1.1, marginTop: 16 }}>{card.title}</span>
           </div>
-          <span style={{ fontSize: 26, color: "rgba(255,255,255,0.75)" }}>Phoenix · Scottsdale · West Valley · East Valley</span>
+          <span style={{ fontSize: 26, color: "rgba(255,255,255,0.75)" }}>Denver · Aurora · Lakewood · Littleton · Parker</span>
         </div>
         <div style={{ display: "flex", flexDirection: "column", justifyContent: "flex-end", flex: 1, background: "#efe6d6" }}>
           <div style={{ height: 120, background: "#e8c9a0", display: "flex" }} />

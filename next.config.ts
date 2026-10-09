@@ -9,7 +9,8 @@ const config: NextConfig = {
   images: { formats: ["image/avif", "image/webp"], deviceSizes: [390, 640, 828, 1080, 1280, 1600] },
   async redirects() {
     return [
-      { source: "/:path*", has: [{ type: "host", value: "www.calicheplumbing.com" }], destination: "https://calicheplumbing.com/:path*", permanent: true },
+      { source: "/:path*", has: [{ type: "host", value: "www.aspenridgeair.com" }], destination: "https://aspenridgeair.com/:path*", permanent: true },
+      { source: "/resources/heat-pump-vs-furnace-kansas-city/", destination: "/resources/heat-pump-vs-furnace-denver/", permanent: true },
       ...redirects,
     ];
   },

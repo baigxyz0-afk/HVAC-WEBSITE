@@ -11,7 +11,7 @@ export default function LpLayout({ children }: { children: React.ReactNode }) {
       <header className="border-b border-line bg-white">
         <div className="container-x flex h-18 items-center justify-between gap-3 py-3">
           <Logo />
-          <PhoneLink phone={phone} e164={e164} location="lp_header" className="btn btn-primary" />
+          <PhoneLink phone={phone} e164={e164} location="lp_header" className="btn btn-primary !px-3 text-sm sm:!px-5 sm:text-base" />
         </div>
       </header>
       {children}

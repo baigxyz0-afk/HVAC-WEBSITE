@@ -4,7 +4,7 @@ import { DISCLOSURE } from "@/content/site";
 import { SimplePage } from "@/components/SimplePage";
 
 const path = routes.terms();
-export const metadata = pageMeta({ title: "Terms of Use", description: "Terms for using the Caliche Plumbing website and referral service, including the role of independent plumbing contractors in Arizona.", path });
+export const metadata = pageMeta({ title: "Terms of Use", description: "Terms for using the Aspenridge Heating & Air website and referral service, including the role of independent HVAC contractors in Coloradorizona.", path });
 
 export default function Terms() {
   return (
@@ -14,11 +14,11 @@ export default function Terms() {
       <h2>No guarantee of availability</h2>
       <p>Coverage and response times depend on which contractors are active in your area. Submitting a request doesn't guarantee a contractor will be available.</p>
       <h2>Contractor work</h2>
-      <p>Any agreement for plumbing work is between you and the contractor. The contractor is responsible for pricing, permits, workmanship and warranties.</p>
+      <p>Any agreement for HVAC work is between you and the contractor. The contractor is responsible for pricing, permits, workmanship and warranties.</p>
       <h2>Information on this site</h2>
-      <p>Guides are general information for Arizona homeowners and aren't a substitute for an on-site diagnosis by a licensed professional. In an emergency involving gas, call 911 or your gas utility.</p>
+      <p>Guides are general information for Denver-area homeowners and aren't a substitute for an on-site diagnosis by a licensed professional. In an emergency involving gas, call 911 or your gas utility.</p>
       <h2>Governing law</h2>
-      <p>These terms are governed by the laws of the State of Arizona.</p>
+      <p>These terms are governed by the laws of the State of Colorado.</p>
     </SimplePage>
   );
 }

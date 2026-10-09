@@ -7,8 +7,8 @@ import { SimplePage } from "@/components/SimplePage";
 import { PhoneLink } from "@/components/PhoneLink";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 
-const title = "Contact Caliche Plumbing";
-const description = "Call or send a request to get connected with a licensed plumber in the Phoenix metro. Emergencies: shut off your main valve and call.";
+const title = "Contact Aspenridge Heating & Air";
+const description = "Call or send a request to get connected with a licensed HVAC contractor in the Denver metro. Smell gas? Leave and call the gas utility first.";
 const path = routes.contact();
 export const metadata = pageMeta({ title, description, path });
 
@@ -32,7 +32,7 @@ export default function Contact() {
             )}
             {site.hours && <p>Hours: {site.hours}</p>}
             <p className="mt-6 text-base text-muted">
-              {site.name} is a service-area referral business with no walk-in office. Plumbing work is done by independent, licensed contractors.
+              {site.name} is a service-area referral business with no walk-in office. HVAC work is done by independent, licensed contractors.
             </p>
           </div>
           <LeadFormBlock compact />

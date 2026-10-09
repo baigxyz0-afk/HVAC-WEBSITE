@@ -33,13 +33,13 @@ export default async function Landing({ params, searchParams }: P) {
       <section className="bg-ink py-10 text-white lg:py-14">
         <div className="container-x grid gap-8 lg:grid-cols-[minmax(0,1fr)_420px] lg:items-start">
           <div className="min-w-0">
-            <p className="eyebrow !text-[#7fc8c9]">Phoenix metro · {availability}</p>
+            <p className="eyebrow !text-[#9fd3c1]">Denver metro · {availability}</p>
             <h1 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl">{headline}</h1>
             <p className="mt-4 text-lg text-white/85">{l.sub}</p>
             <ul className="mt-6 space-y-2">
               {l.bullets.map((b) => (
                 <li key={b} className="flex gap-3">
-                  <Icon name="check" className="h-6 w-6 shrink-0 text-[#7fc8c9]" />
+                  <Icon name="check" className="h-6 w-6 shrink-0 text-[#9fd3c1]" />
                   {b}
                 </li>
               ))}
@@ -47,7 +47,7 @@ export default async function Landing({ params, searchParams }: P) {
             <a href={`tel:${e164}`} className="btn btn-primary mt-7">
               <Icon name="phone" className="h-5 w-5" /> Call {phone}
             </a>
-            <p className="mt-4 text-sm text-white/70">Serving Phoenix, Scottsdale, Glendale, Peoria, Surprise, the Sun Cities, Goodyear, Avondale and the East Valley.</p>
+            <p className="mt-4 text-sm text-white/70">Serving Denver, Aurora, Lakewood, Arvada, Westminster, Thornton, Littleton, Englewood, Centennial, Parker, Castle Rock and Boulder.</p>
           </div>
           <div className="text-ink">
             <LeadFormBlock id="lead-form" defaultService={l.service} compact phone={phone} e164={e164} />

@@ -1,6 +1,6 @@
 {
-  "name": "Caliche Plumbing",
-  "short_name": "Caliche",
+  "name": "Aspenridge Heating & Air",
+  "short_name": "Aspenridge",
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
       "type": "image/png"
     }
   ],
-  "theme_color": "#1b2b34",
+  "theme_color": "#1b2838",
   "background_color": "#f7f2e8",
   "display": "standalone",
   "start_url": "/"

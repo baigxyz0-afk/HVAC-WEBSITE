@@ -60,12 +60,12 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
   function validate(fields: string[]) {
     const e: Errors = {};
     if (fields.includes("service") && !f.service) e.service = "Choose what you need help with";
-    if (fields.includes("emergency") && emergency === null) e.emergency = "Let us know if water is actively leaking";
+    if (fields.includes("emergency") && emergency === null) e.emergency = "Let us know if this is urgent";
     if (fields.includes("zip") && !/^\d{5}$/.test(f.zip)) e.zip = "Enter a 5-digit ZIP code";
     if (fields.includes("name") && f.name.trim().length < 2) e.name = "Enter your name";
     if (fields.includes("phone") && !phoneRe.test(f.phone.trim())) e.phone = "Enter a 10-digit US phone number";
     if (fields.includes("email") && f.email && !/^\S+@\S+\.\S+$/.test(f.email)) e.email = "Enter a valid email";
-    if (fields.includes("consent") && !f.consent) e.consent = "Please agree so a plumber can contact you";
+    if (fields.includes("consent") && !f.consent) e.consent = "Please agree so a contractor can contact you";
     setErrors(e);
     if (Object.keys(e).length) track("form_error", { form: id, fields: Object.keys(e).join(",") });
     return !Object.keys(e).length;
@@ -169,7 +169,7 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
             {err("service")}
           </div>
           <fieldset>
-            <legend className="field-label">Is water actively leaking right now?</legend>
+            <legend className="field-label">Is this urgent (no heat in freezing weather, no AC in extreme heat, or a burning smell)?</legend>
             <div className="grid grid-cols-2 gap-2" {...aria("emergency")} tabIndex={errors.emergency ? -1 : undefined}>
               {[
                 ["yes", "Yes"],
@@ -185,8 +185,8 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
           </fieldset>
           {emergency && (
             <div className="rounded-lg bg-alert-tint p-4 text-sm">
-              <p className="font-semibold text-alert">Shut off your main water valve first.</p>
-              <p className="mt-1">Calling is fastest for active leaks.</p>
+              <p className="font-semibold text-alert">Smell gas or CO alarm? Leave the house and call 911 or the gas utility first.</p>
+              <p className="mt-1">Calling is fastest for urgent problems.</p>
               <a href={`tel:${e164}`} onClick={() => track("emergency_call_click", { location: "form" })} className="btn btn-alert mt-3 w-full">
                 Call {phone}
               </a>
@@ -211,7 +211,7 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
           </div>
           <div>
             <label htmlFor={`${id}-timing`} className="field-label">
-              When do you need a plumber?
+              When do you need a technician?
             </label>
             <select id={`${id}-timing`} className="field" value={f.timing} onChange={(e) => set("timing", e.target.value)}>
               <option value="asap">As soon as possible</option>
@@ -263,7 +263,7 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
               </div>
               <div>
                 <label htmlFor={`${id}-notes`} className="field-label">
-                  Anything the plumber should know? <span className="font-normal text-muted">(optional)</span>
+                  Anything the technician should know? <span className="font-normal text-muted">(optional)</span>
                 </label>
                 <textarea id={`${id}-notes`} rows={3} maxLength={1000} className="field py-2" value={f.notes} onChange={(e) => set("notes", e.target.value)} />
               </div>
@@ -273,7 +273,7 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
             <label className="flex items-start gap-3 text-sm">
               <input type="checkbox" className="mt-1 h-5 w-5 shrink-0" checked={f.consent} onChange={(e) => set("consent", e.target.checked)} {...aria("consent")} />
               <span>
-                I agree that Caliche Plumbing may share my request with up to three independent, licensed plumbers who serve my area, and that they and Caliche may call or text me about it at the number provided, including by automated means. Consent isn't a condition of purchase. Message and data rates may apply. See our{" "}
+                I agree that Aspenridge Heating & Air may share my request with up to three independent, licensed HVAC contractors who serve my area, and that they and Aspenridge may call or text me about it at the number provided, including by automated means. Consent isn't a condition of purchase. Message and data rates may apply. See our{" "}
                 <a href="/privacy/" className="link">Privacy Policy</a>.
               </span>
             </label>
@@ -301,7 +301,7 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
           {step === 3 ? (busy ? "Sending…" : "Send request") : "Continue"}
         </button>
       </div>
-      <p className="mt-3 text-center text-xs text-muted">Free to request. The plumber quotes before any work.</p>
+      <p className="mt-3 text-center text-xs text-muted">Free to request. The contractor quotes before any work.</p>
     </form>
   );
 }

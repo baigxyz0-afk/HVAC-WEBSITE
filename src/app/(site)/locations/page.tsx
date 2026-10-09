@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { regions, states } from "@/content/locations";
+import { regions, states, cityBySlug } from "@/content/locations";
 import { indexableCities, indexableCityServices } from "@/lib/sitemap";
 import { pageMeta } from "@/lib/seo";
 import { routes } from "@/lib/routes";
@@ -9,9 +9,9 @@ import { JsonLd } from "@/components/ui";
 import { ZipChecker } from "@/components/ZipChecker";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Plumbing Service Areas Across the Phoenix Metro";
+const title = "HVAC Service Areas Across Denver";
 const description =
-  "Licensed plumbers across Maricopa County: Phoenix, Scottsdale, Glendale, Peoria, Surprise, the Sun Cities, Goodyear, Mesa, Tempe, Chandler and Gilbert.";
+  "Licensed HVAC contractors across the Denver metro and Front Range: Denver, Aurora, Lakewood, Littleton, Arvada, Westminster, Parker, Castle Rock and more.";
 const path = routes.locations();
 
 export const metadata = pageMeta({ title, description, path });
@@ -29,8 +29,8 @@ export default function LocationsHub() {
       <Hero
         crumbs={crumbs}
         eyebrow="Service areas"
-        title="Plumbers across the Valley"
-        lead={<p>We connect homeowners with independent, licensed plumbers across much of Maricopa County. Check your ZIP code, or pick your town to read about local housing, water and permits.</p>}
+        title="Heating and cooling help across Denver"
+        lead={<p>We connect homeowners with independent, licensed HVAC contractors across the Denver metro. Check your ZIP code, or pick your town to read about local housing, utilities and permits.</p>}
         aside={
           <div className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
             <ZipChecker dark />
@@ -61,7 +61,7 @@ export default function LocationsHub() {
             <ul className="mt-4 space-y-2">
               {combos.map((cs) => (
                 <li key={cs.citySlug + cs.serviceSlug}>
-                  <Link href={routes.cityService("arizona", cs.citySlug, cs.serviceSlug)} className="link">
+                  <Link href={routes.cityService(cityBySlug(cs.citySlug)!.stateSlug, cs.citySlug, cs.serviceSlug)} className="link">
                     {cs.h1}
                   </Link>
                 </li>
@@ -75,16 +75,16 @@ export default function LocationsHub() {
                 </Link>
               ))}
             </p>
-            <p className="mt-2 text-sm text-muted">Looking for a service instead? <Link href={routes.services()} className="link">All plumbing services</Link></p>
+            <p className="mt-2 text-sm text-muted">Looking for a service instead? <Link href={routes.services()} className="link">All HVAC services</Link></p>
           </div>
         </div>
       </section>
       <section className="bg-white py-14">
         <div className="container-x grid gap-8 md:grid-cols-3">
           {[
-            ["How service areas work", "Caliche is a referral service. When you call or send a request, we route it to an independent, licensed plumber who has chosen to serve your ZIP code. Coverage depends on which plumbers are active in your area."],
-            ["What changes town to town", "Housing age decides the problems: galvanized and cast iron in older cores like central Phoenix, Tempe and Sun City; polybutylene in 1978–1995 neighborhoods; and hard-water wear on newer homes in Surprise, Goodyear and Gilbert."],
-            ["Permits and utilities", "Each city issues its own plumbing permits, and Maricopa County covers unincorporated areas like Sun City and Sun City West. Water comes from city utilities, EPCOR or Liberty, depending on where you live."],
+            ["How service areas work", "Aspenridge is a referral service. When you call or send a request, we route it to an independent, licensed HVAC contractor who has chosen to serve your ZIP code. Coverage depends on which contractors are active in your area."],
+            ["What changes town to town", "Housing age decides the problems: swamp coolers and homes with no central air in older Denver neighborhoods; aging original ductwork in postwar Aurora, Lakewood and Arvada; and builder-grade systems reaching end of life in Highlands Ranch, Parker and Castle Rock."],
+            ["Permits and utilities", "Each city or county issues its own mechanical permits, and Denver licenses mechanical contractors. Xcel Energy supplies electricity and natural gas to most of the metro, and some areas are served by Black Hills Energy or local electric co-ops."],
           ].map(([t, b]) => (
             <div key={t}>
               <h2 className="text-2xl font-semibold">{t}</h2>

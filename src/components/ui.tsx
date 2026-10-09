@@ -113,7 +113,7 @@ export function Reviews() {
   if (!site.googleReviewUrl) return null;
   return (
     <div className="card flex flex-col items-start gap-3 p-6 sm:flex-row sm:items-center sm:justify-between">
-      <p className="text-lg">Had a plumber through Caliche? Tell your neighbors how it went.</p>
+      <p className="text-lg">Had HVAC work done through Aspenridge? Tell your neighbors how it went.</p>
       <a href={site.googleReviewUrl} className="btn btn-secondary" rel="noopener" target="_blank">
         Leave a Google review
       </a>

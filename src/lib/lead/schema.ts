@@ -20,7 +20,7 @@ export const leadSchema = z.object({
   email: z.union([z.literal(""), z.string().trim().email("Enter a valid email").max(120)]).optional(),
   contactMethod: z.enum(["call", "text", "email"]).optional(),
   notes: clean(1000).optional(),
-  consent: z.literal(true, { message: "Please agree so a plumber can contact you" }),
+  consent: z.literal(true, { message: "Please agree so a contractor can contact you" }),
   // Anti-spam
   company: z.string().max(0).optional(),
   startedAt: z.number().optional(),

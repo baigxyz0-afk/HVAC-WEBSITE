@@ -1,7 +1,7 @@
 import "server-only";
 import { site } from "@/content/site";
 import { publishedServices, categories } from "@/content/services";
-import { states } from "@/content/locations";
+import { states, cityLabel } from "@/content/locations";
 import { indexableCities } from "./sitemap";
 import { routes } from "./routes";
 import type { Faq } from "@/content/types";
@@ -14,7 +14,7 @@ export const ids = {
   logo: `${U}/#logo`,
   service: (slug: string) => `${U}${routes.service(slug)}#service`,
   place: (city: string) => `${U}/#place-${city}`,
-  county: `${U}/#place-maricopa-county`,
+  county: (slug: string) => `${U}/#place-${slug}-county`,
   state: (s: string) => `${U}/#place-${s}`,
   page: (path: string) => `${U}${path}#webpage`,
   breadcrumb: (path: string) => `${U}${path}#breadcrumb`,
@@ -31,12 +31,28 @@ export function siteGraph() {
     url: `${U}/`,
     logo: { "@id": ids.logo },
     description:
-      "Caliche Plumbing is a plumbing referral service for the Phoenix metro. It connects homeowners with independent, licensed plumbing contractors for leaks, repiping, water heaters, hard water treatment, drains, gas lines and backflow.",
+      "Aspenridge Heating & Air is a heating and cooling referral service for the Denver metro and Front Range. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
     areaServed: cities.map((c) => ({ "@id": ids.place(c.slug) })),
-    knowsAbout: ["Slab leaks", "Hard water", "Water softeners", "Repiping", "Polybutylene pipe", "Water heaters", "Backflow testing", "Gas lines"],
+    knowsAbout: [
+      "Air conditioning repair",
+      "Central AC replacement",
+      "Furnace repair",
+      "Furnace replacement",
+      "Heat pumps",
+      "Cold-climate heat pumps",
+      "Dual-fuel HVAC systems",
+      "Ductless mini-splits",
+      "Evaporative swamp coolers",
+      "Duct sealing & airflow balancing",
+      "Indoor air quality filtration",
+      "Whole-house humidifiers",
+      "HVAC zoning systems",
+      "High-altitude gas furnace combustion",
+      "Manual J load calculations",
+    ],
     hasOfferCatalog: {
       "@type": "OfferCatalog",
-      name: "Plumbing services",
+      name: "Heating and cooling services",
       itemListElement: categories.map((cat) => ({
         "@type": "OfferCatalog",
         name: cat.name,
@@ -53,15 +69,35 @@ export function siteGraph() {
   return [
     org,
     { "@type": "ImageObject", "@id": ids.logo, url: `${U}/brand/logo.png`, width: 600, height: 160, caption: site.name },
-    { "@type": "WebSite", "@id": ids.website, url: `${U}/`, name: site.name, publisher: { "@id": ids.org }, inLanguage: "en-US" },
+    {
+      "@type": "WebSite",
+      "@id": ids.website,
+      url: `${U}/`,
+      name: site.name,
+      publisher: { "@id": ids.org },
+      inLanguage: "en-US",
+      potentialAction: {
+        "@type": "SearchAction",
+        target: {
+          "@type": "EntryPoint",
+          urlTemplate: `${U}/hvac-services/?q={search_term_string}`,
+        },
+        "query-input": "required name=search_term_string",
+      },
+    },
     ...publishedServices.map((s) => ({ "@type": "Service", "@id": ids.service(s.slug), name: s.name, url: `${U}${routes.service(s.slug)}` })),
     ...states.map((s) => ({ "@type": "State", "@id": ids.state(s.slug), name: s.name })),
-    { "@type": "AdministrativeArea", "@id": ids.county, name: "Maricopa County", containedInPlace: { "@id": ids.state("arizona") } },
+    ...[...new Map(cities.map((c) => [`${c.county}-${c.stateSlug}`, c])).values()].map((c) => ({
+      "@type": "AdministrativeArea",
+      "@id": ids.county(`${c.county.toLowerCase()}-${c.stateSlug}`),
+      name: `${c.county} County`,
+      containedInPlace: { "@id": ids.state(c.stateSlug) },
+    })),
     ...cities.map((c) => ({
       "@type": "City",
       "@id": ids.place(c.slug),
-      name: `${c.name}, AZ`,
-      containedInPlace: { "@id": ids.county },
+      name: cityLabel(c),
+      containedInPlace: { "@id": ids.county(`${c.county.toLowerCase()}-${c.stateSlug}`) },
     })),
   ];
 }

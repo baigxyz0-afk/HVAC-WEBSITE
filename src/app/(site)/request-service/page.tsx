@@ -8,8 +8,8 @@ import { PhoneLink } from "@/components/PhoneLink";
 
 const path = routes.request();
 export const metadata = pageMeta({
-  title: "Request Plumbing Service",
-  description: "Send a free request and get connected with a licensed plumber who serves your ZIP code in the Phoenix metro.",
+  title: "Request HVAC Service",
+  description: "Send a free request and get connected with a licensed HVAC contractor who serves your ZIP code in the Denver metro.",
   path,
   noindex: true,
 });
@@ -25,9 +25,9 @@ export default async function Request({ searchParams }: P) {
       <div className="container-x grid max-w-5xl gap-10 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.2fr)]">
         <div>
           <Breadcrumbs items={[{ name: "Home", path: "/" }, { name: "Request service", path }]} />
-          <h1 className="mt-4 text-4xl font-semibold">Request plumbing service</h1>
-          <p className="mt-4 text-lg text-muted">Tell us what's going on. We'll connect you with an independent, licensed plumber who serves your ZIP code, and the plumber will quote before starting.</p>
-          <p className="mt-6 font-semibold">Active leak? Calling is faster.</p>
+          <h1 className="mt-4 text-4xl font-semibold">Request heating or AC service</h1>
+          <p className="mt-4 text-lg text-muted">Tell us what's going on. We'll connect you with an independent, licensed HVAC contractor who serves your ZIP code, and the contractor will quote before starting.</p>
+          <p className="mt-6 font-semibold">No heat in freezing weather? Calling is faster.</p>
           <p className="text-sm text-muted">{availability}.</p>
           <PhoneLink phone={site.phone} e164={site.phoneE164} location="request_page" className="btn btn-alert mt-3" label={`Call ${site.phone}`} emergency />
         </div>

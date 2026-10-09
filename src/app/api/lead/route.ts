@@ -5,7 +5,7 @@ import { rateLimit } from "@/lib/lead/rateLimit";
 import { deliverLead } from "@/lib/lead/store";
 import { zipCoverage } from "@/content/coverage";
 
-const SALT = process.env.IP_HASH_SALT ?? "caliche-dev-salt";
+const SALT = process.env.IP_HASH_SALT ?? "aspenridge-dev-salt";
 
 function sameOrigin(req: Request) {
   const origin = req.headers.get("origin");

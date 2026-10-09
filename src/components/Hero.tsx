@@ -27,7 +27,7 @@ export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside,
       <div className="container-x grid gap-10 py-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:items-center lg:py-16">
         <div className="min-w-0">
           {crumbs && <Breadcrumbs items={crumbs} light />}
-          <p className={`eyebrow mt-4 ${emergency ? "!text-[#ffb4a8]" : "!text-[#7fc8c9]"}`}>{eyebrow}</p>
+          <p className={`eyebrow mt-4 ${emergency ? "!text-[#ffb4a8]" : "!text-[#9fd3c1]"}`}>{eyebrow}</p>
           <h1 className="mt-3 text-4xl leading-tight font-semibold sm:text-5xl">{title}</h1>
           <div className="mt-5 max-w-2xl text-lg leading-relaxed text-white/85">{lead}</div>
           <div className="mt-7 flex flex-wrap gap-3">
@@ -47,7 +47,7 @@ export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside,
             <ul className="mt-8 flex flex-wrap gap-x-6 gap-y-2 border-t border-white/15 pt-5 text-sm text-white/85">
               {facts.map((f) => (
                 <li key={f} className="flex items-center gap-2">
-                  <Icon name="check" className="h-4 w-4 text-[#7fc8c9]" />
+                  <Icon name="check" className="h-4 w-4 text-[#9fd3c1]" />
                   {f}
                 </li>
               ))}
@@ -73,7 +73,7 @@ export function HeroPanel({ title, items }: { title: string; items: { icon: Para
       <ul className="mt-4 space-y-4">
         {items.map((i) => (
           <li key={i.text} className="flex gap-3">
-            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal/30 text-[#9fd8d9]">
+            <span className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-teal/30 text-[#bfe6d8]">
               <Icon name={i.icon} className="h-5 w-5" />
             </span>
             <span className="text-white/85">{i.text}</span>

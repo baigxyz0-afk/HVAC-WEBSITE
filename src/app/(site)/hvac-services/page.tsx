@@ -10,9 +10,9 @@ import { JsonLd, ServiceCard } from "@/components/ui";
 import { Icon } from "@/components/icons";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Plumbing Services in the Phoenix Metro";
+const title = "Heating & Cooling Services in Denver";
 const description =
-  "Every plumbing service we connect Valley homeowners with: hard water treatment, slab leaks, repiping, water heaters, pressure, backflow, drains and gas lines.";
+  "Every HVAC service we connect Denver homeowners with: AC repair and replacement, furnaces, heat pumps, mini-splits, air quality, ductwork and thermostats.";
 const path = routes.services();
 
 export const metadata = pageMeta({ title, description, path });
@@ -27,11 +27,11 @@ export default function ServicesHub() {
       <JsonLd data={graph(pageGraph({ path, name: title, description, type: "CollectionPage", crumbs, about: [ids.org] }))} />
       <Hero
         crumbs={crumbs}
-        eyebrow="Plumbing services"
-        title="Plumbing services for Valley homes"
-        lead={<p>Eight categories, 21 services, each explained with the signs, the process and what drives cost. Pick a service, or call and describe the problem.</p>}
-        facts={[availability, "Licensed Arizona contractors"]}
-        photo={photos.plumber}
+        eyebrow="HVAC services"
+        title="Heating and cooling services for Denver homes"
+        lead={<p>7 categories, 17 services, each explained with the signs, the process, DIY checks, and what drives cost. Pick a service, or call and describe the problem.</p>}
+        facts={[availability, "Licensed local contractors"]}
+        photo={photos.technician}
       />
       <section className="py-14">
         <div className="container-x space-y-14">
@@ -42,7 +42,7 @@ export default function ServicesHub() {
               </a>
             ))}
             <Link href={routes.emergency()} className="inline-flex min-h-10 items-center rounded-full bg-alert-tint px-4 text-sm font-semibold text-alert">
-              Emergency plumbing
+              Emergency heating & AC
             </Link>
           </nav>
           {categories.map((c) => (

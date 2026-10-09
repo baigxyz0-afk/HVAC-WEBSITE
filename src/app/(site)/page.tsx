@@ -15,10 +15,12 @@ import { Icon } from "@/components/icons";
 import { ZipChecker } from "@/components/ZipChecker";
 import { CtaBand } from "@/components/CtaBand";
 import { PhoneLink } from "@/components/PhoneLink";
+import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
+import { beforeAfter } from "@/content/beforeAfter";
 
-const title = "Phoenix Metro Plumbing Help: Leaks, Hard Water & Repipes";
+const title = "Denver Heating & AC Help: Repair, Furnaces, Heat Pumps";
 const description =
-  "Connect with a licensed Valley plumber for slab leaks, water heaters, softeners and repiping across Phoenix, Scottsdale, the West Valley and East Valley.";
+  "Connect with a licensed HVAC contractor for AC repair, furnace repair, heat pumps and replacements across Denver, Aurora, Lakewood, Littleton and Parker.";
 
 export const metadata = pageMeta({ title, description, path: "/" });
 
@@ -29,22 +31,22 @@ export default function Home() {
     <main id="main" data-home>
       <JsonLd data={graph(pageGraph({ path: "/", name: title, description, crumbs: [{ name: "Home", path: "/" }], faqs, about: [ids.org] }))} />
       <Hero
-        eyebrow="Phoenix metro · Maricopa County"
-        title="Plumbing help built for desert homes"
+        eyebrow="Denver metro · Colorado Front Range"
+        title="Heating and air help built for Denver's extremes"
         lead={
           <p>
-            Slab leaks, hard water, polybutylene and worn-out water heaters are the Valley's everyday plumbing problems. {BRAND_PROMISE}
+            100-degree summers, subzero cold snaps and a housing stock that runs from 1920s bungalows to new two-stories make heating and cooling work here. {BRAND_PROMISE}
           </p>
         }
-        facts={[availability, "Licensed Arizona contractors", "Free to request"]}
-        photo={photos.phoenixAerial}
+        facts={[availability, "Licensed local contractors", "Free to request"]}
+        photo={photos.skyline}
       />
 
       <section className="border-b border-line bg-white">
         <div className="container-x grid gap-4 py-6 text-sm sm:grid-cols-3">
           {[
-            ["shield", "Plumbers licensed by the Arizona ROC"],
-            ["search", "Diagnosis before digging or cutting"],
+            ["shield", "Contractors licensed by their cities"],
+            ["search", "Diagnosis before any repair"],
             ["clock", "Quotes before work begins"],
           ].map(([i, t]) => (
             <p key={t} className="flex items-center gap-3 font-medium">
@@ -60,7 +62,7 @@ export default function Home() {
           <p className="flex items-center gap-3">
             <Icon name="alert" className="h-7 w-7 shrink-0 text-alert" />
             <span>
-              <strong className="text-alert">Water you can't stop?</strong> Shut off the main valve, then call.{" "}
+              <strong className="text-alert">No heat in freezing weather?</strong> Smell gas? Get out and call the utility first. Otherwise, call now.{" "}
               <Link href={routes.emergency()} className="link">
                 Emergency steps
               </Link>
@@ -72,7 +74,7 @@ export default function Home() {
 
       <section className="py-16">
         <div className="container-x">
-          <SectionHeading eyebrow="Services" title="What Valley homes call a plumber for" lead="Eight categories built around how plumbing actually fails in the desert." />
+          <SectionHeading eyebrow="Services" title="What Denver homes call an HVAC pro for" lead="Seven categories built around how heating and cooling actually fail here." />
           <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {categories.map((c) => {
               const list = servicesInCategory(c.slug);
@@ -132,21 +134,32 @@ export default function Home() {
 
       <section className="bg-ink py-16 text-white">
         <div className="container-x">
-          <SectionHeading light eyebrow="Local knowledge" title="Why Valley plumbing is different" />
+          <SectionHeading light eyebrow="Local knowledge" title="Why Denver heating and cooling is different" />
           <div className="grid gap-6 md:grid-cols-3">
             {[
-              { icon: "filter" as const, t: "Some of the hardest water in the US", b: "Scale shortens water heater life, clogs tankless units and ruins fixtures. Softeners and RO are standard upgrades here.", href: routes.guide("white-crust-on-faucets") },
-              { icon: "slab" as const, t: "Everything sits on a slab", b: "Supply lines under concrete mean slab leaks, and a warm spot on the floor is the classic clue.", href: routes.guide("warm-spot-on-floor") },
-              { icon: "pipe" as const, t: "A boom in the polybutylene years", b: "Many homes built around 1978–1995 have polybutylene supply pipe that insurers and buyers ask about.", href: routes.guide("polybutylene-pipes-arizona") },
+              { icon: "sun" as const, t: "Hot, dry summers at altitude", b: "Thin air and 95-degree afternoons make condensers work harder, and wildfire smoke makes filtration matter. Many older homes still rely on swamp coolers.", href: routes.guide("ac-running-but-not-cooling") },
+              { icon: "snow" as const, t: "40-degree temperature swings", b: "Cold fronts off the mountains drop temperatures fast and find weak ignitors. A fall safety check prevents most no-heat nights.", href: routes.guide("furnace-not-turning-on") },
+              { icon: "heatpump" as const, t: "Heat pump incentives", b: "Xcel Energy, Denver and state programs have offered heat pump rebates and credits, making cold-climate and dual-fuel systems worth pricing.", href: routes.guide("heat-pump-vs-furnace-denver") },
             ].map((c) => (
               <div key={c.t} className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
-                <Icon name={c.icon} className="h-8 w-8 text-[#7fc8c9]" />
+                <Icon name={c.icon} className="h-8 w-8 text-[#9fd3c1]" />
                 <h3 className="mt-4 text-xl font-semibold">{c.t}</h3>
                 <p className="mt-2 text-white/80">{c.b}</p>
-                <Link href={c.href} className="mt-4 inline-block font-semibold text-[#9fd8d9] underline underline-offset-2">
+                <Link href={c.href} className="mt-4 inline-block font-semibold text-[#bfe6d8] underline underline-offset-2">
                   Learn more
                 </Link>
               </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-16">
+        <div className="container-x">
+          <SectionHeading eyebrow="Before and after" title="What a replacement can look like" lead="Drag the slider to compare. These are stock examples, not jobs by contractors in our network." />
+          <div className="grid gap-6 md:grid-cols-2">
+            {beforeAfter.map((b) => (
+              <BeforeAfterSlider key={b.slug} item={b} />
             ))}
           </div>
         </div>
@@ -158,9 +171,9 @@ export default function Home() {
           <ol className="grid gap-5 md:grid-cols-4">
             {[
               ["Call or request", "Tell us the problem and ZIP code. Requests are free."],
-              ["Get connected", "We connect you with an independent, licensed plumber serving your area."],
-              ["Diagnosis and quote", "The plumber finds the cause and quotes before starting."],
-              ["The fix", "You approve the work; the plumber completes it and handles any permit."],
+              ["Get connected", "We connect you with an independent, licensed HVAC contractor serving your area."],
+              ["Diagnosis and quote", "The technician finds the cause and quotes before starting."],
+              ["The fix", "You approve the work; the contractor completes it and handles any permit."],
             ].map(([t, b], i) => (
               <li key={t} className="card p-6">
                 <span className="font-serif text-3xl font-semibold text-teal">{i + 1}</span>
@@ -175,7 +188,7 @@ export default function Home() {
       <section className="bg-sand-deep py-16">
         <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,1fr)]">
           <div>
-            <SectionHeading eyebrow="Service area" title="Across the Valley" lead="City pages cover local housing, water providers and permits." />
+            <SectionHeading eyebrow="Service area" title="Across the Denver metro" lead="City pages cover local housing, utilities and permits." />
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {regions.map((r) => (
                 <div key={r.slug}>
@@ -203,7 +216,7 @@ export default function Home() {
 
       <section className="py-16">
         <div className="container-x">
-          <SectionHeading eyebrow="Resources" title="Straight answers for Valley homeowners" />
+          <SectionHeading eyebrow="Resources" title="Straight answers for Denver homeowners" />
           <div className="grid gap-5 md:grid-cols-3">
             {publishedArticles.slice(0, 6).map((a) => (
               <Link key={a.slug} href={routes.guide(a.slug)} className="card group p-6">
