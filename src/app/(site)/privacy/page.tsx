@@ -4,7 +4,7 @@ import { site } from "@/content/site";
 import { SimplePage } from "@/components/SimplePage";
 
 const path = routes.privacy();
-export const metadata = pageMeta({ title: "Privacy Policy", description: "How Aspenridge Heating & Air collects, uses and shares information when you call or request HVAC service, including sharing with independent contractors.", path });
+export const metadata = pageMeta({ title: "Privacy Policy", description: "How HVAC Services Hub collects, uses and shares information when you call or request HVAC service, including sharing with independent contractors.", path });
 
 export default function Privacy() {
   return (

@@ -7,8 +7,8 @@ import { JsonLd } from "@/components/ui";
 import { SimplePage } from "@/components/SimplePage";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "About Aspenridge Heating & Air";
-const description = "Aspenridge Heating & Air connects Denver homeowners with independent, licensed HVAC contractors and publishes plain-language HVAC guides.";
+const title = "About HVAC Services Hub";
+const description = "HVAC Services Hub connects Denver homeowners with independent, licensed HVAC contractors and publishes plain-language HVAC guides.";
 const path = routes.about();
 export const metadata = pageMeta({ title, description, path });
 
@@ -20,7 +20,7 @@ export default function About() {
   return (
     <>
       <JsonLd data={graph(pageGraph({ path, name: title, description, type: "AboutPage", crumbs, about: [ids.org] }))} />
-      <SimplePage title="About Aspenridge Heating & Air" crumbs={crumbs} lead="A faster, clearer way to find a heating and cooling contractor in Denver.">
+      <SimplePage title="About HVAC Services Hub" crumbs={crumbs} lead="A faster, clearer way to find a heating and cooling contractor in Denver.">
         <p>
           The name comes from the aspen groves on the ridges west of Denver. Front Range weather comes off those mountains fast: 95-degree afternoons, sudden hail and cold fronts that drop temperatures 40 degrees in a day, which is why heating and cooling here have to handle both.
         </p>

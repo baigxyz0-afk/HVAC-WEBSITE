@@ -1,4 +1,4 @@
-# Aspenridge Heating & Air — Denver HVAC Lead-Gen Site
+# HVAC Services Hub — Denver HVAC Lead-Gen Site
 
 This site was built from the Local Service Lead-Gen Website Playbook (`docs/PLAYBOOK.md`), starting from the Tallgrass HVAC codebase (`D:\Ac website`). The market was chosen from the LeadSmart coverage data.
 
@@ -19,7 +19,7 @@ Denver gives the best combination of payout and volume. `src/content/coverage.ts
 
 | | |
 |---|---|
-| Brand | **Aspenridge Heating & Air** · `aspenridgeair.com` returned RDAP 404 (unregistered). Alternatives also free: `summitlineair.com`, `foothillcomfortair.com`, `larkspurair.com` |
+| Brand | **HVAC Services Hub** · `hvacserviceshubs.com` |
 | Business model | Call brand / referral for LeadSmart buyers (the disclosure is in `src/content/site.ts`) |
 | Services | **16 in 7 categories**, including a Denver-specific **Evaporative (Swamp) Cooler** service |
 | Locations | Colorado · 12 cities in 5 regions · 3 city+service pages |
@@ -50,7 +50,7 @@ node scripts/make-brand.mjs && npm run icons
 
 ## Before launch
 
-- [ ] Trademark and entity check for "Aspenridge Heating & Air" (USPTO Class 37, Colorado Secretary of State). Register the domain.
+- [ ] Trademark and entity check for "HVAC Services Hub" (USPTO Class 37, Colorado Secretary of State). Register the domain.
 - [ ] Replace the temporary phone with the LeadSmart number, and set the lead webhook.
 - [ ] Verify the utility and permit facts with each city (Xcel, IREA, United Power and Black Hills service areas; city licensing rules).
 - [ ] Confirm current Xcel, Denver and state heat pump rebates before promoting them in ads.

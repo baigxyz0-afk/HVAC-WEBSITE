@@ -31,7 +31,7 @@ export function siteGraph() {
     url: `${U}/`,
     logo: { "@id": ids.logo },
     description:
-      "Aspenridge Heating & Air is a heating and cooling referral service for the Denver metro and Front Range. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
+      "HVAC Services Hub is a heating and cooling referral service for the Denver metro and Front Range. It connects homeowners with independent, licensed HVAC contractors for AC repair and replacement, furnaces, heat pumps, ductless mini-splits, ductwork, indoor air quality and thermostats.",
     areaServed: cities.map((c) => ({ "@id": ids.place(c.slug) })),
     knowsAbout: [
       "Air conditioning repair",

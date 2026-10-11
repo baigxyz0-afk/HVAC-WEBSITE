@@ -82,7 +82,7 @@ export default function LocationsHub() {
       <section className="bg-white py-14">
         <div className="container-x grid gap-8 md:grid-cols-3">
           {[
-            ["How service areas work", "Aspenridge is a referral service. When you call or send a request, we route it to an independent, licensed HVAC contractor who has chosen to serve your ZIP code. Coverage depends on which contractors are active in your area."],
+            ["How service areas work", "HVAC Services Hub is a referral service. When you call or send a request, we route it to an independent, licensed HVAC contractor who has chosen to serve your ZIP code. Coverage depends on which contractors are active in your area."],
             ["What changes town to town", "Housing age decides the problems: swamp coolers and homes with no central air in older Denver neighborhoods; aging original ductwork in postwar Aurora, Lakewood and Arvada; and builder-grade systems reaching end of life in Highlands Ranch, Parker and Castle Rock."],
             ["Permits and utilities", "Each city or county issues its own mechanical permits, and Denver licenses mechanical contractors. Xcel Energy supplies electricity and natural gas to most of the metro, and some areas are served by Black Hills Energy or local electric co-ops."],
           ].map(([t, b]) => (

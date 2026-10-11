@@ -14,10 +14,10 @@ export function LogoMark({ className = "h-9 w-9", light = false }: { className?:
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="Aspenridge Heating & Air home">
+    <Link href="/" className="flex shrink-0 items-center gap-2.5" aria-label="HVAC Services Hub home">
       <LogoMark light={light} />
       <span className="leading-none">
-        <span className={`block font-serif text-xl font-semibold sm:text-2xl ${light ? "text-white" : "text-ink"}`}>Aspenridge</span>
+        <span className={`block font-serif text-xl font-semibold sm:text-2xl ${light ? "text-white" : "text-ink"}`}>HVAC Services Hub</span>
         <span className={`block text-[0.65rem] font-bold tracking-[0.2em] ${light ? "text-teal-tint" : "text-teal-deep"}`}>HEATING &amp; AIR</span>
       </span>
     </Link>

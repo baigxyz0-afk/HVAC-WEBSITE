@@ -8,7 +8,7 @@ import { SimplePage } from "@/components/SimplePage";
 import { CtaBand } from "@/components/CtaBand";
 
 const title = "Heating & Cooling FAQ for Denver Homes";
-const description = "Answers about how Aspenridge Heating & Air works, coverage, licensing and permits in Colorado, and what to expect from an HVAC visit.";
+const description = "Answers about how HVAC Services Hub works, coverage, licensing and permits in Colorado, and what to expect from an HVAC visit.";
 const path = routes.faq();
 export const metadata = pageMeta({ title, description, path });
 

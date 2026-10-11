@@ -4,7 +4,7 @@ import { DISCLOSURE } from "@/content/site";
 import { SimplePage } from "@/components/SimplePage";
 
 const path = routes.terms();
-export const metadata = pageMeta({ title: "Terms of Use", description: "Terms for using the Aspenridge Heating & Air website and referral service, including the role of independent HVAC contractors in Coloradorizona.", path });
+export const metadata = pageMeta({ title: "Terms of Use", description: "Terms for using the HVAC Services Hub website and referral service, including the role of independent HVAC contractors in Coloradorizona.", path });
 
 export default function Terms() {
   return (

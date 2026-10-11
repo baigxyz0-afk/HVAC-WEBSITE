@@ -11,7 +11,7 @@ export const states: State[] = [
     abbr: "CO",
     status: "PUBLISHED",
     intro:
-      "Aspenridge Heating & Air connects homeowners across the Denver metro, in Denver, Arapahoe, Jefferson, Adams, Douglas and Boulder counties, with independent, licensed HVAC contractors. Front Range heating and cooling has its own rules: high altitude, dry air, hail, fast temperature swings, and a housing stock where many older homes never had central air.",
+      "HVAC Services Hub connects homeowners across the Denver metro, in Denver, Arapahoe, Jefferson, Adams, Douglas and Boulder counties, with independent, licensed HVAC contractors. Front Range heating and cooling has its own rules: high altitude, dry air, hail, fast temperature swings, and a housing stock where many older homes never had central air.",
     details: [
       { heading: "Housing stock", body: "Central Denver neighborhoods such as Capitol Hill, Highland, Washington Park and Park Hill hold Victorian homes, bungalows and Denver Squares from the 1890s through the 1930s, often with boilers or retrofitted basement furnaces. Postwar ranches spread across Lakewood, Arvada, Aurora and Englewood in the 1950s through 1970s, many with swamp coolers. Highlands Ranch, Parker, Castle Rock, Thornton and southeast Aurora grew from the 1980s on with two-story homes and central air." },
       { heading: "Utilities", body: "Xcel Energy supplies electricity and natural gas to most of the metro. Parts of Douglas County and the northern and eastern suburbs get electricity from co-ops such as IREA or United Power, and Black Hills Energy supplies gas in some communities. Rebate programs from Xcel, the City of Denver and the state change often, so ask the contractor what currently applies." },

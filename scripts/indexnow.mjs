@@ -2,7 +2,7 @@ import fs from "fs";
 import path from "path";
 
 const DEFAULT_KEY = "e4c3b2a19876543210fedcbaabcdef01";
-const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://aspenridgeair.com").replace(/\/$/, "");
+const SITE = (process.env.NEXT_PUBLIC_SITE_URL || "https://hvacserviceshubs.com").replace(/\/$/, "");
 const host = new URL(SITE).host;
 const key = (process.env.INDEXNOW_KEY || DEFAULT_KEY).trim();
 

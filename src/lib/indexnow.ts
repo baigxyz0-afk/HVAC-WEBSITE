@@ -51,7 +51,7 @@ function saveCache(cache: Record<string, string>) {
  * Submits an array of URLs to the IndexNow protocol with batching, deduplication, retry, and history tracking.
  */
 export async function submitUrlsToIndexNow(options: IndexNowOptions = {}): Promise<SubmissionResult[]> {
-  const host = (options.host || process.env.NEXT_PUBLIC_SITE_URL || "https://aspenridgeair.com")
+  const host = (options.host || process.env.NEXT_PUBLIC_SITE_URL || "https://hvacserviceshubs.com")
     .replace(/^https?:\/\//, "")
     .replace(/\/$/, "");
   const siteUrl = `https://${host}`;
@@ -136,7 +136,7 @@ export async function submitUrlsToIndexNow(options: IndexNowOptions = {}): Promi
             method: "POST",
             headers: {
               "Content-Type": "application/json; charset=utf-8",
-              "User-Agent": "Aspenridge-IndexNow-Client/1.0",
+              "User-Agent": "HVACServicesHub-IndexNow-Client/1.0",
             },
             body: JSON.stringify(payload),
           });

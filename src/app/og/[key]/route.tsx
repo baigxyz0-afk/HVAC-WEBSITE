@@ -16,7 +16,7 @@ export async function GET(_req: Request, { params }: { params: Promise<{ key: st
           <div style={{ display: "flex", alignItems: "center", gap: 18 }}>
             <div style={{ width: 64, height: 64, borderRadius: 14, background: "#2f6b5a", display: "flex" }} />
             <div style={{ display: "flex", flexDirection: "column" }}>
-              <span style={{ fontSize: 40, fontWeight: 700 }}>Aspenridge</span>
+              <span style={{ fontSize: 40, fontWeight: 700 }}>HVAC Services Hub</span>
               <span style={{ fontSize: 16, letterSpacing: 6, color: "#bfe6d8" }}>HEATING & AIR</span>
             </div>
           </div>

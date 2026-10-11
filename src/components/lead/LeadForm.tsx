@@ -273,7 +273,7 @@ export function LeadForm({ services, defaultService = "", defaultZip = "", phone
             <label className="flex items-start gap-3 text-sm">
               <input type="checkbox" className="mt-1 h-5 w-5 shrink-0" checked={f.consent} onChange={(e) => set("consent", e.target.checked)} {...aria("consent")} />
               <span>
-                I agree that Aspenridge Heating & Air may share my request with up to three independent, licensed HVAC contractors who serve my area, and that they and Aspenridge may call or text me about it at the number provided, including by automated means. Consent isn't a condition of purchase. Message and data rates may apply. See our{" "}
+                I agree that HVAC Services Hub may share my request with up to three independent, licensed HVAC contractors who serve my area, and that they and HVAC Services Hub may call or text me about it at the number provided, including by automated means. Consent isn't a condition of purchase. Message and data rates may apply. See our{" "}
                 <a href="/privacy/" className="link">Privacy Policy</a>.
               </span>
             </label>

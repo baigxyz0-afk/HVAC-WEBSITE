@@ -7,7 +7,7 @@ import { SimplePage } from "@/components/SimplePage";
 import { PhoneLink } from "@/components/PhoneLink";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 
-const title = "Contact Aspenridge Heating & Air";
+const title = "Contact HVAC Services Hub";
 const description = "Call or send a request to get connected with a licensed HVAC contractor in the Denver metro. Smell gas? Leave and call the gas utility first.";
 const path = routes.contact();
 export const metadata = pageMeta({ title, description, path });
