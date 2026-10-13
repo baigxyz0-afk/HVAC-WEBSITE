@@ -49,7 +49,7 @@ export default async function StatePage({ params }: P) {
   const directory = directoryFor(st.abbr).map((d) => {
     const guide = cityFor(d.name);
     if (guide) return { ...d, guide: routes.city(st.slug, guide.slug) };
-    const dc = dataPages.find((x) => x.name === d.name);
+    const dc = dataPages.find((x) => x.name === d.name || x.alsoServes?.some((a) => a.name === d.name));
     return dc ? { ...d, guide: routes.city(st.slug, dc.slug) } : d;
   });
   return (

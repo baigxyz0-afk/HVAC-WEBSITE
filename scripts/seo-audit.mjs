@@ -9,8 +9,16 @@ const warn = (u, m) => warns.push(`${u}: ${m}`);
 const BANNED = [/in today's fast-paced world/i, /look no further/i, /your trusted partner/i, /we understand that/i, /comprehensive solutions/i, /world-class/i, /one-stop shop/i, /hassle-free/i, /state-of-the-art/i, /peace of mind/i, /lorem ipsum/i, /\{\{[A-Z_]+\}\}/];
 
 async function get(path, opts = {}) {
-  const res = await fetch(BASE + path, { redirect: "manual", ...opts });
-  return { res, text: res.status < 300 ? await res.text() : "" };
+  // Retry transient connection resets (large crawls can overwhelm a local server).
+  for (let attempt = 1; ; attempt++) {
+    try {
+      const res = await fetch(BASE + path, { redirect: "manual", ...opts });
+      return { res, text: res.status < 300 ? await res.text() : "" };
+    } catch (e) {
+      if (attempt >= 4) throw e;
+      await new Promise((r) => setTimeout(r, 500 * attempt));
+    }
+  }
 }
 const toPath = (loc) => new URL(loc).pathname;
 const STATE_ABBR = Object.fromEntries(

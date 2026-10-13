@@ -11,6 +11,8 @@ export type DataCity = {
   station: { name: string; miles: number };
   climate: Climate;
   nearby: { slug: string; miles: number }[];
+  /** Nearby towns that share this climate station and are covered on this page. */
+  alsoServes?: { name: string; zips: string[]; miles: number }[];
 };
 
 const d = data as unknown as { source: string; states: Record<string, DataCity[]> };

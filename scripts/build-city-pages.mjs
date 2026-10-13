@@ -115,6 +115,20 @@ for (const [st, list] of Object.entries(dir.states)) {
       },
     });
   }
+  // One page per climate station: cities sharing a station would have identical climate data and
+  // near-duplicate pages. The first (most populous) city keeps the page and lists the others.
+  const byStation = new Map();
+  for (const p of pages) {
+    const k = p.station.name;
+    if (!byStation.has(k)) byStation.set(k, p);
+    else {
+      const primary = byStation.get(k);
+      (primary.alsoServes ??= []).push({ name: p.name, zips: p.zips, miles: Math.round(km(primary, p) * 0.621371) });
+      p.drop = true;
+    }
+  }
+  for (let i = pages.length - 1; i >= 0; i--) if (pages[i].drop) pages.splice(i, 1);
+
   // Nearby: the closest other city pages in the same state.
   for (const p of pages) {
     p.nearby = pages.filter((x) => x !== p).map((x) => [x.slug, km(p, x)]).sort((a, b) => a[1] - b[1]).slice(0, 6).map(([s, d]) => ({ slug: s, miles: Math.round(d * 0.621371) }));

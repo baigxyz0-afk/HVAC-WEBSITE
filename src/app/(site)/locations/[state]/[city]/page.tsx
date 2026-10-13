@@ -69,7 +69,7 @@ export default async function CityPage({ params }: P) {
       .map((x) => ({ name: x.name, href: routes.city(st.slug, x.slug) }));
     return (
       <>
-        <JsonLd data={graph(pageGraph({ path: dpath, name: `Heating and air conditioning in ${dc.name}, ${st.abbr}`, description: `HVAC guidance for ${dc.name} based on NOAA climate normals.`, crumbs: dcrumbs, faqs: dataCityFaqs(dc), about: [ids.state(st.slug)] }))} />
+        <JsonLd data={graph(pageGraph({ path: dpath, name: `Heating and air conditioning in ${dc.name}, ${st.abbr}`, description: `HVAC guidance for ${dc.name} based on NOAA climate normals.`, crumbs: dcrumbs, faqs: dataCityFaqs(dc, st.abbr), about: [ids.state(st.slug)] }))} />
         <CityDataPage c={dc} st={st} crumbs={dcrumbs} guideCities={guideCities} />
       </>
     );
