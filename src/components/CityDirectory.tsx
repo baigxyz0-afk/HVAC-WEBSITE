@@ -28,7 +28,7 @@ export function CityDirectory({ state, cities, requestHref }: { state: string; c
           <li key={c.name} className="min-w-0">
             {c.guide ? (
               <Link href={c.guide} className="link block py-1 font-semibold">
-                {c.name} <span className="font-normal text-muted">· full guide</span>
+                {c.name} <span className="font-normal text-muted">· city guide</span>
               </Link>
             ) : (
               <button type="button" onClick={() => setOpen(open === c.name ? null : c.name)} aria-expanded={open === c.name} className="block w-full py-1 text-left">

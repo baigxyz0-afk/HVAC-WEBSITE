@@ -4,6 +4,7 @@ import { publishedServices } from "@/content/services";
 import { cities, allCityServices as cityServices, states, cityBySlug } from "@/content/locations";
 import { publishedArticles } from "@/content/articles";
 import { publishedSubservices } from "@/content/subservices";
+import { allDataCities, dataCityOk } from "@/content/cityPages";
 import { dates } from "@/content/misc";
 import { cityQuality, cityServiceQuality, stateQuality } from "./quality";
 
@@ -15,6 +16,9 @@ export function indexableCities() {
 }
 export function indexableStates() {
   return states.filter((s) => stateQuality(s).ok);
+}
+export function indexableDataCities() {
+  return allDataCities().filter((c) => dataCityOk(c));
 }
 export function indexableCityServices() {
   return cityServices.filter((cs) => cityServiceQuality(cs).ok);
@@ -36,6 +40,7 @@ export function indexableUrls(): IndexUrl[] {
     { path: routes.locations(), lastmod: dates.locations, group: "states", title: "Service areas" },
     ...indexableStates().map((s) => ({ path: routes.state(s.slug), lastmod: s.updated, group: "states" as const, title: s.name })),
     ...indexableCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: c.updated, group: "cities" as const, title: c.name })),
+    ...indexableDataCities().map((c) => ({ path: routes.city(c.stateSlug, c.slug), lastmod: "2026-10-13", group: "cities" as const, title: c.name })),
     ...indexableCityServices().map((cs) => {
       const c = cityBySlug(cs.citySlug)!;
       return { path: routes.cityService(c.stateSlug, c.slug, cs.serviceSlug), lastmod: cs.updated, group: "local-services" as const, title: cs.h1 };

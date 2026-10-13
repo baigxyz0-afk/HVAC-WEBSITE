@@ -3,7 +3,7 @@ import { notFound } from "next/navigation";
 import { getState, regions } from "@/content/locations";
 import { getService } from "@/content/services";
 import { zipCountForState } from "@/content/coverage";
-import { indexableCities, indexableStates } from "@/lib/sitemap";
+import { indexableCities, indexableDataCities, indexableStates } from "@/lib/sitemap";
 import { pageMeta } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { graph, ids, pageGraph } from "@/lib/schema";
@@ -45,9 +45,12 @@ export default async function StatePage({ params }: P) {
   const focus = (st.focus ?? []).map((f) => ({ ...f, s: getService(f.service) })).filter((f) => f.s);
   const neighbors = indexableStates().filter((s) => s.region === st.region && s.slug !== st.slug);
   const cityFor = (name: string) => cities.find((c) => c.name.toLowerCase() === name.toLowerCase());
+  const dataPages = indexableDataCities().filter((x) => x.stateSlug === st.slug);
   const directory = directoryFor(st.abbr).map((d) => {
     const guide = cityFor(d.name);
-    return guide ? { ...d, guide: routes.city(st.slug, guide.slug) } : d;
+    if (guide) return { ...d, guide: routes.city(st.slug, guide.slug) };
+    const dc = dataPages.find((x) => x.name === d.name);
+    return dc ? { ...d, guide: routes.city(st.slug, dc.slug) } : d;
   });
   return (
     <main id="main">

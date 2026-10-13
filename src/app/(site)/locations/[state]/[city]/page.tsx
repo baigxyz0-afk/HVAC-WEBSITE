@@ -15,17 +15,33 @@ import { Icon } from "@/components/icons";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 import { CtaBand } from "@/components/CtaBand";
 import type { Service } from "@/content/types";
+import { getDataCity } from "@/content/cityPages";
+import { CityDataPage, dataCityFaqs } from "@/components/templates/CityDataPage";
+import { indexableDataCities } from "@/lib/sitemap";
 
 export const dynamicParams = false;
 export function generateStaticParams() {
-  return indexableCities().map((c) => ({ state: c.stateSlug, city: c.slug }));
+  return [
+    ...indexableCities().map((c) => ({ state: c.stateSlug, city: c.slug })),
+    ...indexableDataCities().map((c) => ({ state: c.stateSlug, city: c.slug })),
+  ];
 }
 
 type P = { params: Promise<{ state: string; city: string }> };
 
 export async function generateMetadata({ params }: P) {
   const p = await params;
-  const c = getCity(p.state, p.city)!;
+  const c = getCity(p.state, p.city);
+  if (!c) {
+    const dc = getDataCity(p.state, p.city)!;
+    const st = getState(p.state)!;
+    const cl = dc.climate;
+    return pageMeta({
+      title: `Heating & AC in ${dc.name}, ${st.abbr}`,
+      description: `HVAC help in ${dc.name}, ${st.abbr}: ${cl.julHigh}°F summer highs, ${cl.janLow}°F winter lows. Heat pump fit, service timing and a licensed local contractor.`.slice(0, 158),
+      path: routes.city(st.slug, dc.slug),
+    });
+  }
   return pageMeta({
     title: `HVAC Repair in ${cityLabel(c)}`,
     description: `Heating and AC help in ${c.name}: ${c.localIssues.map((i) => i.title.toLowerCase()).slice(0, 2).join(", ")}, furnaces and more. Local utility and permit facts, and a licensed HVAC contractor.`.slice(0, 158),
@@ -37,7 +53,27 @@ export default async function CityPage({ params }: P) {
   const p = await params;
   const c = getCity(p.state, p.city);
   const st = getState(p.state);
-  if (!c || !st) notFound();
+  if (!st) notFound();
+  if (!c) {
+    const dc = getDataCity(p.state, p.city);
+    if (!dc) notFound();
+    const dpath = routes.city(st.slug, dc.slug);
+    const dcrumbs = [
+      { name: "Home", path: "/" },
+      { name: "Locations", path: routes.locations() },
+      { name: st.name, path: routes.state(st.slug) },
+      { name: dc.name, path: dpath },
+    ];
+    const guideCities = indexableCities()
+      .filter((x) => x.stateSlug === st.slug)
+      .map((x) => ({ name: x.name, href: routes.city(st.slug, x.slug) }));
+    return (
+      <>
+        <JsonLd data={graph(pageGraph({ path: dpath, name: `Heating and air conditioning in ${dc.name}, ${st.abbr}`, description: `HVAC guidance for ${dc.name} based on NOAA climate normals.`, crumbs: dcrumbs, faqs: dataCityFaqs(dc), about: [ids.state(st.slug)] }))} />
+        <CityDataPage c={dc} st={st} crumbs={dcrumbs} guideCities={guideCities} />
+      </>
+    );
+  }
   const path = routes.city(st.slug, c.slug);
   const link = createLinker(path);
   const crumbs = [
