@@ -1,6 +1,7 @@
 import type { City, CityService, State } from "./types";
 import { citiesMore } from "./locationsMore";
 import { cityServicesMore } from "./cityServicesMore";
+import { cityServicesBatch2 } from "./cityServicesBatch2";
 import { extraIssues } from "./locationDepth";
 import { northeastMidwest } from "./states/northeastMidwest";
 import { south } from "./states/south";
@@ -821,5 +822,5 @@ export const cityServices: CityService[] = [
   },
 ];
 
-export const allCityServices: CityService[] = [...cityServices, ...cityServicesMore];
+export const allCityServices: CityService[] = [...cityServices, ...cityServicesMore, ...cityServicesBatch2];
 export const publishedCityServices = allCityServices.filter((cs) => cs.status === "PUBLISHED");
