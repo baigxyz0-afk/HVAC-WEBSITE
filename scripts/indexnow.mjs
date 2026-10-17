@@ -15,7 +15,7 @@ if (!urls.length) {
     urls.push(...[...x.matchAll(/<url><loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
   }
 }
-const res = await fetch("https://api.indexnow.org/indexnow", {
+const res = await fetch(process.env.INDEXNOW_ENDPOINT || "https://www.bing.com/indexnow", {
   method: "POST",
   headers: { "content-type": "application/json; charset=utf-8" },
   body: JSON.stringify({ host: new URL(SITE).host, key, keyLocation: `${SITE}/${key}.txt`, urlList: urls }),
