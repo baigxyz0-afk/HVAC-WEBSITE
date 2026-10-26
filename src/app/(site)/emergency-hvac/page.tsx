@@ -10,9 +10,9 @@ import { FaqList, JsonLd, ServiceCard } from "@/components/ui";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Emergency Heating & AC Repair: What to Do Now";
+const title = "24/7 Emergency HVAC Repair Near You: Fast Heating & AC Help";
 const description =
-  "No heat in a cold snap, no AC in a heat wave, a CO alarm or a gas smell? What to do right now and how to reach a licensed HVAC technician near you fast.";
+  "No heat in winter or AC failure in a heat wave? Get fast 24/7 emergency HVAC repair near you. Immediate dispatch with verified, licensed local contractors.";
 const path = routes.emergency();
 
 const faqs = [

@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: P) {
   const st = getState((await params).state)!;
   const climate = st.glance?.find((g) => g.term === "Watch for")?.detail.toLowerCase();
   return pageMeta({
-    title: `Heating & AC Repair in ${st.name}`,
-    description: `HVAC help in ${st.name}: ${climate ?? "local climate"}, common heating systems and when to call. Connect with a licensed local contractor.`.slice(0, 158),
+    title: `Heating & AC Repair in ${st.name} | Licensed HVAC Contractors`,
+    description: `Find certified heating and air conditioning contractors in ${st.name}. Expert service for ${climate ?? "local climate"}. Fast 24/7 emergency dispatch, repairs & free estimates.`.slice(0, 158),
     path: routes.state(st.slug),
   });
 }

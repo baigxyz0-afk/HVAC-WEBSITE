@@ -20,9 +20,9 @@ const core: Service[] = [
     shortName: "AC repair",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Repair: Common Causes, Fixes & Costs",
+    seoTitle: "AC Repair Near You | Same-Day Service & Upfront Pricing",
     metaDescription:
-      "Air conditioner repair explained: warm air, frozen coils, tripped breakers and dead condensers. Call or request service.",
+      "Fast 24/7 AC repair near you: warm air, frozen coils, tripped breakers & strange noises. Connect with licensed local technicians for same-day cooling restoration.",
     h1: "Air conditioner repair",
     answer:
       "Most air conditioner failures come down to a handful of parts: the capacitor, the contactor, the condenser fan motor, a clogged condensate drain, low refrigerant from a leak, or restricted airflow. A licensed HVAC technician tests the system, names the failed part and quotes the repair before doing it.",
@@ -75,9 +75,9 @@ const core: Service[] = [
     shortName: "AC replacement",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Replacement & Installation: Sizing and Costs",
+    seoTitle: "AC Replacement & Installation Near You | Free Quotes",
     metaDescription:
-      "Central air conditioner replacement explained: load calculation, matched coil, line set, pad and permit. Get connected with a licensed HVAC contractor.",
+      "Top-rated central air conditioner replacement & installation. Manual J sizing, energy-efficient SEER2 systems, transparent quotes & certified local installers.",
     h1: "Air conditioner replacement and installation",
     answer:
       "Replacing a central air conditioner means sizing it to the house with a load calculation, matching the outdoor unit to a compatible indoor coil, and flushing or replacing the refrigerant lines. Most replacements take one day and need a city mechanical permit.",
@@ -126,9 +126,9 @@ const core: Service[] = [
     shortName: "AC tune-up",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Tune-Up & Maintenance Checklist",
+    seoTitle: "AC Tune-Up & Maintenance Near You | Multi-Point Check",
     metaDescription:
-      "What a spring AC tune-up includes: coil cleaning, capacitor test, drain flush and refrigerant check before the summer heat.",
+      "Comprehensive AC tune-up & seasonal maintenance: electrical testing, coil cleaning, refrigerant verification & airflow check to prevent costly summer breakdowns.",
     h1: "Air conditioner tune-up and maintenance",
     answer:
       "An AC tune-up cleans the condenser coil, tests the capacitor and contactor, flushes the condensate drain, checks refrigerant pressures and measures airflow. Doing it in April or May catches weak parts before the first heat wave.",
@@ -164,9 +164,9 @@ const core: Service[] = [
     shortName: "Furnace repair",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Repair: No Heat Causes & Fixes",
+    seoTitle: "Furnace Repair Near You | 24/7 Fast Heating Fixes",
     metaDescription:
-      "Gas furnace repair explained: no heat, short cycling, ignitor and flame sensor failures, and blower problems. Call or request service.",
+      "Fast, reliable furnace repair near you: bad ignitors, flame sensors, blowers & cold-air blowing. Connect with licensed heating pros for same-day emergency warmth.",
     h1: "Furnace repair",
     answer:
       "When a gas furnace won't heat, the usual causes are a dirty flame sensor, a failed hot-surface ignitor, a blocked condensate line or flue, a tripped limit switch from a clogged filter, or a failed inducer or blower motor. A technician reads the control board's error code, tests the parts and quotes the repair.",
@@ -207,9 +207,9 @@ const core: Service[] = [
     shortName: "Furnace replacement",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Replacement: 80% vs. 96% & Costs",
+    seoTitle: "Furnace Replacement & Installation | Free Quotes",
     metaDescription:
-      "Gas furnace replacement explained: sizing, 80% vs. 96% efficiency, venting, condensate and permits. Get connected with a licensed HVAC pro.",
+      "Expert furnace replacement & installation near you. High-efficiency 96%+ AFUE gas furnaces, proper sizing, permit handling & competitive free estimates.",
     h1: "Furnace replacement and installation",
     answer:
       "Replacing a furnace means choosing between an 80% furnace that vents through the existing chimney or flue and a 90%-plus condensing furnace that vents through PVC pipe and needs a condensate drain. Most installs take one day and need a mechanical permit.",
@@ -244,9 +244,9 @@ const core: Service[] = [
     shortName: "Furnace tune-up",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Tune-Up & Safety Check Checklist",
+    seoTitle: "Furnace Tune-Up & Safety Check | Prevent Breakdowns",
     metaDescription:
-      "What a fall furnace tune-up includes: flame sensor cleaning, combustion and CO checks, venting inspection and filter change.",
+      "Pre-season furnace tune-up & multi-point safety inspection: heat exchanger crack test, burner cleaning, gas pressure & electrical check for worry-free winter heat.",
     h1: "Furnace tune-up and safety check",
     answer:
       "A furnace tune-up cleans the flame sensor, checks the ignitor, burners, gas pressure and venting, tests for carbon monoxide, and inspects the heat exchanger. Doing it in September or October avoids the rush when the first cold front hits.",
@@ -315,9 +315,9 @@ const core: Service[] = [
     shortName: "Heat pump repair",
     category: "heat-pumps",
     status: "PUBLISHED",
-    seoTitle: "Heat Pump Repair: Ice, Defrost & Cold Air",
+    seoTitle: "Heat Pump Repair Near You | Fast Diagnostics & Fixes",
     metaDescription:
-      "Heat pump repair explained: iced outdoor units, defrost problems, reversing valves and backup heat. Call or request service.",
+      "Expert heat pump repair near you: stuck reversing valves, iced coils, emergency aux heat lockouts & refrigerant issues. Certified technicians ready to help.",
     h1: "Heat pump repair",
     answer:
       "A heat pump that blows cool air in winter, stays coated in ice, or leans constantly on its electric backup heat usually has a defrost control, sensor, reversing valve or refrigerant problem. A technician tests the system in both heating and cooling modes.",
@@ -350,9 +350,9 @@ const core: Service[] = [
     shortName: "Heat pumps",
     category: "heat-pumps",
     status: "PUBLISHED",
-    seoTitle: "Heat Pump Installation: Cold-Climate & Dual-Fuel",
+    seoTitle: "Heat Pump Installation Near You | Cold-Climate & Rebates",
     metaDescription:
-      "Heat pump and dual-fuel installation explained: cold-climate models, gas furnace backup, sizing and available tax credits.",
+      "Upgrade to an energy-efficient heat pump. Expert installation for cold-climate and dual-fuel systems, utility rebate assistance & free local estimates.",
     h1: "Heat pump installation",
     answer:
       "A heat pump heats and cools with one outdoor unit. In warm climates a heat pump usually handles all the heating. In colder regions, many homes pair it with a gas furnace (a dual-fuel system), while cold-climate heat pumps can heat well below zero.",

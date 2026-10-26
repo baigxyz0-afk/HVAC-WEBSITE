@@ -10,9 +10,9 @@ import { JsonLd, ServiceCard } from "@/components/ui";
 import { Icon } from "@/components/icons";
 import { CtaBand } from "@/components/CtaBand";
 
-const title = "Heating & Air Conditioning Services";
+const title = "Heating & Air Conditioning Services | 24/7 Repair & Installation";
 const description =
-  "Every HVAC service we connect homeowners with nationwide: AC repair and replacement, furnaces, heat pumps, mini-splits, air quality, ductwork and thermostats.";
+  "Comprehensive residential HVAC services nationwide: fast AC repair, furnace installation, heat pump service & mini-splits. Get upfront pricing & same-day help.";
 const path = routes.services();
 
 export const metadata = pageMeta({ title, description, path });

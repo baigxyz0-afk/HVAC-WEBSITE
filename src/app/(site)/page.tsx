@@ -19,9 +19,9 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { beforeAfter } from "@/content/beforeAfter";
 
-const title = "Heating & AC Repair Help in All 50 States";
+const title = "Heating & AC Repair Near You: 24/7 HVAC Service in All 50 States";
 const description =
-  "Connect with an independent, licensed HVAC contractor for AC repair, furnace repair, heat pumps and replacements. State guides for all 50 states and D.C.";
+  "Need fast HVAC repair near you? Connect with top-rated, licensed heating & cooling technicians for same-day AC repair, furnace replacement & heat pumps nationwide.";
 
 export const metadata = pageMeta({ title, description, path: "/" });
 

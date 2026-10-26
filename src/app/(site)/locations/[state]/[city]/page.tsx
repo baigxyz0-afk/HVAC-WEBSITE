@@ -37,14 +37,15 @@ export async function generateMetadata({ params }: P) {
     const st = getState(p.state)!;
     const cl = dc.climate;
     return pageMeta({
-      title: `Heating & AC in ${dc.name}, ${st.abbr}`,
-      description: `HVAC help in ${dc.name}, ${st.abbr}: ${cl.julHigh}°F summer highs, ${cl.janLow}°F winter lows. Heat pump fit, service timing and a licensed local contractor.`.slice(0, 158),
+      title: `HVAC Repair & Service in ${dc.name}, ${st.abbr} | 24/7 Local Pros`,
+      description: `Need fast HVAC repair or installation in ${dc.name}, ${st.abbr}? Local licensed heating & AC contractors ready for ${cl.julHigh}°F summers and ${cl.janLow}°F winters. Get same-day service!`.slice(0, 158),
       path: routes.city(st.slug, dc.slug),
     });
   }
+  const issues = c.localIssues ? c.localIssues.map((i) => i.title.toLowerCase()).slice(0, 2).join(", ") : "furnaces and AC";
   return pageMeta({
-    title: `HVAC Repair in ${cityLabel(c)}`,
-    description: `Heating and AC help in ${c.name}: ${c.localIssues.map((i) => i.title.toLowerCase()).slice(0, 2).join(", ")}, furnaces and more. Local utility and permit facts, and a licensed HVAC contractor.`.slice(0, 158),
+    title: `HVAC Repair in ${cityLabel(c)} | Same-Day Service & Free Quotes`,
+    description: `Top-rated heating and AC repair in ${c.name}: fast fixes for ${issues}. Licensed local technicians, upfront pricing & same-day emergency dispatch. Call now!`.slice(0, 158),
     path: routes.city(c.stateSlug, c.slug),
   });
 }

@@ -10,9 +10,10 @@ type Opts = {
   ogKey?: string;
 };
 
-const MAX = 62;
+const MAX = 65;
 
 export function fullTitle(title: string) {
+  if (title.includes(site.name)) return title;
   const withBrand = `${title} | ${site.name}`;
   return withBrand.length <= MAX ? withBrand : title;
 }
