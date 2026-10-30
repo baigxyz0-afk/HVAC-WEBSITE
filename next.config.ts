@@ -9,7 +9,7 @@ const config: NextConfig = {
   images: { formats: ["image/avif", "image/webp"], deviceSizes: [390, 640, 828, 1080, 1280, 1600] },
   async redirects() {
     return [
-      { source: "/:path*", has: [{ type: "host", value: "www.calicheplumbing.com" }], destination: "https://calicheplumbing.com/:path*", permanent: true },
+      { source: "/:path*", has: [{ type: "host", value: "www.hvacserviceshubs.com" }], destination: "https://hvacserviceshubs.com/:path*", permanent: true },
       ...redirects,
     ];
   },
