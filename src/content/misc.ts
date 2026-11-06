@@ -6,7 +6,7 @@ export const dates = {
   services: "2026-09-28",
   locations: "2026-09-28",
   guides: "2026-09-28",
-  legal: "2026-09-28",
+  legal: "2026-11-06",
 };
 
 // Only real, verified reviews. Empty until the Google Business Profile collects them.
