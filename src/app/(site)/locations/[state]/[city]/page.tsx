@@ -8,12 +8,13 @@ import { pageMeta } from "@/lib/seo";
 import { routes } from "@/lib/routes";
 import { createLinker } from "@/lib/linker";
 import { graph, ids, pageGraph } from "@/lib/schema";
-import { availability } from "@/content/site";
+import { availability, site } from "@/content/site";
 import { Hero } from "@/components/Hero";
 import { Chip, FaqList, Glance, JsonLd } from "@/components/ui";
 import { Icon } from "@/components/icons";
 import { LeadFormBlock } from "@/components/lead/LeadFormBlock";
 import { CtaBand } from "@/components/CtaBand";
+import { PhoneLink } from "@/components/PhoneLink";
 import type { Service } from "@/content/types";
 import { getDataCity } from "@/content/cityPages";
 import { CityDataPage, dataCityFaqs } from "@/components/templates/CityDataPage";
@@ -35,17 +36,16 @@ export async function generateMetadata({ params }: P) {
   if (!c) {
     const dc = getDataCity(p.state, p.city)!;
     const st = getState(p.state)!;
-    const cl = dc.climate;
     return pageMeta({
-      title: `HVAC Repair & Service in ${dc.name}, ${st.abbr} | 24/7 Local Pros`,
-      description: `Need fast HVAC repair or installation in ${dc.name}, ${st.abbr}? Local licensed heating & AC contractors ready for ${cl.julHigh}°F summers and ${cl.janLow}°F winters. Get same-day service!`.slice(0, 158),
+      title: `24/7 HVAC, AC & Furnace Repair in ${dc.name}, ${st.abbr} | Fast Quotes`,
+      description: `Need fast HVAC repair in ${dc.name}, ${st.abbr}? Local licensed contractors ready for same-day AC repair, furnace troubleshooting & heat pump replacement. Call 24/7!`.slice(0, 158),
       path: routes.city(st.slug, dc.slug),
     });
   }
   const issues = c.localIssues ? c.localIssues.map((i) => i.title.toLowerCase()).slice(0, 2).join(", ") : "furnaces and AC";
   return pageMeta({
-    title: `HVAC Repair in ${cityLabel(c)} | Same-Day Service & Free Quotes`,
-    description: `Top-rated heating and AC repair in ${c.name}: fast fixes for ${issues}. Licensed local technicians, upfront pricing & same-day emergency dispatch. Call now!`.slice(0, 158),
+    title: `24/7 HVAC, AC & Furnace Repair in ${cityLabel(c)} | Same-Day Service`,
+    description: `Top-rated heating & AC repair in ${c.name}: fast fixes for ${issues}. Licensed local technicians, upfront pricing & 24/7 emergency dispatch. Call now!`.slice(0, 158),
     path: routes.city(c.stateSlug, c.slug),
   });
 }
@@ -94,29 +94,49 @@ export default async function CityPage({ params }: P) {
       <JsonLd data={graph(pageGraph({ path, name: `HVAC Repair in ${cityLabel(c)}`, description: c.intro, crumbs, faqs: c.faqs, about: [ids.place(c.slug)] }))} />
       <Hero
         crumbs={crumbs}
-        eyebrow={`${c.county} County · ${cityLabel(c)}`}
-        title={`Heating and AC help in ${cityLabel(c)}`}
+        eyebrow={`24/7 Local HVAC Referral · ${cityLabel(c)}`}
+        title={`Same-Day HVAC, AC & Furnace Repair in ${cityLabel(c)}`}
         lead={<p>{c.intro}</p>}
-        facts={[availability, `Neighborhoods: ${c.areas.slice(0, 3).join(", ")}`]}
-        aside={
-          <div className="rounded-2xl bg-ink-soft p-6 ring-1 ring-white/10">
-            <p className="font-serif text-xl font-semibold">Areas in {c.name}</p>
-            <ul className="mt-3 flex flex-wrap gap-2 text-sm">
-              {c.areas.map((a) => (
-                <li key={a} className="rounded-full bg-white/10 px-3 py-1.5">
-                  {a}
-                </li>
-              ))}
-            </ul>
-            <p className="mt-4 text-sm text-white/75">ZIP codes: {c.zips.join(", ")}</p>
-          </div>
-        }
+        facts={[
+          availability,
+          "Same-Day Dispatch & 24/7 Emergency Service",
+          "Licensed & Insured Local Contractors",
+          "Upfront Written Pricing Before Work Starts",
+        ]}
+        aside={<LeadFormBlock defaultZip={c.zips[0]} compact id="hero-lead-form" />}
+        requestHref="#hero-lead-form"
       />
+
+      <div className="border-y border-line bg-sand-deep py-3.5">
+        <div className="container-x flex flex-col items-center justify-between gap-3 text-sm sm:flex-row">
+          <div className="flex items-center gap-2.5">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal opacity-75"></span>
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-teal"></span>
+            </span>
+            <span className="font-semibold text-ink">
+              Emergency heating or AC breakdown in {c.name}?
+            </span>
+            <span className="hidden text-muted md:inline">
+              Licensed technicians on standby for same-day dispatch across {c.zips.length} ZIP codes.
+            </span>
+          </div>
+          <PhoneLink
+            phone={site.phone}
+            e164={site.phoneE164}
+            label={`Call ${site.phone}`}
+            location="urgent_curated_strip"
+            className="btn btn-primary btn-sm shrink-0"
+          />
+        </div>
+      </div>
+
       <section className="py-14">
-        <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_380px]">
+        <div className="container-x grid gap-10 lg:grid-cols-[minmax(0,1fr)_360px]">
           <div className="min-w-0 space-y-12">
             <div>
-              <h2 className="text-3xl font-semibold">{c.name} homes and their heating and cooling</h2>
+              <p className="eyebrow">Local Homes &amp; Equipment</p>
+              <h2 className="mt-1 text-3xl font-semibold">{c.name} Homes and Their Heating &amp; Cooling</h2>
               <p className="mt-4 text-lg leading-relaxed">{link(c.housingNotes)}</p>
               <div className="mt-6 grid gap-4 md:grid-cols-3">
                 {c.localIssues.map((i) => (
@@ -129,7 +149,7 @@ export default async function CityPage({ params }: P) {
             </div>
 
             <div>
-              <h2 className="text-3xl font-semibold">Common calls in {c.name}</h2>
+              <h2 className="text-3xl font-semibold">Common HVAC Calls in {c.name}</h2>
               <ul className="mt-5 grid gap-3 sm:grid-cols-2">
                 {popular.map((s) => {
                   const combo = combos.find((x) => x.serviceSlug === s.slug);
@@ -148,6 +168,18 @@ export default async function CityPage({ params }: P) {
                 <Link href={routes.emergency()} className="link">emergency heating and AC</Link> and{" "}
                 <Link href={routes.services()} className="link">every HVAC service</Link>.
               </p>
+            </div>
+
+            <div className="rounded-2xl bg-white p-6 ring-1 ring-line">
+              <h2 className="text-2xl font-semibold">Areas &amp; Neighborhoods Served in {c.name}</h2>
+              <ul className="mt-3 flex flex-wrap gap-2 text-sm">
+                {c.areas.map((a) => (
+                  <li key={a} className="rounded-full bg-sand-deep px-3 py-1.5 font-medium text-ink">
+                    {a}
+                  </li>
+                ))}
+              </ul>
+              <p className="mt-4 text-sm text-muted">Covered ZIP codes: {c.zips.join(", ")}</p>
             </div>
 
             <Glance
@@ -185,8 +217,47 @@ export default async function CityPage({ params }: P) {
               </div>
             </div>
           </div>
-          <aside className="lg:sticky lg:top-28 lg:self-start">
-            <LeadFormBlock compact />
+
+          <aside className="space-y-6 lg:sticky lg:top-28 lg:self-start">
+            <div className="card p-6">
+              <h3 className="font-serif text-xl font-semibold text-ink">Need Fast Service in {c.name}?</h3>
+              <p className="mt-2 text-sm text-muted">
+                Connect with an independent, licensed contractor serving your ZIP code. Upfront pricing before any work begins.
+              </p>
+              <div className="mt-5 space-y-3">
+                <PhoneLink
+                  phone={site.phone}
+                  e164={site.phoneE164}
+                  label={`Call ${site.phone}`}
+                  location="sidebar_curated_city"
+                  className="btn btn-primary w-full"
+                />
+                <a href="#hero-lead-form" className="btn btn-secondary w-full text-center">
+                  Request Quote Online
+                </a>
+              </div>
+              <ul className="mt-5 space-y-2 border-t border-line pt-4 text-xs text-muted">
+                <li className="flex items-center gap-2">
+                  <Icon name="check" className="h-4 w-4 text-teal" /> Same-day &amp; emergency response
+                </li>
+                <li className="flex items-center gap-2">
+                  <Icon name="check" className="h-4 w-4 text-teal" /> Licensed &amp; insured technicians
+                </li>
+                <li className="flex items-center gap-2">
+                  <Icon name="check" className="h-4 w-4 text-teal" /> Free referral &amp; written quotes
+                </li>
+                <li className="flex items-center gap-2">
+                  <Icon name="check" className="h-4 w-4 text-teal" /> Zero obligation to buy
+                </li>
+              </ul>
+            </div>
+
+            <div className="rounded-2xl bg-teal-tint p-5 text-sm ring-1 ring-teal/20">
+              <p className="font-semibold text-teal-deep">Emergency Service Available</p>
+              <p className="mt-1 text-ink/80">
+                Calls are answered 24/7 for urgent failures, no heat in winter, or complete cooling breakdown in summer.
+              </p>
+            </div>
           </aside>
         </div>
       </section>

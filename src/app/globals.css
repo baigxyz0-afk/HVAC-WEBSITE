@@ -66,7 +66,7 @@
     @apply font-medium text-teal-deep underline decoration-teal/40 underline-offset-2 hover:decoration-teal-deep;
   }
   .card {
-    @apply rounded-2xl bg-white ring-1 ring-line;
+    @apply rounded-2xl bg-white text-ink ring-1 ring-line;
   }
   .answer-box {
     @apply rounded-xl border-l-4 border-teal bg-teal-tint p-5 text-lg leading-relaxed;

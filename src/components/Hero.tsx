@@ -19,9 +19,10 @@ type Props = {
   aside?: ReactNode;
   emergency?: boolean;
   photo?: Photo;
+  requestHref?: string;
 };
 
-export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside, emergency, photo }: Props) {
+export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside, emergency, photo, requestHref }: Props) {
   return (
     <section className="bg-ink text-white">
       <div className="container-x grid gap-10 py-12 lg:grid-cols-[minmax(0,1.35fr)_minmax(0,1fr)] lg:items-center lg:py-16">
@@ -39,7 +40,7 @@ export function Hero({ eyebrow, title, lead, crumbs, facts = [], service, aside,
               emergency={emergency}
               className={`btn ${emergency ? "btn-alert" : "btn-primary"}`}
             />
-            <Link href={routes.request({ service })} className="btn btn-ghost-light">
+            <Link href={requestHref ?? routes.request({ service })} className="btn btn-ghost-light">
               Request service
             </Link>
           </div>

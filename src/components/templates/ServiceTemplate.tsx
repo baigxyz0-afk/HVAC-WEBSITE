@@ -50,7 +50,32 @@ export function ServiceTemplate({ s, path, crumbs, city, local, faqs }: Props) {
         emergency={false}
         facts={[availability, `Serving ${place}`, "Quote before work"]}
         photo={servicePhotoOverrides[s.slug] ?? categoryPhotos[s.category]}
+        requestHref="#lead-form"
       />
+
+      <div className="border-y border-line bg-sand-deep py-3.5">
+        <div className="container-x flex flex-col items-center justify-between gap-3 text-sm sm:flex-row">
+          <div className="flex items-center gap-2.5">
+            <span className="relative flex h-2.5 w-2.5">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-teal opacity-75"></span>
+              <span className="relative inline-flex h-2.5 w-2.5 rounded-full bg-teal"></span>
+            </span>
+            <span className="font-semibold text-ink">
+              Need immediate {(s.shortName ?? s.name).toLowerCase()} in {place}?
+            </span>
+            <span className="hidden text-muted md:inline">
+              Licensed local contractors available for same-day dispatch and emergency calls.
+            </span>
+          </div>
+          <PhoneLink
+            phone={site.phone}
+            e164={site.phoneE164}
+            label={`Call ${site.phone}`}
+            location="service_urgent_strip"
+            className="btn btn-primary btn-sm shrink-0"
+          />
+        </div>
+      </div>
 
       <nav aria-label="On this page" className="sticky top-16 z-20 border-b border-line bg-sand/95 backdrop-blur">
         <div className="container-x flex gap-1 overflow-x-auto py-2 text-sm whitespace-nowrap">
