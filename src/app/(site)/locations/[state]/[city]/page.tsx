@@ -5,6 +5,7 @@ import { getService } from "@/content/services";
 import { publishedArticles } from "@/content/articles";
 import { indexableCities, indexableCityServices } from "@/lib/sitemap";
 import { pageMeta } from "@/lib/seo";
+import { servicesFor } from "@/lib/climateAdvice";
 import { routes } from "@/lib/routes";
 import { createLinker } from "@/lib/linker";
 import { graph, ids, pageGraph } from "@/lib/schema";
@@ -36,9 +37,13 @@ export async function generateMetadata({ params }: P) {
     const dc = getDataCity(p.state, p.city)!;
     const st = getState(p.state)!;
     const cl = dc.climate;
+    const top = servicesFor(cl).map(getService).filter(Boolean);
+    const topService = top[0]?.name ?? "HVAC repair";
+    const top1 = top[0]?.name ?? "HVAC repair";
+    const top2 = top[1]?.name ?? "HVAC installation";
     return pageMeta({
-      title: `HVAC Repair & Service in ${dc.name}, ${st.abbr} | 24/7 Local Pros`,
-      description: `Need fast HVAC repair or installation in ${dc.name}, ${st.abbr}? Local licensed heating & AC contractors ready for ${cl.julHigh}°F summers and ${cl.janLow}°F winters. Get same-day service!`.slice(0, 158),
+      title: `${topService} in ${dc.name}, ${st.abbr} | Same-Day HVAC Service`,
+      description: `Need ${top1} or ${top2} in ${dc.name}, ${st.abbr}? Local licensed heating & AC contractors ready for ${cl.julHigh}°F summers and ${cl.janLow}°F winters. Get same-day service!`.slice(0, 158),
       path: routes.city(st.slug, dc.slug),
     });
   }

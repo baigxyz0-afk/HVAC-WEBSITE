@@ -21,7 +21,7 @@ import { beforeAfter } from "@/content/beforeAfter";
 
 const title = "Heating & AC Repair Near You: 24/7 HVAC Service in All 50 States";
 const description =
-  "Need fast HVAC repair near you? Connect with top-rated, licensed heating & cooling technicians for same-day AC repair, furnace replacement & heat pumps nationwide.";
+  "Need fast HVAC repair near you? Connect with licensed heating & cooling technicians for same-day AC repair, furnace replacement & heat pumps nationwide.";
 
 export const metadata = pageMeta({ title, description, path: "/" });
 
