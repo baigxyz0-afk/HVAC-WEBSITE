@@ -198,7 +198,7 @@ export const citiesMore: City[] = [
       { title: "Rooftop units and attic ducts", body: "Rooftop package units and attic ducts are exposed to extreme heat. Sealing and insulating ducts and shading or maintaining rooftop units improve efficiency noticeably." },
       { title: "Monsoon dust", body: "Summer monsoon storms and haboobs load filters and coils with dust. Changing filters after storms and cleaning coils each year keeps systems running efficiently." },
     ],
-    popularServices: ["ac-repair", "ac-tune-up", "ac-installation", "duct-sealing", "heat-pump-repair"],
+    popularServices: ["ac-repair", "ac-tune-up", "ac-installation", "duct-sealing", "heat-pump-repair", "furnace-repair"],
     nearby: ["mesa", "scottsdale", "tucson"],
     water: "Arizona Public Service (APS) and Salt River Project (SRP) supply electricity in different parts of Phoenix, and Southwest Gas supplies natural gas.",
     permits: "The City of Phoenix Planning and Development Department issues mechanical permits, and contractors are licensed by the Arizona Registrar of Contractors.",

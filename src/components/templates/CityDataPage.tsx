@@ -34,7 +34,7 @@ export function CityDataPage({ c, st, crumbs, guideCities }: { c: DataCity; st: 
       <Hero
         crumbs={crumbs}
         eyebrow={`${LOAD_LABEL[loadType(cl)]} · ${label}`}
-        title={`Heating and air conditioning in ${label}`}
+        title={`HVAC repair & service in ${label}`}
         lead={<p>{summary(c.name, cl, seed)}</p>}
         facts={[availability, `${c.zips.length} covered ZIP code${c.zips.length === 1 ? "" : "s"}`, "Free to request"]}
       />

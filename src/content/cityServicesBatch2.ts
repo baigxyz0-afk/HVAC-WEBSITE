@@ -132,8 +132,8 @@ export const cityServicesBatch2: CityService[] = [
       "Older Aurora homes often have furnaces replaced two or three times on the original ductwork, with AC or swamp coolers added later. Checking the ducts and returns before installing new equipment helps it perform as rated. The City of Aurora's Building Division issues mechanical permits and requires an Aurora contractor license.",
     ],
     [{ q: "Will insurance pay to replace my hail-damaged Aurora AC?", a: "Hail damage is often an insurance claim. Photograph it and contact your insurer before the old unit is removed." }]),
-  cs("las-vegas", "ac-tune-up", "AC tune-up in Las Vegas", "AC Tune-Up & Maintenance in Las Vegas, NV",
-    "Las Vegas AC tune-ups: testing capacitors and contactors before summer, desert dust on coils, attic ductwork and two-system homes.",
+  cs("las-vegas", "ac-tune-up", "AC tune-up in Las Vegas", "AC Tune-Up in Las Vegas, NV",
+    "Las Vegas AC tune-up before summer: capacitor and contactor testing, desert dust on coils, attic ductwork and two-system homes. Book same-day service.",
     "In Las Vegas, an AC tune-up is mainly about catching heat-stressed parts before summer. Capacitors, contactors and condenser fan motors fail far more often in extreme heat, and testing them in spring prevents many mid-July breakdowns.",
     [
       "Desert dust and wind storms clog filters and coils quickly. A tune-up should include a coil cleaning and a filter check, with monthly filter checks through summer. Many homes in Summerlin, Centennial Hills, Enterprise and Mountains Edge run two systems, and the upstairs unit in a very hot attic needs the same attention.",
@@ -164,8 +164,8 @@ export const cityServicesBatch2: CityService[] = [
       "Bench homes near Alta Canyon, Granite and Bell Canyon see colder nights and canyon winds, so pairing a new air conditioner with a heat pump or a matched furnace is worth considering. Sandy City's building division issues mechanical permits, and contractors are licensed through the Utah Division of Professional Licensing.",
     ],
     [{ q: "Should I repair or replace my old R-22 AC in Sandy?", a: "For a refrigerant leak or compressor failure, replacement is usually the better value on an R-22 system." }]),
-  cs("phoenix", "ac-tune-up", "AC tune-up in Phoenix", "AC Tune-Up & Maintenance in Phoenix, AZ",
-    "Phoenix AC tune-ups before the first 100-degree day: capacitors and contactors, monsoon dust, rooftop units and attic ducts.",
+  cs("phoenix", "ac-tune-up", "AC tune-up in Phoenix", "AC Tune-Up in Phoenix, AZ",
+    "Phoenix AC tune-up before the first 100-degree day: capacitors and contactors, monsoon dust, rooftop units and attic ducts. Book same-day service.",
     "A Phoenix AC tune-up should happen before the first 100-degree day. Capacitors, contactors and fan motors fail more often in Phoenix summers, and a weak part can take out a compressor, so testing them in spring prevents many breakdowns.",
     [
       "Monsoon storms and haboobs load filters and coils with dust. A spring tune-up should include a coil cleaning, and filters should be changed after big storms. Rooftop package units, common in older central Phoenix homes, need roof access and a check of their cabinet seals and duct connections.",
@@ -510,8 +510,8 @@ export const cityServicesBatch2: CityService[] = [
       "Older homes on pier-and-beam foundations often have ducts under the floor that can be damaged by moisture or pests, so inspect them before connecting new equipment. Fort Worth issues mechanical permits, and Texas licenses air conditioning contractors through TDLR.",
     ],
     [{ q: "Should I replace my Fort Worth AC after hail?", a: "If the coil is punctured or badly damaged, often yes. Document it and check with your insurer first." }]),
-  cs("oklahoma-city", "ac-repair", "AC repair in Oklahoma City", "AC Repair in Oklahoma City, OK",
-    "AC repair in Oklahoma City: hail and wind damage, long hot summers, aging 1990s and 2000s systems and attic ductwork.",
+  cs("oklahoma-city", "ac-repair", "AC repair in Oklahoma City", "AC Repair in Oklahoma City, OK | Same-Day Service",
+    "AC repair in Oklahoma City: hail and wind damage, long hot summers, aging 1990s and 2000s systems and attic ductwork. Same-day service.",
     "Spring storms in Oklahoma City frequently damage outdoor units with hail and wind. Photograph the damage and contact your insurer before repair or replacement, since storm damage is often covered.",
     [
       "Long hot summers strain air conditioners. Clean coils, sealed attic ducts and correct refrigerant charge keep them running efficiently, and a system that runs constantly may have a dirty coil or a slow refrigerant leak.",
