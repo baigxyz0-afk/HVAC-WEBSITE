@@ -18,7 +18,7 @@ const cs = (
 
 export const cityServicesMore: CityService[] = [
   // Kansas City metro.
-  cs("independence", "heat-pump-installation", "Heat pump installation in Independence", "Heat Pump Installation in Independence, MO",
+  cs("independence", "heat-pump-installation", "Heat pump installation in Independence", "Heat Pump Installation in Independence, MO | Free Quotes",
     "Heat pumps for Independence homes: replacing aging 1990s AC, dual-fuel with gas furnaces, crawlspace ducts and Independence Power & Light programs.",
     "Many Independence homes are replacing 1990s air conditioners, and swapping in a heat pump adds efficient heating for spring and fall. Paired with the existing gas furnace as a dual-fuel system, it handles most of the year while the furnace covers deep cold.",
     [
@@ -26,7 +26,7 @@ export const cityServicesMore: CityService[] = [
       "Many postwar ranches and split-levels here have crawlspace flex duct that has sagged or separated. Fixing those runs at installation time matters, because a heat pump delivers gentler warm air than a furnace and leaky ducts make rooms feel drafty in winter.",
     ],
     [{ q: "Does Independence Power & Light offer heat pump rebates?", a: "IPL runs its own programs, separate from Evergy. Ask the contractor or IPL what currently applies." }]),
-  cs("blue-springs", "ac-tune-up", "AC tune-up in Blue Springs", "AC Tune-Up & Maintenance in Blue Springs, MO",
+  cs("blue-springs", "ac-tune-up", "AC tune-up in Blue Springs", "AC Tune-Up & Maintenance in Blue Springs, MO | 21-Point Inspection",
     "Spring AC maintenance for Blue Springs homes: cottonwood and leaf debris near the lakes, hail-bent fins, split-level airflow and capacitor checks.",
     "A spring tune-up in Blue Springs should focus on the outdoor coil. Homes near Lake Tapawingo, Lake Jacomo and wooded lots collect cottonwood fluff, seeds and leaves that choke condensers, and spring hail can bend fins before summer even starts.",
     [
@@ -34,7 +34,7 @@ export const cityServicesMore: CityService[] = [
       "Split-levels common in Blue Springs often have uneven airflow between levels. A tune-up is a good time to check the blower, measure temperature split and adjust dampers before summer, rather than waiting until upstairs bedrooms are already too warm.",
     ],
     [{ q: "When should Blue Springs homeowners schedule AC service?", a: "April or May, before cottonwood season and the first heat wave." }]),
-  cs("liberty", "ductless-mini-splits", "Ductless mini-splits in Liberty", "Ductless Mini-Split Installation in Liberty, MO",
+  cs("liberty", "ductless-mini-splits", "Ductless mini-splits in Liberty", "Ductless Mini-Split Installation in Liberty, MO | Zoned Comfort",
     "Ductless mini-splits for Liberty homes: adding cooling to historic houses near the square with radiators or limited ductwork, without opening plaster walls.",
     "Historic homes near Liberty's courthouse square and William Jewell College often have radiators or very limited ductwork. Ductless mini-splits add efficient cooling, and heat for spring and fall, without cutting new duct runs through plaster walls.",
     [
@@ -42,7 +42,7 @@ export const cityServicesMore: CityService[] = [
       "Homes on the edges of town catch strong winter winds, and older boilers or retrofitted furnaces can struggle on the coldest days. Many owners keep their boiler for deep cold and use the mini-split as a heat pump the rest of the year, which reduces gas use.",
     ],
     [{ q: "Can a mini-split heat my Liberty home in winter?", a: "It can handle most of the season. Many owners keep the boiler or furnace for the coldest days." }]),
-  cs("gladstone", "duct-sealing", "Duct sealing in Gladstone", "Duct Sealing & Return Air in Gladstone, MO",
+  cs("gladstone", "duct-sealing", "Duct sealing in Gladstone", "Duct Sealing & Return Air in Gladstone, MO | Fix Hot & Cold Rooms",
     "Duct sealing and return air fixes for Gladstone homes: single central returns, leaky original sheet-metal ducts and uneven raised-ranch levels.",
     "Most Gladstone homes were built from the 1950s through the 1970s with original sheet-metal ductwork and a single central return. Sealing leaky joints and adding return paths are often the fix for rooms that run hot or cold, especially bedrooms with doors closed.",
     [
@@ -82,7 +82,7 @@ export const cityServicesMore: CityService[] = [
       "Old Leawood ranches expanded with additions often tie the new space into ductwork that was never sized for it. Zoning can help, but when the original ducts can't carry the extra air, a dedicated mini-split for the addition is often the more reliable fix.",
     ],
     [{ q: "Should I zone my Leawood home or add another system?", a: "If ducts and equipment have spare capacity, zoning works well. If not, a dedicated system or mini-split for the problem area is more reliable." }]),
-  cs("kansas-city-ks", "furnace-repair", "Furnace repair in Kansas City, KS", "Furnace Repair in Kansas City, KS",
+  cs("kansas-city-ks", "furnace-repair", "Furnace repair in Kansas City, KS", "24/7 Furnace Repair in Kansas City, KS | Same-Day Service",
     "Furnace repair in Kansas City, Kansas: converted gravity furnaces in early-1900s homes, hillside basements and BPU service.",
     "In Kansas City, Kansas, many furnace calls come from older homes in Strawberry Hill, Rosedale and Argentine, where converted gravity furnaces and tight hillside basements make repairs more involved than in newer suburbs.",
     [
@@ -91,7 +91,7 @@ export const cityServicesMore: CityService[] = [
     ],
     [{ q: "Why does my old KCK furnace keep shutting off?", a: "Often it's overheating because older ductwork restricts airflow. A technician can check static pressure and the limit switch." }]),
   // Mountain West and Southwest.
-  cs("henderson", "duct-sealing", "Duct sealing in Henderson", "Duct Sealing & Attic Ducts in Henderson, NV",
+  cs("henderson", "duct-sealing", "Duct sealing in Henderson", "Duct Sealing & Attic Ducts in Henderson, NV | Fix Hot & Cold Rooms",
     "Duct sealing for Henderson homes: original Green Valley ductwork, crushed attic flex duct and cooling lost to 140-degree attics.",
     "In Henderson, ducts in summer attics can lose a large share of their cooling before air reaches the rooms. Sealing leaks, replacing crushed flex duct and adding insulation often fix hot rooms without a bigger air conditioner.",
     [
@@ -115,7 +115,7 @@ export const cityServicesMore: CityService[] = [
       "Owners often set summer temperatures around 85°F. Manufactured homes and packaged heat pump units in east Mesa may need thermostats that support heat pump staging, and some older units need a common wire added for a smart thermostat to work reliably.",
     ],
     [{ q: "What should I set my Mesa thermostat to while away for the summer?", a: "Many owners use around 85°F with a connected thermostat that alerts them if cooling fails." }]),
-  cs("fort-collins", "heat-pump-installation", "Heat pump installation in Fort Collins", "Heat Pump Installation in Fort Collins, CO",
+  cs("fort-collins", "heat-pump-installation", "Heat pump installation in Fort Collins", "Heat Pump Installation in Fort Collins, CO | Free Quotes",
     "Heat pumps for Fort Collins homes: adding cooling to Old Town houses, city utility programs, cold-climate models and dry winter air.",
     "Fort Collins homeowners are increasingly choosing heat pumps when they add cooling or replace a furnace. The city-owned electric utility has run efficiency and heat pump programs, and cold-climate models can handle most Front Range winters.",
     [
@@ -188,7 +188,7 @@ export const cityServicesMore: CityService[] = [
       "Many older boilers vent through masonry chimneys, so a repair visit should include a draft and carbon monoxide check. If any unit smells gas, everyone should leave the building and call PSE&G or 911 before calling for repairs.",
     ],
     [{ q: "Why are some radiators cold in my Newark house?", a: "Common causes are trapped air, low water pressure or a failed zone valve or pump. A technician can find which." }]),
-  cs("hartford", "heat-pump-installation", "Heat pump installation in Hartford", "Heat Pump Installation in Hartford, CT",
+  cs("hartford", "heat-pump-installation", "Heat pump installation in Hartford", "Heat Pump Installation in Hartford, CT | Free Quotes",
     "Heat pumps for Hartford homes: replacing oil heat in multifamily houses, adding cooling, keeping boilers as backup and Connecticut incentives.",
     "Many Hartford homes and multifamily houses still heat with oil. Cold-climate heat pumps let owners cut oil use and add air conditioning at the same time, often keeping the existing boiler as backup for the coldest days.",
     [
@@ -196,7 +196,7 @@ export const cityServicesMore: CityService[] = [
       "Connecticut has offered efficiency incentives for heat pumps, and contractors must hold the appropriate state license. Before removing an oil system entirely, many owners run the heat pump through one winter with the boiler as backup to see how the building performs.",
     ],
     [{ q: "Should I keep my oil boiler after adding heat pumps in Hartford?", a: "Many owners keep it as backup at first, especially for the coldest weeks." }]),
-  cs("portland", "heat-pump-installation", "Heat pump installation in Portland", "Heat Pump Installation in Portland, OR",
+  cs("portland", "heat-pump-installation", "Heat pump installation in Portland", "Heat Pump Installation in Portland, OR | Free Quotes",
     "Heat pumps for Portland homes: adding cooling after heat waves, replacing gas, oil or baseboard heat, oil tank decommissioning and permits.",
     "After record heat waves, many Portland homeowners are adding cooling for the first time, and a heat pump does that while also replacing an older furnace or baseboard heat. Portland's mild winters suit heat pumps well.",
     [
@@ -236,7 +236,7 @@ export const cityServicesMore: CityService[] = [
       "Because building steam heat is controlled centrally, mini-splits operating as heat pumps also give apartment owners some independent control in spring and fall. Larger buildings working toward Local Law 97 emissions limits may favor heat pump upgrades.",
     ],
     [{ q: "What approvals do I need for a mini-split in a Manhattan co-op?", a: "Usually a board alteration application, licensed contractors and an approved outdoor unit location." }]),
-  cs("brooklyn", "heat-pump-installation", "Heat pumps for Brooklyn brownstones", "Heat Pump Installation in Brooklyn, NY",
+  cs("brooklyn", "heat-pump-installation", "Heat pumps for Brooklyn brownstones", "Heat Pump Installation in Brooklyn, NY | Free Quotes",
     "Heat pumps for Brooklyn brownstones and row houses: adding cooling, reducing boiler use, multi-zone systems and landmark district placement.",
     "Brooklyn brownstone owners often add multi-zone heat pumps to cool every floor and to heat efficiently in spring and fall, reducing how much they rely on an aging gas boiler.",
     [
@@ -245,7 +245,7 @@ export const cityServicesMore: CityService[] = [
     ],
     [{ q: "Can a heat pump replace my Brooklyn brownstone's boiler?", a: "It can carry much of the load, but most owners keep a boiler for the coldest weeks." }]),
   // Midwest and Mid-South.
-  cs("columbus", "furnace-repair", "Furnace repair in Columbus", "Furnace Repair in Columbus, OH",
+  cs("columbus", "furnace-repair", "Furnace repair in Columbus", "24/7 Furnace Repair in Columbus, OH | Same-Day Service",
     "Furnace repair in Columbus: freeze-thaw winter failures, older German Village and Clintonville systems, energy choice and OCILB licensing.",
     "Columbus furnace problems cluster in the first cold weeks of the season, when ignitors, flame sensors and inducer motors that sat idle all summer fail. Older homes in German Village and Clintonville add venting and airflow issues to the list.",
     [
@@ -285,7 +285,7 @@ export const cityServicesMore: CityService[] = [
       "During cold snaps, ignitors, flame sensors and inducer motors fail most often, and high-efficiency furnace vents can be blocked by drifting snow. If you smell gas, leave the building and call We Energies or 911 from outside.",
     ],
     [{ q: "My Milwaukee duplex has two furnaces. Can one affect the other?", a: "They often share a chimney or gas line, so problems with one can affect the other's venting." }]),
-  cs("des-moines", "furnace-repair", "Furnace repair in Des Moines", "Furnace Repair in Des Moines, IA",
+  cs("des-moines", "furnace-repair", "Furnace repair in Des Moines", "24/7 Furnace Repair in Des Moines, IA | Same-Day Service",
     "Furnace repair in Des Moines: wind chill and cold-snap failures, older Beaverdale and Sherman Hill systems, and MidAmerican Energy gas.",
     "Des Moines furnace calls peak during the first arctic fronts of the season, when strong prairie winds and subzero wind chills push heating systems hard. Older homes in Beaverdale and Sherman Hill add airflow and venting issues.",
     [
@@ -294,7 +294,7 @@ export const cityServicesMore: CityService[] = [
     ],
     [{ q: "Why does my Des Moines furnace short cycle in cold weather?", a: "Often a dirty flame sensor or restricted airflow tripping the limit switch. A technician can test both." }]),
   // South and Texas.
-  cs("san-antonio", "duct-sealing", "Duct sealing in San Antonio", "Duct Sealing & Attic Ducts in San Antonio, TX",
+  cs("san-antonio", "duct-sealing", "Duct sealing in San Antonio", "Duct Sealing & Attic Ducts in San Antonio, TX | Fix Hot & Cold Rooms",
     "Duct sealing for San Antonio homes: attic duct losses in extreme heat, pier-and-beam ducts in historic homes, and CPS Energy programs.",
     "In San Antonio, attic temperatures in summer can be far hotter than outdoor air, so leaky or poorly insulated ducts waste a large share of cooling. Sealing and insulating them is often the fastest way to cooler rooms and lower CPS Energy bills.",
     [
@@ -310,7 +310,7 @@ export const cityServicesMore: CityService[] = [
       "Older central Austin bungalows in Hyde Park and Travis Heights often have ducts under the floor or in tight attics that pull in dust through leaks. Sealing return ducts at the same time makes the filter more effective, and Austin Energy has offered efficiency programs that can help.",
     ],
     [{ q: "What filter helps with Austin cedar fever?", a: "A MERV 11–13 media filter, with windows closed and the fan running during cedar season." }]),
-  cs("fort-worth", "ac-repair", "AC repair in Fort Worth", "AC Repair in Fort Worth, TX",
+  cs("fort-worth", "ac-repair", "AC repair in Fort Worth", "24/7 AC Repair in Fort Worth, TX | Same-Day Service",
     "Air conditioner repair in Fort Worth: hail damage, summer part failures, pier-and-beam ducts in older homes and TDLR licensing.",
     "Fort Worth AC repair calls rise with the summer heat and after spring hail storms. Failed capacitors, contactors and fan motors are the most common summer problems, while hail damage can range from bent fins to punctured coils.",
     [
@@ -334,7 +334,7 @@ export const cityServicesMore: CityService[] = [
       "Homes near the St. Johns River and the beaches face salt air and high humidity, which corrode coils and clog condensate drains. JEA, the city-owned utility, supplies electricity, so a sudden bill spike in winter can be a sign the backup heat is doing all the work.",
     ],
     [{ q: "Why did my Jacksonville power bill spike in a cold snap?", a: "Your heat pump may be running on backup heat strips. A defrost or charge problem is a common cause." }]),
-  cs("orlando", "ac-repair", "AC repair in Orlando", "AC Repair in Orlando, FL",
+  cs("orlando", "ac-repair", "AC repair in Orlando", "24/7 AC Repair in Orlando, FL | Same-Day Service",
     "Air conditioner repair in Orlando: lightning and surge damage, clogged drains in humid heat, vacation homes and attic air handlers.",
     "Orlando AC repair calls often follow summer thunderstorms. Central Florida's frequent lightning can damage control boards, capacitors and compressors through power surges, while daily humidity leads to clogged condensate drains.",
     [
@@ -342,7 +342,7 @@ export const cityServicesMore: CityService[] = [
       "Vacation and second homes near the attractions often run unattended for weeks. A clogged drain or failed part can go unnoticed until humidity and mold build up, so remote thermostat monitoring and regular drain service are worth considering.",
     ],
     [{ q: "Can lightning damage my AC even if my house wasn't hit?", a: "Yes. Nearby strikes cause power surges that can damage control boards and other parts." }]),
-  cs("charlotte", "duct-sealing", "Duct sealing in Charlotte", "Duct Sealing & Crawlspace Ducts in Charlotte, NC",
+  cs("charlotte", "duct-sealing", "Duct sealing in Charlotte", "Duct Sealing & Crawlspace Ducts in Charlotte, NC | Fix Hot & Cold Rooms",
     "Duct sealing for Charlotte homes: crawlspace ducts in Dilworth and Plaza Midwood, sweating ducts, attic systems and upstairs comfort.",
     "Charlotte's older neighborhoods put ductwork in humid crawlspaces, while newer two-story homes run upstairs ducts through hot attics. Both lose conditioned air through leaks, and sealing them improves comfort and reduces musty odors.",
     [
@@ -366,7 +366,7 @@ export const cityServicesMore: CityService[] = [
       "Heat pumps are the most common system, and zoned or multi-system heat pumps need proper staging and defrost settings to avoid running backup heat unnecessarily. Nashville Electric Service, the city-owned utility, supplies the electricity.",
     ],
     [{ q: "How can I cool the top floor of my Nashville infill home?", a: "A separate upstairs system or zoning with dampers is usually the fix." }]),
-  cs("louisville", "ac-repair", "AC repair in Louisville", "AC Repair in Louisville, KY",
+  cs("louisville", "ac-repair", "AC repair in Louisville", "24/7 AC Repair in Louisville, KY | Same-Day Service",
     "Air conditioner repair in Louisville: humid Ohio River summers, shotgun houses, Victorian homes with added ductwork, and LG&E service.",
     "Louisville's humid river-valley summers keep air conditioners running for long stretches, and many repair calls involve systems that cool but leave homes clammy, iced coils from restricted airflow, or failed capacitors and fan motors.",
     [
@@ -374,7 +374,7 @@ export const cityServicesMore: CityService[] = [
       "Old Louisville Victorians with tall ceilings and ductwork added decades later can have undersized returns that freeze coils. Clean filters and correct airflow fix many of these problems. Repairs should be done by a contractor holding a Kentucky HVAC license.",
     ],
     [{ q: "Why does my Louisville AC freeze up?", a: "Often restricted airflow from small returns or dirty filters, or low refrigerant. A technician can check both." }]),
-  cs("new-orleans", "ac-repair", "AC repair in New Orleans", "AC Repair in New Orleans, LA",
+  cs("new-orleans", "ac-repair", "AC repair in New Orleans", "24/7 AC Repair in New Orleans, LA | Same-Day Service",
     "Air conditioner repair in New Orleans: humidity, ducts and air handlers under raised homes, drain clogs, flood-exposed units and hurricanes.",
     "In New Orleans, many AC repair calls trace back to humidity: clogged condensate drains, sweating ducts under raised homes, and air handlers working in damp crawlspaces. After storms and flooding, outdoor units also need inspection before restarting.",
     [
@@ -382,7 +382,7 @@ export const cityServicesMore: CityService[] = [
       "In flood-prone neighborhoods like Lakeview and Gentilly, outdoor units sit on raised platforms. Equipment exposed to floodwater should be inspected before it runs, since water can damage electrical parts and the compressor. Entergy New Orleans supplies the power.",
     ],
     [{ q: "Should I run my New Orleans AC after a flood?", a: "Not until a technician inspects it. Floodwater can damage electrical parts and the compressor." }]),
-  cs("birmingham", "duct-sealing", "Duct sealing in Birmingham", "Duct Sealing & Crawlspace Ducts in Birmingham, AL",
+  cs("birmingham", "duct-sealing", "Duct sealing in Birmingham", "Duct Sealing & Crawlspace Ducts in Birmingham, AL | Fix Hot & Cold Rooms",
     "Duct sealing for Birmingham homes: crawlspace ducts in older hillside neighborhoods, sweating ducts, attic systems and humidity.",
     "Older Birmingham homes in Highland Park, Forest Park, Crestwood and Avondale typically have ductwork in humid crawlspaces under hillside houses. Leaks there waste cooling and pull musty air indoors, so sealing ducts is one of the most effective upgrades.",
     [
@@ -398,7 +398,7 @@ export const cityServicesMore: CityService[] = [
       "Because many homes change owners or tenants often near the area's military installations, maintenance records can be missing. A first visit that checks refrigerant charge, drains and ductwork establishes a baseline and catches worn parts before summer or a cold snap.",
     ],
     [{ q: "How often should I rinse my AC coil in Virginia Beach?", a: "A few times a year near the ocean, plus a professional cleaning during annual maintenance." }]),
-  cs("charleston", "ac-repair", "AC repair in Charleston", "AC Repair in Charleston, SC",
+  cs("charleston", "ac-repair", "AC repair in Charleston", "24/7 AC Repair in Charleston, SC | Same-Day Service",
     "Air conditioner repair in Charleston: historic peninsula homes, salt air and humidity, flooding, drain clogs and Board of Architectural Review rules.",
     "Charleston's humidity, salt air and tidal flooding make AC repairs here distinct. Corroded coils, clogged drains and flood-exposed outdoor units are common, and historic homes on the peninsula add placement and access challenges.",
     [
@@ -415,7 +415,7 @@ export const cityServicesMore: CityService[] = [
     ],
     [{ q: "My Little Rock heat pump is covered in ice. What should I do?", a: "Don't chip at it. Switch to emergency heat if needed and call if it doesn't clear after the storm." }]),
   // California and the West.
-  cs("san-diego", "heat-pump-installation", "Heat pump installation in San Diego", "Heat Pump Installation in San Diego, CA",
+  cs("san-diego", "heat-pump-installation", "Heat pump installation in San Diego", "Heat Pump Installation in San Diego, CA | Free Quotes",
     "Heat pumps for San Diego homes: adding cooling to coastal homes, replacing wall furnaces, inland sizing, Title 24 permits and SDG&E.",
     "Heat pumps are a natural fit for San Diego, where winters are mild and many homes need cooling only during heat waves and Santa Ana conditions. They add air conditioning to homes without it and replace old wall furnaces with efficient heating.",
     [
@@ -423,7 +423,7 @@ export const cityServicesMore: CityService[] = [
       "Coastal and inland homes need very different capacities, so a load calculation matters more than usual. California's Title 24 typically requires a permit and duct testing, and SDG&E supplies both electricity and gas, which affects operating-cost comparisons.",
     ],
     [{ q: "Is a heat pump enough to heat a San Diego home?", a: "Yes, for nearly all homes. San Diego's mild winters are well within a heat pump's range." }]),
-  cs("los-angeles", "heat-pump-installation", "Heat pump installation in Los Angeles", "Heat Pump Installation in Los Angeles, CA",
+  cs("los-angeles", "heat-pump-installation", "Heat pump installation in Los Angeles", "Heat Pump Installation in Los Angeles, CA | Free Quotes",
     "Heat pumps for Los Angeles homes: replacing wall and floor furnaces, adding cooling in the Valley and eastside neighborhoods, LADWP and LADBS permits.",
     "Many Los Angeles homes in Silver Lake, Echo Park, Highland Park and Mid-City still have old wall or floor furnaces and no air conditioning. A heat pump replaces the furnace with efficient heating and adds cooling for hot summer days.",
     [

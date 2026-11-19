@@ -19,7 +19,7 @@ const cs = (
 
 export const cityServicesBatch2: CityService[] = [
   // Kansas City metro.
-  cs("kansas-city", "furnace-repair", "Furnace repair in Kansas City, MO", "Furnace Repair in Kansas City, MO",
+  cs("kansas-city", "furnace-repair", "Furnace repair in Kansas City, MO", "24/7 Furnace Repair in Kansas City, MO | Same-Day Service",
     "Furnace repair for Kansas City homes: pre-1940 basement furnaces, chimney venting problems, asbestos duct tape and postwar ranch systems south of the city.",
     "Furnace repair in Kansas City often starts with the age of the house. Pre-1940 homes have basement furnaces venting into masonry chimneys and duct systems that grew in stages, while South Kansas City's 1950s and 60s ranches have simpler basement systems with short runs that are quicker to diagnose.",
     [
@@ -27,7 +27,7 @@ export const cityServicesBatch2: CityService[] = [
       "Some pre-1980 basements still have white asbestos-containing tape or insulation on ducts and old boilers. If a repair means cutting into ductwork near the furnace, the contractor should identify that material first. Work on gas furnaces and ductwork in the city falls under Kansas City, Missouri's licensed mechanical contractor and permit rules.",
     ],
     [{ q: "Why does my old Kansas City furnace keep shutting off?", a: "Common causes are a dirty flame sensor, a clogged filter or a venting or draft problem, which is frequent in older homes with masonry chimneys." }]),
-  cs("independence", "furnace-repair", "Furnace repair in Independence, MO", "Furnace Repair in Independence, MO",
+  cs("independence", "furnace-repair", "Furnace repair in Independence, MO", "24/7 Furnace Repair in Independence, MO | Same-Day Service",
     "Furnace repair in Independence: aging 1990s furnaces, crawlspace flex duct, undersized 1970s returns and when repair stops making sense.",
     "Many Independence furnaces were installed in the 1990s and are now past their expected service life. Repair is usually worthwhile for a failed igniter, sensor or inducer, but on an older unit that needs a major part, it's worth comparing the repair with replacement.",
     [
@@ -35,7 +35,7 @@ export const cityServicesBatch2: CityService[] = [
       "Crawlspace flex duct that has sagged or separated sends heat under the house instead of into rooms, which can look like a weak furnace. Reconnecting and sealing those runs is often part of fixing a cold room. The City of Independence licenses contractors and issues mechanical permits for work that needs one.",
     ],
     [{ q: "Is it worth repairing a 1990s furnace in Independence?", a: "For small parts, usually yes. For a cracked heat exchanger or failed blower motor on a furnace that old, compare the repair cost with replacement." }]),
-  cs("lees-summit", "ac-repair", "AC repair in Lee's Summit", "AC Repair in Lee's Summit, MO",
+  cs("lees-summit", "ac-repair", "AC repair in Lee's Summit", "24/7 AC Repair in Lee's Summit, MO | Same-Day Service",
     "AC repair in Lee's Summit: hot upstairs bedrooms, attic air handler leaks, aging 2000s systems and three-floor homes on one basement unit.",
     "Many Lee's Summit two-story homes from the 1990s and 2000s cool three floors with one basement system, so a weak air conditioner shows up first in upstairs bedrooms. Repair calls here also often involve attic air handlers in homes with a second system.",
     [
@@ -43,7 +43,7 @@ export const cityServicesBatch2: CityService[] = [
       "Systems from the building boom of the late 1990s and early 2000s are now reaching the end of their life, and some still use R-22 refrigerant. If a leak or compressor failure turns up on one of these, the technician should give you the repair price alongside replacement so you can compare. Lee's Summit requires licensed contractors and issues mechanical permits for replacements.",
     ],
     [{ q: "Why is my upstairs so hot in my Lee's Summit house?", a: "One thermostat on the main floor and long duct runs leave upstairs rooms warmer. Check the system works properly first, then consider balancing or zoning." }]),
-  cs("blue-springs", "ac-repair", "AC repair in Blue Springs", "AC Repair in Blue Springs, MO",
+  cs("blue-springs", "ac-repair", "AC repair in Blue Springs", "24/7 AC Repair in Blue Springs, MO | Same-Day Service",
     "AC repair for Blue Springs homes: clogged condensers on wooded lake-area lots, hail-damaged fins and uneven split-level cooling.",
     "In Blue Springs, a surprising number of AC repair calls trace back to the outdoor coil. Homes near Lake Tapawingo, Lake Jacomo and the Burr Oak area sit among mature trees that drop leaves, seeds and cottonwood fluff onto condensers, and a clogged coil raises pressures until parts fail.",
     [
@@ -51,7 +51,7 @@ export const cityServicesBatch2: CityService[] = [
       "Split-level homes from the 1970s and 80s often cool the main level well while bedrooms upstairs run warm. Before assuming the air conditioner is failing, a technician can check refrigerant charge and airflow, then adjust dampers, returns and fan settings. Blue Springs issues mechanical permits for equipment replacement and requires registered contractors.",
     ],
     [{ q: "Can hail damage be fixed without replacing my Blue Springs AC?", a: "Light fin damage can often be combed straight. A punctured coil or severe damage usually means replacement, and may be an insurance claim." }]),
-  cs("liberty", "furnace-repair", "Furnace repair in Liberty, MO", "Furnace Repair in Liberty, MO",
+  cs("liberty", "furnace-repair", "Furnace repair in Liberty, MO", "24/7 Furnace Repair in Liberty, MO | Same-Day Service",
     "Furnace repair in Liberty: wind-blown pilot lights, frozen high-efficiency condensate lines, chimney-vented furnaces and undersized returns.",
     "Furnace repair in Liberty covers a wide range of equipment, because a 1920s house near the square can sit a few blocks from a 2010s subdivision. Older homes often have chimney-vented furnaces and undersized returns, while newer homes have high-efficiency furnaces with PVC venting.",
     [
@@ -59,7 +59,7 @@ export const cityServicesBatch2: CityService[] = [
       "High-efficiency furnaces drain condensate through lines that can freeze where they leave the house in deep cold, which stops the furnace. Thawing and rerouting or insulating that line is a common winter repair. In older homes with chimney venting, the technician should also check draft and carbon monoxide. Liberty licenses contractors and issues mechanical permits.",
     ],
     [{ q: "Why did my Liberty furnace stop during a cold, windy night?", a: "Snow or wind at the vent terminations, or a frozen condensate line on a high-efficiency furnace, are common causes." }]),
-  cs("gladstone", "furnace-repair", "Furnace repair in Gladstone", "Furnace Repair in Gladstone, MO",
+  cs("gladstone", "furnace-repair", "Furnace repair in Gladstone", "24/7 Furnace Repair in Gladstone, MO | Same-Day Service",
     "Furnace repair in Gladstone: third-generation furnaces on original ducts, chimney venting and water heater draft, and single central returns.",
     "Many Gladstone homes from the 1950s through the 1970s are on their third furnace, still connected to the original sheet-metal ducts and a single central return. Repairs are usually straightforward, but airflow and venting deserve a look on every visit.",
     [
@@ -67,7 +67,7 @@ export const cityServicesBatch2: CityService[] = [
       "With one hallway return, a dirty filter or closed bedroom doors can choke the furnace's airflow until it overheats and shuts off on its high-limit switch. If a furnace keeps cycling, airflow is worth checking before replacing controls. Raised ranches with a chilly lower level may also need damper adjustment. Gladstone requires licensed contractors and issues mechanical permits.",
     ],
     [{ q: "Does fixing my furnace affect my water heater in Gladstone?", a: "It can when both share a masonry chimney. Ask the technician to check the water heater's draft after furnace work." }]),
-  cs("overland-park", "ac-repair", "AC repair in Overland Park", "AC Repair in Overland Park, KS",
+  cs("overland-park", "ac-repair", "AC repair in Overland Park", "24/7 AC Repair in Overland Park, KS | Same-Day Service",
     "AC repair in Overland Park: attic system drain overflows, hail and cottonwood damage along Tomahawk and Indian creeks, and undersized returns.",
     "AC repair in Overland Park depends a lot on which part of the city you're in. North Overland Park homes usually have one basement system with short runs, while many south Overland Park homes have a second system in the attic, where summer heat and condensate problems cause most service calls.",
     [
@@ -83,7 +83,7 @@ export const cityServicesBatch2: CityService[] = [
       "Newer homes in west and south Olathe are tightly sealed, so ventilation, combustion air and humidity matter more than in older houses. Keep warranty registration paperwork from the original install. Contractors replacing a furnace in Olathe need a Johnson County contractor license and a city mechanical permit.",
     ],
     [{ q: "Should I replace my Olathe furnace and AC together?", a: "If both are original to a 2000s home, replacing them together usually makes sense so they're matched and sized correctly." }]),
-  cs("lenexa", "ac-repair", "AC repair in Lenexa", "AC Repair in Lenexa, KS",
+  cs("lenexa", "ac-repair", "AC repair in Lenexa", "24/7 AC Repair in Lenexa, KS | Same-Day Service",
     "AC repair in Lenexa: leaky 1960s and 70s ductwork east of I-435, humidity in tight new homes and static pressure problems.",
     "AC repair in Lenexa looks different on each side of town. East Lenexa's 1960s and 70s ranches and split-levels have furnaces and air conditioners replaced several times on the same ductwork, while west Lenexa's newer homes are tightly built and often have attic ductwork.",
     [
@@ -91,7 +91,7 @@ export const cityServicesBatch2: CityService[] = [
       "Newer, tightly built west-side homes can hold summer humidity. If an air conditioner reaches the set temperature but rooms still feel clammy, the system may be oversized or running with the wrong fan settings, not broken. Lenexa issues mechanical permits, and contractors need a Johnson County contractor license.",
     ],
     [{ q: "Why does my Lenexa house feel humid even with the AC on?", a: "An oversized system or fan settings that leave moisture on the coil are common causes, especially in tight newer homes." }]),
-  cs("shawnee", "ac-tune-up", "AC tune-up in Shawnee", "AC Tune-Up & Maintenance in Shawnee, KS",
+  cs("shawnee", "ac-tune-up", "AC tune-up in Shawnee", "AC Tune-Up & Maintenance in Shawnee, KS | 21-Point Inspection",
     "AC tune-ups for Shawnee homes: leaf- and cottonwood-clogged condensers on wooded hillside lots, walkout basements and postwar east-side ducts.",
     "An AC tune-up in Shawnee should focus on the outdoor unit. Hillside lots and wooded neighborhoods load condenser coils with leaves, seeds and cottonwood faster than flat, open lots, so a thorough coil cleaning is the most valuable part of a spring visit.",
     [
@@ -107,7 +107,7 @@ export const cityServicesBatch2: CityService[] = [
       "Large homes often replace systems one at a time as they reach different ages. Premium variable-speed and communicating systems need compatible controls, so ask the contractor to plan replacements so thermostats and equipment work together, and to use technicians familiar with the brand's diagnostics. Leawood issues mechanical permits, and contractors need a Johnson County contractor license.",
     ],
     [{ q: "Can I replace just one of my Leawood home's systems?", a: "Yes, and it's common. Make sure the new equipment and controls are compatible with the systems you're keeping." }]),
-  cs("kansas-city-ks", "ac-repair", "AC repair in Kansas City, KS", "AC Repair in Kansas City, KS",
+  cs("kansas-city-ks", "ac-repair", "AC repair in Kansas City, KS", "24/7 AC Repair in Kansas City, KS | Same-Day Service",
     "AC repair in Kansas City, Kansas: BPU electric service, early-1900s homes, hillside neighborhoods and newer Piper systems.",
     "AC repair in Kansas City, Kansas, covers everything from early-1900s homes with central air added much later to newer Piper homes with standard attic systems. Postwar homes in between usually have basement furnaces with simple duct layouts that make repairs straightforward.",
     [
@@ -132,7 +132,7 @@ export const cityServicesBatch2: CityService[] = [
       "Older Aurora homes often have furnaces replaced two or three times on the original ductwork, with AC or swamp coolers added later. Checking the ducts and returns before installing new equipment helps it perform as rated. The City of Aurora's Building Division issues mechanical permits and requires an Aurora contractor license.",
     ],
     [{ q: "Will insurance pay to replace my hail-damaged Aurora AC?", a: "Hail damage is often an insurance claim. Photograph it and contact your insurer before the old unit is removed." }]),
-  cs("las-vegas", "ac-tune-up", "AC tune-up in Las Vegas", "AC Tune-Up & Maintenance in Las Vegas, NV",
+  cs("las-vegas", "ac-tune-up", "AC tune-up in Las Vegas", "AC Tune-Up & Maintenance in Las Vegas, NV | 21-Point Inspection",
     "Las Vegas AC tune-ups: testing capacitors and contactors before summer, desert dust on coils, attic ductwork and two-system homes.",
     "In Las Vegas, an AC tune-up is mainly about catching heat-stressed parts before summer. Capacitors, contactors and condenser fan motors fail far more often in extreme heat, and testing them in spring prevents many mid-July breakdowns.",
     [
@@ -140,7 +140,7 @@ export const cityServicesBatch2: CityService[] = [
       "Attics can exceed 140°F in summer, so the technician should look at accessible attic ductwork for leaks or crushed sections that waste cooling. Older east-valley homes with rooftop package units need roof access for service. Contractors are licensed by the Nevada State Contractors Board.",
     ],
     [{ q: "When should I get my Las Vegas AC tuned up?", a: "In spring, before temperatures climb, so weak capacitors and dirty coils are fixed before the hottest weeks." }]),
-  cs("henderson", "ac-repair", "AC repair in Henderson", "AC Repair in Henderson, NV",
+  cs("henderson", "ac-repair", "AC repair in Henderson", "24/7 AC Repair in Henderson, NV | Same-Day Service",
     "AC repair in Henderson: Green Valley systems on original ducts, wind and dust in Anthem, multi-system homes and heat-stressed parts.",
     "AC repair in Henderson often involves Green Valley homes from the 1980s and 1990s that are now on their second or third air conditioner but still use the original ductwork. Leaks, undersized returns and crushed attic flex duct can make a working system look like a failing one.",
     [
@@ -148,7 +148,7 @@ export const cityServicesBatch2: CityService[] = [
       "Larger homes often run two or three systems. When one fails, keeping the replacement parts and refrigerant type compatible with the others avoids mismatched equipment. Henderson's building department issues mechanical permits, and contractors are licensed by the Nevada State Contractors Board.",
     ],
     [{ q: "Why does my Henderson AC run but not cool well?", a: "Common causes include a dirty coil, a failing capacitor or fan motor, or leaky attic ducts in older homes." }]),
-  cs("salt-lake-city", "furnace-repair", "Furnace repair in Salt Lake City", "Furnace Repair in Salt Lake City, UT",
+  cs("salt-lake-city", "furnace-repair", "Furnace repair in Salt Lake City", "24/7 Furnace Repair in Salt Lake City, UT | Same-Day Service",
     "Furnace repair in Salt Lake City: older Avenues and Sugar House systems, inversion-season filters, dry winter air and humidifier issues.",
     "Furnace repair in Salt Lake City often involves older equipment. Sugar House bungalows commonly have basement furnaces with small returns, and homes in the Avenues and Federal Heights may have older furnaces or boilers with limited ductwork.",
     [
@@ -164,7 +164,7 @@ export const cityServicesBatch2: CityService[] = [
       "Bench homes near Alta Canyon, Granite and Bell Canyon see colder nights and canyon winds, so pairing a new air conditioner with a heat pump or a matched furnace is worth considering. Sandy City's building division issues mechanical permits, and contractors are licensed through the Utah Division of Professional Licensing.",
     ],
     [{ q: "Should I repair or replace my old R-22 AC in Sandy?", a: "For a refrigerant leak or compressor failure, replacement is usually the better value on an R-22 system." }]),
-  cs("phoenix", "ac-tune-up", "AC tune-up in Phoenix", "AC Tune-Up & Maintenance in Phoenix, AZ",
+  cs("phoenix", "ac-tune-up", "AC tune-up in Phoenix", "AC Tune-Up & Maintenance in Phoenix, AZ | 21-Point Inspection",
     "Phoenix AC tune-ups before the first 100-degree day: capacitors and contactors, monsoon dust, rooftop units and attic ducts.",
     "A Phoenix AC tune-up should happen before the first 100-degree day. Capacitors, contactors and fan motors fail more often in Phoenix summers, and a weak part can take out a compressor, so testing them in spring prevents many breakdowns.",
     [
@@ -172,7 +172,7 @@ export const cityServicesBatch2: CityService[] = [
       "Older homes and postwar Maryvale homes often still have original attic ductwork, which loses a lot of cooling in extreme attic heat. A tune-up is a good time to spot leaky or crushed ducts. Contractors are licensed by the Arizona Registrar of Contractors.",
     ],
     [{ q: "How often should a Phoenix AC be serviced?", a: "At least once a year in spring. Many homeowners with heat pumps also schedule a fall check." }]),
-  cs("mesa", "ac-repair", "AC repair in Mesa", "AC Repair in Mesa, AZ",
+  cs("mesa", "ac-repair", "AC repair in Mesa", "24/7 AC Repair in Mesa, AZ | Same-Day Service",
     "AC repair in Mesa: aging 1980s systems, packaged units in manufactured homes, crossover duct leaks and seasonal-home breakdowns.",
     "AC repair in Mesa often involves homes from the 1980s growth boom, still on older equipment and original attic ductwork. Many of these single-story homes have replaced their air conditioner several times, so the ducts may be the weak point.",
     [
@@ -196,7 +196,7 @@ export const cityServicesBatch2: CityService[] = [
       "Fort Collins Utilities supplies electricity and the city has run efficiency and heat pump programs, while Xcel Energy supplies gas. Ask the contractor which incentives currently apply. Rental homes near campus with aging equipment are also common candidates. The City of Fort Collins issues mechanical permits and requires licensed contractors.",
     ],
     [{ q: "Are there heat pump incentives in Fort Collins?", a: "The city utility has run heat pump programs. Ask the contractor or Fort Collins Utilities what is currently offered." }]),
-  cs("scottsdale", "ac-repair", "AC repair in Scottsdale", "AC Repair in Scottsdale, AZ",
+  cs("scottsdale", "ac-repair", "AC repair in Scottsdale", "24/7 AC Repair in Scottsdale, AZ | Same-Day Service",
     "AC repair in Scottsdale: multi-system north Scottsdale homes, afternoon glass heat, seasonal residents and south Scottsdale rooftop units.",
     "AC repair in Scottsdale often involves large north Scottsdale homes that run several systems of different ages. When one fails, the technician should check whether the others are close behind, so repairs and replacements can be planned together.",
     [
@@ -212,7 +212,7 @@ export const cityServicesBatch2: CityService[] = [
       "Historic and adobe homes often lack ductwork entirely, so ductless mini-splits are usually a better fit than new ducts. The City of Tucson issues mechanical permits within city limits and Pima County handles unincorporated areas; contractors are licensed by the Arizona Registrar of Contractors.",
     ],
     [{ q: "Can I keep my swamp cooler and add AC in Tucson?", a: "Yes. Many homes use the cooler in dry early summer and refrigerated air during the monsoon." }]),
-  cs("reno", "furnace-repair", "Furnace repair in Reno", "Furnace Repair in Reno, NV",
+  cs("reno", "furnace-repair", "Furnace repair in Reno", "24/7 Furnace Repair in Reno, NV | Same-Day Service",
     "Furnace repair in Reno: older Old Southwest systems, dust-clogged filters from the Washoe Zephyr, smoke-season filters and newer south Reno homes.",
     "Furnace repair in Reno ranges from older furnaces and boilers in the Old Southwest and near downtown to gas furnaces in two-story homes built since the 1990s in South Reno, Damonte Ranch and Somersett.",
     [
@@ -220,7 +220,7 @@ export const cityServicesBatch2: CityService[] = [
       "Newer two-story homes often have attic ductwork for the upper floor, and leaks there make upstairs bedrooms colder in winter. With cold winters and hot summers, some homeowners pair a high-efficiency furnace with a heat pump. The City of Reno issues mechanical permits and Washoe County handles unincorporated areas; contractors are licensed by the Nevada State Contractors Board.",
     ],
     [{ q: "Why does my Reno furnace keep shutting off?", a: "A clogged filter is a common cause, especially after windy, dusty weather. Check it before calling for repair." }]),
-  cs("west-valley-city", "furnace-repair", "Furnace repair in West Valley City", "Furnace Repair in West Valley City, UT",
+  cs("west-valley-city", "furnace-repair", "Furnace repair in West Valley City", "24/7 Furnace Repair in West Valley City, UT | Same-Day Service",
     "Furnace repair in West Valley City: 1960s ramblers on original ducts, split-level comfort, inversion-season filters and newer Hunter homes.",
     "Many West Valley City ramblers from the 1960s and 1970s have basement gas furnaces on their original ductwork. Most furnace repairs there are straightforward, but airflow through old ducts and returns is worth checking on every visit.",
     [
@@ -237,7 +237,7 @@ export const cityServicesBatch2: CityService[] = [
       "Summer humidity along the Delaware River makes correct sizing important. An oversized air conditioner cools quickly but leaves rooms clammy, so a load calculation should set the size. Wilmington issues permits within city limits, New Castle County handles unincorporated areas, and Delaware licenses HVACR contractors at the state level.",
     ],
     [{ q: "How do I add AC to a Wilmington rowhouse without ducts?", a: "Ductless mini-splits or high-velocity small-duct systems are the usual options." }]),
-  cs("dover", "heat-pump-installation", "Heat pump installation in Dover, DE", "Heat Pump Installation in Dover, DE",
+  cs("dover", "heat-pump-installation", "Heat pump installation in Dover, DE", "Heat Pump Installation in Dover, DE | Fast Local Service",
     "Heat pump installation in Dover: replacing electric heat pumps in newer subdivisions, crawlspace ducts and City of Dover electric programs.",
     "Most newer subdivisions around Dover use electric heat pumps with central air, so heat pump replacement is one of the most common HVAC projects in the area. A new heat pump should be sized with a load calculation, not matched to the old unit.",
     [
@@ -245,7 +245,7 @@ export const cityServicesBatch2: CityService[] = [
       "The City of Dover runs its own electric utility for homes in city limits, so rebate programs may differ from surrounding areas. Ask the contractor what applies at your address. Dover issues permits within city limits, Kent County handles unincorporated areas, and Delaware licenses HVACR contractors.",
     ],
     [{ q: "Are there heat pump rebates for City of Dover electric customers?", a: "The city's electric utility runs its own programs. Ask the contractor or the utility what currently applies." }]),
-  cs("boston", "heat-pump-installation", "Heat pump installation in Boston", "Heat Pump Installation in Boston, MA",
+  cs("boston", "heat-pump-installation", "Heat pump installation in Boston", "Heat Pump Installation in Boston, MA | Fast Local Service",
     "Heat pump installation for Boston homes: brownstones and triple-deckers with steam heat, condo approvals, historic districts and efficiency incentives.",
     "Many Boston homes heat with steam or hot-water radiators fed by boilers, and cooling has historically come from window units. A heat pump, usually ductless, adds efficient cooling and can carry much of the heating in spring and fall while the boiler handles the coldest days.",
     [
@@ -253,7 +253,7 @@ export const cityServicesBatch2: CityService[] = [
       "Massachusetts utility-sponsored efficiency programs have offered incentives for heat pumps and weatherization. Ask the contractor about current incentives before choosing equipment. Boston's Inspectional Services Department issues mechanical permits.",
     ],
     [{ q: "Can a heat pump replace my Boston boiler?", a: "Many owners keep the boiler for the coldest days and use the heat pump for cooling and milder heating." }]),
-  cs("worcester", "furnace-repair", "Furnace repair in Worcester", "Furnace Repair in Worcester, MA",
+  cs("worcester", "furnace-repair", "Furnace repair in Worcester", "24/7 Furnace Repair in Worcester, MA | Same-Day Service",
     "Furnace and boiler repair in Worcester: triple-decker systems, colder hill-town winters, high-efficiency vents and older West Side forced-air homes.",
     "Worcester's elevation brings colder winters and more snow than eastern Massachusetts, so a reliable furnace or boiler matters. In triple-deckers, each unit often has its own system in the basement, sometimes decades old.",
     [
@@ -269,7 +269,7 @@ export const cityServicesBatch2: CityService[] = [
       "Some older homes still heat with oil, and switching to heat pumps often involves decommissioning a basement or buried oil tank, which has its own requirements. The City of Portland issues mechanical permits, and contractors are licensed by the Oregon Construction Contractors Board.",
     ],
     [{ q: "Can a mini-split replace baseboard heat in Portland?", a: "Yes. In Portland's mild winters it can carry most or all of the heating and also adds cooling." }]),
-  cs("salem", "heat-pump-installation", "Heat pump installation in Salem, OR", "Heat Pump Installation in Salem, OR",
+  cs("salem", "heat-pump-installation", "Heat pump installation in Salem, OR", "Heat Pump Installation in Salem, OR | Fast Local Service",
     "Heat pump installation in Salem: replacing baseboard heat in 1950s–70s homes, hotter summers than Portland, smoke and West Salem wind.",
     "Heat pumps are a common upgrade in Salem, where summer highs often run a few degrees warmer than Portland's. Many homes from the 1950s through the 1970s use electric baseboard heat or older gas furnaces without central air, so a heat pump adds cooling and cuts heating costs at once.",
     [
@@ -277,7 +277,7 @@ export const cityServicesBatch2: CityService[] = [
       "Wildfire smoke from the Cascades can settle in the valley, so a heat pump that recirculates air, paired with good filtration, helps during smoke events. The City of Salem issues mechanical permits, and contractors are licensed by the Oregon Construction Contractors Board.",
     ],
     [{ q: "Is a heat pump worth it in Salem?", a: "For homes with baseboard heat or no AC, it's often the most cost-effective way to add cooling and lower heating bills." }]),
-  cs("sacramento", "ac-repair", "AC repair in Sacramento", "AC Repair in Sacramento, CA",
+  cs("sacramento", "ac-repair", "AC repair in Sacramento", "24/7 AC Repair in Sacramento, CA | Same-Day Service",
     "AC repair in Sacramento: long 100-degree stretches, smoke-season filters, undersized returns in older homes and Title 24 rules for replacement.",
     "Long stretches above 100°F strain Sacramento air conditioners, and most repair calls come during heat waves. Capacitors, contactors and fan motors are common failures, and a dirty coil or filter makes them fail sooner.",
     [
@@ -294,7 +294,7 @@ export const cityServicesBatch2: CityService[] = [
     ],
     [{ q: "Do coastal San Diego homes really need AC?", a: "Late-summer heat waves and Santa Ana winds have led many coastal owners to add cooling, often with mini-splits." }]),
   // Texas and Florida.
-  cs("houston", "ac-tune-up", "AC tune-up in Houston", "AC Tune-Up & Maintenance in Houston, TX",
+  cs("houston", "ac-tune-up", "AC tune-up in Houston", "AC Tune-Up & Maintenance in Houston, TX | 21-Point Inspection",
     "Houston AC tune-ups: humidity control, attic air handler drains, float switches, pier-and-beam ductwork and flood-raised units.",
     "In Houston, an AC tune-up is as much about humidity as temperature. A correctly charged system with a clean coil and a clear condensate drain removes moisture properly, which prevents clammy rooms and mold.",
     [
@@ -302,7 +302,7 @@ export const cityServicesBatch2: CityService[] = [
       "Bungalows in the Heights and Montrose on pier-and-beam foundations often have ducts under the floor, which should be checked for disconnections. In flood-prone neighborhoods like Meyerland, outdoor units are often raised, and any equipment that has been underwater should be inspected before use. Texas licenses air conditioning contractors through TDLR.",
     ],
     [{ q: "How often should a Houston AC drain line be cleaned?", a: "At least once a year during a tune-up. Many homeowners also flush it during summer." }]),
-  cs("dallas", "ac-repair", "AC repair in Dallas", "AC Repair in Dallas, TX",
+  cs("dallas", "ac-repair", "AC repair in Dallas", "24/7 AC Repair in Dallas, TX | Same-Day Service",
     "AC repair in Dallas: hail-damaged condensers, hot attic ductwork, two-system North Dallas homes and older East Dallas and Oak Cliff systems.",
     "AC repair in Dallas often follows a hail storm. North Texas hail regularly bends condenser fins and can puncture coils, so photograph the damage and check with your insurer before any major repair or replacement.",
     [
@@ -310,7 +310,7 @@ export const cityServicesBatch2: CityService[] = [
       "Older homes in East Dallas and Oak Cliff often have attic ductwork added long after construction, which may be undersized or poorly sealed. The City of Dallas issues mechanical permits, and Texas licenses air conditioning contractors through TDLR.",
     ],
     [{ q: "Is hail damage to my Dallas AC covered by insurance?", a: "It often is. Photograph the damage and contact your insurer before the unit is repaired or replaced." }]),
-  cs("tampa", "ac-repair", "AC repair in Tampa", "AC Repair in Tampa, FL",
+  cs("tampa", "ac-repair", "AC repair in Tampa", "24/7 AC Repair in Tampa, FL | Same-Day Service",
     "AC repair in Tampa: algae-clogged condensate drains, salt air corrosion near the bay, flood-zone equipment and bungalow ductwork.",
     "Algae in condensate drains is one of the most common causes of AC shutdowns in Tampa. When the drain clogs, a float switch shuts the system off to prevent water damage, so a system that stops on a humid afternoon may need its drain cleared rather than a new part.",
     [
@@ -318,7 +318,7 @@ export const cityServicesBatch2: CityService[] = [
       "In South Tampa and Davis Islands, many homes sit in flood zones with equipment on raised platforms. After storm surge or flooding, have equipment inspected before turning it back on. Tampa issues permits within city limits and Hillsborough County handles unincorporated areas; Florida licenses HVAC contractors at the state level.",
     ],
     [{ q: "Why does my Tampa AC keep shutting off in summer?", a: "A clogged condensate drain tripping the float switch is a very common cause. Flushing the drain often fixes it." }]),
-  cs("orlando", "ac-tune-up", "AC tune-up in Orlando", "AC Tune-Up & Maintenance in Orlando, FL",
+  cs("orlando", "ac-tune-up", "AC tune-up in Orlando", "AC Tune-Up & Maintenance in Orlando, FL | 21-Point Inspection",
     "Orlando AC tune-ups: condensate drain flushing, surge protection for lightning season, vacation-home humidity and attic air handlers.",
     "In Orlando, an AC tune-up should always include flushing the condensate drain. Drains clog with algae in the warm, humid climate, and a clogged drain can shut the system down or overflow onto ceilings from attic air handlers.",
     [
@@ -326,7 +326,7 @@ export const cityServicesBatch2: CityService[] = [
       "Many vacation homes near the attractions run their systems while unoccupied. Those homes still need humidity control, so the technician should confirm thermostat settings and drain function before owners leave. Orlando issues permits in city limits and Orange County handles unincorporated areas; Florida licenses HVAC contractors.",
     ],
     [{ q: "Does an Orlando AC need surge protection?", a: "It's worth considering given how frequent lightning is in Central Florida. It helps protect control boards and compressors." }]),
-  cs("san-antonio", "ac-repair", "AC repair in San Antonio", "AC Repair in San Antonio, TX",
+  cs("san-antonio", "ac-repair", "AC repair in San Antonio", "24/7 AC Repair in San Antonio, TX | Same-Day Service",
     "AC repair in San Antonio: attic heat and duct losses, pier-and-beam homes, two-system north-side houses and CPS Energy programs.",
     "AC repair in San Antonio often involves attic air handlers. Attic temperatures run far above outdoor air in summer, so leaky or poorly insulated ducts can make a working system feel weak, especially in upstairs rooms.",
     [
@@ -334,7 +334,7 @@ export const cityServicesBatch2: CityService[] = [
       "If a repair turns into a replacement, CPS Energy, owned by the city, runs rebates and efficiency programs, since San Antonio is outside the deregulated market. The City of San Antonio issues mechanical permits, and Texas licenses air conditioning contractors through TDLR.",
     ],
     [{ q: "Who offers AC rebates in San Antonio?", a: "Rebates and efficiency programs come from CPS Energy, the city-owned utility." }]),
-  cs("austin", "ac-repair", "AC repair in Austin", "AC Repair in Austin, TX",
+  cs("austin", "ac-repair", "AC repair in Austin", "24/7 AC Repair in Austin, TX | Same-Day Service",
     "AC repair in Austin: pier-and-beam bungalows, attic air handlers, two-system homes, energy audit findings and Austin Energy rebates.",
     "AC repair in Austin covers older central bungalows on pier-and-beam foundations, where ductwork runs under the floor or in tight attics, and newer slab homes with attic air handlers. Many two-story homes use separate systems upstairs and down.",
     [
@@ -342,7 +342,7 @@ export const cityServicesBatch2: CityService[] = [
       "If the system needs replacement, Austin Energy has run rebate programs for efficient equipment and heat pumps. Check current programs before buying. Austin issues mechanical permits, and Texas licenses air conditioning contractors through TDLR.",
     ],
     [{ q: "Are there AC rebates in Austin?", a: "Austin Energy has run rebate programs for efficient equipment and heat pumps. Check what is currently offered." }]),
-  cs("miami", "ac-repair", "AC repair in Miami", "AC Repair in Miami, FL",
+  cs("miami", "ac-repair", "AC repair in Miami", "24/7 AC Repair in Miami, FL | Same-Day Service",
     "AC repair in Miami: salt air corrosion, condo fan coils and building approvals, closet air handlers and high-velocity hurricane zone tie-downs.",
     "Year-round operation and coastal salt air shorten equipment life in Miami, so coil leaks and corroded outdoor parts are common repairs. Single-family homes typically have split systems with air handlers in a closet or garage.",
     [
@@ -350,7 +350,7 @@ export const cityServicesBatch2: CityService[] = [
       "If a repair turns into a replacement, Miami-Dade is part of Florida's high-velocity hurricane zone, where outdoor equipment must be anchored with approved methods and a permit is required. The City of Miami issues permits within city limits and Miami-Dade County handles unincorporated areas; Florida licenses HVAC contractors.",
     ],
     [{ q: "Can I get my Miami condo's AC repaired without building approval?", a: "Many buildings require approval for work on fan coils or water-source units. Check with management first." }]),
-  cs("jacksonville", "ac-repair", "AC repair in Jacksonville", "AC Repair in Jacksonville, FL",
+  cs("jacksonville", "ac-repair", "AC repair in Jacksonville", "24/7 AC Repair in Jacksonville, FL | Same-Day Service",
     "AC repair in Jacksonville: humid river and beach homes, salt air corrosion, attic heat pumps and historic Riverside and San Marco ductwork.",
     "Homes near the St. Johns River and the beaches deal with high humidity and salt air, so clogged condensate drains and corroded coils are among the most common AC repairs in Jacksonville.",
     [
@@ -366,7 +366,7 @@ export const cityServicesBatch2: CityService[] = [
       "PECO supplies electricity and the city-owned Philadelphia Gas Works supplies gas, and efficiency programs from both can apply. Philadelphia's Department of Licenses and Inspections issues mechanical permits and licenses contractors working in the city.",
     ],
     [{ q: "Can my Philadelphia rowhome's AC condenser go on the roof?", a: "Rooftop condensers are common on rowhomes. Secure mounting and roof protection are part of a proper installation." }]),
-  cs("pittsburgh", "furnace-repair", "Furnace repair in Pittsburgh", "Furnace Repair in Pittsburgh, PA",
+  cs("pittsburgh", "furnace-repair", "Furnace repair in Pittsburgh", "24/7 Furnace Repair in Pittsburgh, PA | Same-Day Service",
     "Furnace repair in Pittsburgh: converted gravity furnaces, oversized ducts with few returns, hillside access and freeze-thaw winters.",
     "Many Pittsburgh homes in Squirrel Hill, Shadyside and Highland Park have converted gravity furnaces or large older boilers with oversized ductwork. When a newer furnace is connected to ductwork designed for gravity heat, too few returns can make it overheat and cycle off.",
     [
@@ -382,7 +382,7 @@ export const cityServicesBatch2: CityService[] = [
       "Ohio lets homeowners buy gas and electricity from competitive suppliers, but AEP Ohio and Columbia Gas of Ohio still run most efficiency programs. Columbus Building and Zoning Services issues mechanical permits, and the Ohio Construction Industry Licensing Board licenses HVAC contractors.",
     ],
     [{ q: "Can I put a high-efficiency furnace vent on the front of my German Village home?", a: "Historic district rules may restrict visible vents. Plan placement with the contractor and check review requirements." }]),
-  cs("cincinnati", "furnace-repair", "Furnace repair in Cincinnati", "Furnace Repair in Cincinnati, OH",
+  cs("cincinnati", "furnace-repair", "Furnace repair in Cincinnati", "24/7 Furnace Repair in Cincinnati, OH | Same-Day Service",
     "Furnace repair in Cincinnati: ductwork added in stages, undersized returns, hillside and rowhouse access and older boilers.",
     "Many Cincinnati homes have older furnaces or boilers with ductwork that was added in stages over decades. Leaks and undersized returns in that ductwork can make a furnace overheat or leave rooms cold even when the furnace itself is fine.",
     [
@@ -390,7 +390,7 @@ export const cityServicesBatch2: CityService[] = [
       "Over-the-Rhine rowhouses usually lack room for full duct systems and often rely on boilers or small furnaces. The City of Cincinnati's Department of Buildings and Inspections issues mechanical permits, and the Ohio Construction Industry Licensing Board licenses HVAC contractors.",
     ],
     [{ q: "Why are some rooms cold even when my Cincinnati furnace runs?", a: "Leaky or undersized ductwork added over decades is a common cause. Duct sealing and returns often help." }]),
-  cs("atlanta", "ac-repair", "AC repair in Atlanta", "AC Repair in Atlanta, GA",
+  cs("atlanta", "ac-repair", "AC repair in Atlanta", "24/7 AC Repair in Atlanta, GA | Same-Day Service",
     "AC repair in Atlanta: crawlspace air handlers, pollen-clogged coils, attic systems in two-story homes and humid summers.",
     "Intown Atlanta bungalows usually sit on crawlspaces, with ductwork and sometimes the air handler under the house. Damp crawlspaces cause sweating, leaky ducts and musty air, so a weak system there may need duct repair rather than a new part.",
     [
@@ -398,7 +398,7 @@ export const cityServicesBatch2: CityService[] = [
       "Two-story homes commonly have a second system in the attic serving upstairs bedrooms, where clogged drains can shut it down. The City of Atlanta's Office of Buildings issues mechanical permits, and Georgia licenses conditioned air contractors at the state level.",
     ],
     [{ q: "Why does my Atlanta house smell musty when the AC runs?", a: "Leaky ducts in a damp crawlspace can pull musty air into the system. Duct sealing and moisture control help." }]),
-  cs("charlotte", "heat-pump-repair", "Heat pump repair in Charlotte", "Heat Pump Repair in Charlotte, NC",
+  cs("charlotte", "heat-pump-repair", "Heat pump repair in Charlotte", "Heat Pump Repair in Charlotte, NC | Fast Local Service",
     "Heat pump repair in Charlotte: upstairs attic heat pumps, crawlspace ducts, defrost problems and Mecklenburg County permits.",
     "Many newer Charlotte two-story homes have two systems, often a heat pump upstairs in the attic and a gas furnace downstairs. The upstairs heat pump works hardest in summer, so clogged drains, tripped float switches and worn parts are common repair calls.",
     [
@@ -406,7 +406,7 @@ export const cityServicesBatch2: CityService[] = [
       "In winter, a heat pump that ices over and doesn't clear may have a defrost control problem. Permits in Charlotte are handled by Mecklenburg County rather than the city, and North Carolina licenses heating contractors at the state level.",
     ],
     [{ q: "Who issues HVAC permits in Charlotte?", a: "Mecklenburg County handles building permits for Charlotte, not the city." }]),
-  cs("raleigh", "heat-pump-installation", "Heat pump installation in Raleigh", "Heat Pump Installation in Raleigh, NC",
+  cs("raleigh", "heat-pump-installation", "Heat pump installation in Raleigh", "Heat Pump Installation in Raleigh, NC | Fast Local Service",
     "Heat pump installation in Raleigh: two-system North Raleigh homes, crawlspace ducts, pine pollen, ice storms and backup heat.",
     "Most newer homes in North Raleigh and Brier Creek have two heat pump systems with attic ductwork, and many are reaching replacement age. A load calculation should size each new heat pump for the floor it serves.",
     [
@@ -414,7 +414,7 @@ export const cityServicesBatch2: CityService[] = [
       "Winter ice storms and cold snaps test heat pumps, so a new system needs properly sized backup heat and working defrost controls. Pine pollen clogs outdoor coils each spring. Raleigh issues permits within city limits, Wake County handles unincorporated areas, and North Carolina licenses heating contractors.",
     ],
     [{ q: "Does a Raleigh heat pump need backup heat?", a: "Yes. Backup heat strips or a furnace handle ice storms and cold snaps when the heat pump can't keep up." }]),
-  cs("nashville", "heat-pump-repair", "Heat pump repair in Nashville", "Heat Pump Repair in Nashville, TN",
+  cs("nashville", "heat-pump-repair", "Heat pump repair in Nashville", "Heat Pump Repair in Nashville, TN | Fast Local Service",
     "Heat pump repair in Nashville: tall infill homes with multiple systems, crawlspace ducts, ice storms and NES and TVA programs.",
     "Nashville's narrow infill homes stack two or three floors on small lots and usually have separate systems for each floor. Upper floors run hot, so the top-floor heat pump often fails first or struggles most in summer.",
     [
@@ -430,7 +430,7 @@ export const cityServicesBatch2: CityService[] = [
       "Neighborhoods near the lakefront catch strong winter winds, and subzero cold snaps make reliability the top priority. Finished bungalow attics that overheat in summer are better served by a separate mini-split than a bigger main system. The City of Chicago Department of Buildings issues mechanical permits.",
     ],
     [{ q: "Does a new high-efficiency furnace affect my Chicago water heater?", a: "Often. The water heater may need a chimney liner once the furnace no longer vents through the chimney." }]),
-  cs("detroit", "furnace-repair", "Furnace repair in Detroit", "Furnace Repair in Detroit, MI",
+  cs("detroit", "furnace-repair", "Furnace repair in Detroit", "24/7 Furnace Repair in Detroit, MI | Same-Day Service",
     "Furnace repair in Detroit: ignitor and flame sensor failures in cold stretches, chimney venting, converted gravity furnaces and rehabbed homes.",
     "Long cold stretches in Detroit make ignitor, flame sensor and inducer failures common. Most of these are quick repairs, but in older homes the technician should also check venting and test for carbon monoxide.",
     [
@@ -446,7 +446,7 @@ export const cityServicesBatch2: CityService[] = [
       "Homes switching from oil heat usually need the basement or buried tank decommissioned, which has its own requirements. The Seattle Department of Construction and Inspections issues mechanical permits, and contractors must register with the state Department of Labor & Industries.",
     ],
     [{ q: "Can a mini-split heat a Seattle home in winter?", a: "Yes. Seattle's mild winters let a heat pump provide most or all of a home's heat." }]),
-  cs("minneapolis", "furnace-repair", "Furnace repair in Minneapolis", "Furnace Repair in Minneapolis, MN",
+  cs("minneapolis", "furnace-repair", "Furnace repair in Minneapolis", "24/7 Furnace Repair in Minneapolis, MN | Same-Day Service",
     "Furnace repair in Minneapolis: subzero no-heat calls, converted gravity furnaces, carbon monoxide checks and backup furnaces with heat pumps.",
     "When temperatures drop well below zero in Minneapolis, a furnace failure can freeze pipes within hours. That makes fast diagnosis, a carbon monoxide check and a fall tune-up more important here than almost anywhere.",
     [
@@ -494,7 +494,7 @@ export const cityServicesBatch2: CityService[] = [
       "Mini-splits recirculate indoor air, which helps when Santa Ana winds bring heat, dust and wildfire smoke. California's Title 24 usually requires a permit and testing. LADBS issues mechanical permits, and contractors are licensed by the CSLB.",
     ],
     [{ q: "Can a mini-split replace my LA wall furnace?", a: "Yes. It provides efficient heat and adds cooling, usually with a permit under Title 24." }]),
-  cs("san-jose", "heat-pump-installation", "Heat pump installation in San Jose", "Heat Pump Installation in San Jose, CA",
+  cs("san-jose", "heat-pump-installation", "Heat pump installation in San Jose", "Heat Pump Installation in San Jose, CA | Fast Local Service",
     "Heat pump installation in San Jose: replacing gas furnaces in postwar ranches, cooling Eichlers, all-electric rules and Title 24 permits.",
     "Heat pumps are a common choice in San Jose when replacing a gas furnace. Postwar ranch homes typically have forced-air furnaces with attic or crawlspace ducts, so a ducted heat pump can often use the existing ductwork.",
     [
@@ -510,7 +510,7 @@ export const cityServicesBatch2: CityService[] = [
       "Older homes on pier-and-beam foundations often have ducts under the floor that can be damaged by moisture or pests, so inspect them before connecting new equipment. Fort Worth issues mechanical permits, and Texas licenses air conditioning contractors through TDLR.",
     ],
     [{ q: "Should I replace my Fort Worth AC after hail?", a: "If the coil is punctured or badly damaged, often yes. Document it and check with your insurer first." }]),
-  cs("oklahoma-city", "ac-repair", "AC repair in Oklahoma City", "AC Repair in Oklahoma City, OK",
+  cs("oklahoma-city", "ac-repair", "AC repair in Oklahoma City", "24/7 AC Repair in Oklahoma City, OK | Same-Day Service",
     "AC repair in Oklahoma City: hail and wind damage, long hot summers, aging 1990s and 2000s systems and attic ductwork.",
     "Spring storms in Oklahoma City frequently damage outdoor units with hail and wind. Photograph the damage and contact your insurer before repair or replacement, since storm damage is often covered.",
     [
@@ -534,7 +534,7 @@ export const cityServicesBatch2: CityService[] = [
       "In the French Quarter and other historic districts, equipment placement may require review, so plan rear or rooftop locations out of street view. The Department of Safety and Permits issues mechanical permits, and Louisiana licenses mechanical contractors.",
     ],
     [{ q: "Are mini-splits good for humid New Orleans homes?", a: "Yes, when sized correctly. They avoid sweating under-house ducts and remove moisture room by room." }]),
-  cs("birmingham", "ac-repair", "AC repair in Birmingham", "AC Repair in Birmingham, AL",
+  cs("birmingham", "ac-repair", "AC repair in Birmingham", "24/7 AC Repair in Birmingham, AL | Same-Day Service",
     "AC repair in Birmingham: crawlspace ducts, attic systems in Over the Mountain homes, storm damage and hillside access.",
     "Many older Birmingham homes sit on crawlspaces with ductwork underneath. In humid summers those ducts sweat and leak, which can make a working air conditioner feel weak and pull musty air into the house.",
     [
@@ -542,7 +542,7 @@ export const cityServicesBatch2: CityService[] = [
       "Spring storms and occasional tornadoes can damage outdoor units and cause power surges. Steep lots also complicate access. The City of Birmingham issues mechanical permits, and Alabama licenses heating and air conditioning contractors through a state board.",
     ],
     [{ q: "Why did my Birmingham upstairs AC stop working?", a: "A clogged condensate drain tripping the float switch is a common cause in attic units." }]),
-  cs("virginia-beach", "heat-pump-repair", "Heat pump repair in Virginia Beach", "Heat Pump Repair in Virginia Beach, VA",
+  cs("virginia-beach", "heat-pump-repair", "Heat pump repair in Virginia Beach", "Heat Pump Repair in Virginia Beach, VA | Fast Local Service",
     "Heat pump repair in Virginia Beach: salt air corrosion, flood-raised units, defrost problems and homes with missing maintenance records.",
     "Most Virginia Beach homes heat and cool with heat pumps, and salt air from the ocean and Chesapeake Bay corrodes coils and cabinets faster than inland. Refrigerant leaks and corroded parts are common repairs near the water.",
     [
@@ -558,7 +558,7 @@ export const cityServicesBatch2: CityService[] = [
       "Neighborhoods near the lake catch strong winter winds that drive heat loss through older walls and windows, which makes furnace reliability important. The Department of Neighborhood Services issues mechanical permits, and Wisconsin credentials HVAC contractors.",
     ],
     [{ q: "Can I replace just one furnace in my Milwaukee duplex?", a: "Yes, it's common. Plan venting carefully if the new furnace is high-efficiency." }]),
-  cs("albuquerque", "furnace-repair", "Furnace repair in Albuquerque", "Furnace Repair in Albuquerque, NM",
+  cs("albuquerque", "furnace-repair", "Furnace repair in Albuquerque", "24/7 Furnace Repair in Albuquerque, NM | Same-Day Service",
     "Furnace repair in Albuquerque: high-altitude setup, older pueblo-style homes, Northeast Heights furnaces and swamp cooler duct issues.",
     "At about 5,000 feet, gas furnaces in Albuquerque should be set up following the manufacturer's high-altitude instructions. A furnace that burns poorly or trips safety switches may need its altitude setup checked as part of a repair.",
     [
@@ -582,7 +582,7 @@ export const cityServicesBatch2: CityService[] = [
       "Owners facing a major repair on an oil system often compare new gas equipment with cold-climate heat pumps. The City of Hartford issues mechanical permits, and Connecticut licenses heating and cooling contractors.",
     ],
     [{ q: "Should I repair or replace my Hartford oil furnace?", a: "For a major repair on old oil equipment, compare costs with gas equipment or a cold-climate heat pump." }]),
-  cs("charleston", "heat-pump-repair", "Heat pump repair in Charleston", "Heat Pump Repair in Charleston, SC",
+  cs("charleston", "heat-pump-repair", "Heat pump repair in Charleston", "Heat Pump Repair in Charleston, SC | Fast Local Service",
     "Heat pump repair in Charleston: salt air corrosion, clogged drains, flood-raised equipment and historic peninsula homes.",
     "Year-round humidity and salt air in Charleston corrode heat pump coils and clog drains quickly. Refrigerant leaks and drain-related shutdowns are among the most common repairs.",
     [
@@ -598,7 +598,7 @@ export const cityServicesBatch2: CityService[] = [
       "Strong prairie winds and subzero cold snaps test furnace reliability, so proper sizing and clear venting matter. The City of Des Moines permit and development center issues mechanical permits, and Iowa licenses mechanical professionals.",
     ],
     [{ q: "Does my older Des Moines home need duct work with a new furnace?", a: "Often. Older ducts may leak or lack returns, which limits how well a new furnace performs." }]),
-  cs("little-rock", "ac-repair", "AC repair in Little Rock", "AC Repair in Little Rock, AR",
+  cs("little-rock", "ac-repair", "AC repair in Little Rock", "24/7 AC Repair in Little Rock, AR | Same-Day Service",
     "AC repair in Little Rock: crawlspace ducts, attic systems in West Little Rock, ice storm damage and historic Quapaw Quarter homes.",
     "Many older Little Rock homes sit on crawlspaces with ductwork underneath. In humid summers those ducts sweat and leak, pulling musty air indoors and making a working system feel weak.",
     [

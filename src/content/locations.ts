@@ -442,7 +442,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "furnace-installation",
     status: "PUBLISHED",
     h1: "Furnace replacement in Kansas City, Missouri",
-    seoTitle: "Furnace Replacement in Kansas City, MO",
+    seoTitle: "24/7 Furnace Replacement in Kansas City, MO | Free Quotes",
     metaDescription:
       "Furnace replacement for Kansas City, Missouri homes: basement furnaces, chimney venting, liners and city mechanical permits.",
     answer:
@@ -461,7 +461,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-installation",
     status: "PUBLISHED",
     h1: "AC replacement in Overland Park",
-    seoTitle: "AC Replacement in Overland Park, KS",
+    seoTitle: "Same-Day AC Replacement in Overland Park, KS | Free Estimates",
     metaDescription:
       "Air conditioner replacement for Overland Park homes: right-sizing two-story homes, attic systems, hail damage and Johnson County licensing.",
     answer:
@@ -480,7 +480,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "zoning-systems",
     status: "PUBLISHED",
     h1: "HVAC zoning in Lee's Summit",
-    seoTitle: "HVAC Zoning Systems in Lee's Summit, MO",
+    seoTitle: "HVAC Zoning Systems in Lee's Summit, MO | Balanced Comfort",
     metaDescription:
       "HVAC zoning for Lee's Summit two-story and reverse story-and-a-half homes: fixing hot upstairs bedrooms and cool walkout basements.",
     answer:
@@ -500,7 +500,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-repair",
     status: "PUBLISHED",
     h1: "AC repair in Las Vegas",
-    seoTitle: "AC Repair in Las Vegas, NV",
+    seoTitle: "24/7 AC Repair in Las Vegas, NV | Fast Same-Day Emergency Service",
     metaDescription:
       "Air conditioner repair in Las Vegas: heat-killed capacitors and fan motors, hot attic ducts, dust-clogged coils, and city vs. Clark County permits.",
     answer:
@@ -519,7 +519,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-repair",
     status: "PUBLISHED",
     h1: "AC repair in Phoenix",
-    seoTitle: "AC Repair in Phoenix, AZ",
+    seoTitle: "24/7 AC Repair in Phoenix, AZ | Fast Same-Day Service & Free Quotes",
     metaDescription:
       "Air conditioner repair in Phoenix: summer part failures, rooftop units, monsoon dust, refrigerant leaks and checking an Arizona ROC license.",
     answer:
@@ -538,7 +538,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "furnace-installation",
     status: "PUBLISHED",
     h1: "Furnace replacement in Salt Lake City",
-    seoTitle: "Furnace Replacement in Salt Lake City, UT",
+    seoTitle: "24/7 Furnace Replacement in Salt Lake City, UT | Free Quotes",
     metaDescription:
       "Furnace replacement in Salt Lake City: altitude setup, venting in older Avenues and Sugar House homes, inversion-season filtration and permits.",
     answer:
@@ -557,7 +557,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-installation",
     status: "PUBLISHED",
     h1: "Adding central air in Denver",
-    seoTitle: "Central AC Installation in Denver, CO",
+    seoTitle: "24/7 AC Installation in Denver, CO | Free In-Home Estimates",
     metaDescription:
       "Central air and heat pump installation for Denver homes: replacing swamp coolers, cooling older homes, permits and rebates.",
     answer:
@@ -576,7 +576,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-repair",
     status: "PUBLISHED",
     h1: "AC repair in Aurora, Colorado",
-    seoTitle: "AC Repair in Aurora, CO",
+    seoTitle: "24/7 AC Repair in Aurora, CO | Fast Same-Day Service & Upfront Pricing",
     metaDescription:
       "Air conditioner repair in Aurora, Colorado: hail-damaged condensers, failed capacitors, frozen coils and upstairs heat in two-story homes.",
     answer:
@@ -596,7 +596,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-repair",
     status: "PUBLISHED",
     h1: "AC repair in Houston",
-    seoTitle: "AC Repair in Houston, TX",
+    seoTitle: "24/7 AC Repair in Houston, TX | Same-Day Emergency Service",
     metaDescription:
       "Air conditioner repair in Houston: humidity problems, clogged attic drain pans, flood-damaged units, refrigerant leaks and checking a TDLR license.",
     answer:
@@ -615,7 +615,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-tune-up",
     status: "PUBLISHED",
     h1: "AC tune-up in Tampa",
-    seoTitle: "AC Tune-Up & Maintenance in Tampa, FL",
+    seoTitle: "AC Tune-Up & Maintenance in Tampa, FL | 21-Point Seasonal Check",
     metaDescription:
       "AC maintenance for Tampa homes: twice-a-year service, condensate drain flushing, salt-air coil care near the bay and hurricane-season prep.",
     answer:
@@ -634,7 +634,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "heat-pump-installation",
     status: "PUBLISHED",
     h1: "Heat pump installation in Sacramento",
-    seoTitle: "Heat Pump Installation in Sacramento, CA",
+    seoTitle: "Heat Pump Installation in Sacramento, CA | Rebates & Free Quotes",
     metaDescription:
       "Heat pump installation in Sacramento: replacing gas furnaces and old AC, SMUD programs, Title 24 permits and duct testing, and sizing for valley heat.",
     answer:
@@ -653,7 +653,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ductless-mini-splits",
     status: "PUBLISHED",
     h1: "Ductless mini-splits in Boston",
-    seoTitle: "Ductless Mini-Split Installation in Boston, MA",
+    seoTitle: "Ductless Mini-Split Installation in Boston, MA | Mass Save Rebates",
     metaDescription:
       "Ductless mini-splits for Boston brownstones, condos and triple-deckers: adding cooling to radiator-heated homes, condo approvals and cold-climate heat pumps.",
     answer:
@@ -672,7 +672,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-installation",
     status: "PUBLISHED",
     h1: "AC replacement in Dallas",
-    seoTitle: "AC Replacement & Installation in Dallas, TX",
+    seoTitle: "24/7 AC Replacement & Installation in Dallas, TX | Free Quotes",
     metaDescription:
       "Air conditioner replacement in Dallas: hail-damaged condensers and insurance, sizing for 100-degree summers, attic ducts, permits and TDLR licensing.",
     answer:
@@ -691,7 +691,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "furnace-repair",
     status: "PUBLISHED",
     h1: "Furnace repair in Colorado Springs",
-    seoTitle: "Furnace Repair in Colorado Springs, CO",
+    seoTitle: "24/7 Furnace Repair in Colorado Springs, CO | Same-Day Service",
     metaDescription:
       "Furnace repair in Colorado Springs: altitude-related ignition problems, cold-front breakdowns, downslope winds and Pikes Peak Regional permits.",
     answer:
@@ -711,7 +711,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "furnace-repair",
     status: "PUBLISHED",
     h1: "Furnace repair in Chicago",
-    seoTitle: "Furnace Repair in Chicago, IL",
+    seoTitle: "24/7 Furnace Repair in Chicago, IL | Fast Emergency Heating Repair",
     metaDescription:
       "Furnace and boiler repair in Chicago: subzero breakdowns, bungalow basement furnaces, two-flat boilers, chimney venting and city permits.",
     answer:
@@ -730,7 +730,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "duct-sealing",
     status: "PUBLISHED",
     h1: "Duct sealing in Atlanta",
-    seoTitle: "Duct Sealing & Repair in Atlanta, GA",
+    seoTitle: "Duct Sealing & Airflow Repair in Atlanta, GA | Fix Hot Rooms",
     metaDescription:
       "Duct sealing for Atlanta homes: leaky crawlspace ducts in intown bungalows, sweating ductwork, musty air, attic systems and humidity control.",
     answer:
@@ -749,7 +749,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "heat-pump-installation",
     status: "PUBLISHED",
     h1: "Heat pump installation in Seattle",
-    seoTitle: "Heat Pump Installation in Seattle, WA",
+    seoTitle: "Heat Pump Installation in Seattle, WA | Cold-Climate & Rebates",
     metaDescription:
       "Heat pump installation in Seattle: adding cooling to homes without AC, replacing oil furnaces and baseboard heat, oil tank decommissioning and permits.",
     answer:
@@ -768,7 +768,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "emergency-hvac-repair",
     status: "PUBLISHED",
     h1: "Emergency heating repair in Minneapolis",
-    seoTitle: "Emergency Furnace & Boiler Repair, Minneapolis",
+    seoTitle: "24/7 Emergency Furnace Repair in Minneapolis, MN | Fast Heat Restoration",
     metaDescription:
       "No heat in a Minneapolis cold snap? Steps to protect your home, common causes, boiler and furnace failures, and when to call the gas utility.",
     answer:
@@ -787,7 +787,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ductless-mini-splits",
     status: "PUBLISHED",
     h1: "Ductless mini-splits in Philadelphia",
-    seoTitle: "Ductless Mini-Split Installation in Philadelphia",
+    seoTitle: "Ductless Mini-Split Installation in Philadelphia, PA | Multi-Zone Cooling",
     metaDescription:
       "Ductless mini-splits for Philadelphia rowhomes: adding cooling without ducts, roof and rear-wall condensers, boiler-heated homes and L&I permits.",
     answer:
@@ -806,7 +806,7 @@ export const cityServices: CityService[] = [
     serviceSlug: "ac-tune-up",
     status: "PUBLISHED",
     h1: "AC maintenance in Miami",
-    seoTitle: "AC Tune-Up & Maintenance in Miami, FL",
+    seoTitle: "AC Tune-Up & Preventative Maintenance in Miami, FL | 21-Point Inspection",
     metaDescription:
       "AC maintenance in Miami: twice-yearly service, condensate drain treatment, salt-air coil care, hurricane tie-down checks and condo fan coils.",
     answer:

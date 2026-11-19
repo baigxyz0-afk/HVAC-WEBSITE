@@ -20,7 +20,7 @@ const core: Service[] = [
     shortName: "AC repair",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Repair Near You | Same-Day Service & Upfront Pricing",
+    seoTitle: "24/7 AC Repair Near You | Fast Same-Day Emergency Service",
     metaDescription:
       "Fast 24/7 AC repair near you: warm air, frozen coils, tripped breakers & strange noises. Connect with licensed local technicians for same-day cooling restoration.",
     h1: "Air conditioner repair",
@@ -75,7 +75,7 @@ const core: Service[] = [
     shortName: "AC replacement",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Replacement & Installation Near You | Free Quotes",
+    seoTitle: "AC Replacement & Installation Near You | Free In-Home Estimates",
     metaDescription:
       "Top-rated central air conditioner replacement & installation. Manual J sizing, energy-efficient SEER2 systems, transparent quotes & certified local installers.",
     h1: "Air conditioner replacement and installation",
@@ -126,7 +126,7 @@ const core: Service[] = [
     shortName: "AC tune-up",
     category: "cooling",
     status: "PUBLISHED",
-    seoTitle: "AC Tune-Up & Maintenance Near You | Multi-Point Check",
+    seoTitle: "AC Tune-Up & Maintenance Near You | 21-Point Safety Check",
     metaDescription:
       "Comprehensive AC tune-up & seasonal maintenance: electrical testing, coil cleaning, refrigerant verification & airflow check to prevent costly summer breakdowns.",
     h1: "Air conditioner tune-up and maintenance",
@@ -164,7 +164,7 @@ const core: Service[] = [
     shortName: "Furnace repair",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Repair Near You | 24/7 Fast Heating Fixes",
+    seoTitle: "24/7 Furnace Repair Near You | Fast Emergency Heating Service",
     metaDescription:
       "Fast, reliable furnace repair near you: bad ignitors, flame sensors, blowers & cold-air blowing. Connect with licensed heating pros for same-day emergency warmth.",
     h1: "Furnace repair",
@@ -207,7 +207,7 @@ const core: Service[] = [
     shortName: "Furnace replacement",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Replacement & Installation | Free Quotes",
+    seoTitle: "Furnace Replacement & Installation Near You | Free Written Quotes",
     metaDescription:
       "Expert furnace replacement & installation near you. High-efficiency 96%+ AFUE gas furnaces, proper sizing, permit handling & competitive free estimates.",
     h1: "Furnace replacement and installation",
@@ -244,7 +244,7 @@ const core: Service[] = [
     shortName: "Furnace tune-up",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Furnace Tune-Up & Safety Check | Prevent Breakdowns",
+    seoTitle: "Furnace Tune-Up & Safety Inspection Near You | Prevent Breakdowns",
     metaDescription:
       "Pre-season furnace tune-up & multi-point safety inspection: heat exchanger crack test, burner cleaning, gas pressure & electrical check for worry-free winter heat.",
     h1: "Furnace tune-up and safety check",
@@ -281,7 +281,7 @@ const core: Service[] = [
     shortName: "Emergency repair",
     category: "heating",
     status: "PUBLISHED",
-    seoTitle: "Emergency Heating & AC Repair: What Counts",
+    seoTitle: "24/7 Emergency HVAC Repair Near You | Immediate Same-Day Dispatch",
     metaDescription:
       "No heat in a cold snap or no AC in a heat wave? Get connected with an available licensed HVAC technician near you.",
     h1: "Emergency heating and air conditioning repair",
@@ -315,7 +315,7 @@ const core: Service[] = [
     shortName: "Heat pump repair",
     category: "heat-pumps",
     status: "PUBLISHED",
-    seoTitle: "Heat Pump Repair Near You | Fast Diagnostics & Fixes",
+    seoTitle: "24/7 Heat Pump Repair Near You | Same-Day Diagnostics & Upfront Quotes",
     metaDescription:
       "Expert heat pump repair near you: stuck reversing valves, iced coils, emergency aux heat lockouts & refrigerant issues. Certified technicians ready to help.",
     h1: "Heat pump repair",
@@ -350,7 +350,7 @@ const core: Service[] = [
     shortName: "Heat pumps",
     category: "heat-pumps",
     status: "PUBLISHED",
-    seoTitle: "Heat Pump Installation Near You | Cold-Climate & Rebates",
+    seoTitle: "Heat Pump Installation & Replacement Near You | Rebates & Free Quotes",
     metaDescription:
       "Upgrade to an energy-efficient heat pump. Expert installation for cold-climate and dual-fuel systems, utility rebate assistance & free local estimates.",
     h1: "Heat pump installation",
@@ -384,7 +384,7 @@ const core: Service[] = [
     shortName: "Mini-splits",
     category: "ductless",
     status: "PUBLISHED",
-    seoTitle: "Ductless Mini-Split Installation Guide",
+    seoTitle: "Ductless Mini-Split Installation & Repair Near You | Free Estimates",
     metaDescription:
       "Ductless mini-split installation for additions, finished basements, sunrooms, garages and hot upstairs rooms.",
     h1: "Ductless mini-split installation",

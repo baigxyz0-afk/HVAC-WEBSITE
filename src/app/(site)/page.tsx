@@ -19,7 +19,7 @@ import { PhoneLink } from "@/components/PhoneLink";
 import { BeforeAfterSlider } from "@/components/BeforeAfterSlider";
 import { beforeAfter } from "@/content/beforeAfter";
 
-const title = "Heating & AC Repair Near You: 24/7 HVAC Service in All 50 States";
+const title = "24/7 HVAC, AC & Furnace Repair Near You | Licensed Local Pros";
 const description =
   "Need fast HVAC repair near you? Connect with top-rated, licensed heating & cooling technicians for same-day AC repair, furnace replacement & heat pumps nationwide.";
 
@@ -33,13 +33,13 @@ export default function Home() {
       <JsonLd data={graph(pageGraph({ path: "/", name: title, description, crumbs: [{ name: "Home", path: "/" }], faqs, about: [ids.org] }))} />
       <Hero
         eyebrow="All 50 states · Washington, D.C."
-        title="Heating and air conditioning help, wherever you live"
+        title="Fast Heating & AC Repair, Wherever You Live"
         lead={
           <p>
             Desert heat, Gulf Coast humidity, Northern cold and mountain altitude all change what a home needs from its heating and cooling. {BRAND_PROMISE}
           </p>
         }
-        facts={[availability, "Licensed local contractors", "Free to request"]}
+        facts={[availability, "Same-Day Dispatch & 24/7 Emergency Calls", "Licensed & Insured Local Contractors", "Upfront Written Quotes"]}
         photo={photos.skyline}
       />
 

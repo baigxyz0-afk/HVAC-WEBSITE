@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: P) {
   const st = getState((await params).state)!;
   const climate = st.glance?.find((g) => g.term === "Watch for")?.detail.toLowerCase();
   return pageMeta({
-    title: `Heating & AC Repair in ${st.name} | Licensed HVAC Contractors`,
+    title: `24/7 HVAC, AC & Heating Repair in ${st.name} | Same-Day Service`,
     description: `Find certified heating and air conditioning contractors in ${st.name}. Expert service for ${climate ?? "local climate"}. Fast 24/7 emergency dispatch, repairs & free estimates.`.slice(0, 158),
     path: routes.state(st.slug),
   });
@@ -58,7 +58,7 @@ export default async function StatePage({ params }: P) {
       <Hero
         crumbs={crumbs}
         eyebrow={`${st.region ?? "United States"} · ${st.abbr}`}
-        title={`Heating and air conditioning help in ${st.name}`}
+        title={`24/7 Heating, AC & HVAC Services in ${st.name}`}
         lead={<p>{st.intro}</p>}
         facts={zipCount ? [`Contractors in our network take calls in ${zipCount.toLocaleString()} ${st.abbr} ZIP codes`, "Free to request"] : ["Free to request"]}
         aside={
