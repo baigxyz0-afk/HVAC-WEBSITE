@@ -21,7 +21,7 @@ import { beforeAfter } from "@/content/beforeAfter";
 
 const title = "24/7 HVAC, AC & Furnace Repair Near You | Licensed Local Pros";
 const description =
-  "Need fast HVAC repair near you? Connect with top-rated, licensed heating & cooling technicians for same-day AC repair, furnace replacement & heat pumps nationwide.";
+  "Need fast HVAC repair near you? Connect with licensed heating & cooling technicians for same-day AC repair, furnace replacement & heat pumps nationwide.";
 
 export const metadata = pageMeta({ title, description, path: "/" });
 

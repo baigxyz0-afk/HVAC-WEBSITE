@@ -34,7 +34,7 @@ export function CityDataPage({ c, st, crumbs, guideCities }: { c: DataCity; st: 
     <main id="main">
       <Hero
         crumbs={crumbs}
-        eyebrow={`24/7 Heating & Cooling Referral · ${label}`}
+        eyebrow={`24/7 Heating & Cooling · ${label}`}
         title={`Same-Day HVAC, AC & Furnace Repair in ${label}`}
         lead={
           <p>
@@ -46,7 +46,7 @@ export function CityDataPage({ c, st, crumbs, guideCities }: { c: DataCity; st: 
           "Same-Day Dispatch & 24/7 Emergency Service",
           "Licensed & Insured Local Contractors",
           "Upfront Written Quotes Before Work Begins",
-          `Serving All ${c.name} ZIP Codes`,
+          `Serving All ${c.name} ZIP Codes (${c.zips.length} Covered)`,
         ]}
         aside={<LeadFormBlock defaultZip={c.zips[0]} compact id="hero-lead-form" />}
         requestHref="#hero-lead-form"

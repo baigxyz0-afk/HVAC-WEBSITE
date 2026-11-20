@@ -128,7 +128,7 @@ const core: Service[] = [
     status: "PUBLISHED",
     seoTitle: "AC Tune-Up & Maintenance Near You | 21-Point Safety Check",
     metaDescription:
-      "Comprehensive AC tune-up & seasonal maintenance: electrical testing, coil cleaning, refrigerant verification & airflow check to prevent costly summer breakdowns.",
+      "AC tune-up & seasonal maintenance: electrical testing, coil cleaning, refrigerant verification & airflow check to prevent costly summer breakdowns.",
     h1: "Air conditioner tune-up and maintenance",
     answer:
       "An AC tune-up cleans the condenser coil, tests the capacitor and contactor, flushes the condensate drain, checks refrigerant pressures and measures airflow. Doing it in April or May catches weak parts before the first heat wave.",
@@ -166,7 +166,7 @@ const core: Service[] = [
     status: "PUBLISHED",
     seoTitle: "24/7 Furnace Repair Near You | Fast Emergency Heating Service",
     metaDescription:
-      "Fast, reliable furnace repair near you: bad ignitors, flame sensors, blowers & cold-air blowing. Connect with licensed heating pros for same-day emergency warmth.",
+      "Fast, reliable furnace repair near you: bad ignitors, flame sensors, blowers & cold-air blowing. Connect with licensed heating pros for same-day service.",
     h1: "Furnace repair",
     answer:
       "When a gas furnace won't heat, the usual causes are a dirty flame sensor, a failed hot-surface ignitor, a blocked condensate line or flue, a tripped limit switch from a clogged filter, or a failed inducer or blower motor. A technician reads the control board's error code, tests the parts and quotes the repair.",
@@ -190,6 +190,7 @@ const core: Service[] = [
       { q: "Why does my furnace keep shutting off?", a: "Short cycling usually points to a dirty flame sensor, a clogged filter tripping the high-limit switch, or a blocked vent or condensate line." },
       { q: "What do I do if I smell gas?", a: "Leave the house without flipping switches and call your gas utility's emergency line or 911 from outside." },
       { q: "Is a cracked heat exchanger dangerous?", a: "It can let combustion gases, including carbon monoxide, into the air stream. A technician who finds one will usually shut the furnace off, which is the correct call." },
+      { q: "Can I get furnace repair near me today?", a: "Yes. Tell us your ZIP code and we connect you with an independent, licensed heating contractor serving your area for same-day service when a technician is available." },
     ],
     related: ["furnace-installation", "furnace-tune-up", "emergency-hvac-repair", "heat-pump-repair"],
     isEmergencyCapable: true,
@@ -369,6 +370,7 @@ const core: Service[] = [
     costFactors: ["Standard vs. cold-climate model", "Dual-fuel controls", "Electrical upgrades", "Tax credits and rebates"],
     faqs: [
       { q: "Do heat pumps work in cold climates?", a: "Yes. Cold-climate models keep heating well below zero, and dual-fuel systems use gas for the coldest hours. Check your state guide for how common they are where you live." },
+      { q: "How do I find heat pump installation near me?", a: "Tell us your ZIP code and we connect you with an independent, licensed contractor serving your area who can quote a cold-climate or dual-fuel heat pump for your home." },
     ],
     related: ["heat-pump-repair", "ac-installation", "ductless-mini-splits", "furnace-installation"],
     isEmergencyCapable: false,

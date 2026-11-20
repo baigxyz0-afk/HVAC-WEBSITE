@@ -5,6 +5,7 @@ import { getService } from "@/content/services";
 import { publishedArticles } from "@/content/articles";
 import { indexableCities, indexableCityServices } from "@/lib/sitemap";
 import { pageMeta } from "@/lib/seo";
+import { servicesFor } from "@/lib/climateAdvice";
 import { routes } from "@/lib/routes";
 import { createLinker } from "@/lib/linker";
 import { graph, ids, pageGraph } from "@/lib/schema";
@@ -36,9 +37,12 @@ export async function generateMetadata({ params }: P) {
   if (!c) {
     const dc = getDataCity(p.state, p.city)!;
     const st = getState(p.state)!;
+    const cl = dc.climate;
+    const top = servicesFor(cl).map(getService).filter(Boolean);
+    const topService = top[0]?.name ?? "HVAC Repair";
     return pageMeta({
-      title: `24/7 HVAC, AC & Furnace Repair in ${dc.name}, ${st.abbr} | Fast Quotes`,
-      description: `Need fast HVAC repair in ${dc.name}, ${st.abbr}? Local licensed contractors ready for same-day AC repair, furnace troubleshooting & heat pump replacement. Call 24/7!`.slice(0, 158),
+      title: `24/7 ${topService} in ${dc.name}, ${st.abbr} | Same-Day Service & Free Quotes`,
+      description: `Need ${topService} in ${dc.name}, ${st.abbr}? Local licensed heating & AC contractors ready for ${cl.julHigh}°F summers and ${cl.janLow}°F winters. 24/7 emergency dispatch & fast quotes.`.slice(0, 158),
       path: routes.city(st.slug, dc.slug),
     });
   }
